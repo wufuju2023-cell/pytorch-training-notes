@@ -7,6 +7,8 @@
 > 实验：notebook `N17_tool_calling_agent`（`N-17`）。
 >
 > **【文档｜DOC-V11】**（doccode = `V11`）｜编号与 Tag 规范见《00-风格与编号规范》。
+>
+> **前置（预备篇）**：见【定义 PY3.1.1】（虚拟环境）、【定义 PY6.3.1】（`transformers` Auto*）。
 
 ---
 
