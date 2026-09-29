@@ -1,11 +1,11 @@
 {
  "generated_by": "v1.0/tools/tag_graph.py render",
- "root": "/home/zhai/.local/share/opencode/worktree/manual/pytorch-training-notes/pre/tagtool",
+ "root": "/home/zhai/project/pytorch-training-notes",
  "counts": {
-  "tags": 844,
-  "relations": 619,
+  "tags": 1232,
+  "relations": 1052,
   "errors": 0,
-  "warnings": 248
+  "warnings": 369
  },
  "nodes": [
   {
@@ -44,6 +44,26 @@
    "doccode": "MCTS",
    "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L164",
    "title": "online_ttt `run_online`",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "A-PY4.4.2",
+   "type": "A",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L181",
+   "title": "朴素两层循环 -> 矩阵乘",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "A-PY5.7.1",
+   "type": "A",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L321",
+   "title": "标准训练循环五步",
    "status": "active",
    "version": "v1.0",
    "ext": ""
@@ -174,6 +194,296 @@
    "doccode": "MCTS",
    "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L140",
    "title": "与 Lean `reap` 引擎的对应",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Cd-PY1.1.4",
+   "type": "Cd",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L50",
+   "title": "用 `dis` 观察字节码",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Cd-PY1.2.6",
+   "type": "Cd",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L116",
+   "title": "绑定与共享的可观测行为",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Cd-PY1.3.8",
+   "type": "Cd",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L192",
+   "title": "类型与切片速览",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Cd-PY1.4.7",
+   "type": "Cd",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L258",
+   "title": "控制流速览",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Cd-PY1.5.7",
+   "type": "Cd",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L341",
+   "title": "参数与闭包速览",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Cd-PY1.6.5",
+   "type": "Cd",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L382",
+   "title": "推导式与迭代协议速览",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Cd-PY2.1.7",
+   "type": "Cd",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L78",
+   "title": "最小 `Vec2`：类属性、实例属性、运算符与 `__repr__`",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Cd-PY2.2.7",
+   "type": "Cd",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L160",
+   "title": "一个支持 `len`/索引/迭代的小容器",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Cd-PY2.5.6",
+   "type": "Cd",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L318",
+   "title": "EAFP 风格的分词",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Cd-PY2.6.4",
+   "type": "Cd",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L362",
+   "title": "类式与生成器式两种上下文管理器",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Cd-PY2.7.6",
+   "type": "Cd",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L424",
+   "title": "带参装饰器与 `lru_cache`",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Cd-PY2.8.6",
+   "type": "Cd",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L493",
+   "title": "手写生成器与 `itertools`",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Cd-PY3.1.5",
+   "type": "Cd",
+   "doccode": "PY3",
+   "locator": "v1.0/00-预备/PY3-工程与环境.md#L66",
+   "title": "环境自检片段",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Cd-PY3.3.4",
+   "type": "Cd",
+   "doccode": "PY3",
+   "locator": "v1.0/00-预备/PY3-工程与环境.md#L158",
+   "title": "argparse + logging 最小骨架",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Cd-PY4.1.7",
+   "type": "Cd",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L56",
+   "title": "检查形状、步长与共享",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Cd-PY4.2.6",
+   "type": "Cd",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L99",
+   "title": "三种索引的返回类型",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Cd-PY4.3.5",
+   "type": "Cd",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L154",
+   "title": "广播实验与形状诊断",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Cd-PY4.4.5",
+   "type": "Cd",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L206",
+   "title": "三种等价写法",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Cd-PY4.5.4",
+   "type": "Cd",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L247",
+   "title": "归约与 keepdims 实验",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Cd-PY4.6.5",
+   "type": "Cd",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L281",
+   "title": "Generator 与 spawn",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Cd-PY5.1.3",
+   "type": "Cd",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L40",
+   "title": "构造、属性与 NumPy 互操作",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Cd-PY5.2.4",
+   "type": "Cd",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L93",
+   "title": "形状操作与连续性",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Cd-PY5.3.5",
+   "type": "Cd",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L150",
+   "title": "autograd 最小示例与梯度检查",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Cd-PY5.4.4",
+   "type": "Cd",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L206",
+   "title": "两层 MLP，对照【定义 1.1.3】与【代码 1.1.4】",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Cd-PY5.6.3",
+   "type": "Cd",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L290",
+   "title": "TensorDataset 与自定义 Dataset",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Cd-PY5.7.2",
+   "type": "Cd",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L334",
+   "title": "训练循环与 checkpoint",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Cd-PY6.1.5",
+   "type": "Cd",
+   "doccode": "PY6",
+   "locator": "v1.0/00-预备/PY6-PyTorch进阶与生态.md#L52",
+   "title": "检查点 + autocast 最小写法",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Cd-PY6.2.5",
+   "type": "Cd",
+   "doccode": "PY6",
+   "locator": "v1.0/00-预备/PY6-PyTorch进阶与生态.md#L105",
+   "title": "profiler 与 compile 用法",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Cd-PY6.3.6",
+   "type": "Cd",
+   "doccode": "PY6",
+   "locator": "v1.0/00-预备/PY6-PyTorch进阶与生态.md#L163",
+   "title": "生态库最小调用链，可选依赖缺失即跳过",
    "status": "active",
    "version": "v1.0",
    "ext": ""
@@ -1469,6 +1779,816 @@
    "ext": ""
   },
   {
+   "id": "D-PY1.1.1",
+   "type": "D",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L13",
+   "title": "CPython 的执行模型",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY1.1.2",
+   "type": "D",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L23",
+   "title": "三种入口：REPL、脚本、模块",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY1.2.1",
+   "type": "D",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L78",
+   "title": "名字是绑定，不是盒子",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY1.2.3",
+   "type": "D",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L93",
+   "title": "对象身份与相等",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY1.2.5",
+   "type": "D",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L108",
+   "title": "可变与不可变对象",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY1.3.1",
+   "type": "D",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L139",
+   "title": "标量类型",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY1.3.3",
+   "type": "D",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L149",
+   "title": "`str` 与 `bytes`",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY1.3.4",
+   "type": "D",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L161",
+   "title": "`None`",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY1.3.5",
+   "type": "D",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L165",
+   "title": "序列容器 `list` 与 `tuple`",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY1.3.6",
+   "type": "D",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L173",
+   "title": "映射与集合 `dict`/`set`/`frozenset`",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY1.4.1",
+   "type": "D",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L213",
+   "title": "真值测试规则",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY1.4.2",
+   "type": "D",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L217",
+   "title": "`if/elif/else`",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY1.4.3",
+   "type": "D",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L221",
+   "title": "`while` 与 `for`",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY1.4.6",
+   "type": "D",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L250",
+   "title": "结构化模式匹配 `match`",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY1.5.1",
+   "type": "D",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L286",
+   "title": "`def`、位置参数与关键字参数",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY1.5.3",
+   "type": "D",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L308",
+   "title": "可变参数与只关键字参数",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY1.5.4",
+   "type": "D",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L316",
+   "title": "LEGB 作用域规则",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY1.5.5",
+   "type": "D",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L327",
+   "title": "闭包与 `nonlocal`",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY1.5.6",
+   "type": "D",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L335",
+   "title": "函数是一等对象；`lambda`",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY1.6.1",
+   "type": "D",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L366",
+   "title": "推导式",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY1.6.2",
+   "type": "D",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L370",
+   "title": "生成器表达式与惰性求值",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY1.6.3",
+   "type": "D",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L374",
+   "title": "迭代协议初识：可迭代对象与迭代器",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY2.1.1",
+   "type": "D",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L17",
+   "title": "类、实例与 `self`",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY2.1.2",
+   "type": "D",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L27",
+   "title": "`__init__` 与构造过程",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY2.1.4",
+   "type": "D",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L49",
+   "title": "继承与 MRO",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY2.2.1",
+   "type": "D",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L101",
+   "title": "数据模型与特殊方法总览",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY2.3.1",
+   "type": "D",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L184",
+   "title": "`property`：把方法伪装成属性",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY2.3.2",
+   "type": "D",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L194",
+   "title": "描述符协议",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY2.3.3",
+   "type": "D",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L204",
+   "title": "`__slots__` 与内存布局",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY2.4.1",
+   "type": "D",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L223",
+   "title": "`dataclass`：样板代码生成器",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY2.4.3",
+   "type": "D",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L247",
+   "title": "`typing`：`Optional`/`Union`/`Sequence`/`Mapping`/`Protocol`",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY2.4.5",
+   "type": "D",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L270",
+   "title": "`enum`：具名常量",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY2.5.1",
+   "type": "D",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L278",
+   "title": "异常层级",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY2.5.2",
+   "type": "D",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L288",
+   "title": "`try/except/else/finally` 语义",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY2.5.3",
+   "type": "D",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L297",
+   "title": "`raise`、异常链与自定义异常",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY2.6.1",
+   "type": "D",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L335",
+   "title": "`with` 与 `__enter__`/`__exit__`",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY2.7.1",
+   "type": "D",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L388",
+   "title": "函数是一等对象与高阶函数",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY2.7.2",
+   "type": "D",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L394",
+   "title": "装饰器：`f = deco(f)` 的语法糖",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY2.7.3",
+   "type": "D",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L400",
+   "title": "带参装饰器：三层结构",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY2.7.4",
+   "type": "D",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L416",
+   "title": "`functools.lru_cache`：记忆化",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY2.8.1",
+   "type": "D",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L451",
+   "title": "迭代协议：`__iter__`/`__next__`/`StopIteration`",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY2.8.2",
+   "type": "D",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L463",
+   "title": "生成器函数与 `yield`：惰性求值",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY2.9.1",
+   "type": "D",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L514",
+   "title": "模块与 `import` 机制",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY2.9.2",
+   "type": "D",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L526",
+   "title": "`__name__ == \"__main__\"` 与双入口",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY2.9.3",
+   "type": "D",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L537",
+   "title": "包与相对导入",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY3.1.1",
+   "type": "D",
+   "doccode": "PY3",
+   "locator": "v1.0/00-预备/PY3-工程与环境.md#L16",
+   "title": "虚拟环境与解释器隔离",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY3.7.1",
+   "type": "D",
+   "doccode": "PY3",
+   "locator": "v1.0/00-预备/PY3-工程与环境.md#L309",
+   "title": "可复现性的三要素",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY4.1.1",
+   "type": "D",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L16",
+   "title": "ndarray",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY4.1.2",
+   "type": "D",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L25",
+   "title": "shape 与 dtype",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY4.1.4",
+   "type": "D",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L36",
+   "title": "axis 语义",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY4.1.5",
+   "type": "D",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L40",
+   "title": "strides：下标到字节地址的映射",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY4.2.1",
+   "type": "D",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L75",
+   "title": "基本索引与切片",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY4.2.3",
+   "type": "D",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L83",
+   "title": "花式索引：整数数组索引",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY4.2.4",
+   "type": "D",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L87",
+   "title": "布尔掩码",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY4.3.1",
+   "type": "D",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L121",
+   "title": "广播严格规则",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY4.5.1",
+   "type": "D",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L226",
+   "title": "归约算子",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY4.6.2",
+   "type": "D",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L269",
+   "title": "种子与可复现性",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY4.7.1",
+   "type": "D",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L295",
+   "title": "`matmul` / `@` 语义",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY4.7.3",
+   "type": "D",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L303",
+   "title": "`np.linalg` 常用函数",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY5.1.1",
+   "type": "D",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L23",
+   "title": "张量：带元数据的同构多维数组",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY5.1.2",
+   "type": "D",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L33",
+   "title": "dtype 与 device 的相容规则",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY5.2.1",
+   "type": "D",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L78",
+   "title": "view 与 reshape：改变解释方式还是复制数据",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY5.2.2",
+   "type": "D",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L84",
+   "title": "transpose/permute 与 contiguous",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY5.2.3",
+   "type": "D",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L88",
+   "title": "unsqueeze/squeeze 与广播",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY5.3.1",
+   "type": "D",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L123",
+   "title": "计算图、叶子与非叶子张量",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY5.3.2",
+   "type": "D",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L130",
+   "title": "requires_grad、grad_fn 与 .grad",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY5.3.3",
+   "type": "D",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L136",
+   "title": "detach 与 torch.no_grad",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY5.4.1",
+   "type": "D",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L182",
+   "title": "nn.Module：参数注册与子模块",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY5.4.2",
+   "type": "D",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L194",
+   "title": "state_dict 与 load_state_dict",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY5.5.1",
+   "type": "D",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L237",
+   "title": "nn.CrossEntropyLoss：logits 输入、内部含 log-softmax",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY5.5.2",
+   "type": "D",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L247",
+   "title": "nn.MSELoss：回归目标，对照【定义 1.2.5】",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY5.5.3",
+   "type": "D",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L251",
+   "title": "优化器：SGD 与 Adam",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY5.6.1",
+   "type": "D",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L271",
+   "title": "Dataset 协议",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY5.6.2",
+   "type": "D",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L280",
+   "title": "DataLoader：batch/shuffle/collate/num_workers",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY6.1.1",
+   "type": "D",
+   "doccode": "PY6",
+   "locator": "v1.0/00-预备/PY6-PyTorch进阶与生态.md#L18",
+   "title": "梯度检查点",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY6.1.3",
+   "type": "D",
+   "doccode": "PY6",
+   "locator": "v1.0/00-预备/PY6-PyTorch进阶与生态.md#L36",
+   "title": "混合精度与 `autocast`",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY6.2.1",
+   "type": "D",
+   "doccode": "PY6",
+   "locator": "v1.0/00-预备/PY6-PyTorch进阶与生态.md#L76",
+   "title": "`torch.profiler` 入门",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY6.2.4",
+   "type": "D",
+   "doccode": "PY6",
+   "locator": "v1.0/00-预备/PY6-PyTorch进阶与生态.md#L98",
+   "title": "`torch.compile` 与固定形状",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY6.3.1",
+   "type": "D",
+   "doccode": "PY6",
+   "locator": "v1.0/00-预备/PY6-PyTorch进阶与生态.md#L128",
+   "title": "`transformers`：`Auto*` 三件套",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY6.3.3",
+   "type": "D",
+   "doccode": "PY6",
+   "locator": "v1.0/00-预备/PY6-PyTorch进阶与生态.md#L142",
+   "title": "`peft`：`LoraConfig` / `get_peft_model`",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "D-PY6.3.5",
+   "type": "D",
+   "doccode": "PY6",
+   "locator": "v1.0/00-预备/PY6-PyTorch进阶与生态.md#L157",
+   "title": "`accelerate`：`Accelerator`",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
    "id": "D-RL.2.1",
    "type": "D",
    "doccode": "RL",
@@ -1979,6 +3099,66 @@
    "ext": ""
   },
   {
+   "id": "DOC-PY1",
+   "type": "DOC",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md",
+   "title": "PY1 · Python 语言 I",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "DOC-PY2",
+   "type": "DOC",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md",
+   "title": "PY2 · Python 语言 II",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "DOC-PY3",
+   "type": "DOC",
+   "doccode": "PY3",
+   "locator": "v1.0/00-预备/PY3-工程与环境.md",
+   "title": "预备 PY3 · 工程与环境",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "DOC-PY4",
+   "type": "DOC",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md",
+   "title": "PY4 · NumPy 与张量思维",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "DOC-PY5",
+   "type": "DOC",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md",
+   "title": "预备篇 PY5 · PyTorch 从零",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "DOC-PY6",
+   "type": "DOC",
+   "doccode": "PY6",
+   "locator": "v1.0/00-预备/PY6-PyTorch进阶与生态.md",
+   "title": "预备篇 PY6 · PyTorch 进阶与生态",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
    "id": "DOC-RES",
    "type": "DOC",
    "doccode": "RES",
@@ -2339,6 +3519,206 @@
    "ext": ""
   },
   {
+   "id": "E-PY1.1.5",
+   "type": "E",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L68",
+   "title": "三种入口的可观测差异",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "E-PY2.1.6",
+   "type": "E",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L67",
+   "title": "剖析 `CharTokenizer`：类属性、类方法与只读属性",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "E-PY2.2.6",
+   "type": "E",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L156",
+   "title": "`CharDataset`：只靠 `__len__` + `__getitem__` 就成为数据集",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "E-PY2.3.4",
+   "type": "E",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L215",
+   "title": "`CharTokenizer.vocab_size` 是只读属性",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "E-PY2.4.4",
+   "type": "E",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L258",
+   "title": "用 `Protocol` 描述分词器接口",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "E-PY2.5.5",
+   "type": "E",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L314",
+   "title": "`data.py` 的“捕获后降级”与“主动报错”",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "E-PY2.6.3",
+   "type": "E",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L354",
+   "title": "`data.py` 的原子写：临时文件 + `os.replace`",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "E-PY2.7.5",
+   "type": "E",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L420",
+   "title": "`data.py` 中的高阶用法",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "E-PY2.8.5",
+   "type": "E",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L487",
+   "title": "读懂 `data.py` 的生成器与迭代用法",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "E-PY2.9.5",
+   "type": "E",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L549",
+   "title": "`data.py` 与 `model.py` 的模块结构",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "E-PY4.3.2",
+   "type": "E",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L132",
+   "title": "合法广播示例",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "E-PY4.3.3",
+   "type": "E",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L141",
+   "title": "反例：不同时为 1 或相等则报错",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "E-PY4.4.3",
+   "type": "E",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L198",
+   "title": "朴素实现与向量化基准",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "E-PY4.5.3",
+   "type": "E",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L236",
+   "title": "softmax 的向量化实现",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "E-PY6.4.2",
+   "type": "E",
+   "doccode": "PY6",
+   "locator": "v1.0/00-预备/PY6-PyTorch进阶与生态.md#L206",
+   "title": "读 `F-b04-value_head_api` 的调用链并标注对象来源",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "E-PY6.6.2",
+   "type": "E",
+   "doccode": "PY6",
+   "locator": "v1.0/00-预备/PY6-PyTorch进阶与生态.md#L254",
+   "title": "自测：检查点为什么省显存",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "E-PY6.6.3",
+   "type": "E",
+   "doccode": "PY6",
+   "locator": "v1.0/00-预备/PY6-PyTorch进阶与生态.md#L258",
+   "title": "自测：非连续张量",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "E-PY6.6.4",
+   "type": "E",
+   "doccode": "PY6",
+   "locator": "v1.0/00-预备/PY6-PyTorch进阶与生态.md#L262",
+   "title": "自测：fp16 与 bf16",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "E-PY6.6.5",
+   "type": "E",
+   "doccode": "PY6",
+   "locator": "v1.0/00-预备/PY6-PyTorch进阶与生态.md#L266",
+   "title": "自测：读调用链",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "E-PY6.6.6",
+   "type": "E",
+   "doccode": "PY6",
+   "locator": "v1.0/00-预备/PY6-PyTorch进阶与生态.md#L270",
+   "title": "自测：找瓶颈",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
    "id": "E-SRC1.7.1",
    "type": "E",
    "doccode": "SRC1",
@@ -2494,6 +3874,236 @@
    "doccode": "PT",
    "locator": "v1.0/02-预训练/01-预训练原理.md#L237",
    "title": "动手：域切换与预算",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Ex-PY1.8.1",
+   "type": "Ex",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L420",
+   "title": "执行入口",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Ex-PY1.8.2",
+   "type": "Ex",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L424",
+   "title": "绑定与身份",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Ex-PY1.8.3",
+   "type": "Ex",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L428",
+   "title": "切片与拷贝",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Ex-PY1.8.4",
+   "type": "Ex",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L432",
+   "title": "哈希与集合",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Ex-PY1.8.5",
+   "type": "Ex",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L436",
+   "title": "控制流",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Ex-PY1.8.6",
+   "type": "Ex",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L440",
+   "title": "默认参数陷阱",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Ex-PY1.8.7",
+   "type": "Ex",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L444",
+   "title": "闭包与 `nonlocal`",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Ex-PY1.8.8",
+   "type": "Ex",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L448",
+   "title": "推导式与生成器",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Ex-PY2.11.1",
+   "type": "Ex",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L580",
+   "title": "类属性共享陷阱与 `dataclass` 修复",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Ex-PY2.11.2",
+   "type": "Ex",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L584",
+   "title": "给 `Buffer` 补全协议",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Ex-PY2.11.3",
+   "type": "Ex",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L588",
+   "title": "用生成器与装饰器处理 `data.py` 的采样",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Ex-PY3.9.1",
+   "type": "Ex",
+   "doccode": "PY3",
+   "locator": "v1.0/00-预备/PY3-工程与环境.md#L371",
+   "title": "虚拟环境与依赖隔离",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Ex-PY3.9.2",
+   "type": "Ex",
+   "doccode": "PY3",
+   "locator": "v1.0/00-预备/PY3-工程与环境.md#L375",
+   "title": "参数与日志",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Ex-PY3.9.3",
+   "type": "Ex",
+   "doccode": "PY3",
+   "locator": "v1.0/00-预备/PY3-工程与环境.md#L379",
+   "title": "测试与复现",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Ex-PY4.9.1",
+   "type": "Ex",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L334",
+   "title": "形状推导",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Ex-PY4.9.2",
+   "type": "Ex",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L338",
+   "title": "视图还是拷贝",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Ex-PY4.9.3",
+   "type": "Ex",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L342",
+   "title": "把朴素实现向量化并基准",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Ex-PY5.10.1",
+   "type": "Ex",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L456",
+   "title": "视图与拷贝",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Ex-PY5.10.2",
+   "type": "Ex",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L460",
+   "title": "autograd 与梯度累加",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Ex-PY5.10.3",
+   "type": "Ex",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L464",
+   "title": "手写线性回归闭环",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Ex-PY5.10.4",
+   "type": "Ex",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L468",
+   "title": "两层 MLP 分类闭环",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Ex-PY5.10.5",
+   "type": "Ex",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L472",
+   "title": "制造并修复五个错误",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "Ex-PY5.10.6",
+   "type": "Ex",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L476",
+   "title": "公式与实践对照",
    "status": "active",
    "version": "v1.0",
    "ext": ""
@@ -4479,6 +6089,766 @@
    "ext": ""
   },
   {
+   "id": "F-pre-py1",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py1_language_basics.py#L1",
+   "title": "Python 语言 I 教学代码",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py1.classify",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py1_language_basics.py#L115",
+   "title": "match 结构化模式匹配 + 守卫",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py1.comprehension_vs_generator",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py1_language_basics.py#L131",
+   "title": "推导式 vs 生成器表达式",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py1.fixed_default",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py1_language_basics.py#L81",
+   "title": "用 None 哨兵修正可变默认值陷阱",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py1.main",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py1_language_basics.py#L159",
+   "title": "运行全部示例并打印结果",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py1.make_counter",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py1_language_basics.py#L99",
+   "title": "闭包与 nonlocal：返回带状态的计数器",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py1.mutable_default_trap",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py1_language_basics.py#L74",
+   "title": "可变默认值陷阱（错误示范）",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py1.show_binding_semantics",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py1_language_basics.py#L23",
+   "title": "绑定/身份/可变性的可观测行为",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py1.show_bytecode",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py1_language_basics.py#L150",
+   "title": "用 dis 观察字节码",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py1.slice_semantics",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py1_language_basics.py#L55",
+   "title": "切片：左闭右开、负索引、步长、越界截断",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py1.tag",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py1_language_basics.py#L90",
+   "title": "签名演示：*args、只关键字参数、**kwargs",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py2",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py2_oop_protocols.py#L1",
+   "title": "Python 语言 II 教学代码：类/协议/异常/生成器/装饰器",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py2.atomic_write",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py2_oop_protocols.py#L240",
+   "title": "临时文件 + os.replace 的原子写",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py2.Batch",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py2_oop_protocols.py#L133",
+   "title": "dataclass：自动 __init__/__repr__/__eq__（对照 data.py 的 Batch）",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py2.Buffer",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py2_oop_protocols.py#L61",
+   "title": "只实现容器协议即可被 len()/索引/for 使用",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py2.Color",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py2_oop_protocols.py#L141",
+   "title": "Enum：具名常量，成员是单例",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py2.Counter",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py2_oop_protocols.py#L84",
+   "title": "property 读只读派生值 + 描述符式校验 setter",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py2.encode_safe",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py2_oop_protocols.py#L198",
+   "title": "EAFP 风格：直接查表，失败再处理",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py2.feature_pipeline",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py2_oop_protocols.py#L312",
+   "title": "生成器流水线：过滤 + 变换，无中间 list",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py2.fib",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py2_oop_protocols.py#L275",
+   "title": "functools.lru_cache 记忆化",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py2.main",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py2_oop_protocols.py#L322",
+   "title": "运行全部演示",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py2.memory_footprint",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py2_oop_protocols.py#L106",
+   "title": "粗略比较有/无 __slots__ 的实例内存",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py2.parse_ids",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py2_oop_protocols.py#L181",
+   "title": "示范 else/finally 与 raise ... from 的语义",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py2.pushed",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py2_oop_protocols.py#L228",
+   "title": "@contextmanager：用生成器写上下文管理器",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py2.retry",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py2_oop_protocols.py#L255",
+   "title": "带参装饰器：三层结构，functools.wraps 保元数据",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py2.SimpleTokenizer",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py2_oop_protocols.py#L158",
+   "title": "满足 TokenizerLike 协议的最小实现（不继承）",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py2.sort_by_abs",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py2_oop_protocols.py#L283",
+   "title": "高阶函数：key= 回调",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py2.take",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py2_oop_protocols.py#L305",
+   "title": "itertools.islice：从无限迭代器取前 n 个",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py2.Timer",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py2_oop_protocols.py#L214",
+   "title": "类式上下文管理器：测量代码块耗时",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py2.TokenizerError",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py2_oop_protocols.py#L176",
+   "title": "库专用异常基类，便于调用方精确捕获",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py2.TokenizerLike",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py2_oop_protocols.py#L148",
+   "title": "Protocol：结构化子类型（duck typing 的类型化）",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py2.Vec2",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py2_oop_protocols.py#L33",
+   "title": "二维向量：类属性 + 实例属性 + 运算符重载 + __repr__",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py2.windows",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py2_oop_protocols.py#L293",
+   "title": "生成器：滑动窗口，惰性求值",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py3",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py3_engineering.py#L1",
+   "title": "工程与环境教学骨架（argparse + logging + 可测函数）",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py3.configure_logging",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py3_engineering.py#L30",
+   "title": "配置根 logger 的级别与格式",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py3.DEFAULT_FORMAT",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py3_engineering.py#L26",
+   "title": "日志统一格式：时间 级别 模块名 消息",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py3.draw",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py3_engineering.py#L64",
+   "title": "按 seed 生成一组 [0,1) 随机数（纯函数式）",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py3.LOGGER",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py3_engineering.py#L23",
+   "title": "本模块 logger（不在 import 时配置，配置权交给入口）",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py3.main",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py3_engineering.py#L99",
+   "title": "串起解析、日志、播种与汇总流程",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py3.parse_args",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py3_engineering.py#L84",
+   "title": "定义并解析命令行参数",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py3.seed_everything",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py3_engineering.py#L40",
+   "title": "固定 Python/numpy/torch 三处随机源",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py3.summarize",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py3_engineering.py#L71",
+   "title": "对数值序列做无副作用汇总",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py4",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py4_numpy.py#L1",
+   "title": "NumPy 与张量思维教学代码",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py4.__main__",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py4_numpy.py#L206",
+   "title": "脚本入口：自测 + 小基准",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py4.benchmark_vectorization",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py4_numpy.py#L128",
+   "title": "基准：朴素循环 vs 向量化",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py4.broadcast_shape",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py4_numpy.py#L65",
+   "title": "按严格规则推导广播结果形状（不符则 None）",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py4.classify_indexing",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py4_numpy.py#L36",
+   "title": "判断常见索引结果是视图还是拷贝",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py4.describe_array",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py4_numpy.py#L21",
+   "title": "打印 ndarray 的形状/类型/步长元数据",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py4.matmul_naive",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py4_numpy.py#L81",
+   "title": "朴素三重循环实现 X @ W.T + b（对照【算法 PY4.4.2】）",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py4.matmul_vectorized",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py4_numpy.py#L99",
+   "title": "用 @ 与广播实现同一计算",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py4.rng_demo",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py4_numpy.py#L113",
+   "title": "Generator / 种子 / SeedSequence.spawn 演示",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py4.selftest",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py4_numpy.py#L159",
+   "title": "PY4 全章自测（assert 失败即报错）",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py4.softmax_np",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py4_numpy.py#L105",
+   "title": "数值稳定的 NumPy softmax（对照【例 PY4.5.3】）",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py5",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py5_torch_from_zero.py#L2",
+   "title": "PyTorch 从零：线性回归与两层 MLP 训练闭环",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py5.evaluate",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py5_torch_from_zero.py#L130",
+   "title": "验证：eval() + no_grad()，只前向，返回 (loss, acc)",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py5.LinearRegressionModel",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py5_torch_from_zero.py#L46",
+   "title": "单层线性回归：y = x W^T + b（对照【定义 1.1.1】）",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py5.load_checkpoint",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py5_torch_from_zero.py#L154",
+   "title": "加载 checkpoint（map_location 兜底跨设备）",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py5.main",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py5_torch_from_zero.py#L230",
+   "title": "命令行入口：--mode linear|mlp|both",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py5.make_regression_data",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py5_torch_from_zero.py#L37",
+   "title": "生成 y = 3x + 2 + 高斯噪声 的一维回归数据",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py5.run_linear_regression",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py5_torch_from_zero.py#L163",
+   "title": "线性回归闭环：拟合 y = 3x + 2",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py5.run_mlp_classification",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py5_torch_from_zero.py#L188",
+   "title": "两层 MLP 分类闭环（Dataset/DataLoader + 验证 + checkpoint + 可选 AMP）",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py5.save_checkpoint",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py5_torch_from_zero.py#L144",
+   "title": "保存 model/optimizer/epoch 的完整 checkpoint",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py5.ToyClassificationDataset",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py5_torch_from_zero.py#L74",
+   "title": "三簇二维玩具分类集（Dataset 协议：__len__/__getitem__）",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py5.train_one_epoch",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py5_torch_from_zero.py#L95",
+   "title": "一个 epoch 的标准训练五步（【算法 PY5.7.1】）",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py5.train_one_epoch_amp",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py5_torch_from_zero.py#L112",
+   "title": "CUDA 混合精度版单 epoch（CPU 路径不进入）",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py5.TwoLayerMLP",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py5_torch_from_zero.py#L58",
+   "title": "两层 ReLU MLP（对照【定义 1.1.3】三层结构与【代码 1.1.4】forward）",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py6",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py6_torch_ecosystem.py#L2",
+   "title": "PyTorch 进阶与生态教学代码",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py6._require_torch",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py6_torch_ecosystem.py#L34",
+   "title": "按需导入 torch，缺失时返回 None",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py6.autocast_demo",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py6_torch_ecosystem.py#L94",
+   "title": "混合精度 autocast 与 GradScaler 语义",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py6.checkpoint_demo",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py6_torch_ecosystem.py#L45",
+   "title": "梯度检查点前后向一致性验证",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py6.compile_demo",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py6_torch_ecosystem.py#L163",
+   "title": "torch.compile 可用性探测",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py6.ecosystem_demo",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py6_torch_ecosystem.py#L185",
+   "title": "transformers/peft/trl/accelerate 速览",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py6.main",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py6_torch_ecosystem.py#L222",
+   "title": "命令行入口，按名调度各演示",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py6.memory_demo",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py6_torch_ecosystem.py#L144",
+   "title": "显存统计与 empty_cache 的适用边界",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py6.noncontiguous_demo",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py6_torch_ecosystem.py#L76",
+   "title": "非连续张量上 view/reshape/contiguous 的差别",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "F-pre-py6.profiler_demo",
+   "type": "F",
+   "doccode": "pre",
+   "locator": "v1.0/00-预备/code/py6_torch_ecosystem.py#L125",
+   "title": "torch.profiler 统计算子耗时",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
    "id": "F-tools-tag_graph",
    "type": "F",
    "doccode": "tools",
@@ -5439,6 +7809,576 @@
    "ext": ""
   },
   {
+   "id": "N-18",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N18_Python语言I.ipynb",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-18.c1",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N18_Python语言I.ipynb#c1",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-18.c2",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N18_Python语言I.ipynb#c2",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-18.c3",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N18_Python语言I.ipynb#c3",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-18.c4",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N18_Python语言I.ipynb#c4",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-18.c5",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N18_Python语言I.ipynb#c5",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-18.c6",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N18_Python语言I.ipynb#c6",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-18.c7",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N18_Python语言I.ipynb#c7",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-18.c8",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N18_Python语言I.ipynb#c8",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-18.c9",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N18_Python语言I.ipynb#c9",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-18.c10",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N18_Python语言I.ipynb#c10",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-19",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N19_Python面向对象与协议.ipynb",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-19.c1",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N19_Python面向对象与协议.ipynb#c1",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-19.c2",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N19_Python面向对象与协议.ipynb#c2",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-19.c3",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N19_Python面向对象与协议.ipynb#c3",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-19.c4",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N19_Python面向对象与协议.ipynb#c4",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-19.c5",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N19_Python面向对象与协议.ipynb#c5",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-19.c6",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N19_Python面向对象与协议.ipynb#c6",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-19.c7",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N19_Python面向对象与协议.ipynb#c7",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-19.c8",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N19_Python面向对象与协议.ipynb#c8",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-20",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N20_工程环境与工具链.ipynb",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-20.c1",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N20_工程环境与工具链.ipynb#c1",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-20.c2",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N20_工程环境与工具链.ipynb#c2",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-20.c3",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N20_工程环境与工具链.ipynb#c3",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-20.c4",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N20_工程环境与工具链.ipynb#c4",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-20.c5",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N20_工程环境与工具链.ipynb#c5",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-20.c6",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N20_工程环境与工具链.ipynb#c6",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-20.c7",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N20_工程环境与工具链.ipynb#c7",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-20.c8",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N20_工程环境与工具链.ipynb#c8",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-21",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N21_NumPy与张量思维.ipynb",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-21.c1",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N21_NumPy与张量思维.ipynb#c1",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-21.c2",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N21_NumPy与张量思维.ipynb#c2",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-21.c3",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N21_NumPy与张量思维.ipynb#c3",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-21.c4",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N21_NumPy与张量思维.ipynb#c4",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-21.c5",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N21_NumPy与张量思维.ipynb#c5",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-21.c6",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N21_NumPy与张量思维.ipynb#c6",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-21.c7",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N21_NumPy与张量思维.ipynb#c7",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-21.c8",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N21_NumPy与张量思维.ipynb#c8",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-21.c9",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N21_NumPy与张量思维.ipynb#c9",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-22",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N22_PyTorch从零.ipynb",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-22.c1",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N22_PyTorch从零.ipynb#c1",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-22.c2",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N22_PyTorch从零.ipynb#c2",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-22.c3",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N22_PyTorch从零.ipynb#c3",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-22.c4",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N22_PyTorch从零.ipynb#c4",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-22.c5",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N22_PyTorch从零.ipynb#c5",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-22.c6",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N22_PyTorch从零.ipynb#c6",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-22.c7",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N22_PyTorch从零.ipynb#c7",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-22.c8",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N22_PyTorch从零.ipynb#c8",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-22.c9",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N22_PyTorch从零.ipynb#c9",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-23",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N23_PyTorch进阶与生态.ipynb",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-23.c1",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N23_PyTorch进阶与生态.ipynb#c1",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-23.c2",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N23_PyTorch进阶与生态.ipynb#c2",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-23.c3",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N23_PyTorch进阶与生态.ipynb#c3",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-23.c4",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N23_PyTorch进阶与生态.ipynb#c4",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-23.c5",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N23_PyTorch进阶与生态.ipynb#c5",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-23.c6",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N23_PyTorch进阶与生态.ipynb#c6",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "N-23.c7",
+   "type": "N",
+   "doccode": "N",
+   "locator": "v1.0/notebooks/00-预备/N23_PyTorch进阶与生态.ipynb#c7",
+   "title": "",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
    "id": "P-1.1.2",
    "type": "P",
    "doccode": "1",
@@ -5594,6 +8534,86 @@
    "doccode": "PT",
    "locator": "v1.0/02-预训练/01-预训练原理.md#L146",
    "title": "算力预算 C≈6ND",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "P-PY1.2.2",
+   "type": "P",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L84",
+   "title": "赋值即重绑定，参数传递为引用传递",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "P-PY2.1.3",
+   "type": "P",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L37",
+   "title": "属性查找顺序：实例字典优先于类字典",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "P-PY2.2.2",
+   "type": "P",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L117",
+   "title": "`__repr__` 与 `__str__` 的分工",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "P-PY2.2.3",
+   "type": "P",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L125",
+   "title": "容器协议：`__len__`、`__getitem__`、`__contains__`",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "P-PY2.2.4",
+   "type": "P",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L134",
+   "title": "`__eq__` 与 `__hash__` 的契约",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "P-PY2.4.2",
+   "type": "P",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L234",
+   "title": "`data.py` 的 `Batch` 就是 dataclass",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "P-PY2.6.2",
+   "type": "P",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L346",
+   "title": "`contextlib.contextmanager`：用生成器写上下文管理器",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "P-PY2.8.3",
+   "type": "P",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L473",
+   "title": "生成器表达式与列表推导式的区别",
    "status": "active",
    "version": "v1.0",
    "ext": ""
@@ -6774,6 +9794,866 @@
    "doccode": "PT",
    "locator": "v1.0/02-预训练/01-预训练原理.md#L229",
    "title": "小结",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY1.1.3",
+   "type": "R",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L40",
+   "title": "`__pycache__` 与 `.pyc`",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY1.2.4",
+   "type": "R",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L100",
+   "title": "引用计数与 GC 概览",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY1.3.2",
+   "type": "R",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L143",
+   "title": "`int` 与 `float` 对照 C/C++",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY1.3.7",
+   "type": "R",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L182",
+   "title": "切片语义：步长、负索引、拷贝 vs 视图",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY1.4.4",
+   "type": "R",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L225",
+   "title": "`for-else` 与 `while-else`",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY1.4.5",
+   "type": "R",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L239",
+   "title": "海象运算符 `:=`",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY1.5.2",
+   "type": "R",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L290",
+   "title": "默认参数与可变默认值陷阱",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY1.6.4",
+   "type": "R",
+   "doccode": "PY1",
+   "locator": "v1.0/00-预备/PY1-Python语言I.md#L378",
+   "title": "与 PY2 的衔接",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY2.1.5",
+   "type": "R",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L61",
+   "title": "`super()` 与协作式多继承",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY2.2.5",
+   "type": "R",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L144",
+   "title": "运算符重载一览与 C++ 对照",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY2.5.4",
+   "type": "R",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L306",
+   "title": "EAFP vs LBYL；对照 C 错误码",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY2.8.4",
+   "type": "R",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L483",
+   "title": "`itertools` 常用件",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY2.9.4",
+   "type": "R",
+   "doccode": "PY2",
+   "locator": "v1.0/00-预备/PY2-Python语言II.md#L541",
+   "title": "`sys.path` 与查找顺序；对照链接",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY3.1.2",
+   "type": "R",
+   "doccode": "PY3",
+   "locator": "v1.0/00-预备/PY3-工程与环境.md#L29",
+   "title": "pip、依赖解析与 requirements.txt",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY3.1.3",
+   "type": "R",
+   "doccode": "PY3",
+   "locator": "v1.0/00-预备/PY3-工程与环境.md#L46",
+   "title": "conda：跨语言包与环境管理",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY3.1.4",
+   "type": "R",
+   "doccode": "PY3",
+   "locator": "v1.0/00-预备/PY3-工程与环境.md#L56",
+   "title": "CUDA 版与 ROCm 版 PyTorch 的安装差异",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY3.2.1",
+   "type": "R",
+   "doccode": "PY3",
+   "locator": "v1.0/00-预备/PY3-工程与环境.md#L81",
+   "title": "包布局与 import 解析",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY3.2.2",
+   "type": "R",
+   "doccode": "PY3",
+   "locator": "v1.0/00-预备/PY3-工程与环境.md#L91",
+   "title": "pyproject.toml：声明“可安装”与“可运行”",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY3.2.3",
+   "type": "R",
+   "doccode": "PY3",
+   "locator": "v1.0/00-预备/PY3-工程与环境.md#L116",
+   "title": "本仓目录职责",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY3.3.1",
+   "type": "R",
+   "doccode": "PY3",
+   "locator": "v1.0/00-预备/PY3-工程与环境.md#L125",
+   "title": "argparse：把配置从源码里挪出来",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY3.3.2",
+   "type": "R",
+   "doccode": "PY3",
+   "locator": "v1.0/00-预备/PY3-工程与环境.md#L136",
+   "title": "环境变量与 os.environ",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY3.3.3",
+   "type": "R",
+   "doccode": "PY3",
+   "locator": "v1.0/00-预备/PY3-工程与环境.md#L147",
+   "title": "logging：替代 print/printf 的调试",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY3.4.1",
+   "type": "R",
+   "doccode": "PY3",
+   "locator": "v1.0/00-预备/PY3-工程与环境.md#L172",
+   "title": "pdb 与 breakpoint()，对照 gdb",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY3.4.2",
+   "type": "R",
+   "doccode": "PY3",
+   "locator": "v1.0/00-预备/PY3-工程与环境.md#L182",
+   "title": "assert：契约检查与它的开关",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY3.4.3",
+   "type": "R",
+   "doccode": "PY3",
+   "locator": "v1.0/00-预备/PY3-工程与环境.md#L191",
+   "title": "pytest：发现、断言、fixture、参数化",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY3.4.4",
+   "type": "R",
+   "doccode": "PY3",
+   "locator": "v1.0/00-预备/PY3-工程与环境.md#L210",
+   "title": "属性测试简介",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY3.5.1",
+   "type": "R",
+   "doccode": "PY3",
+   "locator": "v1.0/00-预备/PY3-工程与环境.md#L216",
+   "title": "cell 语义、内核与执行顺序",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY3.5.2",
+   "type": "R",
+   "doccode": "PY3",
+   "locator": "v1.0/00-预备/PY3-工程与环境.md#L226",
+   "title": "魔法命令与 shell 转义",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY3.5.3",
+   "type": "R",
+   "doccode": "PY3",
+   "locator": "v1.0/00-预备/PY3-工程与环境.md#L235",
+   "title": "内核算力与 GPU 检测",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY3.5.4",
+   "type": "R",
+   "doccode": "PY3",
+   "locator": "v1.0/00-预备/PY3-工程与环境.md#L248",
+   "title": "与本仓 notebook 惯例对接",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY3.6.1",
+   "type": "R",
+   "doccode": "PY3",
+   "locator": "v1.0/00-预备/PY3-工程与环境.md#L261",
+   "title": "提交、分支与合并",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY3.6.2",
+   "type": "R",
+   "doccode": "PY3",
+   "locator": "v1.0/00-预备/PY3-工程与环境.md#L272",
+   "title": ".gitignore 与不入库的产物",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY3.6.3",
+   "type": "R",
+   "doccode": "PY3",
+   "locator": "v1.0/00-预备/PY3-工程与环境.md#L287",
+   "title": "worktree：一个仓库、多个工作目录",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY3.6.4",
+   "type": "R",
+   "doccode": "PY3",
+   "locator": "v1.0/00-预备/PY3-工程与环境.md#L303",
+   "title": "冲突的处理原则",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY3.7.2",
+   "type": "R",
+   "doccode": "PY3",
+   "locator": "v1.0/00-预备/PY3-工程与环境.md#L319",
+   "title": "随机种子与确定性开关",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY3.7.3",
+   "type": "R",
+   "doccode": "PY3",
+   "locator": "v1.0/00-预备/PY3-工程与环境.md#L338",
+   "title": "记录环境：把现场写进产物",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY3.8.1",
+   "type": "R",
+   "doccode": "PY3",
+   "locator": "v1.0/00-预备/PY3-工程与环境.md#L352",
+   "title": "外部来源清单",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY4.1.3",
+   "type": "R",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L32",
+   "title": "为什么必须同质定长",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY4.1.6",
+   "type": "R",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L50",
+   "title": "视图 vs 拷贝：对照指针别名与 memcpy",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY4.2.2",
+   "type": "R",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L79",
+   "title": "负索引与步长切片的代价",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY4.2.5",
+   "type": "R",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L91",
+   "title": "赋值语义：原地写入目标",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY4.2.7",
+   "type": "R",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L112",
+   "title": "对照 C 指针算术",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY4.3.4",
+   "type": "R",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L150",
+   "title": "广播是零拷贝的 stride=0 视图",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY4.3.6",
+   "type": "R",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L171",
+   "title": "与 PyTorch 广播一致",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY4.4.1",
+   "type": "R",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L177",
+   "title": "为什么必须向量化",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY4.4.4",
+   "type": "R",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L202",
+   "title": "`einsum` 初识",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY4.4.6",
+   "type": "R",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L220",
+   "title": "与 batch 反向公式的衔接",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY4.5.2",
+   "type": "R",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L230",
+   "title": "`axis` 与 `keepdims`",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY4.5.5",
+   "type": "R",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L259",
+   "title": "归约 + 广播是「规范化」的标准范式",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY4.6.1",
+   "type": "R",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L265",
+   "title": "全局状态 vs `Generator`",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY4.6.3",
+   "type": "R",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L273",
+   "title": "并行随机数：`SeedSequence`",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY4.6.4",
+   "type": "R",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L277",
+   "title": "与 PyTorch 随机源的对应",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY4.7.2",
+   "type": "R",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L299",
+   "title": "批量 matmul 与广播组合",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY4.7.4",
+   "type": "R",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L307",
+   "title": "数值稳定与 dtype 提示",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY4.7.5",
+   "type": "R",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L313",
+   "title": "为 PY5 铺垫",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY4.8.1",
+   "type": "R",
+   "doccode": "PY4",
+   "locator": "v1.0/00-预备/PY4-NumPy与张量思维.md#L319",
+   "title": "来源与许可",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY5.1.4",
+   "type": "R",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L62",
+   "title": "拷贝语义：共享、视图与深拷贝",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY5.1.5",
+   "type": "R",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L72",
+   "title": "requires_grad：进入自动微分世界的开关",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY5.2.5",
+   "type": "R",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L109",
+   "title": "与 NumPy 的对应表",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY5.3.4",
+   "type": "R",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L142",
+   "title": "backward、retain_graph 与梯度累加",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY5.3.6",
+   "type": "R",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L176",
+   "title": "与第 1 章反向传播的对应",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY5.4.3",
+   "type": "R",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L198",
+   "title": "train/eval 模式",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY5.4.5",
+   "type": "R",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L228",
+   "title": "参数、缓冲区与模块遍历",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY5.5.4",
+   "type": "R",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L261",
+   "title": "参数组与逐组学习率",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY5.5.5",
+   "type": "R",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L265",
+   "title": "zero_grad 与 set_to_none",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY5.6.4",
+   "type": "R",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L315",
+   "title": "与经验风险的对应",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY5.7.3",
+   "type": "R",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L360",
+   "title": "保存/加载：state_dict、优化器状态与续训",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY5.7.4",
+   "type": "R",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L380",
+   "title": "AMP 与 GradScaler 初识",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY5.7.5",
+   "type": "R",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L397",
+   "title": "与【代码 1.6.2】的对照",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY5.8.1",
+   "type": "R",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L403",
+   "title": "in-place on leaf：叶子张量被原地修改",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY5.8.2",
+   "type": "R",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L411",
+   "title": "shape 不匹配",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY5.8.3",
+   "type": "R",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L415",
+   "title": "device 混用",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY5.8.4",
+   "type": "R",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L419",
+   "title": "忘记 zero_grad",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY5.8.5",
+   "type": "R",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L423",
+   "title": "eval 未生效与其他陷阱",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY5.8.6",
+   "type": "R",
+   "doccode": "PY5",
+   "locator": "v1.0/00-预备/PY5-PyTorch从零.md#L431",
+   "title": "诊断速查表",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY6.1.2",
+   "type": "R",
+   "doccode": "PY6",
+   "locator": "v1.0/00-预备/PY6-PyTorch进阶与生态.md#L27",
+   "title": "非连续张量与 `view`/`reshape`/`contiguous`",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY6.1.4",
+   "type": "R",
+   "doccode": "PY6",
+   "locator": "v1.0/00-预备/PY6-PyTorch进阶与生态.md#L45",
+   "title": "`GradScaler` 与溢出处理",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY6.2.2",
+   "type": "R",
+   "doccode": "PY6",
+   "locator": "v1.0/00-预备/PY6-PyTorch进阶与生态.md#L83",
+   "title": "显存统计",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY6.2.3",
+   "type": "R",
+   "doccode": "PY6",
+   "locator": "v1.0/00-预备/PY6-PyTorch进阶与生态.md#L91",
+   "title": "`empty_cache` 的适用与不适用",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY6.3.2",
+   "type": "R",
+   "doccode": "PY6",
+   "locator": "v1.0/00-预备/PY6-PyTorch进阶与生态.md#L136",
+   "title": "`Trainer` 与 `TrainingArguments`",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY6.3.4",
+   "type": "R",
+   "doccode": "PY6",
+   "locator": "v1.0/00-预备/PY6-PyTorch进阶与生态.md#L150",
+   "title": "`trl`：`SFTTrainer` / `GRPOTrainer`",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY6.3.7",
+   "type": "R",
+   "doccode": "PY6",
+   "locator": "v1.0/00-预备/PY6-PyTorch进阶与生态.md#L182",
+   "title": "安装与版本约束",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY6.4.1",
+   "type": "R",
+   "doccode": "PY6",
+   "locator": "v1.0/00-预备/PY6-PyTorch进阶与生态.md#L191",
+   "title": "同一功能的两种写法",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY6.4.3",
+   "type": "R",
+   "doccode": "PY6",
+   "locator": "v1.0/00-预备/PY6-PyTorch进阶与生态.md#L218",
+   "title": "迁移到 with_api 的注意事项",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY6.5.1",
+   "type": "R",
+   "doccode": "PY6",
+   "locator": "v1.0/00-预备/PY6-PyTorch进阶与生态.md#L227",
+   "title": "来源与许可",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
+   "id": "R-PY6.6.1",
+   "type": "R",
+   "doccode": "PY6",
+   "locator": "v1.0/00-预备/PY6-PyTorch进阶与生态.md#L247",
+   "title": "本章小结",
    "status": "active",
    "version": "v1.0",
    "ext": ""
@@ -8801,6 +12681,20 @@
    "since": "v1.0"
   },
   {
+   "src": "DOC-1",
+   "relation": "requires",
+   "dst": "DOC-PY2",
+   "note": "auto:requires(outline)",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-1",
+   "relation": "requires",
+   "dst": "DOC-PY5",
+   "note": "auto:requires(outline)",
+   "since": "v1.0"
+  },
+  {
    "src": "DOC-2",
    "relation": "refs",
    "dst": "D-2.1.1",
@@ -8910,6 +12804,13 @@
    "relation": "refs",
    "dst": "T-1.3.4",
    "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-2",
+   "relation": "requires",
+   "dst": "DOC-PY4",
+   "note": "auto:requires(outline)",
    "since": "v1.0"
   },
   {
@@ -9088,6 +12989,13 @@
    "since": "v1.0"
   },
   {
+   "src": "DOC-3",
+   "relation": "requires",
+   "dst": "DOC-PY4",
+   "note": "auto:requires(outline)",
+   "since": "v1.0"
+  },
+  {
    "src": "DOC-4",
    "relation": "corresponds",
    "dst": "N-07",
@@ -9211,6 +13119,13 @@
    "relation": "refs",
    "dst": "R-4.8.1",
    "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-4",
+   "relation": "requires",
+   "dst": "DOC-PY1",
+   "note": "auto:requires(outline)",
    "since": "v1.0"
   },
   {
@@ -9403,6 +13318,20 @@
    "since": "v1.0"
   },
   {
+   "src": "DOC-5",
+   "relation": "requires",
+   "dst": "DOC-PY2",
+   "note": "auto:requires(outline)",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-5",
+   "relation": "requires",
+   "dst": "DOC-PY5",
+   "note": "auto:requires(outline)",
+   "since": "v1.0"
+  },
+  {
    "src": "DOC-6",
    "relation": "corresponds",
    "dst": "N-05",
@@ -9564,6 +13493,13 @@
    "since": "v1.0"
   },
   {
+   "src": "DOC-6",
+   "relation": "requires",
+   "dst": "DOC-PY4",
+   "note": "auto:requires(outline)",
+   "since": "v1.0"
+  },
+  {
    "src": "DOC-BRIDGE",
    "relation": "corresponds",
    "dst": "F-b08-tool_agent",
@@ -9686,7 +13622,7 @@
    "src": "DOC-LORA",
    "relation": "corresponds",
    "dst": "N-12",
-   "note": "auto:corresponds(mention)",
+   "note": "auto:corresponds(dir)",
    "since": "v1.0"
   },
   {
@@ -9879,6 +13815,20 @@
    "since": "v1.0"
   },
   {
+   "src": "DOC-LORA",
+   "relation": "requires",
+   "dst": "DOC-PY3",
+   "note": "auto:requires(outline)",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-LORA",
+   "relation": "requires",
+   "dst": "DOC-PY6",
+   "note": "auto:requires(outline)",
+   "since": "v1.0"
+  },
+  {
    "src": "DOC-MCTS",
    "relation": "corresponds",
    "dst": "F-b07-mcts",
@@ -10068,6 +14018,20 @@
    "since": "v1.0"
   },
   {
+   "src": "DOC-MCTS",
+   "relation": "requires",
+   "dst": "DOC-PY3",
+   "note": "auto:requires(outline)",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-MCTS",
+   "relation": "requires",
+   "dst": "DOC-PY6",
+   "note": "auto:requires(outline)",
+   "since": "v1.0"
+  },
+  {
    "src": "DOC-PREM",
    "relation": "refs",
    "dst": "D-1.1.3",
@@ -10099,7 +14063,7 @@
    "src": "DOC-PT",
    "relation": "corresponds",
    "dst": "N-09",
-   "note": "auto:corresponds(mention)",
+   "note": "auto:corresponds(dir)",
    "since": "v1.0"
   },
   {
@@ -10289,6 +14253,2085 @@
    "relation": "refs",
    "dst": "T-1.2.6",
    "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PT",
+   "relation": "requires",
+   "dst": "DOC-PY3",
+   "note": "auto:requires(outline)",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PT",
+   "relation": "requires",
+   "dst": "DOC-PY6",
+   "note": "auto:requires(outline)",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "corresponds",
+   "dst": "F-pre-py1",
+   "note": "auto:corresponds(pre)",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "corresponds",
+   "dst": "N-18",
+   "note": "auto:corresponds(pre)",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "Cd-1.1.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "Cd-PY1.1.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "Cd-PY1.2.6",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "Cd-PY1.3.8",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "Cd-PY1.4.7",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "Cd-PY1.5.7",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "Cd-PY1.6.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "D-1.1.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "D-PY1.1.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "D-PY1.1.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "D-PY1.2.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "D-PY1.2.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "D-PY1.2.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "D-PY1.3.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "D-PY1.3.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "D-PY1.3.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "D-PY1.3.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "D-PY1.3.6",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "D-PY1.4.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "D-PY1.4.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "D-PY1.4.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "D-PY1.4.6",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "D-PY1.5.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "D-PY1.5.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "D-PY1.5.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "D-PY1.5.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "D-PY1.5.6",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "D-PY1.6.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "D-PY1.6.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "D-PY1.6.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "E-PY1.1.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "Ex-PY1.8.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "Ex-PY1.8.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "Ex-PY1.8.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "Ex-PY1.8.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "Ex-PY1.8.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "Ex-PY1.8.6",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "Ex-PY1.8.7",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "Ex-PY1.8.8",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "P-PY1.2.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "R-PY1.1.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "R-PY1.2.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "R-PY1.3.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "R-PY1.3.7",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "R-PY1.4.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "R-PY1.4.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "R-PY1.5.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "refs",
+   "dst": "R-PY1.6.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "corresponds",
+   "dst": "F-pre-py2",
+   "note": "auto:corresponds(pre)",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "corresponds",
+   "dst": "N-19",
+   "note": "auto:corresponds(pre)",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "Cd-1.1.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "Cd-PY2.1.7",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "Cd-PY2.2.7",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "Cd-PY2.5.6",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "Cd-PY2.6.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "Cd-PY2.7.6",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "Cd-PY2.8.6",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "D-1.1.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "D-1.2.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "D-PY2.1.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "D-PY2.1.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "D-PY2.1.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "D-PY2.2.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "D-PY2.3.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "D-PY2.3.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "D-PY2.3.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "D-PY2.4.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "D-PY2.4.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "D-PY2.4.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "D-PY2.5.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "D-PY2.5.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "D-PY2.5.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "D-PY2.6.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "D-PY2.7.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "D-PY2.7.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "D-PY2.7.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "D-PY2.7.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "D-PY2.8.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "D-PY2.8.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "D-PY2.9.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "D-PY2.9.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "D-PY2.9.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "E-PY2.1.6",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "E-PY2.2.6",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "E-PY2.3.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "E-PY2.4.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "E-PY2.5.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "E-PY2.6.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "E-PY2.7.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "E-PY2.8.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "E-PY2.9.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "Ex-PY2.11.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "Ex-PY2.11.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "Ex-PY2.11.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "P-PY2.1.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "P-PY2.2.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "P-PY2.2.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "P-PY2.2.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "P-PY2.4.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "P-PY2.6.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "P-PY2.8.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "R-PY2.1.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "R-PY2.2.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "R-PY2.5.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "R-PY2.8.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY2",
+   "relation": "refs",
+   "dst": "R-PY2.9.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY3",
+   "relation": "corresponds",
+   "dst": "F-pre-py3",
+   "note": "auto:corresponds(pre)",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY3",
+   "relation": "corresponds",
+   "dst": "N-20",
+   "note": "auto:corresponds(mention)",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY3",
+   "relation": "refs",
+   "dst": "Cd-1.6.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY3",
+   "relation": "refs",
+   "dst": "Cd-PY3.1.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY3",
+   "relation": "refs",
+   "dst": "Cd-PY3.3.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY3",
+   "relation": "refs",
+   "dst": "D-1.2.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY3",
+   "relation": "refs",
+   "dst": "D-PY3.1.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY3",
+   "relation": "refs",
+   "dst": "D-PY3.7.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY3",
+   "relation": "refs",
+   "dst": "Ex-PY3.9.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY3",
+   "relation": "refs",
+   "dst": "Ex-PY3.9.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY3",
+   "relation": "refs",
+   "dst": "Ex-PY3.9.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY3",
+   "relation": "refs",
+   "dst": "R-1.5.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY3",
+   "relation": "refs",
+   "dst": "R-PY3.1.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY3",
+   "relation": "refs",
+   "dst": "R-PY3.1.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY3",
+   "relation": "refs",
+   "dst": "R-PY3.1.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY3",
+   "relation": "refs",
+   "dst": "R-PY3.2.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY3",
+   "relation": "refs",
+   "dst": "R-PY3.2.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY3",
+   "relation": "refs",
+   "dst": "R-PY3.2.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY3",
+   "relation": "refs",
+   "dst": "R-PY3.3.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY3",
+   "relation": "refs",
+   "dst": "R-PY3.3.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY3",
+   "relation": "refs",
+   "dst": "R-PY3.3.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY3",
+   "relation": "refs",
+   "dst": "R-PY3.4.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY3",
+   "relation": "refs",
+   "dst": "R-PY3.4.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY3",
+   "relation": "refs",
+   "dst": "R-PY3.4.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY3",
+   "relation": "refs",
+   "dst": "R-PY3.4.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY3",
+   "relation": "refs",
+   "dst": "R-PY3.5.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY3",
+   "relation": "refs",
+   "dst": "R-PY3.5.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY3",
+   "relation": "refs",
+   "dst": "R-PY3.5.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY3",
+   "relation": "refs",
+   "dst": "R-PY3.5.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY3",
+   "relation": "refs",
+   "dst": "R-PY3.6.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY3",
+   "relation": "refs",
+   "dst": "R-PY3.6.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY3",
+   "relation": "refs",
+   "dst": "R-PY3.6.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY3",
+   "relation": "refs",
+   "dst": "R-PY3.6.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY3",
+   "relation": "refs",
+   "dst": "R-PY3.7.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY3",
+   "relation": "refs",
+   "dst": "R-PY3.7.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY3",
+   "relation": "refs",
+   "dst": "R-PY3.8.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "corresponds",
+   "dst": "F-pre-py4",
+   "note": "auto:corresponds(pre)",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "corresponds",
+   "dst": "N-21",
+   "note": "auto:corresponds(pre)",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "A-PY4.4.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "Cd-PY4.1.7",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "Cd-PY4.2.6",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "Cd-PY4.3.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "Cd-PY4.4.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "Cd-PY4.5.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "Cd-PY4.6.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "D-1.2.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "D-PY4.1.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "D-PY4.1.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "D-PY4.1.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "D-PY4.1.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "D-PY4.2.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "D-PY4.2.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "D-PY4.2.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "D-PY4.3.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "D-PY4.5.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "D-PY4.6.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "D-PY4.7.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "D-PY4.7.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "E-PY4.3.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "E-PY4.3.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "E-PY4.4.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "E-PY4.5.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "Ex-PY4.9.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "Ex-PY4.9.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "Ex-PY4.9.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "P-1.4.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "R-1.2.13",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "R-1.4.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "R-1.5.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "R-1.7.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "R-PY4.1.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "R-PY4.1.6",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "R-PY4.2.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "R-PY4.2.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "R-PY4.2.7",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "R-PY4.3.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "R-PY4.3.6",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "R-PY4.4.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "R-PY4.4.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "R-PY4.4.6",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "R-PY4.5.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "R-PY4.5.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "R-PY4.6.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "R-PY4.6.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "R-PY4.6.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "R-PY4.7.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "R-PY4.7.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "R-PY4.7.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "refs",
+   "dst": "R-PY4.8.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "corresponds",
+   "dst": "F-pre-py5",
+   "note": "auto:corresponds(pre)",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "corresponds",
+   "dst": "N-22",
+   "note": "auto:corresponds(pre)",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "A-PY5.7.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "C-1.3.6",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "Cd-1.1.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "Cd-1.6.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "Cd-PY5.1.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "Cd-PY5.2.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "Cd-PY5.3.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "Cd-PY5.4.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "Cd-PY5.6.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "Cd-PY5.7.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "D-1.1.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "D-1.2.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "D-1.2.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "D-PY5.1.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "D-PY5.1.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "D-PY5.2.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "D-PY5.2.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "D-PY5.2.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "D-PY5.3.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "D-PY5.3.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "D-PY5.3.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "D-PY5.4.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "D-PY5.4.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "D-PY5.5.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "D-PY5.5.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "D-PY5.5.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "D-PY5.6.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "D-PY5.6.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "Ex-PY5.10.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "Ex-PY5.10.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "Ex-PY5.10.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "Ex-PY5.10.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "Ex-PY5.10.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "Ex-PY5.10.6",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "P-1.2.9",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "P-1.3.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "P-1.3.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "R-1.7.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "R-PY5.1.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "R-PY5.1.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "R-PY5.2.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "R-PY5.3.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "R-PY5.3.6",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "R-PY5.4.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "R-PY5.4.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "R-PY5.5.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "R-PY5.5.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "R-PY5.6.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "R-PY5.7.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "R-PY5.7.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "R-PY5.7.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "R-PY5.8.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "R-PY5.8.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "R-PY5.8.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "R-PY5.8.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "R-PY5.8.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "R-PY5.8.6",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "refs",
+   "dst": "T-1.3.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY6",
+   "relation": "corresponds",
+   "dst": "F-pre-py6",
+   "note": "auto:corresponds(pre)",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY6",
+   "relation": "corresponds",
+   "dst": "N-23",
+   "note": "auto:corresponds(pre)",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY6",
+   "relation": "refs",
+   "dst": "Cd-1.6.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY6",
+   "relation": "refs",
+   "dst": "Cd-PY6.1.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY6",
+   "relation": "refs",
+   "dst": "Cd-PY6.2.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY6",
+   "relation": "refs",
+   "dst": "Cd-PY6.3.6",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY6",
+   "relation": "refs",
+   "dst": "D-1.1.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY6",
+   "relation": "refs",
+   "dst": "D-PY6.1.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY6",
+   "relation": "refs",
+   "dst": "D-PY6.1.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY6",
+   "relation": "refs",
+   "dst": "D-PY6.2.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY6",
+   "relation": "refs",
+   "dst": "D-PY6.2.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY6",
+   "relation": "refs",
+   "dst": "D-PY6.3.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY6",
+   "relation": "refs",
+   "dst": "D-PY6.3.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY6",
+   "relation": "refs",
+   "dst": "D-PY6.3.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY6",
+   "relation": "refs",
+   "dst": "E-PY6.4.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY6",
+   "relation": "refs",
+   "dst": "E-PY6.6.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY6",
+   "relation": "refs",
+   "dst": "E-PY6.6.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY6",
+   "relation": "refs",
+   "dst": "E-PY6.6.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY6",
+   "relation": "refs",
+   "dst": "E-PY6.6.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY6",
+   "relation": "refs",
+   "dst": "E-PY6.6.6",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY6",
+   "relation": "refs",
+   "dst": "P-1.2.9",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY6",
+   "relation": "refs",
+   "dst": "R-1.3.8",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY6",
+   "relation": "refs",
+   "dst": "R-1.4.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY6",
+   "relation": "refs",
+   "dst": "R-1.5.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY6",
+   "relation": "refs",
+   "dst": "R-1.7.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY6",
+   "relation": "refs",
+   "dst": "R-PY6.1.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY6",
+   "relation": "refs",
+   "dst": "R-PY6.1.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY6",
+   "relation": "refs",
+   "dst": "R-PY6.2.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY6",
+   "relation": "refs",
+   "dst": "R-PY6.2.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY6",
+   "relation": "refs",
+   "dst": "R-PY6.3.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY6",
+   "relation": "refs",
+   "dst": "R-PY6.3.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY6",
+   "relation": "refs",
+   "dst": "R-PY6.3.7",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY6",
+   "relation": "refs",
+   "dst": "R-PY6.4.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY6",
+   "relation": "refs",
+   "dst": "R-PY6.4.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY6",
+   "relation": "refs",
+   "dst": "R-PY6.5.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY6",
+   "relation": "refs",
+   "dst": "R-PY6.6.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY6",
+   "relation": "requires",
+   "dst": "D-1.1.3",
+   "note": "auto:requires",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY6",
+   "relation": "requires",
+   "dst": "P-1.2.9",
+   "note": "auto:requires",
    "since": "v1.0"
   },
   {
@@ -10667,6 +16710,20 @@
    "relation": "refs",
    "dst": "T-RL.4.1",
    "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-RL",
+   "relation": "requires",
+   "dst": "DOC-PY3",
+   "note": "auto:requires(outline)",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-RL",
+   "relation": "requires",
+   "dst": "DOC-PY6",
+   "note": "auto:requires(outline)",
    "since": "v1.0"
   },
   {
@@ -11107,7 +17164,7 @@
    "src": "DOC-SFT",
    "relation": "corresponds",
    "dst": "N-10",
-   "note": "auto:corresponds(mention)",
+   "note": "auto:corresponds(dir)",
    "since": "v1.0"
   },
   {
@@ -11265,6 +17322,20 @@
    "since": "v1.0"
   },
   {
+   "src": "DOC-SFT",
+   "relation": "requires",
+   "dst": "DOC-PY3",
+   "note": "auto:requires(outline)",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-SFT",
+   "relation": "requires",
+   "dst": "DOC-PY6",
+   "note": "auto:requires(outline)",
+   "since": "v1.0"
+  },
+  {
    "src": "DOC-SRC0",
    "relation": "refs",
    "dst": "R-SRC0.1.1",
@@ -11297,6 +17368,20 @@
    "relation": "refs",
    "dst": "R-SRC0.5.1",
    "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-SRC0",
+   "relation": "requires",
+   "dst": "DOC-PY3",
+   "note": "auto:requires(outline)",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-SRC0",
+   "relation": "requires",
+   "dst": "DOC-PY6",
+   "note": "auto:requires(outline)",
    "since": "v1.0"
   },
   {
@@ -11426,6 +17511,20 @@
    "since": "v1.0"
   },
   {
+   "src": "DOC-SRC1",
+   "relation": "requires",
+   "dst": "DOC-PY3",
+   "note": "auto:requires(outline)",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-SRC1",
+   "relation": "requires",
+   "dst": "DOC-PY6",
+   "note": "auto:requires(outline)",
+   "since": "v1.0"
+  },
+  {
    "src": "DOC-SRC2",
    "relation": "refs",
    "dst": "Cd-SRC2.2.1",
@@ -11514,6 +17613,20 @@
    "relation": "refs",
    "dst": "R-SRC2.9.1",
    "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-SRC2",
+   "relation": "requires",
+   "dst": "DOC-PY3",
+   "note": "auto:requires(outline)",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-SRC2",
+   "relation": "requires",
+   "dst": "DOC-PY6",
+   "note": "auto:requires(outline)",
    "since": "v1.0"
   },
   {
@@ -11671,6 +17784,20 @@
    "since": "v1.0"
   },
   {
+   "src": "DOC-SRC3",
+   "relation": "requires",
+   "dst": "DOC-PY3",
+   "note": "auto:requires(outline)",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-SRC3",
+   "relation": "requires",
+   "dst": "DOC-PY6",
+   "note": "auto:requires(outline)",
+   "since": "v1.0"
+  },
+  {
    "src": "DOC-SRC4",
    "relation": "refs",
    "dst": "Cd-SRC4.1.1",
@@ -11797,6 +17924,20 @@
    "since": "v1.0"
   },
   {
+   "src": "DOC-SRC4",
+   "relation": "requires",
+   "dst": "DOC-PY3",
+   "note": "auto:requires(outline)",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-SRC4",
+   "relation": "requires",
+   "dst": "DOC-PY6",
+   "note": "auto:requires(outline)",
+   "since": "v1.0"
+  },
+  {
    "src": "DOC-SRC5",
    "relation": "refs",
    "dst": "Cd-SRC5.2.1",
@@ -11888,6 +18029,20 @@
    "since": "v1.0"
   },
   {
+   "src": "DOC-SRC5",
+   "relation": "requires",
+   "dst": "DOC-PY3",
+   "note": "auto:requires(outline)",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-SRC5",
+   "relation": "requires",
+   "dst": "DOC-PY6",
+   "note": "auto:requires(outline)",
+   "since": "v1.0"
+  },
+  {
    "src": "DOC-SRC6",
    "relation": "refs",
    "dst": "Cd-SRC6.1.1",
@@ -11965,6 +18120,20 @@
    "since": "v1.0"
   },
   {
+   "src": "DOC-SRC6",
+   "relation": "requires",
+   "dst": "DOC-PY3",
+   "note": "auto:requires(outline)",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-SRC6",
+   "relation": "requires",
+   "dst": "DOC-PY6",
+   "note": "auto:requires(outline)",
+   "since": "v1.0"
+  },
+  {
    "src": "DOC-SRC7",
    "relation": "refs",
    "dst": "Cd-SRC7.1.1",
@@ -12032,6 +18201,20 @@
    "relation": "refs",
    "dst": "R-SRC7.9.1",
    "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-SRC7",
+   "relation": "requires",
+   "dst": "DOC-PY3",
+   "note": "auto:requires(outline)",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-SRC7",
+   "relation": "requires",
+   "dst": "DOC-PY6",
+   "note": "auto:requires(outline)",
    "since": "v1.0"
   },
   {
@@ -12105,6 +18288,20 @@
    "since": "v1.0"
   },
   {
+   "src": "DOC-SRC8",
+   "relation": "requires",
+   "dst": "DOC-PY3",
+   "note": "auto:requires(outline)",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-SRC8",
+   "relation": "requires",
+   "dst": "DOC-PY6",
+   "note": "auto:requires(outline)",
+   "since": "v1.0"
+  },
+  {
    "src": "DOC-STYLE",
    "relation": "refs",
    "dst": "R-STYLE.1.1",
@@ -12164,7 +18361,7 @@
    "src": "DOC-V11",
    "relation": "corresponds",
    "dst": "N-17",
-   "note": "auto:corresponds(mention)",
+   "note": "auto:corresponds(dir)",
    "since": "v1.0"
   },
   {
@@ -12326,6 +18523,20 @@
    "relation": "refs",
    "dst": "R-V11.9.1",
    "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-V11",
+   "relation": "requires",
+   "dst": "DOC-PY3",
+   "note": "auto:requires(outline)",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-V11",
+   "relation": "requires",
+   "dst": "DOC-PY6",
+   "note": "auto:requires(outline)",
    "since": "v1.0"
   },
   {
@@ -12588,6 +18799,20 @@
    "since": "v1.0"
   },
   {
+   "src": "DOC-VH",
+   "relation": "requires",
+   "dst": "DOC-PY3",
+   "note": "auto:requires(outline)",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-VH",
+   "relation": "requires",
+   "dst": "DOC-PY6",
+   "note": "auto:requires(outline)",
+   "since": "v1.0"
+  },
+  {
    "src": "F-b01-model",
    "relation": "refs",
    "dst": "Cd-1.1.4",
@@ -12598,6 +18823,279 @@
    "src": "F-b01-model",
    "relation": "refs",
    "dst": "D-1.1.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "F-pre-py1",
+   "relation": "refs",
+   "dst": "DOC-PY1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "F-pre-py3",
+   "relation": "refs",
+   "dst": "DOC-PY3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "F-pre-py3",
+   "relation": "refs",
+   "dst": "R-PY3.3.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "F-pre-py3",
+   "relation": "refs",
+   "dst": "R-PY3.3.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "F-pre-py3",
+   "relation": "refs",
+   "dst": "R-PY3.7.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "F-pre-py4",
+   "relation": "refs",
+   "dst": "A-PY4.4.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "F-pre-py4",
+   "relation": "refs",
+   "dst": "Cd-PY4.4.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "F-pre-py4",
+   "relation": "refs",
+   "dst": "Cd-PY4.5.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "F-pre-py4",
+   "relation": "refs",
+   "dst": "D-PY4.1.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "F-pre-py4",
+   "relation": "refs",
+   "dst": "D-PY4.1.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "F-pre-py4",
+   "relation": "refs",
+   "dst": "D-PY4.3.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "F-pre-py4",
+   "relation": "refs",
+   "dst": "D-PY4.6.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "F-pre-py4",
+   "relation": "refs",
+   "dst": "D-PY4.7.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "F-pre-py4",
+   "relation": "refs",
+   "dst": "E-PY4.3.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "F-pre-py4",
+   "relation": "refs",
+   "dst": "E-PY4.3.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "F-pre-py4",
+   "relation": "refs",
+   "dst": "E-PY4.4.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "F-pre-py4",
+   "relation": "refs",
+   "dst": "E-PY4.5.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "F-pre-py4",
+   "relation": "refs",
+   "dst": "Ex-PY4.9.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "F-pre-py4",
+   "relation": "refs",
+   "dst": "R-1.2.13",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "F-pre-py4",
+   "relation": "refs",
+   "dst": "R-PY4.1.6",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "F-pre-py4",
+   "relation": "refs",
+   "dst": "R-PY4.2.7",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "F-pre-py4",
+   "relation": "refs",
+   "dst": "R-PY4.5.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "F-pre-py4",
+   "relation": "refs",
+   "dst": "R-PY4.6.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "F-pre-py4",
+   "relation": "refs",
+   "dst": "R-PY4.7.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "F-pre-py5",
+   "relation": "refs",
+   "dst": "A-1.5.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "F-pre-py5",
+   "relation": "refs",
+   "dst": "A-PY5.7.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "F-pre-py5",
+   "relation": "refs",
+   "dst": "Cd-1.1.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "F-pre-py5",
+   "relation": "refs",
+   "dst": "D-1.1.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "F-pre-py5",
+   "relation": "refs",
+   "dst": "D-1.1.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "F-pre-py5",
+   "relation": "refs",
+   "dst": "D-1.2.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "F-pre-py5",
+   "relation": "refs",
+   "dst": "D-1.2.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "F-pre-py5",
+   "relation": "refs",
+   "dst": "R-PY5.7.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "F-pre-py5",
+   "relation": "refs",
+   "dst": "T-1.3.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "F-pre-py6",
+   "relation": "refs",
+   "dst": "D-PY6.1.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "F-pre-py6",
+   "relation": "refs",
+   "dst": "D-PY6.1.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "F-pre-py6",
+   "relation": "refs",
+   "dst": "D-PY6.2.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "F-pre-py6",
+   "relation": "refs",
+   "dst": "D-PY6.2.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "F-pre-py6",
+   "relation": "refs",
+   "dst": "D-PY6.3.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "F-pre-py6",
+   "relation": "refs",
+   "dst": "DOC-PY6",
    "note": "auto:refs",
    "since": "v1.0"
   },
@@ -12780,6 +19278,419 @@
    "src": "N-17",
    "relation": "refs",
    "dst": "DOC-V11",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-18",
+   "relation": "refs",
+   "dst": "D-PY1.1.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-18",
+   "relation": "refs",
+   "dst": "D-PY1.2.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-18",
+   "relation": "refs",
+   "dst": "D-PY1.3.6",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-18",
+   "relation": "refs",
+   "dst": "D-PY1.4.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-18",
+   "relation": "refs",
+   "dst": "D-PY1.5.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-18",
+   "relation": "refs",
+   "dst": "D-PY1.6.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-18",
+   "relation": "refs",
+   "dst": "Ex-PY1.8.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-18",
+   "relation": "refs",
+   "dst": "Ex-PY1.8.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-18",
+   "relation": "refs",
+   "dst": "Ex-PY1.8.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-18",
+   "relation": "refs",
+   "dst": "Ex-PY1.8.7",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-18",
+   "relation": "refs",
+   "dst": "R-PY1.3.7",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-19",
+   "relation": "refs",
+   "dst": "D-PY2.3.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-19",
+   "relation": "refs",
+   "dst": "D-PY2.3.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-19",
+   "relation": "refs",
+   "dst": "D-PY2.5.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-19",
+   "relation": "refs",
+   "dst": "P-PY2.2.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-19",
+   "relation": "refs",
+   "dst": "P-PY2.2.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-19",
+   "relation": "refs",
+   "dst": "P-PY2.8.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-20",
+   "relation": "refs",
+   "dst": "DOC-PY3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-20",
+   "relation": "refs",
+   "dst": "R-PY3.5.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-21",
+   "relation": "refs",
+   "dst": "A-PY4.4.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-21",
+   "relation": "refs",
+   "dst": "Cd-PY4.1.7",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-21",
+   "relation": "refs",
+   "dst": "Cd-PY4.6.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-21",
+   "relation": "refs",
+   "dst": "D-PY4.1.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-21",
+   "relation": "refs",
+   "dst": "D-PY4.2.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-21",
+   "relation": "refs",
+   "dst": "D-PY4.3.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-21",
+   "relation": "refs",
+   "dst": "D-PY4.5.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-21",
+   "relation": "refs",
+   "dst": "D-PY4.7.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-21",
+   "relation": "refs",
+   "dst": "Ex-PY4.9.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-21",
+   "relation": "refs",
+   "dst": "Ex-PY4.9.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-21",
+   "relation": "refs",
+   "dst": "R-PY4.2.7",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-21",
+   "relation": "refs",
+   "dst": "R-PY4.3.6",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-21",
+   "relation": "refs",
+   "dst": "R-PY4.4.6",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-21",
+   "relation": "refs",
+   "dst": "R-PY4.5.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-21",
+   "relation": "refs",
+   "dst": "R-PY4.6.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-21",
+   "relation": "refs",
+   "dst": "R-PY4.7.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-22",
+   "relation": "refs",
+   "dst": "A-PY5.7.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-22",
+   "relation": "refs",
+   "dst": "Cd-1.1.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-22",
+   "relation": "refs",
+   "dst": "D-1.1.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-22",
+   "relation": "refs",
+   "dst": "D-1.2.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-22",
+   "relation": "refs",
+   "dst": "D-1.2.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-22",
+   "relation": "refs",
+   "dst": "D-PY5.1.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-22",
+   "relation": "refs",
+   "dst": "D-PY5.5.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-22",
+   "relation": "refs",
+   "dst": "D-PY5.6.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-22",
+   "relation": "refs",
+   "dst": "Ex-PY5.10.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-22",
+   "relation": "refs",
+   "dst": "Ex-PY5.10.6",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-22",
+   "relation": "refs",
+   "dst": "R-PY5.2.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-22",
+   "relation": "refs",
+   "dst": "R-PY5.3.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-22",
+   "relation": "refs",
+   "dst": "R-PY5.8.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-22",
+   "relation": "refs",
+   "dst": "R-PY5.8.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-22",
+   "relation": "refs",
+   "dst": "T-1.3.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-23",
+   "relation": "refs",
+   "dst": "D-PY6.1.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-23",
+   "relation": "refs",
+   "dst": "D-PY6.1.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-23",
+   "relation": "refs",
+   "dst": "D-PY6.2.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-23",
+   "relation": "refs",
+   "dst": "D-PY6.2.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-23",
+   "relation": "refs",
+   "dst": "D-PY6.3.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-23",
+   "relation": "refs",
+   "dst": "D-PY6.3.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-23",
+   "relation": "refs",
+   "dst": "DOC-PY6",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-23",
+   "relation": "refs",
+   "dst": "R-PY6.1.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "N-23",
+   "relation": "refs",
+   "dst": "R-PY6.1.4",
    "note": "auto:refs",
    "since": "v1.0"
   }

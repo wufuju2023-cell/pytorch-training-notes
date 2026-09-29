@@ -4,9 +4,9 @@
 
 ## 统计
 
-- registry: **844** tags
-- relations: **619** edges（corresponds=44, refs=575）
-- check: errors=0, warnings=248
+- registry: **1232** tags
+- relations: **1052** edges（corresponds=56, refs=954, requires=42）
+- check: errors=0, warnings=369
 
 ## 总表（按 doccode 分组）
 
@@ -511,7 +511,7 @@
 | `F-misc-fixorder` | F | `v1.0/fixorder.py#L1` | 临时正文顺序修复脚本 | active | v1.0 |
 | `F-misc-validate_nb` | F | `v1.0/_validate_nb.py#L1` | 校验 notebook 合法性与可编译性 | active | v1.0 |
 
-### doccode `N`（95）
+### doccode `N`（152）
 
 | Tag | 类型 | 位置 | 标题 | 状态 | 版本 |
 | --- | --- | --- | --- | --- | --- |
@@ -610,6 +610,144 @@
 | `N-17.c2` | N | `v1.0/notebooks/08-V1-1/N17_tool_calling_agent.ipynb#c2` |  | active | v1.0 |
 | `N-17.c3` | N | `v1.0/notebooks/08-V1-1/N17_tool_calling_agent.ipynb#c3` |  | active | v1.0 |
 | `N-17.c4` | N | `v1.0/notebooks/08-V1-1/N17_tool_calling_agent.ipynb#c4` |  | active | v1.0 |
+| `N-18` | N | `v1.0/notebooks/00-预备/N18_Python语言I.ipynb` |  | active | v1.0 |
+| `N-18.c1` | N | `v1.0/notebooks/00-预备/N18_Python语言I.ipynb#c1` |  | active | v1.0 |
+| `N-18.c2` | N | `v1.0/notebooks/00-预备/N18_Python语言I.ipynb#c2` |  | active | v1.0 |
+| `N-18.c3` | N | `v1.0/notebooks/00-预备/N18_Python语言I.ipynb#c3` |  | active | v1.0 |
+| `N-18.c4` | N | `v1.0/notebooks/00-预备/N18_Python语言I.ipynb#c4` |  | active | v1.0 |
+| `N-18.c5` | N | `v1.0/notebooks/00-预备/N18_Python语言I.ipynb#c5` |  | active | v1.0 |
+| `N-18.c6` | N | `v1.0/notebooks/00-预备/N18_Python语言I.ipynb#c6` |  | active | v1.0 |
+| `N-18.c7` | N | `v1.0/notebooks/00-预备/N18_Python语言I.ipynb#c7` |  | active | v1.0 |
+| `N-18.c8` | N | `v1.0/notebooks/00-预备/N18_Python语言I.ipynb#c8` |  | active | v1.0 |
+| `N-18.c9` | N | `v1.0/notebooks/00-预备/N18_Python语言I.ipynb#c9` |  | active | v1.0 |
+| `N-18.c10` | N | `v1.0/notebooks/00-预备/N18_Python语言I.ipynb#c10` |  | active | v1.0 |
+| `N-19` | N | `v1.0/notebooks/00-预备/N19_Python面向对象与协议.ipynb` |  | active | v1.0 |
+| `N-19.c1` | N | `v1.0/notebooks/00-预备/N19_Python面向对象与协议.ipynb#c1` |  | active | v1.0 |
+| `N-19.c2` | N | `v1.0/notebooks/00-预备/N19_Python面向对象与协议.ipynb#c2` |  | active | v1.0 |
+| `N-19.c3` | N | `v1.0/notebooks/00-预备/N19_Python面向对象与协议.ipynb#c3` |  | active | v1.0 |
+| `N-19.c4` | N | `v1.0/notebooks/00-预备/N19_Python面向对象与协议.ipynb#c4` |  | active | v1.0 |
+| `N-19.c5` | N | `v1.0/notebooks/00-预备/N19_Python面向对象与协议.ipynb#c5` |  | active | v1.0 |
+| `N-19.c6` | N | `v1.0/notebooks/00-预备/N19_Python面向对象与协议.ipynb#c6` |  | active | v1.0 |
+| `N-19.c7` | N | `v1.0/notebooks/00-预备/N19_Python面向对象与协议.ipynb#c7` |  | active | v1.0 |
+| `N-19.c8` | N | `v1.0/notebooks/00-预备/N19_Python面向对象与协议.ipynb#c8` |  | active | v1.0 |
+| `N-20` | N | `v1.0/notebooks/00-预备/N20_工程环境与工具链.ipynb` |  | active | v1.0 |
+| `N-20.c1` | N | `v1.0/notebooks/00-预备/N20_工程环境与工具链.ipynb#c1` |  | active | v1.0 |
+| `N-20.c2` | N | `v1.0/notebooks/00-预备/N20_工程环境与工具链.ipynb#c2` |  | active | v1.0 |
+| `N-20.c3` | N | `v1.0/notebooks/00-预备/N20_工程环境与工具链.ipynb#c3` |  | active | v1.0 |
+| `N-20.c4` | N | `v1.0/notebooks/00-预备/N20_工程环境与工具链.ipynb#c4` |  | active | v1.0 |
+| `N-20.c5` | N | `v1.0/notebooks/00-预备/N20_工程环境与工具链.ipynb#c5` |  | active | v1.0 |
+| `N-20.c6` | N | `v1.0/notebooks/00-预备/N20_工程环境与工具链.ipynb#c6` |  | active | v1.0 |
+| `N-20.c7` | N | `v1.0/notebooks/00-预备/N20_工程环境与工具链.ipynb#c7` |  | active | v1.0 |
+| `N-20.c8` | N | `v1.0/notebooks/00-预备/N20_工程环境与工具链.ipynb#c8` |  | active | v1.0 |
+| `N-21` | N | `v1.0/notebooks/00-预备/N21_NumPy与张量思维.ipynb` |  | active | v1.0 |
+| `N-21.c1` | N | `v1.0/notebooks/00-预备/N21_NumPy与张量思维.ipynb#c1` |  | active | v1.0 |
+| `N-21.c2` | N | `v1.0/notebooks/00-预备/N21_NumPy与张量思维.ipynb#c2` |  | active | v1.0 |
+| `N-21.c3` | N | `v1.0/notebooks/00-预备/N21_NumPy与张量思维.ipynb#c3` |  | active | v1.0 |
+| `N-21.c4` | N | `v1.0/notebooks/00-预备/N21_NumPy与张量思维.ipynb#c4` |  | active | v1.0 |
+| `N-21.c5` | N | `v1.0/notebooks/00-预备/N21_NumPy与张量思维.ipynb#c5` |  | active | v1.0 |
+| `N-21.c6` | N | `v1.0/notebooks/00-预备/N21_NumPy与张量思维.ipynb#c6` |  | active | v1.0 |
+| `N-21.c7` | N | `v1.0/notebooks/00-预备/N21_NumPy与张量思维.ipynb#c7` |  | active | v1.0 |
+| `N-21.c8` | N | `v1.0/notebooks/00-预备/N21_NumPy与张量思维.ipynb#c8` |  | active | v1.0 |
+| `N-21.c9` | N | `v1.0/notebooks/00-预备/N21_NumPy与张量思维.ipynb#c9` |  | active | v1.0 |
+| `N-22` | N | `v1.0/notebooks/00-预备/N22_PyTorch从零.ipynb` |  | active | v1.0 |
+| `N-22.c1` | N | `v1.0/notebooks/00-预备/N22_PyTorch从零.ipynb#c1` |  | active | v1.0 |
+| `N-22.c2` | N | `v1.0/notebooks/00-预备/N22_PyTorch从零.ipynb#c2` |  | active | v1.0 |
+| `N-22.c3` | N | `v1.0/notebooks/00-预备/N22_PyTorch从零.ipynb#c3` |  | active | v1.0 |
+| `N-22.c4` | N | `v1.0/notebooks/00-预备/N22_PyTorch从零.ipynb#c4` |  | active | v1.0 |
+| `N-22.c5` | N | `v1.0/notebooks/00-预备/N22_PyTorch从零.ipynb#c5` |  | active | v1.0 |
+| `N-22.c6` | N | `v1.0/notebooks/00-预备/N22_PyTorch从零.ipynb#c6` |  | active | v1.0 |
+| `N-22.c7` | N | `v1.0/notebooks/00-预备/N22_PyTorch从零.ipynb#c7` |  | active | v1.0 |
+| `N-22.c8` | N | `v1.0/notebooks/00-预备/N22_PyTorch从零.ipynb#c8` |  | active | v1.0 |
+| `N-22.c9` | N | `v1.0/notebooks/00-预备/N22_PyTorch从零.ipynb#c9` |  | active | v1.0 |
+| `N-23` | N | `v1.0/notebooks/00-预备/N23_PyTorch进阶与生态.ipynb` |  | active | v1.0 |
+| `N-23.c1` | N | `v1.0/notebooks/00-预备/N23_PyTorch进阶与生态.ipynb#c1` |  | active | v1.0 |
+| `N-23.c2` | N | `v1.0/notebooks/00-预备/N23_PyTorch进阶与生态.ipynb#c2` |  | active | v1.0 |
+| `N-23.c3` | N | `v1.0/notebooks/00-预备/N23_PyTorch进阶与生态.ipynb#c3` |  | active | v1.0 |
+| `N-23.c4` | N | `v1.0/notebooks/00-预备/N23_PyTorch进阶与生态.ipynb#c4` |  | active | v1.0 |
+| `N-23.c5` | N | `v1.0/notebooks/00-预备/N23_PyTorch进阶与生态.ipynb#c5` |  | active | v1.0 |
+| `N-23.c6` | N | `v1.0/notebooks/00-预备/N23_PyTorch进阶与生态.ipynb#c6` |  | active | v1.0 |
+| `N-23.c7` | N | `v1.0/notebooks/00-预备/N23_PyTorch进阶与生态.ipynb#c7` |  | active | v1.0 |
+
+### doccode `pre`（76）
+
+| Tag | 类型 | 位置 | 标题 | 状态 | 版本 |
+| --- | --- | --- | --- | --- | --- |
+| `F-pre-py1` | F | `v1.0/00-预备/code/py1_language_basics.py#L1` | Python 语言 I 教学代码 | active | v1.0 |
+| `F-pre-py1.classify` | F | `v1.0/00-预备/code/py1_language_basics.py#L115` | match 结构化模式匹配 + 守卫 | active | v1.0 |
+| `F-pre-py1.comprehension_vs_generator` | F | `v1.0/00-预备/code/py1_language_basics.py#L131` | 推导式 vs 生成器表达式 | active | v1.0 |
+| `F-pre-py1.fixed_default` | F | `v1.0/00-预备/code/py1_language_basics.py#L81` | 用 None 哨兵修正可变默认值陷阱 | active | v1.0 |
+| `F-pre-py1.main` | F | `v1.0/00-预备/code/py1_language_basics.py#L159` | 运行全部示例并打印结果 | active | v1.0 |
+| `F-pre-py1.make_counter` | F | `v1.0/00-预备/code/py1_language_basics.py#L99` | 闭包与 nonlocal：返回带状态的计数器 | active | v1.0 |
+| `F-pre-py1.mutable_default_trap` | F | `v1.0/00-预备/code/py1_language_basics.py#L74` | 可变默认值陷阱（错误示范） | active | v1.0 |
+| `F-pre-py1.show_binding_semantics` | F | `v1.0/00-预备/code/py1_language_basics.py#L23` | 绑定/身份/可变性的可观测行为 | active | v1.0 |
+| `F-pre-py1.show_bytecode` | F | `v1.0/00-预备/code/py1_language_basics.py#L150` | 用 dis 观察字节码 | active | v1.0 |
+| `F-pre-py1.slice_semantics` | F | `v1.0/00-预备/code/py1_language_basics.py#L55` | 切片：左闭右开、负索引、步长、越界截断 | active | v1.0 |
+| `F-pre-py1.tag` | F | `v1.0/00-预备/code/py1_language_basics.py#L90` | 签名演示：*args、只关键字参数、**kwargs | active | v1.0 |
+| `F-pre-py2` | F | `v1.0/00-预备/code/py2_oop_protocols.py#L1` | Python 语言 II 教学代码：类/协议/异常/生成器/装饰器 | active | v1.0 |
+| `F-pre-py2.atomic_write` | F | `v1.0/00-预备/code/py2_oop_protocols.py#L240` | 临时文件 + os.replace 的原子写 | active | v1.0 |
+| `F-pre-py2.Batch` | F | `v1.0/00-预备/code/py2_oop_protocols.py#L133` | dataclass：自动 __init__/__repr__/__eq__（对照 data.py 的 Batch） | active | v1.0 |
+| `F-pre-py2.Buffer` | F | `v1.0/00-预备/code/py2_oop_protocols.py#L61` | 只实现容器协议即可被 len()/索引/for 使用 | active | v1.0 |
+| `F-pre-py2.Color` | F | `v1.0/00-预备/code/py2_oop_protocols.py#L141` | Enum：具名常量，成员是单例 | active | v1.0 |
+| `F-pre-py2.Counter` | F | `v1.0/00-预备/code/py2_oop_protocols.py#L84` | property 读只读派生值 + 描述符式校验 setter | active | v1.0 |
+| `F-pre-py2.encode_safe` | F | `v1.0/00-预备/code/py2_oop_protocols.py#L198` | EAFP 风格：直接查表，失败再处理 | active | v1.0 |
+| `F-pre-py2.feature_pipeline` | F | `v1.0/00-预备/code/py2_oop_protocols.py#L312` | 生成器流水线：过滤 + 变换，无中间 list | active | v1.0 |
+| `F-pre-py2.fib` | F | `v1.0/00-预备/code/py2_oop_protocols.py#L275` | functools.lru_cache 记忆化 | active | v1.0 |
+| `F-pre-py2.main` | F | `v1.0/00-预备/code/py2_oop_protocols.py#L322` | 运行全部演示 | active | v1.0 |
+| `F-pre-py2.memory_footprint` | F | `v1.0/00-预备/code/py2_oop_protocols.py#L106` | 粗略比较有/无 __slots__ 的实例内存 | active | v1.0 |
+| `F-pre-py2.parse_ids` | F | `v1.0/00-预备/code/py2_oop_protocols.py#L181` | 示范 else/finally 与 raise ... from 的语义 | active | v1.0 |
+| `F-pre-py2.pushed` | F | `v1.0/00-预备/code/py2_oop_protocols.py#L228` | @contextmanager：用生成器写上下文管理器 | active | v1.0 |
+| `F-pre-py2.retry` | F | `v1.0/00-预备/code/py2_oop_protocols.py#L255` | 带参装饰器：三层结构，functools.wraps 保元数据 | active | v1.0 |
+| `F-pre-py2.SimpleTokenizer` | F | `v1.0/00-预备/code/py2_oop_protocols.py#L158` | 满足 TokenizerLike 协议的最小实现（不继承） | active | v1.0 |
+| `F-pre-py2.sort_by_abs` | F | `v1.0/00-预备/code/py2_oop_protocols.py#L283` | 高阶函数：key= 回调 | active | v1.0 |
+| `F-pre-py2.take` | F | `v1.0/00-预备/code/py2_oop_protocols.py#L305` | itertools.islice：从无限迭代器取前 n 个 | active | v1.0 |
+| `F-pre-py2.Timer` | F | `v1.0/00-预备/code/py2_oop_protocols.py#L214` | 类式上下文管理器：测量代码块耗时 | active | v1.0 |
+| `F-pre-py2.TokenizerError` | F | `v1.0/00-预备/code/py2_oop_protocols.py#L176` | 库专用异常基类，便于调用方精确捕获 | active | v1.0 |
+| `F-pre-py2.TokenizerLike` | F | `v1.0/00-预备/code/py2_oop_protocols.py#L148` | Protocol：结构化子类型（duck typing 的类型化） | active | v1.0 |
+| `F-pre-py2.Vec2` | F | `v1.0/00-预备/code/py2_oop_protocols.py#L33` | 二维向量：类属性 + 实例属性 + 运算符重载 + __repr__ | active | v1.0 |
+| `F-pre-py2.windows` | F | `v1.0/00-预备/code/py2_oop_protocols.py#L293` | 生成器：滑动窗口，惰性求值 | active | v1.0 |
+| `F-pre-py3` | F | `v1.0/00-预备/code/py3_engineering.py#L1` | 工程与环境教学骨架（argparse + logging + 可测函数） | active | v1.0 |
+| `F-pre-py3.configure_logging` | F | `v1.0/00-预备/code/py3_engineering.py#L30` | 配置根 logger 的级别与格式 | active | v1.0 |
+| `F-pre-py3.DEFAULT_FORMAT` | F | `v1.0/00-预备/code/py3_engineering.py#L26` | 日志统一格式：时间 级别 模块名 消息 | active | v1.0 |
+| `F-pre-py3.draw` | F | `v1.0/00-预备/code/py3_engineering.py#L64` | 按 seed 生成一组 [0,1) 随机数（纯函数式） | active | v1.0 |
+| `F-pre-py3.LOGGER` | F | `v1.0/00-预备/code/py3_engineering.py#L23` | 本模块 logger（不在 import 时配置，配置权交给入口） | active | v1.0 |
+| `F-pre-py3.main` | F | `v1.0/00-预备/code/py3_engineering.py#L99` | 串起解析、日志、播种与汇总流程 | active | v1.0 |
+| `F-pre-py3.parse_args` | F | `v1.0/00-预备/code/py3_engineering.py#L84` | 定义并解析命令行参数 | active | v1.0 |
+| `F-pre-py3.seed_everything` | F | `v1.0/00-预备/code/py3_engineering.py#L40` | 固定 Python/numpy/torch 三处随机源 | active | v1.0 |
+| `F-pre-py3.summarize` | F | `v1.0/00-预备/code/py3_engineering.py#L71` | 对数值序列做无副作用汇总 | active | v1.0 |
+| `F-pre-py4` | F | `v1.0/00-预备/code/py4_numpy.py#L1` | NumPy 与张量思维教学代码 | active | v1.0 |
+| `F-pre-py4.__main__` | F | `v1.0/00-预备/code/py4_numpy.py#L206` | 脚本入口：自测 + 小基准 | active | v1.0 |
+| `F-pre-py4.benchmark_vectorization` | F | `v1.0/00-预备/code/py4_numpy.py#L128` | 基准：朴素循环 vs 向量化 | active | v1.0 |
+| `F-pre-py4.broadcast_shape` | F | `v1.0/00-预备/code/py4_numpy.py#L65` | 按严格规则推导广播结果形状（不符则 None） | active | v1.0 |
+| `F-pre-py4.classify_indexing` | F | `v1.0/00-预备/code/py4_numpy.py#L36` | 判断常见索引结果是视图还是拷贝 | active | v1.0 |
+| `F-pre-py4.describe_array` | F | `v1.0/00-预备/code/py4_numpy.py#L21` | 打印 ndarray 的形状/类型/步长元数据 | active | v1.0 |
+| `F-pre-py4.matmul_naive` | F | `v1.0/00-预备/code/py4_numpy.py#L81` | 朴素三重循环实现 X @ W.T + b（对照【算法 PY4.4.2】） | active | v1.0 |
+| `F-pre-py4.matmul_vectorized` | F | `v1.0/00-预备/code/py4_numpy.py#L99` | 用 @ 与广播实现同一计算 | active | v1.0 |
+| `F-pre-py4.rng_demo` | F | `v1.0/00-预备/code/py4_numpy.py#L113` | Generator / 种子 / SeedSequence.spawn 演示 | active | v1.0 |
+| `F-pre-py4.selftest` | F | `v1.0/00-预备/code/py4_numpy.py#L159` | PY4 全章自测（assert 失败即报错） | active | v1.0 |
+| `F-pre-py4.softmax_np` | F | `v1.0/00-预备/code/py4_numpy.py#L105` | 数值稳定的 NumPy softmax（对照【例 PY4.5.3】） | active | v1.0 |
+| `F-pre-py5` | F | `v1.0/00-预备/code/py5_torch_from_zero.py#L2` | PyTorch 从零：线性回归与两层 MLP 训练闭环 | active | v1.0 |
+| `F-pre-py5.evaluate` | F | `v1.0/00-预备/code/py5_torch_from_zero.py#L130` | 验证：eval() + no_grad()，只前向，返回 (loss, acc) | active | v1.0 |
+| `F-pre-py5.LinearRegressionModel` | F | `v1.0/00-预备/code/py5_torch_from_zero.py#L46` | 单层线性回归：y = x W^T + b（对照【定义 1.1.1】） | active | v1.0 |
+| `F-pre-py5.load_checkpoint` | F | `v1.0/00-预备/code/py5_torch_from_zero.py#L154` | 加载 checkpoint（map_location 兜底跨设备） | active | v1.0 |
+| `F-pre-py5.main` | F | `v1.0/00-预备/code/py5_torch_from_zero.py#L230` | 命令行入口：--mode linear\|mlp\|both | active | v1.0 |
+| `F-pre-py5.make_regression_data` | F | `v1.0/00-预备/code/py5_torch_from_zero.py#L37` | 生成 y = 3x + 2 + 高斯噪声 的一维回归数据 | active | v1.0 |
+| `F-pre-py5.run_linear_regression` | F | `v1.0/00-预备/code/py5_torch_from_zero.py#L163` | 线性回归闭环：拟合 y = 3x + 2 | active | v1.0 |
+| `F-pre-py5.run_mlp_classification` | F | `v1.0/00-预备/code/py5_torch_from_zero.py#L188` | 两层 MLP 分类闭环（Dataset/DataLoader + 验证 + checkpoint + 可选 AMP） | active | v1.0 |
+| `F-pre-py5.save_checkpoint` | F | `v1.0/00-预备/code/py5_torch_from_zero.py#L144` | 保存 model/optimizer/epoch 的完整 checkpoint | active | v1.0 |
+| `F-pre-py5.ToyClassificationDataset` | F | `v1.0/00-预备/code/py5_torch_from_zero.py#L74` | 三簇二维玩具分类集（Dataset 协议：__len__/__getitem__） | active | v1.0 |
+| `F-pre-py5.train_one_epoch` | F | `v1.0/00-预备/code/py5_torch_from_zero.py#L95` | 一个 epoch 的标准训练五步（【算法 PY5.7.1】） | active | v1.0 |
+| `F-pre-py5.train_one_epoch_amp` | F | `v1.0/00-预备/code/py5_torch_from_zero.py#L112` | CUDA 混合精度版单 epoch（CPU 路径不进入） | active | v1.0 |
+| `F-pre-py5.TwoLayerMLP` | F | `v1.0/00-预备/code/py5_torch_from_zero.py#L58` | 两层 ReLU MLP（对照【定义 1.1.3】三层结构与【代码 1.1.4】forward） | active | v1.0 |
+| `F-pre-py6` | F | `v1.0/00-预备/code/py6_torch_ecosystem.py#L2` | PyTorch 进阶与生态教学代码 | active | v1.0 |
+| `F-pre-py6._require_torch` | F | `v1.0/00-预备/code/py6_torch_ecosystem.py#L34` | 按需导入 torch，缺失时返回 None | active | v1.0 |
+| `F-pre-py6.autocast_demo` | F | `v1.0/00-预备/code/py6_torch_ecosystem.py#L94` | 混合精度 autocast 与 GradScaler 语义 | active | v1.0 |
+| `F-pre-py6.checkpoint_demo` | F | `v1.0/00-预备/code/py6_torch_ecosystem.py#L45` | 梯度检查点前后向一致性验证 | active | v1.0 |
+| `F-pre-py6.compile_demo` | F | `v1.0/00-预备/code/py6_torch_ecosystem.py#L163` | torch.compile 可用性探测 | active | v1.0 |
+| `F-pre-py6.ecosystem_demo` | F | `v1.0/00-预备/code/py6_torch_ecosystem.py#L185` | transformers/peft/trl/accelerate 速览 | active | v1.0 |
+| `F-pre-py6.main` | F | `v1.0/00-预备/code/py6_torch_ecosystem.py#L222` | 命令行入口，按名调度各演示 | active | v1.0 |
+| `F-pre-py6.memory_demo` | F | `v1.0/00-预备/code/py6_torch_ecosystem.py#L144` | 显存统计与 empty_cache 的适用边界 | active | v1.0 |
+| `F-pre-py6.noncontiguous_demo` | F | `v1.0/00-预备/code/py6_torch_ecosystem.py#L76` | 非连续张量上 view/reshape/contiguous 的差别 | active | v1.0 |
+| `F-pre-py6.profiler_demo` | F | `v1.0/00-预备/code/py6_torch_ecosystem.py#L125` | torch.profiler 统计算子耗时 | active | v1.0 |
 
 ### doccode `PREM`（1）
 
@@ -645,6 +783,291 @@
 | `R-PT.9.1` | R | `v1.0/02-预训练/01-预训练原理.md#L198` | 与 nanoproof 源码对照 | active | v1.0 |
 | `R-PT.10.1` | R | `v1.0/02-预训练/01-预训练原理.md#L216` | 常见坑 | active | v1.0 |
 | `R-PT.11.1` | R | `v1.0/02-预训练/01-预训练原理.md#L229` | 小结 | active | v1.0 |
+
+### doccode `PY1`（47）
+
+| Tag | 类型 | 位置 | 标题 | 状态 | 版本 |
+| --- | --- | --- | --- | --- | --- |
+| `Cd-PY1.1.4` | Cd | `v1.0/00-预备/PY1-Python语言I.md#L50` | 用 `dis` 观察字节码 | active | v1.0 |
+| `Cd-PY1.2.6` | Cd | `v1.0/00-预备/PY1-Python语言I.md#L116` | 绑定与共享的可观测行为 | active | v1.0 |
+| `Cd-PY1.3.8` | Cd | `v1.0/00-预备/PY1-Python语言I.md#L192` | 类型与切片速览 | active | v1.0 |
+| `Cd-PY1.4.7` | Cd | `v1.0/00-预备/PY1-Python语言I.md#L258` | 控制流速览 | active | v1.0 |
+| `Cd-PY1.5.7` | Cd | `v1.0/00-预备/PY1-Python语言I.md#L341` | 参数与闭包速览 | active | v1.0 |
+| `Cd-PY1.6.5` | Cd | `v1.0/00-预备/PY1-Python语言I.md#L382` | 推导式与迭代协议速览 | active | v1.0 |
+| `D-PY1.1.1` | D | `v1.0/00-预备/PY1-Python语言I.md#L13` | CPython 的执行模型 | active | v1.0 |
+| `D-PY1.1.2` | D | `v1.0/00-预备/PY1-Python语言I.md#L23` | 三种入口：REPL、脚本、模块 | active | v1.0 |
+| `D-PY1.2.1` | D | `v1.0/00-预备/PY1-Python语言I.md#L78` | 名字是绑定，不是盒子 | active | v1.0 |
+| `D-PY1.2.3` | D | `v1.0/00-预备/PY1-Python语言I.md#L93` | 对象身份与相等 | active | v1.0 |
+| `D-PY1.2.5` | D | `v1.0/00-预备/PY1-Python语言I.md#L108` | 可变与不可变对象 | active | v1.0 |
+| `D-PY1.3.1` | D | `v1.0/00-预备/PY1-Python语言I.md#L139` | 标量类型 | active | v1.0 |
+| `D-PY1.3.3` | D | `v1.0/00-预备/PY1-Python语言I.md#L149` | `str` 与 `bytes` | active | v1.0 |
+| `D-PY1.3.4` | D | `v1.0/00-预备/PY1-Python语言I.md#L161` | `None` | active | v1.0 |
+| `D-PY1.3.5` | D | `v1.0/00-预备/PY1-Python语言I.md#L165` | 序列容器 `list` 与 `tuple` | active | v1.0 |
+| `D-PY1.3.6` | D | `v1.0/00-预备/PY1-Python语言I.md#L173` | 映射与集合 `dict`/`set`/`frozenset` | active | v1.0 |
+| `D-PY1.4.1` | D | `v1.0/00-预备/PY1-Python语言I.md#L213` | 真值测试规则 | active | v1.0 |
+| `D-PY1.4.2` | D | `v1.0/00-预备/PY1-Python语言I.md#L217` | `if/elif/else` | active | v1.0 |
+| `D-PY1.4.3` | D | `v1.0/00-预备/PY1-Python语言I.md#L221` | `while` 与 `for` | active | v1.0 |
+| `D-PY1.4.6` | D | `v1.0/00-预备/PY1-Python语言I.md#L250` | 结构化模式匹配 `match` | active | v1.0 |
+| `D-PY1.5.1` | D | `v1.0/00-预备/PY1-Python语言I.md#L286` | `def`、位置参数与关键字参数 | active | v1.0 |
+| `D-PY1.5.3` | D | `v1.0/00-预备/PY1-Python语言I.md#L308` | 可变参数与只关键字参数 | active | v1.0 |
+| `D-PY1.5.4` | D | `v1.0/00-预备/PY1-Python语言I.md#L316` | LEGB 作用域规则 | active | v1.0 |
+| `D-PY1.5.5` | D | `v1.0/00-预备/PY1-Python语言I.md#L327` | 闭包与 `nonlocal` | active | v1.0 |
+| `D-PY1.5.6` | D | `v1.0/00-预备/PY1-Python语言I.md#L335` | 函数是一等对象；`lambda` | active | v1.0 |
+| `D-PY1.6.1` | D | `v1.0/00-预备/PY1-Python语言I.md#L366` | 推导式 | active | v1.0 |
+| `D-PY1.6.2` | D | `v1.0/00-预备/PY1-Python语言I.md#L370` | 生成器表达式与惰性求值 | active | v1.0 |
+| `D-PY1.6.3` | D | `v1.0/00-预备/PY1-Python语言I.md#L374` | 迭代协议初识：可迭代对象与迭代器 | active | v1.0 |
+| `DOC-PY1` | DOC | `v1.0/00-预备/PY1-Python语言I.md` | PY1 · Python 语言 I | active | v1.0 |
+| `E-PY1.1.5` | E | `v1.0/00-预备/PY1-Python语言I.md#L68` | 三种入口的可观测差异 | active | v1.0 |
+| `Ex-PY1.8.1` | Ex | `v1.0/00-预备/PY1-Python语言I.md#L420` | 执行入口 | active | v1.0 |
+| `Ex-PY1.8.2` | Ex | `v1.0/00-预备/PY1-Python语言I.md#L424` | 绑定与身份 | active | v1.0 |
+| `Ex-PY1.8.3` | Ex | `v1.0/00-预备/PY1-Python语言I.md#L428` | 切片与拷贝 | active | v1.0 |
+| `Ex-PY1.8.4` | Ex | `v1.0/00-预备/PY1-Python语言I.md#L432` | 哈希与集合 | active | v1.0 |
+| `Ex-PY1.8.5` | Ex | `v1.0/00-预备/PY1-Python语言I.md#L436` | 控制流 | active | v1.0 |
+| `Ex-PY1.8.6` | Ex | `v1.0/00-预备/PY1-Python语言I.md#L440` | 默认参数陷阱 | active | v1.0 |
+| `Ex-PY1.8.7` | Ex | `v1.0/00-预备/PY1-Python语言I.md#L444` | 闭包与 `nonlocal` | active | v1.0 |
+| `Ex-PY1.8.8` | Ex | `v1.0/00-预备/PY1-Python语言I.md#L448` | 推导式与生成器 | active | v1.0 |
+| `P-PY1.2.2` | P | `v1.0/00-预备/PY1-Python语言I.md#L84` | 赋值即重绑定，参数传递为引用传递 | active | v1.0 |
+| `R-PY1.1.3` | R | `v1.0/00-预备/PY1-Python语言I.md#L40` | `__pycache__` 与 `.pyc` | active | v1.0 |
+| `R-PY1.2.4` | R | `v1.0/00-预备/PY1-Python语言I.md#L100` | 引用计数与 GC 概览 | active | v1.0 |
+| `R-PY1.3.2` | R | `v1.0/00-预备/PY1-Python语言I.md#L143` | `int` 与 `float` 对照 C/C++ | active | v1.0 |
+| `R-PY1.3.7` | R | `v1.0/00-预备/PY1-Python语言I.md#L182` | 切片语义：步长、负索引、拷贝 vs 视图 | active | v1.0 |
+| `R-PY1.4.4` | R | `v1.0/00-预备/PY1-Python语言I.md#L225` | `for-else` 与 `while-else` | active | v1.0 |
+| `R-PY1.4.5` | R | `v1.0/00-预备/PY1-Python语言I.md#L239` | 海象运算符 `:=` | active | v1.0 |
+| `R-PY1.5.2` | R | `v1.0/00-预备/PY1-Python语言I.md#L290` | 默认参数与可变默认值陷阱 | active | v1.0 |
+| `R-PY1.6.4` | R | `v1.0/00-预备/PY1-Python语言I.md#L378` | 与 PY2 的衔接 | active | v1.0 |
+
+### doccode `PY2`（54）
+
+| Tag | 类型 | 位置 | 标题 | 状态 | 版本 |
+| --- | --- | --- | --- | --- | --- |
+| `Cd-PY2.1.7` | Cd | `v1.0/00-预备/PY2-Python语言II.md#L78` | 最小 `Vec2`：类属性、实例属性、运算符与 `__repr__` | active | v1.0 |
+| `Cd-PY2.2.7` | Cd | `v1.0/00-预备/PY2-Python语言II.md#L160` | 一个支持 `len`/索引/迭代的小容器 | active | v1.0 |
+| `Cd-PY2.5.6` | Cd | `v1.0/00-预备/PY2-Python语言II.md#L318` | EAFP 风格的分词 | active | v1.0 |
+| `Cd-PY2.6.4` | Cd | `v1.0/00-预备/PY2-Python语言II.md#L362` | 类式与生成器式两种上下文管理器 | active | v1.0 |
+| `Cd-PY2.7.6` | Cd | `v1.0/00-预备/PY2-Python语言II.md#L424` | 带参装饰器与 `lru_cache` | active | v1.0 |
+| `Cd-PY2.8.6` | Cd | `v1.0/00-预备/PY2-Python语言II.md#L493` | 手写生成器与 `itertools` | active | v1.0 |
+| `D-PY2.1.1` | D | `v1.0/00-预备/PY2-Python语言II.md#L17` | 类、实例与 `self` | active | v1.0 |
+| `D-PY2.1.2` | D | `v1.0/00-预备/PY2-Python语言II.md#L27` | `__init__` 与构造过程 | active | v1.0 |
+| `D-PY2.1.4` | D | `v1.0/00-预备/PY2-Python语言II.md#L49` | 继承与 MRO | active | v1.0 |
+| `D-PY2.2.1` | D | `v1.0/00-预备/PY2-Python语言II.md#L101` | 数据模型与特殊方法总览 | active | v1.0 |
+| `D-PY2.3.1` | D | `v1.0/00-预备/PY2-Python语言II.md#L184` | `property`：把方法伪装成属性 | active | v1.0 |
+| `D-PY2.3.2` | D | `v1.0/00-预备/PY2-Python语言II.md#L194` | 描述符协议 | active | v1.0 |
+| `D-PY2.3.3` | D | `v1.0/00-预备/PY2-Python语言II.md#L204` | `__slots__` 与内存布局 | active | v1.0 |
+| `D-PY2.4.1` | D | `v1.0/00-预备/PY2-Python语言II.md#L223` | `dataclass`：样板代码生成器 | active | v1.0 |
+| `D-PY2.4.3` | D | `v1.0/00-预备/PY2-Python语言II.md#L247` | `typing`：`Optional`/`Union`/`Sequence`/`Mapping`/`Protocol` | active | v1.0 |
+| `D-PY2.4.5` | D | `v1.0/00-预备/PY2-Python语言II.md#L270` | `enum`：具名常量 | active | v1.0 |
+| `D-PY2.5.1` | D | `v1.0/00-预备/PY2-Python语言II.md#L278` | 异常层级 | active | v1.0 |
+| `D-PY2.5.2` | D | `v1.0/00-预备/PY2-Python语言II.md#L288` | `try/except/else/finally` 语义 | active | v1.0 |
+| `D-PY2.5.3` | D | `v1.0/00-预备/PY2-Python语言II.md#L297` | `raise`、异常链与自定义异常 | active | v1.0 |
+| `D-PY2.6.1` | D | `v1.0/00-预备/PY2-Python语言II.md#L335` | `with` 与 `__enter__`/`__exit__` | active | v1.0 |
+| `D-PY2.7.1` | D | `v1.0/00-预备/PY2-Python语言II.md#L388` | 函数是一等对象与高阶函数 | active | v1.0 |
+| `D-PY2.7.2` | D | `v1.0/00-预备/PY2-Python语言II.md#L394` | 装饰器：`f = deco(f)` 的语法糖 | active | v1.0 |
+| `D-PY2.7.3` | D | `v1.0/00-预备/PY2-Python语言II.md#L400` | 带参装饰器：三层结构 | active | v1.0 |
+| `D-PY2.7.4` | D | `v1.0/00-预备/PY2-Python语言II.md#L416` | `functools.lru_cache`：记忆化 | active | v1.0 |
+| `D-PY2.8.1` | D | `v1.0/00-预备/PY2-Python语言II.md#L451` | 迭代协议：`__iter__`/`__next__`/`StopIteration` | active | v1.0 |
+| `D-PY2.8.2` | D | `v1.0/00-预备/PY2-Python语言II.md#L463` | 生成器函数与 `yield`：惰性求值 | active | v1.0 |
+| `D-PY2.9.1` | D | `v1.0/00-预备/PY2-Python语言II.md#L514` | 模块与 `import` 机制 | active | v1.0 |
+| `D-PY2.9.2` | D | `v1.0/00-预备/PY2-Python语言II.md#L526` | `__name__ == "__main__"` 与双入口 | active | v1.0 |
+| `D-PY2.9.3` | D | `v1.0/00-预备/PY2-Python语言II.md#L537` | 包与相对导入 | active | v1.0 |
+| `DOC-PY2` | DOC | `v1.0/00-预备/PY2-Python语言II.md` | PY2 · Python 语言 II | active | v1.0 |
+| `E-PY2.1.6` | E | `v1.0/00-预备/PY2-Python语言II.md#L67` | 剖析 `CharTokenizer`：类属性、类方法与只读属性 | active | v1.0 |
+| `E-PY2.2.6` | E | `v1.0/00-预备/PY2-Python语言II.md#L156` | `CharDataset`：只靠 `__len__` + `__getitem__` 就成为数据集 | active | v1.0 |
+| `E-PY2.3.4` | E | `v1.0/00-预备/PY2-Python语言II.md#L215` | `CharTokenizer.vocab_size` 是只读属性 | active | v1.0 |
+| `E-PY2.4.4` | E | `v1.0/00-预备/PY2-Python语言II.md#L258` | 用 `Protocol` 描述分词器接口 | active | v1.0 |
+| `E-PY2.5.5` | E | `v1.0/00-预备/PY2-Python语言II.md#L314` | `data.py` 的“捕获后降级”与“主动报错” | active | v1.0 |
+| `E-PY2.6.3` | E | `v1.0/00-预备/PY2-Python语言II.md#L354` | `data.py` 的原子写：临时文件 + `os.replace` | active | v1.0 |
+| `E-PY2.7.5` | E | `v1.0/00-预备/PY2-Python语言II.md#L420` | `data.py` 中的高阶用法 | active | v1.0 |
+| `E-PY2.8.5` | E | `v1.0/00-预备/PY2-Python语言II.md#L487` | 读懂 `data.py` 的生成器与迭代用法 | active | v1.0 |
+| `E-PY2.9.5` | E | `v1.0/00-预备/PY2-Python语言II.md#L549` | `data.py` 与 `model.py` 的模块结构 | active | v1.0 |
+| `Ex-PY2.11.1` | Ex | `v1.0/00-预备/PY2-Python语言II.md#L580` | 类属性共享陷阱与 `dataclass` 修复 | active | v1.0 |
+| `Ex-PY2.11.2` | Ex | `v1.0/00-预备/PY2-Python语言II.md#L584` | 给 `Buffer` 补全协议 | active | v1.0 |
+| `Ex-PY2.11.3` | Ex | `v1.0/00-预备/PY2-Python语言II.md#L588` | 用生成器与装饰器处理 `data.py` 的采样 | active | v1.0 |
+| `P-PY2.1.3` | P | `v1.0/00-预备/PY2-Python语言II.md#L37` | 属性查找顺序：实例字典优先于类字典 | active | v1.0 |
+| `P-PY2.2.2` | P | `v1.0/00-预备/PY2-Python语言II.md#L117` | `__repr__` 与 `__str__` 的分工 | active | v1.0 |
+| `P-PY2.2.3` | P | `v1.0/00-预备/PY2-Python语言II.md#L125` | 容器协议：`__len__`、`__getitem__`、`__contains__` | active | v1.0 |
+| `P-PY2.2.4` | P | `v1.0/00-预备/PY2-Python语言II.md#L134` | `__eq__` 与 `__hash__` 的契约 | active | v1.0 |
+| `P-PY2.4.2` | P | `v1.0/00-预备/PY2-Python语言II.md#L234` | `data.py` 的 `Batch` 就是 dataclass | active | v1.0 |
+| `P-PY2.6.2` | P | `v1.0/00-预备/PY2-Python语言II.md#L346` | `contextlib.contextmanager`：用生成器写上下文管理器 | active | v1.0 |
+| `P-PY2.8.3` | P | `v1.0/00-预备/PY2-Python语言II.md#L473` | 生成器表达式与列表推导式的区别 | active | v1.0 |
+| `R-PY2.1.5` | R | `v1.0/00-预备/PY2-Python语言II.md#L61` | `super()` 与协作式多继承 | active | v1.0 |
+| `R-PY2.2.5` | R | `v1.0/00-预备/PY2-Python语言II.md#L144` | 运算符重载一览与 C++ 对照 | active | v1.0 |
+| `R-PY2.5.4` | R | `v1.0/00-预备/PY2-Python语言II.md#L306` | EAFP vs LBYL；对照 C 错误码 | active | v1.0 |
+| `R-PY2.8.4` | R | `v1.0/00-预备/PY2-Python语言II.md#L483` | `itertools` 常用件 | active | v1.0 |
+| `R-PY2.9.4` | R | `v1.0/00-预备/PY2-Python语言II.md#L541` | `sys.path` 与查找顺序；对照链接 | active | v1.0 |
+
+### doccode `PY3`（32）
+
+| Tag | 类型 | 位置 | 标题 | 状态 | 版本 |
+| --- | --- | --- | --- | --- | --- |
+| `Cd-PY3.1.5` | Cd | `v1.0/00-预备/PY3-工程与环境.md#L66` | 环境自检片段 | active | v1.0 |
+| `Cd-PY3.3.4` | Cd | `v1.0/00-预备/PY3-工程与环境.md#L158` | argparse + logging 最小骨架 | active | v1.0 |
+| `D-PY3.1.1` | D | `v1.0/00-预备/PY3-工程与环境.md#L16` | 虚拟环境与解释器隔离 | active | v1.0 |
+| `D-PY3.7.1` | D | `v1.0/00-预备/PY3-工程与环境.md#L309` | 可复现性的三要素 | active | v1.0 |
+| `DOC-PY3` | DOC | `v1.0/00-预备/PY3-工程与环境.md` | 预备 PY3 · 工程与环境 | active | v1.0 |
+| `Ex-PY3.9.1` | Ex | `v1.0/00-预备/PY3-工程与环境.md#L371` | 虚拟环境与依赖隔离 | active | v1.0 |
+| `Ex-PY3.9.2` | Ex | `v1.0/00-预备/PY3-工程与环境.md#L375` | 参数与日志 | active | v1.0 |
+| `Ex-PY3.9.3` | Ex | `v1.0/00-预备/PY3-工程与环境.md#L379` | 测试与复现 | active | v1.0 |
+| `R-PY3.1.2` | R | `v1.0/00-预备/PY3-工程与环境.md#L29` | pip、依赖解析与 requirements.txt | active | v1.0 |
+| `R-PY3.1.3` | R | `v1.0/00-预备/PY3-工程与环境.md#L46` | conda：跨语言包与环境管理 | active | v1.0 |
+| `R-PY3.1.4` | R | `v1.0/00-预备/PY3-工程与环境.md#L56` | CUDA 版与 ROCm 版 PyTorch 的安装差异 | active | v1.0 |
+| `R-PY3.2.1` | R | `v1.0/00-预备/PY3-工程与环境.md#L81` | 包布局与 import 解析 | active | v1.0 |
+| `R-PY3.2.2` | R | `v1.0/00-预备/PY3-工程与环境.md#L91` | pyproject.toml：声明“可安装”与“可运行” | active | v1.0 |
+| `R-PY3.2.3` | R | `v1.0/00-预备/PY3-工程与环境.md#L116` | 本仓目录职责 | active | v1.0 |
+| `R-PY3.3.1` | R | `v1.0/00-预备/PY3-工程与环境.md#L125` | argparse：把配置从源码里挪出来 | active | v1.0 |
+| `R-PY3.3.2` | R | `v1.0/00-预备/PY3-工程与环境.md#L136` | 环境变量与 os.environ | active | v1.0 |
+| `R-PY3.3.3` | R | `v1.0/00-预备/PY3-工程与环境.md#L147` | logging：替代 print/printf 的调试 | active | v1.0 |
+| `R-PY3.4.1` | R | `v1.0/00-预备/PY3-工程与环境.md#L172` | pdb 与 breakpoint()，对照 gdb | active | v1.0 |
+| `R-PY3.4.2` | R | `v1.0/00-预备/PY3-工程与环境.md#L182` | assert：契约检查与它的开关 | active | v1.0 |
+| `R-PY3.4.3` | R | `v1.0/00-预备/PY3-工程与环境.md#L191` | pytest：发现、断言、fixture、参数化 | active | v1.0 |
+| `R-PY3.4.4` | R | `v1.0/00-预备/PY3-工程与环境.md#L210` | 属性测试简介 | active | v1.0 |
+| `R-PY3.5.1` | R | `v1.0/00-预备/PY3-工程与环境.md#L216` | cell 语义、内核与执行顺序 | active | v1.0 |
+| `R-PY3.5.2` | R | `v1.0/00-预备/PY3-工程与环境.md#L226` | 魔法命令与 shell 转义 | active | v1.0 |
+| `R-PY3.5.3` | R | `v1.0/00-预备/PY3-工程与环境.md#L235` | 内核算力与 GPU 检测 | active | v1.0 |
+| `R-PY3.5.4` | R | `v1.0/00-预备/PY3-工程与环境.md#L248` | 与本仓 notebook 惯例对接 | active | v1.0 |
+| `R-PY3.6.1` | R | `v1.0/00-预备/PY3-工程与环境.md#L261` | 提交、分支与合并 | active | v1.0 |
+| `R-PY3.6.2` | R | `v1.0/00-预备/PY3-工程与环境.md#L272` | .gitignore 与不入库的产物 | active | v1.0 |
+| `R-PY3.6.3` | R | `v1.0/00-预备/PY3-工程与环境.md#L287` | worktree：一个仓库、多个工作目录 | active | v1.0 |
+| `R-PY3.6.4` | R | `v1.0/00-预备/PY3-工程与环境.md#L303` | 冲突的处理原则 | active | v1.0 |
+| `R-PY3.7.2` | R | `v1.0/00-预备/PY3-工程与环境.md#L319` | 随机种子与确定性开关 | active | v1.0 |
+| `R-PY3.7.3` | R | `v1.0/00-预备/PY3-工程与环境.md#L338` | 记录环境：把现场写进产物 | active | v1.0 |
+| `R-PY3.8.1` | R | `v1.0/00-预备/PY3-工程与环境.md#L352` | 外部来源清单 | active | v1.0 |
+
+### doccode `PY4`（46）
+
+| Tag | 类型 | 位置 | 标题 | 状态 | 版本 |
+| --- | --- | --- | --- | --- | --- |
+| `A-PY4.4.2` | A | `v1.0/00-预备/PY4-NumPy与张量思维.md#L181` | 朴素两层循环 -> 矩阵乘 | active | v1.0 |
+| `Cd-PY4.1.7` | Cd | `v1.0/00-预备/PY4-NumPy与张量思维.md#L56` | 检查形状、步长与共享 | active | v1.0 |
+| `Cd-PY4.2.6` | Cd | `v1.0/00-预备/PY4-NumPy与张量思维.md#L99` | 三种索引的返回类型 | active | v1.0 |
+| `Cd-PY4.3.5` | Cd | `v1.0/00-预备/PY4-NumPy与张量思维.md#L154` | 广播实验与形状诊断 | active | v1.0 |
+| `Cd-PY4.4.5` | Cd | `v1.0/00-预备/PY4-NumPy与张量思维.md#L206` | 三种等价写法 | active | v1.0 |
+| `Cd-PY4.5.4` | Cd | `v1.0/00-预备/PY4-NumPy与张量思维.md#L247` | 归约与 keepdims 实验 | active | v1.0 |
+| `Cd-PY4.6.5` | Cd | `v1.0/00-预备/PY4-NumPy与张量思维.md#L281` | Generator 与 spawn | active | v1.0 |
+| `D-PY4.1.1` | D | `v1.0/00-预备/PY4-NumPy与张量思维.md#L16` | ndarray | active | v1.0 |
+| `D-PY4.1.2` | D | `v1.0/00-预备/PY4-NumPy与张量思维.md#L25` | shape 与 dtype | active | v1.0 |
+| `D-PY4.1.4` | D | `v1.0/00-预备/PY4-NumPy与张量思维.md#L36` | axis 语义 | active | v1.0 |
+| `D-PY4.1.5` | D | `v1.0/00-预备/PY4-NumPy与张量思维.md#L40` | strides：下标到字节地址的映射 | active | v1.0 |
+| `D-PY4.2.1` | D | `v1.0/00-预备/PY4-NumPy与张量思维.md#L75` | 基本索引与切片 | active | v1.0 |
+| `D-PY4.2.3` | D | `v1.0/00-预备/PY4-NumPy与张量思维.md#L83` | 花式索引：整数数组索引 | active | v1.0 |
+| `D-PY4.2.4` | D | `v1.0/00-预备/PY4-NumPy与张量思维.md#L87` | 布尔掩码 | active | v1.0 |
+| `D-PY4.3.1` | D | `v1.0/00-预备/PY4-NumPy与张量思维.md#L121` | 广播严格规则 | active | v1.0 |
+| `D-PY4.5.1` | D | `v1.0/00-预备/PY4-NumPy与张量思维.md#L226` | 归约算子 | active | v1.0 |
+| `D-PY4.6.2` | D | `v1.0/00-预备/PY4-NumPy与张量思维.md#L269` | 种子与可复现性 | active | v1.0 |
+| `D-PY4.7.1` | D | `v1.0/00-预备/PY4-NumPy与张量思维.md#L295` | `matmul` / `@` 语义 | active | v1.0 |
+| `D-PY4.7.3` | D | `v1.0/00-预备/PY4-NumPy与张量思维.md#L303` | `np.linalg` 常用函数 | active | v1.0 |
+| `DOC-PY4` | DOC | `v1.0/00-预备/PY4-NumPy与张量思维.md` | PY4 · NumPy 与张量思维 | active | v1.0 |
+| `E-PY4.3.2` | E | `v1.0/00-预备/PY4-NumPy与张量思维.md#L132` | 合法广播示例 | active | v1.0 |
+| `E-PY4.3.3` | E | `v1.0/00-预备/PY4-NumPy与张量思维.md#L141` | 反例：不同时为 1 或相等则报错 | active | v1.0 |
+| `E-PY4.4.3` | E | `v1.0/00-预备/PY4-NumPy与张量思维.md#L198` | 朴素实现与向量化基准 | active | v1.0 |
+| `E-PY4.5.3` | E | `v1.0/00-预备/PY4-NumPy与张量思维.md#L236` | softmax 的向量化实现 | active | v1.0 |
+| `Ex-PY4.9.1` | Ex | `v1.0/00-预备/PY4-NumPy与张量思维.md#L334` | 形状推导 | active | v1.0 |
+| `Ex-PY4.9.2` | Ex | `v1.0/00-预备/PY4-NumPy与张量思维.md#L338` | 视图还是拷贝 | active | v1.0 |
+| `Ex-PY4.9.3` | Ex | `v1.0/00-预备/PY4-NumPy与张量思维.md#L342` | 把朴素实现向量化并基准 | active | v1.0 |
+| `R-PY4.1.3` | R | `v1.0/00-预备/PY4-NumPy与张量思维.md#L32` | 为什么必须同质定长 | active | v1.0 |
+| `R-PY4.1.6` | R | `v1.0/00-预备/PY4-NumPy与张量思维.md#L50` | 视图 vs 拷贝：对照指针别名与 memcpy | active | v1.0 |
+| `R-PY4.2.2` | R | `v1.0/00-预备/PY4-NumPy与张量思维.md#L79` | 负索引与步长切片的代价 | active | v1.0 |
+| `R-PY4.2.5` | R | `v1.0/00-预备/PY4-NumPy与张量思维.md#L91` | 赋值语义：原地写入目标 | active | v1.0 |
+| `R-PY4.2.7` | R | `v1.0/00-预备/PY4-NumPy与张量思维.md#L112` | 对照 C 指针算术 | active | v1.0 |
+| `R-PY4.3.4` | R | `v1.0/00-预备/PY4-NumPy与张量思维.md#L150` | 广播是零拷贝的 stride=0 视图 | active | v1.0 |
+| `R-PY4.3.6` | R | `v1.0/00-预备/PY4-NumPy与张量思维.md#L171` | 与 PyTorch 广播一致 | active | v1.0 |
+| `R-PY4.4.1` | R | `v1.0/00-预备/PY4-NumPy与张量思维.md#L177` | 为什么必须向量化 | active | v1.0 |
+| `R-PY4.4.4` | R | `v1.0/00-预备/PY4-NumPy与张量思维.md#L202` | `einsum` 初识 | active | v1.0 |
+| `R-PY4.4.6` | R | `v1.0/00-预备/PY4-NumPy与张量思维.md#L220` | 与 batch 反向公式的衔接 | active | v1.0 |
+| `R-PY4.5.2` | R | `v1.0/00-预备/PY4-NumPy与张量思维.md#L230` | `axis` 与 `keepdims` | active | v1.0 |
+| `R-PY4.5.5` | R | `v1.0/00-预备/PY4-NumPy与张量思维.md#L259` | 归约 + 广播是「规范化」的标准范式 | active | v1.0 |
+| `R-PY4.6.1` | R | `v1.0/00-预备/PY4-NumPy与张量思维.md#L265` | 全局状态 vs `Generator` | active | v1.0 |
+| `R-PY4.6.3` | R | `v1.0/00-预备/PY4-NumPy与张量思维.md#L273` | 并行随机数：`SeedSequence` | active | v1.0 |
+| `R-PY4.6.4` | R | `v1.0/00-预备/PY4-NumPy与张量思维.md#L277` | 与 PyTorch 随机源的对应 | active | v1.0 |
+| `R-PY4.7.2` | R | `v1.0/00-预备/PY4-NumPy与张量思维.md#L299` | 批量 matmul 与广播组合 | active | v1.0 |
+| `R-PY4.7.4` | R | `v1.0/00-预备/PY4-NumPy与张量思维.md#L307` | 数值稳定与 dtype 提示 | active | v1.0 |
+| `R-PY4.7.5` | R | `v1.0/00-预备/PY4-NumPy与张量思维.md#L313` | 为 PY5 铺垫 | active | v1.0 |
+| `R-PY4.8.1` | R | `v1.0/00-预备/PY4-NumPy与张量思维.md#L319` | 来源与许可 | active | v1.0 |
+
+### doccode `PY5`（48）
+
+| Tag | 类型 | 位置 | 标题 | 状态 | 版本 |
+| --- | --- | --- | --- | --- | --- |
+| `A-PY5.7.1` | A | `v1.0/00-预备/PY5-PyTorch从零.md#L321` | 标准训练循环五步 | active | v1.0 |
+| `Cd-PY5.1.3` | Cd | `v1.0/00-预备/PY5-PyTorch从零.md#L40` | 构造、属性与 NumPy 互操作 | active | v1.0 |
+| `Cd-PY5.2.4` | Cd | `v1.0/00-预备/PY5-PyTorch从零.md#L93` | 形状操作与连续性 | active | v1.0 |
+| `Cd-PY5.3.5` | Cd | `v1.0/00-预备/PY5-PyTorch从零.md#L150` | autograd 最小示例与梯度检查 | active | v1.0 |
+| `Cd-PY5.4.4` | Cd | `v1.0/00-预备/PY5-PyTorch从零.md#L206` | 两层 MLP，对照【定义 1.1.3】与【代码 1.1.4】 | active | v1.0 |
+| `Cd-PY5.6.3` | Cd | `v1.0/00-预备/PY5-PyTorch从零.md#L290` | TensorDataset 与自定义 Dataset | active | v1.0 |
+| `Cd-PY5.7.2` | Cd | `v1.0/00-预备/PY5-PyTorch从零.md#L334` | 训练循环与 checkpoint | active | v1.0 |
+| `D-PY5.1.1` | D | `v1.0/00-预备/PY5-PyTorch从零.md#L23` | 张量：带元数据的同构多维数组 | active | v1.0 |
+| `D-PY5.1.2` | D | `v1.0/00-预备/PY5-PyTorch从零.md#L33` | dtype 与 device 的相容规则 | active | v1.0 |
+| `D-PY5.2.1` | D | `v1.0/00-预备/PY5-PyTorch从零.md#L78` | view 与 reshape：改变解释方式还是复制数据 | active | v1.0 |
+| `D-PY5.2.2` | D | `v1.0/00-预备/PY5-PyTorch从零.md#L84` | transpose/permute 与 contiguous | active | v1.0 |
+| `D-PY5.2.3` | D | `v1.0/00-预备/PY5-PyTorch从零.md#L88` | unsqueeze/squeeze 与广播 | active | v1.0 |
+| `D-PY5.3.1` | D | `v1.0/00-预备/PY5-PyTorch从零.md#L123` | 计算图、叶子与非叶子张量 | active | v1.0 |
+| `D-PY5.3.2` | D | `v1.0/00-预备/PY5-PyTorch从零.md#L130` | requires_grad、grad_fn 与 .grad | active | v1.0 |
+| `D-PY5.3.3` | D | `v1.0/00-预备/PY5-PyTorch从零.md#L136` | detach 与 torch.no_grad | active | v1.0 |
+| `D-PY5.4.1` | D | `v1.0/00-预备/PY5-PyTorch从零.md#L182` | nn.Module：参数注册与子模块 | active | v1.0 |
+| `D-PY5.4.2` | D | `v1.0/00-预备/PY5-PyTorch从零.md#L194` | state_dict 与 load_state_dict | active | v1.0 |
+| `D-PY5.5.1` | D | `v1.0/00-预备/PY5-PyTorch从零.md#L237` | nn.CrossEntropyLoss：logits 输入、内部含 log-softmax | active | v1.0 |
+| `D-PY5.5.2` | D | `v1.0/00-预备/PY5-PyTorch从零.md#L247` | nn.MSELoss：回归目标，对照【定义 1.2.5】 | active | v1.0 |
+| `D-PY5.5.3` | D | `v1.0/00-预备/PY5-PyTorch从零.md#L251` | 优化器：SGD 与 Adam | active | v1.0 |
+| `D-PY5.6.1` | D | `v1.0/00-预备/PY5-PyTorch从零.md#L271` | Dataset 协议 | active | v1.0 |
+| `D-PY5.6.2` | D | `v1.0/00-预备/PY5-PyTorch从零.md#L280` | DataLoader：batch/shuffle/collate/num_workers | active | v1.0 |
+| `DOC-PY5` | DOC | `v1.0/00-预备/PY5-PyTorch从零.md` | 预备篇 PY5 · PyTorch 从零 | active | v1.0 |
+| `Ex-PY5.10.1` | Ex | `v1.0/00-预备/PY5-PyTorch从零.md#L456` | 视图与拷贝 | active | v1.0 |
+| `Ex-PY5.10.2` | Ex | `v1.0/00-预备/PY5-PyTorch从零.md#L460` | autograd 与梯度累加 | active | v1.0 |
+| `Ex-PY5.10.3` | Ex | `v1.0/00-预备/PY5-PyTorch从零.md#L464` | 手写线性回归闭环 | active | v1.0 |
+| `Ex-PY5.10.4` | Ex | `v1.0/00-预备/PY5-PyTorch从零.md#L468` | 两层 MLP 分类闭环 | active | v1.0 |
+| `Ex-PY5.10.5` | Ex | `v1.0/00-预备/PY5-PyTorch从零.md#L472` | 制造并修复五个错误 | active | v1.0 |
+| `Ex-PY5.10.6` | Ex | `v1.0/00-预备/PY5-PyTorch从零.md#L476` | 公式与实践对照 | active | v1.0 |
+| `R-PY5.1.4` | R | `v1.0/00-预备/PY5-PyTorch从零.md#L62` | 拷贝语义：共享、视图与深拷贝 | active | v1.0 |
+| `R-PY5.1.5` | R | `v1.0/00-预备/PY5-PyTorch从零.md#L72` | requires_grad：进入自动微分世界的开关 | active | v1.0 |
+| `R-PY5.2.5` | R | `v1.0/00-预备/PY5-PyTorch从零.md#L109` | 与 NumPy 的对应表 | active | v1.0 |
+| `R-PY5.3.4` | R | `v1.0/00-预备/PY5-PyTorch从零.md#L142` | backward、retain_graph 与梯度累加 | active | v1.0 |
+| `R-PY5.3.6` | R | `v1.0/00-预备/PY5-PyTorch从零.md#L176` | 与第 1 章反向传播的对应 | active | v1.0 |
+| `R-PY5.4.3` | R | `v1.0/00-预备/PY5-PyTorch从零.md#L198` | train/eval 模式 | active | v1.0 |
+| `R-PY5.4.5` | R | `v1.0/00-预备/PY5-PyTorch从零.md#L228` | 参数、缓冲区与模块遍历 | active | v1.0 |
+| `R-PY5.5.4` | R | `v1.0/00-预备/PY5-PyTorch从零.md#L261` | 参数组与逐组学习率 | active | v1.0 |
+| `R-PY5.5.5` | R | `v1.0/00-预备/PY5-PyTorch从零.md#L265` | zero_grad 与 set_to_none | active | v1.0 |
+| `R-PY5.6.4` | R | `v1.0/00-预备/PY5-PyTorch从零.md#L315` | 与经验风险的对应 | active | v1.0 |
+| `R-PY5.7.3` | R | `v1.0/00-预备/PY5-PyTorch从零.md#L360` | 保存/加载：state_dict、优化器状态与续训 | active | v1.0 |
+| `R-PY5.7.4` | R | `v1.0/00-预备/PY5-PyTorch从零.md#L380` | AMP 与 GradScaler 初识 | active | v1.0 |
+| `R-PY5.7.5` | R | `v1.0/00-预备/PY5-PyTorch从零.md#L397` | 与【代码 1.6.2】的对照 | active | v1.0 |
+| `R-PY5.8.1` | R | `v1.0/00-预备/PY5-PyTorch从零.md#L403` | in-place on leaf：叶子张量被原地修改 | active | v1.0 |
+| `R-PY5.8.2` | R | `v1.0/00-预备/PY5-PyTorch从零.md#L411` | shape 不匹配 | active | v1.0 |
+| `R-PY5.8.3` | R | `v1.0/00-预备/PY5-PyTorch从零.md#L415` | device 混用 | active | v1.0 |
+| `R-PY5.8.4` | R | `v1.0/00-预备/PY5-PyTorch从零.md#L419` | 忘记 zero_grad | active | v1.0 |
+| `R-PY5.8.5` | R | `v1.0/00-预备/PY5-PyTorch从零.md#L423` | eval 未生效与其他陷阱 | active | v1.0 |
+| `R-PY5.8.6` | R | `v1.0/00-预备/PY5-PyTorch从零.md#L431` | 诊断速查表 | active | v1.0 |
+
+### doccode `PY6`（28）
+
+| Tag | 类型 | 位置 | 标题 | 状态 | 版本 |
+| --- | --- | --- | --- | --- | --- |
+| `Cd-PY6.1.5` | Cd | `v1.0/00-预备/PY6-PyTorch进阶与生态.md#L52` | 检查点 + autocast 最小写法 | active | v1.0 |
+| `Cd-PY6.2.5` | Cd | `v1.0/00-预备/PY6-PyTorch进阶与生态.md#L105` | profiler 与 compile 用法 | active | v1.0 |
+| `Cd-PY6.3.6` | Cd | `v1.0/00-预备/PY6-PyTorch进阶与生态.md#L163` | 生态库最小调用链，可选依赖缺失即跳过 | active | v1.0 |
+| `D-PY6.1.1` | D | `v1.0/00-预备/PY6-PyTorch进阶与生态.md#L18` | 梯度检查点 | active | v1.0 |
+| `D-PY6.1.3` | D | `v1.0/00-预备/PY6-PyTorch进阶与生态.md#L36` | 混合精度与 `autocast` | active | v1.0 |
+| `D-PY6.2.1` | D | `v1.0/00-预备/PY6-PyTorch进阶与生态.md#L76` | `torch.profiler` 入门 | active | v1.0 |
+| `D-PY6.2.4` | D | `v1.0/00-预备/PY6-PyTorch进阶与生态.md#L98` | `torch.compile` 与固定形状 | active | v1.0 |
+| `D-PY6.3.1` | D | `v1.0/00-预备/PY6-PyTorch进阶与生态.md#L128` | `transformers`：`Auto*` 三件套 | active | v1.0 |
+| `D-PY6.3.3` | D | `v1.0/00-预备/PY6-PyTorch进阶与生态.md#L142` | `peft`：`LoraConfig` / `get_peft_model` | active | v1.0 |
+| `D-PY6.3.5` | D | `v1.0/00-预备/PY6-PyTorch进阶与生态.md#L157` | `accelerate`：`Accelerator` | active | v1.0 |
+| `DOC-PY6` | DOC | `v1.0/00-预备/PY6-PyTorch进阶与生态.md` | 预备篇 PY6 · PyTorch 进阶与生态 | active | v1.0 |
+| `E-PY6.4.2` | E | `v1.0/00-预备/PY6-PyTorch进阶与生态.md#L206` | 读 `F-b04-value_head_api` 的调用链并标注对象来源 | active | v1.0 |
+| `E-PY6.6.2` | E | `v1.0/00-预备/PY6-PyTorch进阶与生态.md#L254` | 自测：检查点为什么省显存 | active | v1.0 |
+| `E-PY6.6.3` | E | `v1.0/00-预备/PY6-PyTorch进阶与生态.md#L258` | 自测：非连续张量 | active | v1.0 |
+| `E-PY6.6.4` | E | `v1.0/00-预备/PY6-PyTorch进阶与生态.md#L262` | 自测：fp16 与 bf16 | active | v1.0 |
+| `E-PY6.6.5` | E | `v1.0/00-预备/PY6-PyTorch进阶与生态.md#L266` | 自测：读调用链 | active | v1.0 |
+| `E-PY6.6.6` | E | `v1.0/00-预备/PY6-PyTorch进阶与生态.md#L270` | 自测：找瓶颈 | active | v1.0 |
+| `R-PY6.1.2` | R | `v1.0/00-预备/PY6-PyTorch进阶与生态.md#L27` | 非连续张量与 `view`/`reshape`/`contiguous` | active | v1.0 |
+| `R-PY6.1.4` | R | `v1.0/00-预备/PY6-PyTorch进阶与生态.md#L45` | `GradScaler` 与溢出处理 | active | v1.0 |
+| `R-PY6.2.2` | R | `v1.0/00-预备/PY6-PyTorch进阶与生态.md#L83` | 显存统计 | active | v1.0 |
+| `R-PY6.2.3` | R | `v1.0/00-预备/PY6-PyTorch进阶与生态.md#L91` | `empty_cache` 的适用与不适用 | active | v1.0 |
+| `R-PY6.3.2` | R | `v1.0/00-预备/PY6-PyTorch进阶与生态.md#L136` | `Trainer` 与 `TrainingArguments` | active | v1.0 |
+| `R-PY6.3.4` | R | `v1.0/00-预备/PY6-PyTorch进阶与生态.md#L150` | `trl`：`SFTTrainer` / `GRPOTrainer` | active | v1.0 |
+| `R-PY6.3.7` | R | `v1.0/00-预备/PY6-PyTorch进阶与生态.md#L182` | 安装与版本约束 | active | v1.0 |
+| `R-PY6.4.1` | R | `v1.0/00-预备/PY6-PyTorch进阶与生态.md#L191` | 同一功能的两种写法 | active | v1.0 |
+| `R-PY6.4.3` | R | `v1.0/00-预备/PY6-PyTorch进阶与生态.md#L218` | 迁移到 with_api 的注意事项 | active | v1.0 |
+| `R-PY6.5.1` | R | `v1.0/00-预备/PY6-PyTorch进阶与生态.md#L227` | 来源与许可 | active | v1.0 |
+| `R-PY6.6.1` | R | `v1.0/00-预备/PY6-PyTorch进阶与生态.md#L247` | 本章小结 | active | v1.0 |
 
 ### doccode `RES`（10）
 
@@ -1132,6 +1555,12 @@ flowchart TD
   nDOC_MCTS["DOC-MCTS"]
   nDOC_PREM["DOC-PREM"]
   nDOC_PT["DOC-PT"]
+  nDOC_PY1["DOC-PY1"]
+  nDOC_PY2["DOC-PY2"]
+  nDOC_PY3["DOC-PY3"]
+  nDOC_PY4["DOC-PY4"]
+  nDOC_PY5["DOC-PY5"]
+  nDOC_PY6["DOC-PY6"]
   nDOC_RES["DOC-RES"]
   nDOC_RL["DOC-RL"]
   nDOC_RM01API["DOC-RM01API"]
@@ -1188,6 +1617,12 @@ flowchart TD
   nF_ds_prepare_tiny["F-ds-prepare_tiny"]
   nF_misc_fixorder["F-misc-fixorder"]
   nF_misc_validate_nb["F-misc-validate_nb"]
+  nF_pre_py1["F-pre-py1"]
+  nF_pre_py2["F-pre-py2"]
+  nF_pre_py3["F-pre-py3"]
+  nF_pre_py4["F-pre-py4"]
+  nF_pre_py5["F-pre-py5"]
+  nF_pre_py6["F-pre-py6"]
   nF_tools_tag_graph["F-tools-tag_graph"]
   nN_01["N-01"]
   nN_02["N-02"]
@@ -1206,15 +1641,29 @@ flowchart TD
   nN_15["N-15"]
   nN_16["N-16"]
   nN_17["N-17"]
+  nN_18["N-18"]
+  nN_19["N-19"]
+  nN_20["N-20"]
+  nN_21["N-21"]
+  nN_22["N-22"]
+  nN_23["N-23"]
+  nDOC_1 -->|requires| nDOC_PY2
+  nDOC_1 -->|requires| nDOC_PY5
+  nDOC_2 -->|requires| nDOC_PY4
   nDOC_3 -->|corresponds| nN_03
   nDOC_3 -->|corresponds| nN_04
   nDOC_3 -->|corresponds| nN_05
+  nDOC_3 -->|requires| nDOC_PY4
   nDOC_4 -->|corresponds| nN_07
+  nDOC_4 -->|requires| nDOC_PY1
   nDOC_5 -->|corresponds| nN_04
   nDOC_5 -->|corresponds| nN_06
   nDOC_5 -->|corresponds| nN_08
+  nDOC_5 -->|requires| nDOC_PY2
+  nDOC_5 -->|requires| nDOC_PY5
   nDOC_6 -->|corresponds| nN_05
   nDOC_6 -->|corresponds| nN_08
+  nDOC_6 -->|requires| nDOC_PY4
   nDOC_BRIDGE -->|corresponds| nF_b08_tool_agent
   nDOC_DS -->|corresponds| nF_ds_prepare_tiny
   nDOC_LORA -->|corresponds| nF_b05_finetune_lora
@@ -1222,19 +1671,39 @@ flowchart TD
   nDOC_LORA -->|corresponds| nF_b05_peft_lora
   nDOC_LORA -->|corresponds| nF_b05_qlora_bnb
   nDOC_LORA -->|corresponds| nN_12
+  nDOC_LORA -->|requires| nDOC_PY3
+  nDOC_LORA -->|requires| nDOC_PY6
   nDOC_MCTS -->|corresponds| nF_b07_mcts
   nDOC_MCTS -->|corresponds| nF_b07_policy_value_eval
   nDOC_MCTS -->|corresponds| nF_b07_run_demo
   nDOC_MCTS -->|corresponds| nF_b07_self_play
   nDOC_MCTS -->|corresponds| nN_15
   nDOC_MCTS -->|corresponds| nN_16
+  nDOC_MCTS -->|requires| nDOC_PY3
+  nDOC_MCTS -->|requires| nDOC_PY6
   nDOC_PT -->|corresponds| nF_b02_pretrain
   nDOC_PT -->|corresponds| nF_b02_pretrain_hf
   nDOC_PT -->|corresponds| nN_09
+  nDOC_PT -->|requires| nDOC_PY3
+  nDOC_PT -->|requires| nDOC_PY6
+  nDOC_PY1 -->|corresponds| nF_pre_py1
+  nDOC_PY1 -->|corresponds| nN_18
+  nDOC_PY2 -->|corresponds| nF_pre_py2
+  nDOC_PY2 -->|corresponds| nN_19
+  nDOC_PY3 -->|corresponds| nF_pre_py3
+  nDOC_PY3 -->|corresponds| nN_20
+  nDOC_PY4 -->|corresponds| nF_pre_py4
+  nDOC_PY4 -->|corresponds| nN_21
+  nDOC_PY5 -->|corresponds| nF_pre_py5
+  nDOC_PY5 -->|corresponds| nN_22
+  nDOC_PY6 -->|corresponds| nF_pre_py6
+  nDOC_PY6 -->|corresponds| nN_23
   nDOC_RL -->|corresponds| nF_b06_grpo
   nDOC_RL -->|corresponds| nF_b06_trl_grpo
   nDOC_RL -->|corresponds| nN_13
   nDOC_RL -->|corresponds| nN_14
+  nDOC_RL -->|requires| nDOC_PY3
+  nDOC_RL -->|requires| nDOC_PY6
   nDOC_RM01API -->|corresponds| nF_b01_tokenizer_api
   nDOC_RM01API -->|corresponds| nF_b01_train_hf
   nDOC_RM01FS -->|corresponds| nF_b01_configs
@@ -1245,11 +1714,38 @@ flowchart TD
   nDOC_SFT -->|corresponds| nF_b03_sft
   nDOC_SFT -->|corresponds| nF_b03_sft_hf
   nDOC_SFT -->|corresponds| nN_10
+  nDOC_SFT -->|requires| nDOC_PY3
+  nDOC_SFT -->|requires| nDOC_PY6
+  nDOC_SRC0 -->|requires| nDOC_PY3
+  nDOC_SRC0 -->|requires| nDOC_PY6
+  nDOC_SRC1 -->|requires| nDOC_PY3
+  nDOC_SRC1 -->|requires| nDOC_PY6
+  nDOC_SRC2 -->|requires| nDOC_PY3
+  nDOC_SRC2 -->|requires| nDOC_PY6
+  nDOC_SRC3 -->|requires| nDOC_PY3
+  nDOC_SRC3 -->|requires| nDOC_PY6
+  nDOC_SRC4 -->|requires| nDOC_PY3
+  nDOC_SRC4 -->|requires| nDOC_PY6
+  nDOC_SRC5 -->|requires| nDOC_PY3
+  nDOC_SRC5 -->|requires| nDOC_PY6
+  nDOC_SRC6 -->|requires| nDOC_PY3
+  nDOC_SRC6 -->|requires| nDOC_PY6
+  nDOC_SRC7 -->|requires| nDOC_PY3
+  nDOC_SRC7 -->|requires| nDOC_PY6
+  nDOC_SRC8 -->|requires| nDOC_PY3
+  nDOC_SRC8 -->|requires| nDOC_PY6
   nDOC_V11 -->|corresponds| nN_17
+  nDOC_V11 -->|requires| nDOC_PY3
+  nDOC_V11 -->|requires| nDOC_PY6
   nDOC_VH -->|corresponds| nF_b04_train_value_head
   nDOC_VH -->|corresponds| nF_b04_value_head
   nDOC_VH -->|corresponds| nF_b04_value_head_api
   nDOC_VH -->|corresponds| nN_11
+  nDOC_VH -->|requires| nDOC_PY3
+  nDOC_VH -->|requires| nDOC_PY6
+  nF_pre_py1 -->|refs| nDOC_PY1
+  nF_pre_py3 -->|refs| nDOC_PY3
+  nF_pre_py6 -->|refs| nDOC_PY6
   nF_tools_tag_graph -->|refs| nDOC_STYLE
   nF_tools_tag_graph -->|refs| nDOC_TAGS
   nN_03 -->|refs| nDOC_3
@@ -1270,13 +1766,86 @@ flowchart TD
   nN_15 -->|refs| nDOC_MCTS
   nN_16 -->|refs| nDOC_MCTS
   nN_17 -->|refs| nDOC_V11
+  nN_20 -->|refs| nDOC_PY3
+  nN_23 -->|refs| nDOC_PY6
 ```
 
 ### requires 依赖图（DAG）
 
 ```mermaid
 flowchart TD
-  empty["（暂无数据）"]
+  nD_1_1_3["D-1.1.3"]
+  nDOC_1["DOC-1"]
+  nDOC_2["DOC-2"]
+  nDOC_3["DOC-3"]
+  nDOC_4["DOC-4"]
+  nDOC_5["DOC-5"]
+  nDOC_6["DOC-6"]
+  nDOC_LORA["DOC-LORA"]
+  nDOC_MCTS["DOC-MCTS"]
+  nDOC_PT["DOC-PT"]
+  nDOC_PY1["DOC-PY1"]
+  nDOC_PY2["DOC-PY2"]
+  nDOC_PY3["DOC-PY3"]
+  nDOC_PY4["DOC-PY4"]
+  nDOC_PY5["DOC-PY5"]
+  nDOC_PY6["DOC-PY6"]
+  nDOC_RL["DOC-RL"]
+  nDOC_SFT["DOC-SFT"]
+  nDOC_SRC0["DOC-SRC0"]
+  nDOC_SRC1["DOC-SRC1"]
+  nDOC_SRC2["DOC-SRC2"]
+  nDOC_SRC3["DOC-SRC3"]
+  nDOC_SRC4["DOC-SRC4"]
+  nDOC_SRC5["DOC-SRC5"]
+  nDOC_SRC6["DOC-SRC6"]
+  nDOC_SRC7["DOC-SRC7"]
+  nDOC_SRC8["DOC-SRC8"]
+  nDOC_V11["DOC-V11"]
+  nDOC_VH["DOC-VH"]
+  nP_1_2_9["P-1.2.9"]
+  nDOC_1 -->|requires| nDOC_PY2
+  nDOC_1 -->|requires| nDOC_PY5
+  nDOC_2 -->|requires| nDOC_PY4
+  nDOC_3 -->|requires| nDOC_PY4
+  nDOC_4 -->|requires| nDOC_PY1
+  nDOC_5 -->|requires| nDOC_PY2
+  nDOC_5 -->|requires| nDOC_PY5
+  nDOC_6 -->|requires| nDOC_PY4
+  nDOC_LORA -->|requires| nDOC_PY3
+  nDOC_LORA -->|requires| nDOC_PY6
+  nDOC_MCTS -->|requires| nDOC_PY3
+  nDOC_MCTS -->|requires| nDOC_PY6
+  nDOC_PT -->|requires| nDOC_PY3
+  nDOC_PT -->|requires| nDOC_PY6
+  nDOC_PY6 -->|requires| nD_1_1_3
+  nDOC_PY6 -->|requires| nP_1_2_9
+  nDOC_RL -->|requires| nDOC_PY3
+  nDOC_RL -->|requires| nDOC_PY6
+  nDOC_SFT -->|requires| nDOC_PY3
+  nDOC_SFT -->|requires| nDOC_PY6
+  nDOC_SRC0 -->|requires| nDOC_PY3
+  nDOC_SRC0 -->|requires| nDOC_PY6
+  nDOC_SRC1 -->|requires| nDOC_PY3
+  nDOC_SRC1 -->|requires| nDOC_PY6
+  nDOC_SRC2 -->|requires| nDOC_PY3
+  nDOC_SRC2 -->|requires| nDOC_PY6
+  nDOC_SRC3 -->|requires| nDOC_PY3
+  nDOC_SRC3 -->|requires| nDOC_PY6
+  nDOC_SRC4 -->|requires| nDOC_PY3
+  nDOC_SRC4 -->|requires| nDOC_PY6
+  nDOC_SRC5 -->|requires| nDOC_PY3
+  nDOC_SRC5 -->|requires| nDOC_PY6
+  nDOC_SRC6 -->|requires| nDOC_PY3
+  nDOC_SRC6 -->|requires| nDOC_PY6
+  nDOC_SRC7 -->|requires| nDOC_PY3
+  nDOC_SRC7 -->|requires| nDOC_PY6
+  nDOC_SRC8 -->|requires| nDOC_PY3
+  nDOC_SRC8 -->|requires| nDOC_PY6
+  nDOC_V11 -->|requires| nDOC_PY3
+  nDOC_V11 -->|requires| nDOC_PY6
+  nDOC_VH -->|requires| nDOC_PY3
+  nDOC_VH -->|requires| nDOC_PY6
 ```
 
 ### doc ↔ F ↔ N 对应图
@@ -1292,6 +1861,12 @@ flowchart TD
   nDOC_LORA["DOC-LORA"]
   nDOC_MCTS["DOC-MCTS"]
   nDOC_PT["DOC-PT"]
+  nDOC_PY1["DOC-PY1"]
+  nDOC_PY2["DOC-PY2"]
+  nDOC_PY3["DOC-PY3"]
+  nDOC_PY4["DOC-PY4"]
+  nDOC_PY5["DOC-PY5"]
+  nDOC_PY6["DOC-PY6"]
   nDOC_RL["DOC-RL"]
   nDOC_RM01API["DOC-RM01API"]
   nDOC_RM01FS["DOC-RM01FS"]
@@ -1324,6 +1899,12 @@ flowchart TD
   nF_b07_self_play["F-b07-self_play"]
   nF_b08_tool_agent["F-b08-tool_agent"]
   nF_ds_prepare_tiny["F-ds-prepare_tiny"]
+  nF_pre_py1["F-pre-py1"]
+  nF_pre_py2["F-pre-py2"]
+  nF_pre_py3["F-pre-py3"]
+  nF_pre_py4["F-pre-py4"]
+  nF_pre_py5["F-pre-py5"]
+  nF_pre_py6["F-pre-py6"]
   nN_03["N-03"]
   nN_04["N-04"]
   nN_05["N-05"]
@@ -1339,6 +1920,12 @@ flowchart TD
   nN_15["N-15"]
   nN_16["N-16"]
   nN_17["N-17"]
+  nN_18["N-18"]
+  nN_19["N-19"]
+  nN_20["N-20"]
+  nN_21["N-21"]
+  nN_22["N-22"]
+  nN_23["N-23"]
   nDOC_3 -->|corresponds| nN_03
   nDOC_3 -->|corresponds| nN_04
   nDOC_3 -->|corresponds| nN_05
@@ -1364,6 +1951,18 @@ flowchart TD
   nDOC_PT -->|corresponds| nF_b02_pretrain
   nDOC_PT -->|corresponds| nF_b02_pretrain_hf
   nDOC_PT -->|corresponds| nN_09
+  nDOC_PY1 -->|corresponds| nF_pre_py1
+  nDOC_PY1 -->|corresponds| nN_18
+  nDOC_PY2 -->|corresponds| nF_pre_py2
+  nDOC_PY2 -->|corresponds| nN_19
+  nDOC_PY3 -->|corresponds| nF_pre_py3
+  nDOC_PY3 -->|corresponds| nN_20
+  nDOC_PY4 -->|corresponds| nF_pre_py4
+  nDOC_PY4 -->|corresponds| nN_21
+  nDOC_PY5 -->|corresponds| nF_pre_py5
+  nDOC_PY5 -->|corresponds| nN_22
+  nDOC_PY6 -->|corresponds| nF_pre_py6
+  nDOC_PY6 -->|corresponds| nN_23
   nDOC_RL -->|corresponds| nF_b06_grpo
   nDOC_RL -->|corresponds| nF_b06_trl_grpo
   nDOC_RL -->|corresponds| nN_13
