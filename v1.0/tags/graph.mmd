@@ -1,0 +1,151 @@
+flowchart TD
+  nDOC_1["DOC-1"]
+  nDOC_2["DOC-2"]
+  nDOC_3["DOC-3"]
+  nDOC_4["DOC-4"]
+  nDOC_5["DOC-5"]
+  nDOC_6["DOC-6"]
+  nDOC_BRIDGE["DOC-BRIDGE"]
+  nDOC_DS["DOC-DS"]
+  nDOC_LORA["DOC-LORA"]
+  nDOC_MCTS["DOC-MCTS"]
+  nDOC_PREM["DOC-PREM"]
+  nDOC_PT["DOC-PT"]
+  nDOC_RES["DOC-RES"]
+  nDOC_RL["DOC-RL"]
+  nDOC_RM01API["DOC-RM01API"]
+  nDOC_RM01FS["DOC-RM01FS"]
+  nDOC_RM08C["DOC-RM08C"]
+  nDOC_RMLORA["DOC-RMLORA"]
+  nDOC_RMMCTS["DOC-RMMCTS"]
+  nDOC_RMPT["DOC-RMPT"]
+  nDOC_RMRL["DOC-RMRL"]
+  nDOC_RMSFT["DOC-RMSFT"]
+  nDOC_RMVH["DOC-RMVH"]
+  nDOC_ROAD["DOC-ROAD"]
+  nDOC_SFT["DOC-SFT"]
+  nDOC_SRC0["DOC-SRC0"]
+  nDOC_SRC1["DOC-SRC1"]
+  nDOC_SRC2["DOC-SRC2"]
+  nDOC_SRC3["DOC-SRC3"]
+  nDOC_SRC4["DOC-SRC4"]
+  nDOC_SRC5["DOC-SRC5"]
+  nDOC_SRC6["DOC-SRC6"]
+  nDOC_SRC7["DOC-SRC7"]
+  nDOC_SRC8["DOC-SRC8"]
+  nDOC_STYLE["DOC-STYLE"]
+  nDOC_TAGS["DOC-TAGS"]
+  nDOC_TINY["DOC-TINY"]
+  nDOC_V10["DOC-V10"]
+  nDOC_V11["DOC-V11"]
+  nDOC_VH["DOC-VH"]
+  nF_b01_configs["F-b01-configs"]
+  nF_b01_data["F-b01-data"]
+  nF_b01_generate["F-b01-generate"]
+  nF_b01_model["F-b01-model"]
+  nF_b01_tokenizer_api["F-b01-tokenizer_api"]
+  nF_b01_train["F-b01-train"]
+  nF_b01_train_hf["F-b01-train_hf"]
+  nF_b02_pretrain["F-b02-pretrain"]
+  nF_b02_pretrain_hf["F-b02-pretrain_hf"]
+  nF_b03_sft["F-b03-sft"]
+  nF_b03_sft_hf["F-b03-sft_hf"]
+  nF_b04_train_value_head["F-b04-train_value_head"]
+  nF_b04_value_head["F-b04-value_head"]
+  nF_b04_value_head_api["F-b04-value_head_api"]
+  nF_b05_finetune_lora["F-b05-finetune_lora"]
+  nF_b05_lora["F-b05-lora"]
+  nF_b05_peft_lora["F-b05-peft_lora"]
+  nF_b05_qlora_bnb["F-b05-qlora_bnb"]
+  nF_b06_grpo["F-b06-grpo"]
+  nF_b06_trl_grpo["F-b06-trl_grpo"]
+  nF_b07_mcts["F-b07-mcts"]
+  nF_b07_policy_value_eval["F-b07-policy_value_eval"]
+  nF_b07_run_demo["F-b07-run_demo"]
+  nF_b07_self_play["F-b07-self_play"]
+  nF_b08_tool_agent["F-b08-tool_agent"]
+  nF_ds_prepare_tiny["F-ds-prepare_tiny"]
+  nF_misc_fixorder["F-misc-fixorder"]
+  nF_misc_validate_nb["F-misc-validate_nb"]
+  nF_tools_tag_graph["F-tools-tag_graph"]
+  nN_01["N-01"]
+  nN_02["N-02"]
+  nN_03["N-03"]
+  nN_04["N-04"]
+  nN_05["N-05"]
+  nN_06["N-06"]
+  nN_07["N-07"]
+  nN_08["N-08"]
+  nN_09["N-09"]
+  nN_10["N-10"]
+  nN_11["N-11"]
+  nN_12["N-12"]
+  nN_13["N-13"]
+  nN_14["N-14"]
+  nN_15["N-15"]
+  nN_16["N-16"]
+  nN_17["N-17"]
+  nDOC_3 -->|corresponds| nN_03
+  nDOC_3 -->|corresponds| nN_04
+  nDOC_3 -->|corresponds| nN_05
+  nDOC_4 -->|corresponds| nN_07
+  nDOC_5 -->|corresponds| nN_04
+  nDOC_5 -->|corresponds| nN_06
+  nDOC_5 -->|corresponds| nN_08
+  nDOC_6 -->|corresponds| nN_05
+  nDOC_6 -->|corresponds| nN_08
+  nDOC_BRIDGE -->|corresponds| nF_b08_tool_agent
+  nDOC_DS -->|corresponds| nF_ds_prepare_tiny
+  nDOC_LORA -->|corresponds| nF_b05_finetune_lora
+  nDOC_LORA -->|corresponds| nF_b05_lora
+  nDOC_LORA -->|corresponds| nF_b05_peft_lora
+  nDOC_LORA -->|corresponds| nF_b05_qlora_bnb
+  nDOC_LORA -->|corresponds| nN_12
+  nDOC_MCTS -->|corresponds| nF_b07_mcts
+  nDOC_MCTS -->|corresponds| nF_b07_policy_value_eval
+  nDOC_MCTS -->|corresponds| nF_b07_run_demo
+  nDOC_MCTS -->|corresponds| nF_b07_self_play
+  nDOC_MCTS -->|corresponds| nN_15
+  nDOC_MCTS -->|corresponds| nN_16
+  nDOC_PT -->|corresponds| nF_b02_pretrain
+  nDOC_PT -->|corresponds| nF_b02_pretrain_hf
+  nDOC_PT -->|corresponds| nN_09
+  nDOC_RL -->|corresponds| nF_b06_grpo
+  nDOC_RL -->|corresponds| nF_b06_trl_grpo
+  nDOC_RL -->|corresponds| nN_13
+  nDOC_RL -->|corresponds| nN_14
+  nDOC_RM01API -->|corresponds| nF_b01_tokenizer_api
+  nDOC_RM01API -->|corresponds| nF_b01_train_hf
+  nDOC_RM01FS -->|corresponds| nF_b01_configs
+  nDOC_RM01FS -->|corresponds| nF_b01_data
+  nDOC_RM01FS -->|corresponds| nF_b01_generate
+  nDOC_RM01FS -->|corresponds| nF_b01_model
+  nDOC_RM01FS -->|corresponds| nF_b01_train
+  nDOC_SFT -->|corresponds| nF_b03_sft
+  nDOC_SFT -->|corresponds| nF_b03_sft_hf
+  nDOC_SFT -->|corresponds| nN_10
+  nDOC_V11 -->|corresponds| nN_17
+  nDOC_VH -->|corresponds| nF_b04_train_value_head
+  nDOC_VH -->|corresponds| nF_b04_value_head
+  nDOC_VH -->|corresponds| nF_b04_value_head_api
+  nDOC_VH -->|corresponds| nN_11
+  nF_tools_tag_graph -->|refs| nDOC_STYLE
+  nF_tools_tag_graph -->|refs| nDOC_TAGS
+  nN_03 -->|refs| nDOC_3
+  nN_04 -->|refs| nDOC_3
+  nN_04 -->|refs| nDOC_5
+  nN_05 -->|refs| nDOC_3
+  nN_05 -->|refs| nDOC_6
+  nN_06 -->|refs| nDOC_5
+  nN_07 -->|refs| nDOC_4
+  nN_08 -->|refs| nDOC_5
+  nN_08 -->|refs| nDOC_6
+  nN_09 -->|refs| nDOC_PT
+  nN_10 -->|refs| nDOC_SFT
+  nN_11 -->|refs| nDOC_VH
+  nN_12 -->|refs| nDOC_LORA
+  nN_13 -->|refs| nDOC_RL
+  nN_14 -->|refs| nDOC_RL
+  nN_15 -->|refs| nDOC_MCTS
+  nN_16 -->|refs| nDOC_MCTS
+  nN_17 -->|refs| nDOC_V11
