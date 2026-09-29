@@ -4,8 +4,11 @@
 > 角色：V1-1 主线实现。**0 长训**：直接加载 REAL-Prover（BF16, cuda:0）+ 一个零初始化 LoRA adapter，线上按需做 RTTT（Real-Time Test-Time Training）一步更新；同时挂一个独立可训练的标量价值头。
 > 上游规格：`v1-spec/00-overview.md`、`v1-spec/01-policy-value.md`、`v1-spec/02-mcts-verifier.md`；笔记 `文档/mcts-theory-learning/MCTS算法流程/V1-MCTS完整运行流程与算例.md`。
 > 教学链接：`../05-LoRA/`（LoRA 注入）、`../04-价值头/`（标量 critic）、`../06-RL-RLVR/`（REINFORCE+KL）、`../07-MCTS+V1/`（闭环）。
+> **【文档｜DOC-SRC1】**（doccode = `SRC1`）｜编号与 Tag 规范见《00-风格与编号规范》。
 
 ## 0. 文件树与职责
+
+**【注 SRC1.0.1｜R-SRC1.0.1】（文件树与职责）**
 
 ```
 app/
@@ -36,12 +39,16 @@ Lean 状态 --(v1_run.py 注入 set_option reap.policy_endpoint/value_endpoint)-
 ## 1. `value_head.py`（先读它，policy_server 依赖它）
 
 ### 1.1 `ValueHead` — 标量 critic（L26–63）
+
+**【代码 SRC1.1.1｜Cd-SRC1.1.1】（`ValueHead`：标量 critic）**
 - 结构：`Linear(hidden_size, hidden_dim) → SiLU → Linear(hidden_dim, 1) → Tanh`（L43–48），默认 `hidden_dim=256`。
 - `forward`（L50–63）：接受 `[B,H]` 或 `[B,T,H]`（后者取最后位置 L53–54）；强制 `hidden_states.float()` 后再过 MLP（L63），保证 backbone 跑 bf16 时头部仍 fp32。
 - 输出形状 `[B]`，值域 `(-1,1)`。对应教学 `../04-价值头/`。
 - 代码里 `hidden_size` 对 REAL-Prover 为 **3584**（Qwen2.5-7B 系），实际值由 `model_hidden_size()` 推断。
 
 ### 1.2 辅助函数
+
+**【代码 SRC1.1.2｜Cd-SRC1.1.2】（`value_head.py` 辅助函数）**
 - `model_hidden_size(model)`（L66–81）：依次找 `hidden_size/n_embd/d_model/n_embed`，再退回 `embedding_dim`。
 - `last_token_hidden(output, attention_mask)`（L84–116）：从 `last_hidden_state` 或 `hidden_states[-1]` 取 `[B,T,H]`；用 attention_mask 求**最后一个非 pad 位置**（L109–116），兼容左右 padding。
 - `finite_scalar`（L119–132）/ `clamp_target`（L135–138，夹到 `[-1,1]`）。
@@ -49,17 +56,23 @@ Lean 状态 --(v1_run.py 注入 set_option reap.policy_endpoint/value_endpoint)-
 - `proof_depth_to_target(depth, max_depth=64)`（L155–170）：`-min(depth,max_depth)/max_depth`。**剩余深度 0 = 最优 = 0.0**，深度越大越负。这是把 nanoproof replay 的“负剩余深度”转成有界 target 的桥。
 
 ### 1.3 持久化（原子写）
+
+**【代码 SRC1.1.3｜Cd-SRC1.1.3】（价值头持久化与原子写）**
 - `VALUE_HEAD_SCHEMA = "reap.value-head.v1"`（L23）。
 - `save_value_head(...)`（L185–237）：payload 含 `schema_version/hidden_size/hidden_dim/head(CPU state)/optimizer_steps/examples_seen/metadata`，可选 `optimizer`；写临时文件后 `os.replace` 原子替换（L220–229）。
 - `load_value_head(...)`（L240–295）：校验 schema 与 `hidden_size/hidden_dim`，支持**裸 state_dict 的 legacy 迁移**（L260–262，返回 `legacy=True`）；可选加载 optimizer 并把状态搬到 head 设备（L282–285）。
 - checkpoint 只存小头，**不动 policy backbone**，避免频繁 RTTT 覆盖大模型（L196–199 注释）。
 
 ### 1.4 `ValueHeadTrainer`（L298–376）
+
+**【代码 SRC1.1.4｜Cd-SRC1.1.4】（`ValueHeadTrainer`）**
 - 只吃**预计算的 hidden**（`[B, hidden_size]`），做 `mse` 或 `huber`（`smooth_l1_loss`，L337–340）。
 - 全过程有限性校验：loss（L341）、grad（L345）、grad_norm（L350）、参数（L353）；`clip_grad_norm_` 保护（L347）。
 - `update` 返回 loss/prediction_mean/target_mean/grad_norm/steps（L357–364）；`checkpoint` 落盘（L366–375）。
 
 ## 2. `train_value_head.py` — 离线价值头训练
+
+**【代码 SRC1.2.1｜Cd-SRC1.2.1】（`train_value_head.py` 离线训练）**
 
 - 数据抽取 `iter_examples(path, max_depth, allow_score, include_binary_outcomes)`（L91–136）：
   - 若记录含**并行数组** `states[]`+`rewards[]`，用 `discounted_returns` 展开成多个 `(state,target)`（L112–120）。
@@ -72,11 +85,15 @@ Lean 状态 --(v1_run.py 注入 set_option reap.policy_endpoint/value_endpoint)-
 ## 3. `policy_server.py` — 服务核心
 
 ### 3.1 常量与设计
+
+**【代码 SRC1.3.1｜Cd-SRC1.3.1】（`policy_server.py` 常量与设计）**
 - `TARGET_MODULES`（L45）：LoRA 打在注意力和 MLP 全部线性层 `q/k/v/o/gate/up/down_proj`。
 - `BETA_KL = 0.05`（L46）：KL 防忘系数（v1-spec 02）。
 - 超参默认（L47–52）：value_lr 3e-4、policy_lr 1e-4、value_coefficient 0.5、gamma 0.99、max_grad_norm 1.0、max_distance 64；`MAX_TTT_ITEMS = 16`（L53）。
 
 ### 3.2 `class Engine`（L55）
+
+**【代码 SRC1.3.2｜Cd-SRC1.3.2】（`class Engine`）**
 `__init__`（L64–152）：
 1. 参数校验（L81–92）：gamma∈[0,1]、lr>0、coeff≥0、max_grad_norm>0、`value_output_mode∈{scalar,distance}`、`max_distance` 正整数。
 2. `self._update_lock = threading.RLock()`（L105）——**并发保护**，所有会改参数的入口（`value/raw_value/train_value/ttt_step`）都进出这把锁。
@@ -104,6 +121,8 @@ Lean 状态 --(v1_run.py 注入 set_option reap.policy_endpoint/value_endpoint)-
 
 ### 3.3 训练循环
 
+**【代码 SRC1.3.3｜Cd-SRC1.3.3】（训练循环：`train_value` / `ttt_step`）**
+
 **`train_value(items, epochs)`（L356–414）— 纯头更新：**
 ```
 对每个 item: target=_target_for_item; hidden=_hidden_from_encoded(no_grad).detach()
@@ -127,10 +146,14 @@ loss = MSE(pred, target)          # 有界 [-1,1] 回归
 - 返回 loss/policy_loss/kl/value_loss/value_updates/grad_norm/steps/optimizer_steps（L495–506）。
 
 ### 3.4 快照 / 回滚
+
+**【代码 SRC1.3.4｜Cd-SRC1.3.4】（快照与回滚）**
 - `snapshot(name)`（L509–527）：schema `reap.policy-server.snapshot.v2`，存 `model + value_head + optimizer + value_optimizer + steps` 到 `output_dir/adapter_<name>.pt`。
 - `restore(name)`（L529–562）：校验 schema/hidden_size/output_mode/max_distance 后恢复；兼容旧式裸 LoRA state_dict（L554–557）。
 
 ### 3.5 HTTP 层 `class H`（L566）
+
+**【代码 SRC1.3.5｜Cd-SRC1.3.5】（HTTP 层 `class H`）**
 - `_prompt`（L575–596）：`prompt/state` 或 OpenAI `messages` 拼接。
 - `_value_chat`（L598–612）：**OpenAI chat 包装**，`assistant.content = json({"score": float})`，Lean `OpenAIClient` 解析后取负。
 - `_policy_chat`（L614–633）：同时给旧 `text` 字段与 OpenAI `message` 字段。
@@ -146,6 +169,8 @@ loss = MSE(pred, target)          # 有界 [-1,1] 回归
 - `main`（L687–734）：参数含 `--base --port(8760) --lora-r --device --value-head --value-hidden-dim --value-lr --policy-lr --value-coefficient --gamma --max-grad-norm --value-output-mode --max-distance --output-dir`；若未显式给 `--value-head` 但 `output_dir/value_head.pt` 存在则自动用（L708–711）；即使新头也在首次更新后落盘（L730–731）；`ThreadingHTTPServer(("0.0.0.0", port), H)`（L734）。
 
 ## 4. `v1_run.py` — BatchSolver 编排器
+
+**【代码 SRC1.4.1｜Cd-SRC1.4.1】（`v1_run.py`：BatchSolver 编排器）**
 
 - `make_lean(task, policy, value, ps, import_extra)`（L21–45）：拼出
   ```
@@ -163,6 +188,8 @@ loss = MSE(pred, target)          # 有界 [-1,1] 回归
 
 ## 5. `v1_sink.py` — RolloutSink JSONL 样本面
 
+**【代码 SRC1.5.1｜Cd-SRC1.5.1】（`v1_sink.py`：RolloutSink JSONL）**
+
 - `ALLOWED_KINDS = {node_visited, task_done, rttt_update}`（L7）；`VERDICT_CLASSES`（L8–9）。
 - `Sink.node_visited`（L16–27）：记录树节点 visited，含 `tree_hash/node_idx/parent_idx/depth/state_pp/state_key/goal_count/tactic/verdict.kernel_check/policy.logprob_avg/value.score/was_solved`。
 - `Sink.task_done`（L29–33）/`Sink.rttt_update`（L35–37）。
@@ -171,11 +198,15 @@ loss = MSE(pred, target)          # 有界 [-1,1] 回归
 
 ## 6. `rttt_demo.py` / `mock_policy_server.py` / `train_sft.py`
 
+**【代码 SRC1.6.1｜Cd-SRC1.6.1】（`rttt_demo` / mock / `train_sft`）**
+
 - `rttt_demo.py`：先 `/health`（L31），循环 `POST /v1/chat/completions`（n=2）取首个候选，构造 item（`target/r/value_target/done/logprob_old`，L40–47），攒够 `--k`（默认 8）后 `POST /ttt_step`，指标追加到 `rttt_metrics.jsonl`（L48–52）。演示用 `reward = 1.0 if i%3==0 else -0.5`（L39），生产应换成 Lean verifier 的 discounted return。
 - `mock_policy_server.py`：CPU 替身，`/v1/chat/completions` 随机返回 tactic + `logprob_avg∈[-18,-2]`（L42–54）；`/value` 随机 `[0,1]`（L55–56）；`/value/chat/completions` 用 **sha256 前 4 字节确定 score**（L34–35，便于协议测试）。
 - `train_sft.py`：**DEPRECATED（2026-08-26）**，仅有 argparse + 打印行数（L10–29），注释指向 v1-spec/01 的显存预算；正式 SFT 实现见 02 篇（容器 QLoRA）。
 
 ## 7. 张量/数据流小结
+
+**【例 SRC1.7.1｜E-SRC1.7.1】（张量/数据流小结）**
 
 | 环节 | 形状 | 说明 |
 |---|---|---|
@@ -189,11 +220,15 @@ loss = MSE(pred, target)          # 有界 [-1,1] 回归
 
 ## 8. 与其它版本差异
 
+**【注 SRC1.8.1｜R-SRC1.8.1】（与其它版本差异）**
+
 - 与 **03 gpu_runtime**：这里是“单进程 HTTP + PEFT LoRA + 标量头”的极简在线实现；gpu_runtime 是“多 backend、release head、64-bin 分类头、learner/actor 分离”的生产化实现。
 - 与 **04 nanoproof**：nanoproof 是**从零预训练**到 RL 的完整研究栈（自定义 tokenizer/Muon/FlashAttn）；本版直接复用 HF REAL-Prover + LoRA。
 - 与 **05 value-head/nanoproof 移植**：本版 value 头是 `3584→256→1`（tanh），05 篇是 `3584→256→64`（64-bin 分类）并带 real7 特征管线。
 
 ## 9. 想改造应先动哪里
+
+**【注 SRC1.9.1｜R-SRC1.9.1】（想改造应先动哪里）**
 
 - **换基座/换 hidden 维**：改 `policy_server.py` L109–116（`--base`、LoRA target_modules）与 `--value-hidden-dim`；`model_hidden_size` 自动适配。
 - **改 RL 目标**：`ttt_step` L462（policy）、L463（KL）、L466–475（value）；超参 `BETA_KL` L46、`value_coefficient`。
@@ -203,6 +238,8 @@ loss = MSE(pred, target)          # 有界 [-1,1] 回归
 - **并发/吞吐**：`ThreadingHTTPServer` + 全局 `RLock`（L105）意味着训练串行；要并发需拆 Engine 或多进程。
 
 ## 10. 对应关系
+
+**【注 SRC1.10.1｜R-SRC1.10.1】（对应关系）**
 
 - 教学篇：`../05-LoRA/`（LoRA/`init_lora_weights`）、`../04-价值头/`（`3584→256→1`、MSE/校准）、`../06-RL-RLVR/`（REINFORCE+KL 形式）、`../07-MCTS+V1/`（`reapMCTS` + endpoint 注入）。
 - 数学文档：`文档/mcts-theory-learning/MCTS算法流程/V1-MCTS完整运行流程与算例.md`。
