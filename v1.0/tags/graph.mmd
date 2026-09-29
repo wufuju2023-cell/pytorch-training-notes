@@ -11,6 +11,12 @@ flowchart TD
   nDOC_MCTS["DOC-MCTS"]
   nDOC_PREM["DOC-PREM"]
   nDOC_PT["DOC-PT"]
+  nDOC_PY1["DOC-PY1"]
+  nDOC_PY2["DOC-PY2"]
+  nDOC_PY3["DOC-PY3"]
+  nDOC_PY4["DOC-PY4"]
+  nDOC_PY5["DOC-PY5"]
+  nDOC_PY6["DOC-PY6"]
   nDOC_RES["DOC-RES"]
   nDOC_RL["DOC-RL"]
   nDOC_RM01API["DOC-RM01API"]
@@ -67,6 +73,12 @@ flowchart TD
   nF_ds_prepare_tiny["F-ds-prepare_tiny"]
   nF_misc_fixorder["F-misc-fixorder"]
   nF_misc_validate_nb["F-misc-validate_nb"]
+  nF_pre_py1["F-pre-py1"]
+  nF_pre_py2["F-pre-py2"]
+  nF_pre_py3["F-pre-py3"]
+  nF_pre_py4["F-pre-py4"]
+  nF_pre_py5["F-pre-py5"]
+  nF_pre_py6["F-pre-py6"]
   nF_tools_tag_graph["F-tools-tag_graph"]
   nN_01["N-01"]
   nN_02["N-02"]
@@ -85,15 +97,28 @@ flowchart TD
   nN_15["N-15"]
   nN_16["N-16"]
   nN_17["N-17"]
+  nN_18["N-18"]
+  nN_19["N-19"]
+  nN_20["N-20"]
+  nN_21["N-21"]
+  nN_22["N-22"]
+  nN_23["N-23"]
+  nDOC_1 -->|requires| nDOC_PY5
+  nDOC_2 -->|requires| nDOC_PY4
   nDOC_3 -->|corresponds| nN_03
   nDOC_3 -->|corresponds| nN_04
   nDOC_3 -->|corresponds| nN_05
+  nDOC_3 -->|requires| nDOC_PY4
   nDOC_4 -->|corresponds| nN_07
+  nDOC_4 -->|requires| nDOC_PY1
   nDOC_5 -->|corresponds| nN_04
   nDOC_5 -->|corresponds| nN_06
   nDOC_5 -->|corresponds| nN_08
+  nDOC_5 -->|requires| nDOC_PY2
+  nDOC_5 -->|requires| nDOC_PY5
   nDOC_6 -->|corresponds| nN_05
   nDOC_6 -->|corresponds| nN_08
+  nDOC_6 -->|requires| nDOC_PY4
   nDOC_BRIDGE -->|corresponds| nF_b08_tool_agent
   nDOC_DS -->|corresponds| nF_ds_prepare_tiny
   nDOC_LORA -->|corresponds| nF_b05_finetune_lora
@@ -101,19 +126,49 @@ flowchart TD
   nDOC_LORA -->|corresponds| nF_b05_peft_lora
   nDOC_LORA -->|corresponds| nF_b05_qlora_bnb
   nDOC_LORA -->|corresponds| nN_12
+  nDOC_LORA -->|requires| nDOC_PY3
+  nDOC_LORA -->|requires| nDOC_PY6
   nDOC_MCTS -->|corresponds| nF_b07_mcts
   nDOC_MCTS -->|corresponds| nF_b07_policy_value_eval
   nDOC_MCTS -->|corresponds| nF_b07_run_demo
   nDOC_MCTS -->|corresponds| nF_b07_self_play
   nDOC_MCTS -->|corresponds| nN_15
   nDOC_MCTS -->|corresponds| nN_16
+  nDOC_MCTS -->|requires| nDOC_PY3
+  nDOC_MCTS -->|requires| nDOC_PY6
   nDOC_PT -->|corresponds| nF_b02_pretrain
   nDOC_PT -->|corresponds| nF_b02_pretrain_hf
   nDOC_PT -->|corresponds| nN_09
+  nDOC_PT -->|requires| nDOC_PY3
+  nDOC_PT -->|requires| nDOC_PY6
+  nDOC_PY1 -->|corresponds| nF_pre_py1
+  nDOC_PY1 -->|corresponds| nN_18
+  nDOC_PY1 -->|evolves_to| nDOC_PY2
+  nDOC_PY2 -->|corresponds| nF_pre_py2
+  nDOC_PY2 -->|corresponds| nN_19
+  nDOC_PY2 -->|requires| nDOC_PY1
+  nDOC_PY3 -->|corresponds| nF_pre_py3
+  nDOC_PY3 -->|corresponds| nN_20
+  nDOC_PY3 -->|requires| nDOC_PY2
+  nDOC_PY4 -->|corresponds| nF_pre_py4
+  nDOC_PY4 -->|corresponds| nN_21
+  nDOC_PY4 -->|evolves_to| nDOC_PY5
+  nDOC_PY4 -->|requires| nDOC_PY1
+  nDOC_PY4 -->|requires| nDOC_PY2
+  nDOC_PY5 -->|corresponds| nF_pre_py5
+  nDOC_PY5 -->|corresponds| nN_22
+  nDOC_PY5 -->|evolves_to| nDOC_1
+  nDOC_PY5 -->|requires| nDOC_PY4
+  nDOC_PY6 -->|corresponds| nF_pre_py6
+  nDOC_PY6 -->|corresponds| nN_23
+  nDOC_PY6 -->|evolves_to| nDOC_PT
+  nDOC_PY6 -->|requires| nDOC_PY5
   nDOC_RL -->|corresponds| nF_b06_grpo
   nDOC_RL -->|corresponds| nF_b06_trl_grpo
   nDOC_RL -->|corresponds| nN_13
   nDOC_RL -->|corresponds| nN_14
+  nDOC_RL -->|requires| nDOC_PY3
+  nDOC_RL -->|requires| nDOC_PY6
   nDOC_RM01API -->|corresponds| nF_b01_tokenizer_api
   nDOC_RM01API -->|corresponds| nF_b01_train_hf
   nDOC_RM01FS -->|corresponds| nF_b01_configs
@@ -124,11 +179,38 @@ flowchart TD
   nDOC_SFT -->|corresponds| nF_b03_sft
   nDOC_SFT -->|corresponds| nF_b03_sft_hf
   nDOC_SFT -->|corresponds| nN_10
+  nDOC_SFT -->|requires| nDOC_PY3
+  nDOC_SFT -->|requires| nDOC_PY6
+  nDOC_SRC0 -->|requires| nDOC_PY3
+  nDOC_SRC0 -->|requires| nDOC_PY6
+  nDOC_SRC1 -->|requires| nDOC_PY3
+  nDOC_SRC1 -->|requires| nDOC_PY6
+  nDOC_SRC2 -->|requires| nDOC_PY3
+  nDOC_SRC2 -->|requires| nDOC_PY6
+  nDOC_SRC3 -->|requires| nDOC_PY3
+  nDOC_SRC3 -->|requires| nDOC_PY6
+  nDOC_SRC4 -->|requires| nDOC_PY3
+  nDOC_SRC4 -->|requires| nDOC_PY6
+  nDOC_SRC5 -->|requires| nDOC_PY3
+  nDOC_SRC5 -->|requires| nDOC_PY6
+  nDOC_SRC6 -->|requires| nDOC_PY3
+  nDOC_SRC6 -->|requires| nDOC_PY6
+  nDOC_SRC7 -->|requires| nDOC_PY3
+  nDOC_SRC7 -->|requires| nDOC_PY6
+  nDOC_SRC8 -->|requires| nDOC_PY3
+  nDOC_SRC8 -->|requires| nDOC_PY6
   nDOC_V11 -->|corresponds| nN_17
+  nDOC_V11 -->|requires| nDOC_PY3
+  nDOC_V11 -->|requires| nDOC_PY6
   nDOC_VH -->|corresponds| nF_b04_train_value_head
   nDOC_VH -->|corresponds| nF_b04_value_head
   nDOC_VH -->|corresponds| nF_b04_value_head_api
   nDOC_VH -->|corresponds| nN_11
+  nDOC_VH -->|requires| nDOC_PY3
+  nDOC_VH -->|requires| nDOC_PY6
+  nF_pre_py1 -->|refs| nDOC_PY1
+  nF_pre_py3 -->|refs| nDOC_PY3
+  nF_pre_py6 -->|refs| nDOC_PY6
   nF_tools_tag_graph -->|refs| nDOC_STYLE
   nF_tools_tag_graph -->|refs| nDOC_TAGS
   nN_03 -->|refs| nDOC_3
@@ -149,3 +231,5 @@ flowchart TD
   nN_15 -->|refs| nDOC_MCTS
   nN_16 -->|refs| nDOC_MCTS
   nN_17 -->|refs| nDOC_V11
+  nN_20 -->|refs| nDOC_PY3
+  nN_23 -->|refs| nDOC_PY6
