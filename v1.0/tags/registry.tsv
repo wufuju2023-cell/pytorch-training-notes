@@ -1,21 +1,52 @@
 tag	type	doccode	locator	title	status	version	ext
 A-1.5.1	A	1	v1.0/01-基础/01-神经网络与反向传播.md#L470	中心差分梯度检查	active	v1.0	
 A-4.3.1	A	4	v1.0/01-基础/04-分词器与词表.md#L56	BPE 训练算法	active	v1.0	
-A-MCTS.8.1	A	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L158	BatchSolver	active	v1.0	
-A-MCTS.8.2	A	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L164	online_ttt `run_online`	active	v1.0	
-A-RL.11.2	A	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L380	online_ttt 闭环	active	v1.0	
+A-MCTS.8.1	A	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L160	BatchSolver	active	v1.0	
+A-MCTS.8.2	A	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L166	online_ttt `run_online`	active	v1.0	
+A-PY4.4.2	A	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L181	朴素两层循环 -> 矩阵乘	active	v1.0	
+A-PY5.7.1	A	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L321	标准训练循环五步	active	v1.0	
+A-RL.11.2	A	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L382	online_ttt 闭环	active	v1.0	
 C-1.3.5	C	1	v1.0/01-基础/01-神经网络与反向传播.md#L409	每层参数梯度	active	v1.0	
 C-1.3.6	C	1	v1.0/01-基础/01-神经网络与反向传播.md#L421	输出层误差信号与反向传播的起点	active	v1.0	
 Cd-1.1.4	Cd	1	v1.0/01-基础/01-神经网络与反向传播.md#L48	`model.py`：`MLP.forward`	active	v1.0	
 Cd-1.5.3	Cd	1	v1.0/01-基础/01-神经网络与反向传播.md#L491	`grad_check` 实现	active	v1.0	
 Cd-1.6.2	Cd	1	v1.0/01-基础/01-神经网络与反向传播.md#L519	最小训练循环	active	v1.0	
 Cd-BRIDGE.2.1	Cd	BRIDGE	v1.0/08-V1-1/code/opencode_bridge.md#L28	最小接入伪代码	active	v1.0	
-Cd-LORA.3.2	Cd	LORA	v1.0/05-LoRA/01-LoRA原理.md#L99	`LoraConfig`	active	v1.0	
-Cd-LORA.4.1	Cd	LORA	v1.0/05-LoRA/01-LoRA原理.md#L144	`TARGET_MODULES`	active	v1.0	
-Cd-LORA.5.6	Cd	LORA	v1.0/05-LoRA/01-LoRA原理.md#L214	`BitsAndBytesConfig`	active	v1.0	
-Cd-MCTS.2.2	Cd	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L34	focus 孩子构造	active	v1.0	
-Cd-MCTS.6.1	Cd	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L116	单轮迭代伪代码	active	v1.0	
-Cd-MCTS.7.1	Cd	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L140	与 Lean `reap` 引擎的对应	active	v1.0	
+Cd-LORA.3.2	Cd	LORA	v1.0/05-LoRA/01-LoRA原理.md#L100	`LoraConfig`	active	v1.0	
+Cd-LORA.4.1	Cd	LORA	v1.0/05-LoRA/01-LoRA原理.md#L145	`TARGET_MODULES`	active	v1.0	
+Cd-LORA.5.6	Cd	LORA	v1.0/05-LoRA/01-LoRA原理.md#L215	`BitsAndBytesConfig`	active	v1.0	
+Cd-MCTS.2.2	Cd	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L36	focus 孩子构造	active	v1.0	
+Cd-MCTS.6.1	Cd	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L118	单轮迭代伪代码	active	v1.0	
+Cd-MCTS.7.1	Cd	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L142	与 Lean `reap` 引擎的对应	active	v1.0	
+Cd-PY1.1.4	Cd	PY1	v1.0/00-预备/PY1-Python语言I.md#L50	用 `dis` 观察字节码	active	v1.0	EXT-PY1-04
+Cd-PY1.2.6	Cd	PY1	v1.0/00-预备/PY1-Python语言I.md#L116	绑定与共享的可观测行为	active	v1.0	
+Cd-PY1.3.8	Cd	PY1	v1.0/00-预备/PY1-Python语言I.md#L192	类型与切片速览	active	v1.0	
+Cd-PY1.4.7	Cd	PY1	v1.0/00-预备/PY1-Python语言I.md#L258	控制流速览	active	v1.0	
+Cd-PY1.5.7	Cd	PY1	v1.0/00-预备/PY1-Python语言I.md#L341	参数与闭包速览	active	v1.0	
+Cd-PY1.6.5	Cd	PY1	v1.0/00-预备/PY1-Python语言I.md#L382	推导式与迭代协议速览	active	v1.0	
+Cd-PY2.1.7	Cd	PY2	v1.0/00-预备/PY2-Python语言II.md#L78	最小 `Vec2`：类属性、实例属性、运算符与 `__repr__`	active	v1.0	
+Cd-PY2.2.7	Cd	PY2	v1.0/00-预备/PY2-Python语言II.md#L160	一个支持 `len`/索引/迭代的小容器	active	v1.0	
+Cd-PY2.5.6	Cd	PY2	v1.0/00-预备/PY2-Python语言II.md#L318	EAFP 风格的分词	active	v1.0	
+Cd-PY2.6.4	Cd	PY2	v1.0/00-预备/PY2-Python语言II.md#L362	类式与生成器式两种上下文管理器	active	v1.0	
+Cd-PY2.7.6	Cd	PY2	v1.0/00-预备/PY2-Python语言II.md#L424	带参装饰器与 `lru_cache`	active	v1.0	
+Cd-PY2.8.6	Cd	PY2	v1.0/00-预备/PY2-Python语言II.md#L493	手写生成器与 `itertools`	active	v1.0	
+Cd-PY3.1.5	Cd	PY3	v1.0/00-预备/PY3-工程与环境.md#L66	环境自检片段	active	v1.0	
+Cd-PY3.3.4	Cd	PY3	v1.0/00-预备/PY3-工程与环境.md#L158	argparse + logging 最小骨架	active	v1.0	
+Cd-PY4.1.7	Cd	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L56	检查形状、步长与共享	active	v1.0	
+Cd-PY4.2.6	Cd	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L99	三种索引的返回类型	active	v1.0	
+Cd-PY4.3.5	Cd	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L154	广播实验与形状诊断	active	v1.0	
+Cd-PY4.4.5	Cd	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L206	三种等价写法	active	v1.0	
+Cd-PY4.5.4	Cd	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L247	归约与 keepdims 实验	active	v1.0	
+Cd-PY4.6.5	Cd	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L281	Generator 与 spawn	active	v1.0	
+Cd-PY5.1.3	Cd	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L40	构造、属性与 NumPy 互操作	active	v1.0	
+Cd-PY5.2.4	Cd	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L93	形状操作与连续性	active	v1.0	
+Cd-PY5.3.5	Cd	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L150	autograd 最小示例与梯度检查	active	v1.0	
+Cd-PY5.4.4	Cd	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L206	两层 MLP，对照【定义 1.1.3】与【代码 1.1.4】	active	v1.0	
+Cd-PY5.6.3	Cd	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L290	TensorDataset 与自定义 Dataset	active	v1.0	
+Cd-PY5.7.2	Cd	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L334	训练循环与 checkpoint	active	v1.0	
+Cd-PY6.1.5	Cd	PY6	v1.0/00-预备/PY6-PyTorch进阶与生态.md#L52	检查点 + autocast 最小写法	active	v1.0	
+Cd-PY6.2.5	Cd	PY6	v1.0/00-预备/PY6-PyTorch进阶与生态.md#L105	profiler 与 compile 用法	active	v1.0	
+Cd-PY6.3.6	Cd	PY6	v1.0/00-预备/PY6-PyTorch进阶与生态.md#L163	生态库最小调用链，可选依赖缺失即跳过	active	v1.0	
 Cd-SRC1.1.1	Cd	SRC1	v1.0/09-源码精读/01-GPU版本A-V1-app-policy-value.md#L43	`ValueHead`：标量 critic	active	v1.0	
 Cd-SRC1.1.2	Cd	SRC1	v1.0/09-源码精读/01-GPU版本A-V1-app-policy-value.md#L51	`value_head.py` 辅助函数	active	v1.0	
 Cd-SRC1.1.3	Cd	SRC1	v1.0/09-源码精读/01-GPU版本A-V1-app-policy-value.md#L60	价值头持久化与原子写	active	v1.0	
@@ -85,13 +116,13 @@ Cd-SRC8.2.1	Cd	SRC8	v1.0/09-源码精读/08-评测与数据集管线.md#L24	`pro
 Cd-SRC8.3.1	Cd	SRC8	v1.0/09-源码精读/08-评测与数据集管线.md#L37	`policy_eval.py`：策略 / critic 指标	active	v1.0	
 Cd-SRC8.4.1	Cd	SRC8	v1.0/09-源码精读/08-评测与数据集管线.md#L53	数据集加载：miniF2F / ProofNet / RL 数据	active	v1.0	
 Cd-SRC8.5.1	Cd	SRC8	v1.0/09-源码精读/08-评测与数据集管线.md#L63	`bench_inference.py`：单卡吞吐基准	active	v1.0	
-Cd-V11.2.1	Cd	V11	v1.0/08-V1-1/01-工具调用与agent.md#L25	agent 循环伪代码	active	v1.0	
-Cd-V11.4.3	Cd	V11	v1.0/08-V1-1/01-工具调用与agent.md#L112	`build_prompt` 实现	active	v1.0	
-Cd-V11.5.1	Cd	V11	v1.0/08-V1-1/01-工具调用与agent.md#L132	HTTP 服务器路由表	active	v1.0	
-Cd-V11.7.1	Cd	V11	v1.0/08-V1-1/01-工具调用与agent.md#L204	DSL 样例	active	v1.0	
-Cd-VH.2.3	Cd	VH	v1.0/04-价值头/01-价值头原理.md#L63	`discounted_returns`	active	v1.0	
-Cd-VH.3.5	Cd	VH	v1.0/04-价值头/01-价值头原理.md#L121	64 桶 token 定义	active	v1.0	
-Cd-VH.5.2	Cd	VH	v1.0/04-价值头/01-价值头原理.md#L211	`distance_two_hot`	active	v1.0	
+Cd-V11.2.1	Cd	V11	v1.0/08-V1-1/01-工具调用与agent.md#L27	agent 循环伪代码	active	v1.0	
+Cd-V11.4.3	Cd	V11	v1.0/08-V1-1/01-工具调用与agent.md#L114	`build_prompt` 实现	active	v1.0	
+Cd-V11.5.1	Cd	V11	v1.0/08-V1-1/01-工具调用与agent.md#L134	HTTP 服务器路由表	active	v1.0	
+Cd-V11.7.1	Cd	V11	v1.0/08-V1-1/01-工具调用与agent.md#L206	DSL 样例	active	v1.0	
+Cd-VH.2.3	Cd	VH	v1.0/04-价值头/01-价值头原理.md#L64	`discounted_returns`	active	v1.0	
+Cd-VH.3.5	Cd	VH	v1.0/04-价值头/01-价值头原理.md#L122	64 桶 token 定义	active	v1.0	
+Cd-VH.5.2	Cd	VH	v1.0/04-价值头/01-价值头原理.md#L212	`distance_two_hot`	active	v1.0	
 D-1.1.1	D	1	v1.0/01-基础/01-神经网络与反向传播.md#L20	线性模型	active	v1.0	
 D-1.1.3	D	1	v1.0/01-基础/01-神经网络与反向传播.md#L38	多层感知机	active	v1.0	
 D-1.2.1	D	1	v1.0/01-基础/01-神经网络与反向传播.md#L65	softmax 与分类分布	active	v1.0	
@@ -128,62 +159,143 @@ D-5.7.1	D	5	v1.0/01-基础/05-训练循环与数据管线.md#L264	per-token loss
 D-6.3.1	D	6	v1.0/01-基础/06-初始化与学习率调度.md#L89	LoRA 低秩更新	active	v1.0	
 D-6.4.1	D	6	v1.0/01-基础/06-初始化与学习率调度.md#L111	warmup	active	v1.0	
 D-6.4.2	D	6	v1.0/01-基础/06-初始化与学习率调度.md#L128	常量 + 线性 warmdown 与余弦调度	active	v1.0	
-D-LORA.2.2	D	LORA	v1.0/05-LoRA/01-LoRA原理.md#L42	低秩更新参数化	active	v1.0	
-D-LORA.5.1	D	LORA	v1.0/05-LoRA/01-LoRA原理.md#L174	QLoRA	active	v1.0	
-D-LORA.5.2	D	LORA	v1.0/05-LoRA/01-LoRA原理.md#L180	nf4 blockwise 量化	active	v1.0	
-D-LORA.5.3	D	LORA	v1.0/05-LoRA/01-LoRA原理.md#L195	double quantization	active	v1.0	
-D-LORA.6.1	D	LORA	v1.0/05-LoRA/01-LoRA原理.md#L230	DoRA：幅度-方向分解	active	v1.0	
-D-MCTS.2.1	D	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L29	OR / AND 节点	active	v1.0	
-D-MCTS.3.1	D	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L56	PUCT 选择分数	active	v1.0	
-D-MCTS.4.1	D	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L75	Q 变换与 $\gamma$ 折扣	active	v1.0	
-D-MCTS.5.1	D	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L96	progressive sampling 条件	active	v1.0	
-D-PT.2.1	D	PT	v1.0/02-预训练/01-预训练原理.md#L30	自回归分解与语言建模目标	active	v1.0	
-D-PT.2.2	D	PT	v1.0/02-预训练/01-预训练原理.md#L38	逐位置条件分布	active	v1.0	
-D-PT.3.2	D	PT	v1.0/02-预训练/01-预训练原理.md#L75	带掩码的逐位置损失	active	v1.0	
-D-PT.5.1	D	PT	v1.0/02-预训练/01-预训练原理.md#L107	困惑度 PPL	active	v1.0	
-D-PT.6.1	D	PT	v1.0/02-预训练/01-预训练原理.md#L120	域配比	active	v1.0	
-D-PT.6.2	D	PT	v1.0/02-预训练/01-预训练原理.md#L130	课程学习：线性域退火	active	v1.0	
-D-PT.8.1	D	PT	v1.0/02-预训练/01-预训练原理.md#L167	数据并行 all-reduce	active	v1.0	
-D-PT.8.3	D	PT	v1.0/02-预训练/01-预训练原理.md#L184	梯度累积	active	v1.0	
-D-RL.2.1	D	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L44	token 级 MDP 与轨迹概率	active	v1.0	
-D-RL.4.3	D	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L165	优势函数	active	v1.0	
-D-RL.4.4	D	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L178	GAE：优势的方差–偏差折中	active	v1.0	
-D-RL.5.1	D	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L195	重要性比与单步代理目标	active	v1.0	
-D-RL.6.1	D	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L214	PPO clip 目标	active	v1.0	
-D-RL.6.3	D	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L230	完整 PPO 目标	active	v1.0	
-D-RL.7.1	D	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L249	GRPO 组内相对优势	active	v1.0	
-D-RL.7.3	D	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L264	GRPO 目标	active	v1.0	
-D-RL.8.1	D	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L291	KL 正则与三种估计器	active	v1.0	
-D-RL.8.3	D	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L312	RTTT 的平方对数比 KL	active	v1.0	
-D-RL.9.1	D	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L327	RLVR：可验证奖励	active	v1.0	
-D-RL.11.1	D	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L372	TTRL 与 RTTT	active	v1.0	
-D-SFT.1.1	D	SFT	v1.0/03-SFT/01-SFT原理.md#L23	SFT 的条件似然目标	active	v1.0	
-D-SFT.2.1	D	SFT	v1.0/03-SFT/01-SFT原理.md#L39	(state, tactic) 数据字段	active	v1.0	
-D-SFT.3.1	D	SFT	v1.0/03-SFT/01-SFT原理.md#L55	拼接格式	active	v1.0	
-D-SFT.3.2	D	SFT	v1.0/03-SFT/01-SFT原理.md#L66	标签掩码与掩码交叉熵	active	v1.0	
-D-SFT.5.2	D	SFT	v1.0/03-SFT/01-SFT原理.md#L127	LoRA 增量参数化	active	v1.0	
-D-V11.3.1	D	V11	v1.0/08-V1-1/01-工具调用与agent.md#L53	OpenAI tool-call 协议	active	v1.0	
-D-V11.3.2	D	V11	v1.0/08-V1-1/01-工具调用与agent.md#L69	agentic DSL `{"calls":[...]}`	active	v1.0	
-D-V11.4.1	D	V11	v1.0/08-V1-1/01-工具调用与agent.md#L89	证据与审计结构	active	v1.0	
-D-V11.4.2	D	V11	v1.0/08-V1-1/01-工具调用与agent.md#L96	组合律与贝叶斯重加权	active	v1.0	
-D-V11.5.2	D	V11	v1.0/08-V1-1/01-工具调用与agent.md#L146	单工作线程 actor	active	v1.0	
-D-V11.5.3	D	V11	v1.0/08-V1-1/01-工具调用与agent.md#L153	会话生命周期与乐观并发	active	v1.0	
-D-V11.5.4	D	V11	v1.0/08-V1-1/01-工具调用与agent.md#L162	持久 learner 与 release	active	v1.0	
-D-V11.5.5	D	V11	v1.0/08-V1-1/01-工具调用与agent.md#L169	RTTT hooks	active	v1.0	
-D-V11.6.1	D	V11	v1.0/08-V1-1/01-工具调用与agent.md#L181	三档 transport	active	v1.0	
-D-VH.2.1	D	VH	v1.0/04-价值头/01-价值头原理.md#L36	状态价值、动作价值与优势	active	v1.0	
-D-VH.2.2	D	VH	v1.0/04-价值头/01-价值头原理.md#L58	折扣回报的后向递推	active	v1.0	
-D-VH.3.1	D	VH	v1.0/04-价值头/01-价值头原理.md#L81	nanoproof 的 proof-depth 价值语义	active	v1.0	
-D-VH.3.2	D	VH	v1.0/04-价值头/01-价值头原理.md#L89	REAP 标量价值头的归一化目标	active	v1.0	
-D-VH.3.3	D	VH	v1.0/04-价值头/01-价值头原理.md#L102	GPU 分类语义：distance 1–64	active	v1.0	
-D-VH.4.1	D	VH	v1.0/04-价值头/01-价值头原理.md#L149	标量价值头结构	active	v1.0	
-D-VH.4.2	D	VH	v1.0/04-价值头/01-价值头原理.md#L165	64 桶分类价值头结构	active	v1.0	
-D-VH.5.1	D	VH	v1.0/04-价值头/01-价值头原理.md#L193	two-hot 目标	active	v1.0	
-D-VH.5.3	D	VH	v1.0/04-价值头/01-价值头原理.md#L224	two-hot 交叉熵损失	active	v1.0	
-D-VH.6.1	D	VH	v1.0/04-价值头/01-价值头原理.md#L249	proper scoring rule	active	v1.0	
-D-VH.6.3	D	VH	v1.0/04-价值头/01-价值头原理.md#L261	可靠性图与 ECE	active	v1.0	
-D-VH.8.1	D	VH	v1.0/04-价值头/01-价值头原理.md#L311	PUCT 选择与 Q 统计量	active	v1.0	
-D-VH.8.2	D	VH	v1.0/04-价值头/01-价值头原理.md#L320	叶子评估与备份	active	v1.0	
+D-LORA.2.2	D	LORA	v1.0/05-LoRA/01-LoRA原理.md#L43	低秩更新参数化	active	v1.0	
+D-LORA.5.1	D	LORA	v1.0/05-LoRA/01-LoRA原理.md#L175	QLoRA	active	v1.0	
+D-LORA.5.2	D	LORA	v1.0/05-LoRA/01-LoRA原理.md#L181	nf4 blockwise 量化	active	v1.0	
+D-LORA.5.3	D	LORA	v1.0/05-LoRA/01-LoRA原理.md#L196	double quantization	active	v1.0	
+D-LORA.6.1	D	LORA	v1.0/05-LoRA/01-LoRA原理.md#L231	DoRA：幅度-方向分解	active	v1.0	
+D-MCTS.2.1	D	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L31	OR / AND 节点	active	v1.0	
+D-MCTS.3.1	D	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L58	PUCT 选择分数	active	v1.0	
+D-MCTS.4.1	D	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L77	Q 变换与 $\gamma$ 折扣	active	v1.0	
+D-MCTS.5.1	D	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L98	progressive sampling 条件	active	v1.0	
+D-PT.2.1	D	PT	v1.0/02-预训练/01-预训练原理.md#L32	自回归分解与语言建模目标	active	v1.0	
+D-PT.2.2	D	PT	v1.0/02-预训练/01-预训练原理.md#L40	逐位置条件分布	active	v1.0	
+D-PT.3.2	D	PT	v1.0/02-预训练/01-预训练原理.md#L77	带掩码的逐位置损失	active	v1.0	
+D-PT.5.1	D	PT	v1.0/02-预训练/01-预训练原理.md#L109	困惑度 PPL	active	v1.0	
+D-PT.6.1	D	PT	v1.0/02-预训练/01-预训练原理.md#L122	域配比	active	v1.0	
+D-PT.6.2	D	PT	v1.0/02-预训练/01-预训练原理.md#L132	课程学习：线性域退火	active	v1.0	
+D-PT.8.1	D	PT	v1.0/02-预训练/01-预训练原理.md#L169	数据并行 all-reduce	active	v1.0	
+D-PT.8.3	D	PT	v1.0/02-预训练/01-预训练原理.md#L186	梯度累积	active	v1.0	
+D-PY1.1.1	D	PY1	v1.0/00-预备/PY1-Python语言I.md#L13	CPython 的执行模型	active	v1.0	EXT-PY1-02
+D-PY1.1.2	D	PY1	v1.0/00-预备/PY1-Python语言I.md#L23	三种入口：REPL、脚本、模块	active	v1.0	
+D-PY1.2.1	D	PY1	v1.0/00-预备/PY1-Python语言I.md#L78	名字是绑定，不是盒子	active	v1.0	
+D-PY1.2.3	D	PY1	v1.0/00-预备/PY1-Python语言I.md#L93	对象身份与相等	active	v1.0	
+D-PY1.2.5	D	PY1	v1.0/00-预备/PY1-Python语言I.md#L108	可变与不可变对象	active	v1.0	
+D-PY1.3.1	D	PY1	v1.0/00-预备/PY1-Python语言I.md#L139	标量类型	active	v1.0	
+D-PY1.3.3	D	PY1	v1.0/00-预备/PY1-Python语言I.md#L149	`str` 与 `bytes`	active	v1.0	EXT-PY1-03
+D-PY1.3.4	D	PY1	v1.0/00-预备/PY1-Python语言I.md#L161	`None`	active	v1.0	
+D-PY1.3.5	D	PY1	v1.0/00-预备/PY1-Python语言I.md#L165	序列容器 `list` 与 `tuple`	active	v1.0	
+D-PY1.3.6	D	PY1	v1.0/00-预备/PY1-Python语言I.md#L173	映射与集合 `dict`/`set`/`frozenset`	active	v1.0	
+D-PY1.4.1	D	PY1	v1.0/00-预备/PY1-Python语言I.md#L213	真值测试规则	active	v1.0	
+D-PY1.4.2	D	PY1	v1.0/00-预备/PY1-Python语言I.md#L217	`if/elif/else`	active	v1.0	
+D-PY1.4.3	D	PY1	v1.0/00-预备/PY1-Python语言I.md#L221	`while` 与 `for`	active	v1.0	
+D-PY1.4.6	D	PY1	v1.0/00-预备/PY1-Python语言I.md#L250	结构化模式匹配 `match`	active	v1.0	
+D-PY1.5.1	D	PY1	v1.0/00-预备/PY1-Python语言I.md#L286	`def`、位置参数与关键字参数	active	v1.0	
+D-PY1.5.3	D	PY1	v1.0/00-预备/PY1-Python语言I.md#L308	可变参数与只关键字参数	active	v1.0	
+D-PY1.5.4	D	PY1	v1.0/00-预备/PY1-Python语言I.md#L316	LEGB 作用域规则	active	v1.0	
+D-PY1.5.5	D	PY1	v1.0/00-预备/PY1-Python语言I.md#L327	闭包与 `nonlocal`	active	v1.0	
+D-PY1.5.6	D	PY1	v1.0/00-预备/PY1-Python语言I.md#L335	函数是一等对象；`lambda`	active	v1.0	
+D-PY1.6.1	D	PY1	v1.0/00-预备/PY1-Python语言I.md#L366	推导式	active	v1.0	
+D-PY1.6.2	D	PY1	v1.0/00-预备/PY1-Python语言I.md#L370	生成器表达式与惰性求值	active	v1.0	
+D-PY1.6.3	D	PY1	v1.0/00-预备/PY1-Python语言I.md#L374	迭代协议初识：可迭代对象与迭代器	active	v1.0	
+D-PY2.1.1	D	PY2	v1.0/00-预备/PY2-Python语言II.md#L17	类、实例与 `self`	active	v1.0	
+D-PY2.1.2	D	PY2	v1.0/00-预备/PY2-Python语言II.md#L27	`__init__` 与构造过程	active	v1.0	
+D-PY2.1.4	D	PY2	v1.0/00-预备/PY2-Python语言II.md#L49	继承与 MRO	active	v1.0	
+D-PY2.2.1	D	PY2	v1.0/00-预备/PY2-Python语言II.md#L101	数据模型与特殊方法总览	active	v1.0	EXT-PY2-03
+D-PY2.3.1	D	PY2	v1.0/00-预备/PY2-Python语言II.md#L184	`property`：把方法伪装成属性	active	v1.0	
+D-PY2.3.2	D	PY2	v1.0/00-预备/PY2-Python语言II.md#L194	描述符协议	active	v1.0	
+D-PY2.3.3	D	PY2	v1.0/00-预备/PY2-Python语言II.md#L204	`__slots__` 与内存布局	active	v1.0	
+D-PY2.4.1	D	PY2	v1.0/00-预备/PY2-Python语言II.md#L223	`dataclass`：样板代码生成器	active	v1.0	EXT-PY2-06
+D-PY2.4.3	D	PY2	v1.0/00-预备/PY2-Python语言II.md#L247	`typing`：`Optional`/`Union`/`Sequence`/`Mapping`/`Protocol`	active	v1.0	
+D-PY2.4.5	D	PY2	v1.0/00-预备/PY2-Python语言II.md#L270	`enum`：具名常量	active	v1.0	
+D-PY2.5.1	D	PY2	v1.0/00-预备/PY2-Python语言II.md#L278	异常层级	active	v1.0	
+D-PY2.5.2	D	PY2	v1.0/00-预备/PY2-Python语言II.md#L288	`try/except/else/finally` 语义	active	v1.0	
+D-PY2.5.3	D	PY2	v1.0/00-预备/PY2-Python语言II.md#L297	`raise`、异常链与自定义异常	active	v1.0	
+D-PY2.6.1	D	PY2	v1.0/00-预备/PY2-Python语言II.md#L335	`with` 与 `__enter__`/`__exit__`	active	v1.0	
+D-PY2.7.1	D	PY2	v1.0/00-预备/PY2-Python语言II.md#L388	函数是一等对象与高阶函数	active	v1.0	
+D-PY2.7.2	D	PY2	v1.0/00-预备/PY2-Python语言II.md#L394	装饰器：`f = deco(f)` 的语法糖	active	v1.0	
+D-PY2.7.3	D	PY2	v1.0/00-预备/PY2-Python语言II.md#L400	带参装饰器：三层结构	active	v1.0	
+D-PY2.7.4	D	PY2	v1.0/00-预备/PY2-Python语言II.md#L416	`functools.lru_cache`：记忆化	active	v1.0	
+D-PY2.8.1	D	PY2	v1.0/00-预备/PY2-Python语言II.md#L451	迭代协议：`__iter__`/`__next__`/`StopIteration`	active	v1.0	
+D-PY2.8.2	D	PY2	v1.0/00-预备/PY2-Python语言II.md#L463	生成器函数与 `yield`：惰性求值	active	v1.0	EXT-PY2-01
+D-PY2.9.1	D	PY2	v1.0/00-预备/PY2-Python语言II.md#L514	模块与 `import` 机制	active	v1.0	
+D-PY2.9.2	D	PY2	v1.0/00-预备/PY2-Python语言II.md#L526	`__name__ == "__main__"` 与双入口	active	v1.0	
+D-PY2.9.3	D	PY2	v1.0/00-预备/PY2-Python语言II.md#L537	包与相对导入	active	v1.0	
+D-PY3.1.1	D	PY3	v1.0/00-预备/PY3-工程与环境.md#L16	虚拟环境与解释器隔离	active	v1.0	EXT-PY3-01
+D-PY3.7.1	D	PY3	v1.0/00-预备/PY3-工程与环境.md#L309	可复现性的三要素	active	v1.0	
+D-PY4.1.1	D	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L16	ndarray	active	v1.0	EXT-PY4-01
+D-PY4.1.2	D	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L25	shape 与 dtype	active	v1.0	
+D-PY4.1.4	D	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L36	axis 语义	active	v1.0	
+D-PY4.1.5	D	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L40	strides：下标到字节地址的映射	active	v1.0	
+D-PY4.2.1	D	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L75	基本索引与切片	active	v1.0	
+D-PY4.2.3	D	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L83	花式索引：整数数组索引	active	v1.0	
+D-PY4.2.4	D	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L87	布尔掩码	active	v1.0	
+D-PY4.3.1	D	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L121	广播严格规则	active	v1.0	EXT-PY4-01
+D-PY4.5.1	D	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L226	归约算子	active	v1.0	
+D-PY4.6.2	D	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L269	种子与可复现性	active	v1.0	
+D-PY4.7.1	D	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L295	`matmul` / `@` 语义	active	v1.0	EXT-PY4-03
+D-PY4.7.3	D	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L303	`np.linalg` 常用函数	active	v1.0	
+D-PY5.1.1	D	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L23	张量：带元数据的同构多维数组	active	v1.0	EXT-PY5-01
+D-PY5.1.2	D	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L33	dtype 与 device 的相容规则	active	v1.0	
+D-PY5.2.1	D	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L78	view 与 reshape：改变解释方式还是复制数据	active	v1.0	
+D-PY5.2.2	D	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L84	transpose/permute 与 contiguous	active	v1.0	
+D-PY5.2.3	D	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L88	unsqueeze/squeeze 与广播	active	v1.0	
+D-PY5.3.1	D	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L123	计算图、叶子与非叶子张量	active	v1.0	
+D-PY5.3.2	D	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L130	requires_grad、grad_fn 与 .grad	active	v1.0	EXT-PY5-01
+D-PY5.3.3	D	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L136	detach 与 torch.no_grad	active	v1.0	
+D-PY5.4.1	D	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L182	nn.Module：参数注册与子模块	active	v1.0	
+D-PY5.4.2	D	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L194	state_dict 与 load_state_dict	active	v1.0	
+D-PY5.5.1	D	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L237	nn.CrossEntropyLoss：logits 输入、内部含 log-softmax	active	v1.0	
+D-PY5.5.2	D	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L247	nn.MSELoss：回归目标，对照【定义 1.2.5】	active	v1.0	
+D-PY5.5.3	D	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L251	优化器：SGD 与 Adam	active	v1.0	
+D-PY5.6.1	D	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L271	Dataset 协议	active	v1.0	
+D-PY5.6.2	D	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L280	DataLoader：batch/shuffle/collate/num_workers	active	v1.0	EXT-PY5-03
+D-PY6.1.1	D	PY6	v1.0/00-预备/PY6-PyTorch进阶与生态.md#L18	梯度检查点	active	v1.0	EXT-PY6-02
+D-PY6.1.3	D	PY6	v1.0/00-预备/PY6-PyTorch进阶与生态.md#L36	混合精度与 `autocast`	active	v1.0	
+D-PY6.2.1	D	PY6	v1.0/00-预备/PY6-PyTorch进阶与生态.md#L76	`torch.profiler` 入门	active	v1.0	
+D-PY6.2.4	D	PY6	v1.0/00-预备/PY6-PyTorch进阶与生态.md#L98	`torch.compile` 与固定形状	active	v1.0	
+D-PY6.3.1	D	PY6	v1.0/00-预备/PY6-PyTorch进阶与生态.md#L128	`transformers`：`Auto*` 三件套	active	v1.0	EXT-PY6-06
+D-PY6.3.3	D	PY6	v1.0/00-预备/PY6-PyTorch进阶与生态.md#L142	`peft`：`LoraConfig` / `get_peft_model`	active	v1.0	EXT-PY6-07
+D-PY6.3.5	D	PY6	v1.0/00-预备/PY6-PyTorch进阶与生态.md#L157	`accelerate`：`Accelerator`	active	v1.0	
+D-RL.2.1	D	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L46	token 级 MDP 与轨迹概率	active	v1.0	
+D-RL.4.3	D	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L167	优势函数	active	v1.0	
+D-RL.4.4	D	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L180	GAE：优势的方差–偏差折中	active	v1.0	
+D-RL.5.1	D	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L197	重要性比与单步代理目标	active	v1.0	
+D-RL.6.1	D	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L216	PPO clip 目标	active	v1.0	
+D-RL.6.3	D	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L232	完整 PPO 目标	active	v1.0	
+D-RL.7.1	D	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L251	GRPO 组内相对优势	active	v1.0	
+D-RL.7.3	D	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L266	GRPO 目标	active	v1.0	
+D-RL.8.1	D	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L293	KL 正则与三种估计器	active	v1.0	
+D-RL.8.3	D	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L314	RTTT 的平方对数比 KL	active	v1.0	
+D-RL.9.1	D	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L329	RLVR：可验证奖励	active	v1.0	
+D-RL.11.1	D	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L374	TTRL 与 RTTT	active	v1.0	
+D-SFT.1.1	D	SFT	v1.0/03-SFT/01-SFT原理.md#L25	SFT 的条件似然目标	active	v1.0	
+D-SFT.2.1	D	SFT	v1.0/03-SFT/01-SFT原理.md#L41	(state, tactic) 数据字段	active	v1.0	
+D-SFT.3.1	D	SFT	v1.0/03-SFT/01-SFT原理.md#L57	拼接格式	active	v1.0	
+D-SFT.3.2	D	SFT	v1.0/03-SFT/01-SFT原理.md#L68	标签掩码与掩码交叉熵	active	v1.0	
+D-SFT.5.2	D	SFT	v1.0/03-SFT/01-SFT原理.md#L129	LoRA 增量参数化	active	v1.0	
+D-V11.3.1	D	V11	v1.0/08-V1-1/01-工具调用与agent.md#L55	OpenAI tool-call 协议	active	v1.0	
+D-V11.3.2	D	V11	v1.0/08-V1-1/01-工具调用与agent.md#L71	agentic DSL `{"calls":[...]}`	active	v1.0	
+D-V11.4.1	D	V11	v1.0/08-V1-1/01-工具调用与agent.md#L91	证据与审计结构	active	v1.0	
+D-V11.4.2	D	V11	v1.0/08-V1-1/01-工具调用与agent.md#L98	组合律与贝叶斯重加权	active	v1.0	
+D-V11.5.2	D	V11	v1.0/08-V1-1/01-工具调用与agent.md#L148	单工作线程 actor	active	v1.0	
+D-V11.5.3	D	V11	v1.0/08-V1-1/01-工具调用与agent.md#L155	会话生命周期与乐观并发	active	v1.0	
+D-V11.5.4	D	V11	v1.0/08-V1-1/01-工具调用与agent.md#L164	持久 learner 与 release	active	v1.0	
+D-V11.5.5	D	V11	v1.0/08-V1-1/01-工具调用与agent.md#L171	RTTT hooks	active	v1.0	
+D-V11.6.1	D	V11	v1.0/08-V1-1/01-工具调用与agent.md#L183	三档 transport	active	v1.0	
+D-VH.2.1	D	VH	v1.0/04-价值头/01-价值头原理.md#L37	状态价值、动作价值与优势	active	v1.0	
+D-VH.2.2	D	VH	v1.0/04-价值头/01-价值头原理.md#L59	折扣回报的后向递推	active	v1.0	
+D-VH.3.1	D	VH	v1.0/04-价值头/01-价值头原理.md#L82	nanoproof 的 proof-depth 价值语义	active	v1.0	
+D-VH.3.2	D	VH	v1.0/04-价值头/01-价值头原理.md#L90	REAP 标量价值头的归一化目标	active	v1.0	
+D-VH.3.3	D	VH	v1.0/04-价值头/01-价值头原理.md#L103	GPU 分类语义：distance 1–64	active	v1.0	
+D-VH.4.1	D	VH	v1.0/04-价值头/01-价值头原理.md#L150	标量价值头结构	active	v1.0	
+D-VH.4.2	D	VH	v1.0/04-价值头/01-价值头原理.md#L166	64 桶分类价值头结构	active	v1.0	
+D-VH.5.1	D	VH	v1.0/04-价值头/01-价值头原理.md#L194	two-hot 目标	active	v1.0	
+D-VH.5.3	D	VH	v1.0/04-价值头/01-价值头原理.md#L225	two-hot 交叉熵损失	active	v1.0	
+D-VH.6.1	D	VH	v1.0/04-价值头/01-价值头原理.md#L250	proper scoring rule	active	v1.0	
+D-VH.6.3	D	VH	v1.0/04-价值头/01-价值头原理.md#L262	可靠性图与 ECE	active	v1.0	
+D-VH.8.1	D	VH	v1.0/04-价值头/01-价值头原理.md#L312	PUCT 选择与 Q 统计量	active	v1.0	
+D-VH.8.2	D	VH	v1.0/04-价值头/01-价值头原理.md#L321	叶子评估与备份	active	v1.0	
 DOC-1	DOC	1	v1.0/01-基础/01-神经网络与反向传播.md	第 1 章 神经网络与反向传播	active	v1.0	
 DOC-2	DOC	2	v1.0/01-基础/02-自动微分与优化器.md	第 2 章 自动微分与优化器	active	v1.0	
 DOC-3	DOC	3	v1.0/01-基础/03-Attention与Transformer.md	第 3 章 Attention 与 Transformer	active	v1.0	
@@ -196,6 +308,12 @@ DOC-LORA	DOC	LORA	v1.0/05-LoRA/01-LoRA原理.md	05-LoRA原理：低秩适配、�
 DOC-MCTS	DOC	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md	07 · MCTS 原理与 V1 闭环	active	v1.0	
 DOC-PREM	DOC	PREM	v1.0/00-预备/00-大纲.md	00 · 预备篇大纲（Python / PyTorch 从零）	active	v1.0	
 DOC-PT	DOC	PT	v1.0/02-预训练/01-预训练原理.md	01 · 预训练原理	active	v1.0	
+DOC-PY1	DOC	PY1	v1.0/00-预备/PY1-Python语言I.md	PY1 · Python 语言 I	active	v1.0	
+DOC-PY2	DOC	PY2	v1.0/00-预备/PY2-Python语言II.md	PY2 · Python 语言 II	active	v1.0	
+DOC-PY3	DOC	PY3	v1.0/00-预备/PY3-工程与环境.md	预备 PY3 · 工程与环境	active	v1.0	
+DOC-PY4	DOC	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md	PY4 · NumPy 与张量思维	active	v1.0	
+DOC-PY5	DOC	PY5	v1.0/00-预备/PY5-PyTorch从零.md	预备篇 PY5 · PyTorch 从零	active	v1.0	
+DOC-PY6	DOC	PY6	v1.0/00-预备/PY6-PyTorch进阶与生态.md	预备篇 PY6 · PyTorch 进阶与生态	active	v1.0	
 DOC-RES	DOC	RES	v1.0/00-资料清单.md	00 · 资料清单（v1.0）	active	v1.0	
 DOC-RL	DOC	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md	06 · RL 与 RLVR 原理（从策略梯度到可验证奖励）	active	v1.0	
 DOC-RM01API	DOC	RM01API	v1.0/01-基础/code/with_api/README.md	with_api：用 HuggingFace 现成 API 训练同一个 tiny GPT	active	v1.0	
@@ -232,6 +350,26 @@ E-5.8.1	E	5	v1.0/01-基础/05-训练循环与数据管线.md#L296	最小可运�
 E-6.7.1	E	6	v1.0/01-基础/06-初始化与学习率调度.md#L198	初始化与 LR 调度的数值实验	active	v1.0	
 E-BRIDGE.3.1	E	BRIDGE	v1.0/08-V1-1/code/opencode_bridge.md#L48	三种 transport 的切换	active	v1.0	
 E-BRIDGE.4.1	E	BRIDGE	v1.0/08-V1-1/code/opencode_bridge.md#L58	工具映射建议	active	v1.0	
+E-PY1.1.5	E	PY1	v1.0/00-预备/PY1-Python语言I.md#L68	三种入口的可观测差异	active	v1.0	
+E-PY2.1.6	E	PY2	v1.0/00-预备/PY2-Python语言II.md#L67	剖析 `CharTokenizer`：类属性、类方法与只读属性	active	v1.0	
+E-PY2.2.6	E	PY2	v1.0/00-预备/PY2-Python语言II.md#L156	`CharDataset`：只靠 `__len__` + `__getitem__` 就成为数据集	active	v1.0	
+E-PY2.3.4	E	PY2	v1.0/00-预备/PY2-Python语言II.md#L215	`CharTokenizer.vocab_size` 是只读属性	active	v1.0	
+E-PY2.4.4	E	PY2	v1.0/00-预备/PY2-Python语言II.md#L258	用 `Protocol` 描述分词器接口	active	v1.0	
+E-PY2.5.5	E	PY2	v1.0/00-预备/PY2-Python语言II.md#L314	`data.py` 的“捕获后降级”与“主动报错”	active	v1.0	
+E-PY2.6.3	E	PY2	v1.0/00-预备/PY2-Python语言II.md#L354	`data.py` 的原子写：临时文件 + `os.replace`	active	v1.0	
+E-PY2.7.5	E	PY2	v1.0/00-预备/PY2-Python语言II.md#L420	`data.py` 中的高阶用法	active	v1.0	
+E-PY2.8.5	E	PY2	v1.0/00-预备/PY2-Python语言II.md#L487	读懂 `data.py` 的生成器与迭代用法	active	v1.0	
+E-PY2.9.5	E	PY2	v1.0/00-预备/PY2-Python语言II.md#L549	`data.py` 与 `model.py` 的模块结构	active	v1.0	
+E-PY4.3.2	E	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L132	合法广播示例	active	v1.0	
+E-PY4.3.3	E	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L141	反例：不同时为 1 或相等则报错	active	v1.0	
+E-PY4.4.3	E	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L198	朴素实现与向量化基准	active	v1.0	
+E-PY4.5.3	E	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L236	softmax 的向量化实现	active	v1.0	
+E-PY6.4.2	E	PY6	v1.0/00-预备/PY6-PyTorch进阶与生态.md#L206	读 `F-b04-value_head_api` 的调用链并标注对象来源	active	v1.0	
+E-PY6.6.2	E	PY6	v1.0/00-预备/PY6-PyTorch进阶与生态.md#L254	自测：检查点为什么省显存	active	v1.0	
+E-PY6.6.3	E	PY6	v1.0/00-预备/PY6-PyTorch进阶与生态.md#L258	自测：非连续张量	active	v1.0	
+E-PY6.6.4	E	PY6	v1.0/00-预备/PY6-PyTorch进阶与生态.md#L262	自测：fp16 与 bf16	active	v1.0	
+E-PY6.6.5	E	PY6	v1.0/00-预备/PY6-PyTorch进阶与生态.md#L266	自测：读调用链	active	v1.0	
+E-PY6.6.6	E	PY6	v1.0/00-预备/PY6-PyTorch进阶与生态.md#L270	自测：找瓶颈	active	v1.0	
 E-SRC1.7.1	E	SRC1	v1.0/09-源码精读/01-GPU版本A-V1-app-policy-value.md#L209	张量/数据流小结	active	v1.0	
 E-SRC2.6.1	E	SRC2	v1.0/09-源码精读/02-GPU版本B-容器Qwen-QLoRA-SFT.md#L140	张量形状与训练配置	active	v1.0	
 E-SRC3.5.1	E	SRC3	v1.0/09-源码精读/03-GPU版本C-gpu_runtime后端.md#L198	关键超参汇总	active	v1.0	
@@ -246,10 +384,33 @@ Ex-3.7.2	Ex	3	v1.0/01-基础/03-Attention与Transformer.md#L301	RoPE 恒等式�
 Ex-4.8.2	Ex	4	v1.0/01-基础/04-分词器与词表.md#L210	手工 BPE 合并	active	v1.0	
 Ex-5.9.2	Ex	5	v1.0/01-基础/05-训练循环与数据管线.md#L352	权重衰减的缩放推导	active	v1.0	
 Ex-6.8.2	Ex	6	v1.0/01-基础/06-初始化与学习率调度.md#L244	Kaiming 方差与 LR 乘子实现	active	v1.0	
-Ex-MCTS.10.2	Ex	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L211	思考题	active	v1.0	
-Ex-PT.11.2	Ex	PT	v1.0/02-预训练/01-预训练原理.md#L237	动手：域切换与预算	active	v1.0	
-Ex-RL.13.2	Ex	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L487	思考题	active	v1.0	
-Ex-SFT.8.3	Ex	SFT	v1.0/03-SFT/01-SFT原理.md#L190	动手：mask 与 LoRA 秩	active	v1.0	
+Ex-MCTS.10.2	Ex	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L213	思考题	active	v1.0	
+Ex-PT.11.2	Ex	PT	v1.0/02-预训练/01-预训练原理.md#L239	动手：域切换与预算	active	v1.0	
+Ex-PY1.8.1	Ex	PY1	v1.0/00-预备/PY1-Python语言I.md#L420	执行入口	active	v1.0	
+Ex-PY1.8.2	Ex	PY1	v1.0/00-预备/PY1-Python语言I.md#L424	绑定与身份	active	v1.0	
+Ex-PY1.8.3	Ex	PY1	v1.0/00-预备/PY1-Python语言I.md#L428	切片与拷贝	active	v1.0	
+Ex-PY1.8.4	Ex	PY1	v1.0/00-预备/PY1-Python语言I.md#L432	哈希与集合	active	v1.0	
+Ex-PY1.8.5	Ex	PY1	v1.0/00-预备/PY1-Python语言I.md#L436	控制流	active	v1.0	
+Ex-PY1.8.6	Ex	PY1	v1.0/00-预备/PY1-Python语言I.md#L440	默认参数陷阱	active	v1.0	
+Ex-PY1.8.7	Ex	PY1	v1.0/00-预备/PY1-Python语言I.md#L444	闭包与 `nonlocal`	active	v1.0	
+Ex-PY1.8.8	Ex	PY1	v1.0/00-预备/PY1-Python语言I.md#L448	推导式与生成器	active	v1.0	
+Ex-PY2.11.1	Ex	PY2	v1.0/00-预备/PY2-Python语言II.md#L580	类属性共享陷阱与 `dataclass` 修复	active	v1.0	
+Ex-PY2.11.2	Ex	PY2	v1.0/00-预备/PY2-Python语言II.md#L584	给 `Buffer` 补全协议	active	v1.0	
+Ex-PY2.11.3	Ex	PY2	v1.0/00-预备/PY2-Python语言II.md#L588	用生成器与装饰器处理 `data.py` 的采样	active	v1.0	
+Ex-PY3.9.1	Ex	PY3	v1.0/00-预备/PY3-工程与环境.md#L371	虚拟环境与依赖隔离	active	v1.0	
+Ex-PY3.9.2	Ex	PY3	v1.0/00-预备/PY3-工程与环境.md#L375	参数与日志	active	v1.0	
+Ex-PY3.9.3	Ex	PY3	v1.0/00-预备/PY3-工程与环境.md#L379	测试与复现	active	v1.0	
+Ex-PY4.9.1	Ex	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L334	形状推导	active	v1.0	
+Ex-PY4.9.2	Ex	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L338	视图还是拷贝	active	v1.0	
+Ex-PY4.9.3	Ex	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L342	把朴素实现向量化并基准	active	v1.0	
+Ex-PY5.10.1	Ex	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L456	视图与拷贝	active	v1.0	
+Ex-PY5.10.2	Ex	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L460	autograd 与梯度累加	active	v1.0	
+Ex-PY5.10.3	Ex	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L464	手写线性回归闭环	active	v1.0	
+Ex-PY5.10.4	Ex	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L468	两层 MLP 分类闭环	active	v1.0	
+Ex-PY5.10.5	Ex	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L472	制造并修复五个错误	active	v1.0	
+Ex-PY5.10.6	Ex	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L476	公式与实践对照	active	v1.0	
+Ex-RL.13.2	Ex	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L489	思考题	active	v1.0	
+Ex-SFT.8.3	Ex	SFT	v1.0/03-SFT/01-SFT原理.md#L192	动手：mask 与 LoRA 秩	active	v1.0	
 F-b01-configs	F	b01	v1.0/01-基础/code/from_scratch/configs.py#L1	tiny GPT 可复现配置（micro/tiny 两档）	active	v1.0	
 F-b01-configs._swiglu_hidden	F	b01	v1.0/01-基础/code/from_scratch/configs.py#L110	SwiGLU 中间维度向上取整到 multiple_of	active	v1.0	
 F-b01-configs.get_config	F	b01	v1.0/01-基础/code/from_scratch/configs.py#L147	按名字取配置并返回深拷贝	active	v1.0	
@@ -446,6 +607,82 @@ F-ds-prepare_tiny.synth_statements	F	ds	v1.0/datasets/prepare_tiny.py#L130	合�
 F-ds-prepare_tiny.write_value_head_note	F	ds	v1.0/datasets/prepare_tiny.py#L307	写价值头特征分片说明	active	v1.0	
 F-misc-fixorder	F	misc	v1.0/fixorder.py#L1	临时正文顺序修复脚本	active	v1.0	
 F-misc-validate_nb	F	misc	v1.0/_validate_nb.py#L1	校验 notebook 合法性与可编译性	active	v1.0	
+F-pre-py1	F	pre	v1.0/00-预备/code/py1_language_basics.py#L1	Python 语言 I 教学代码	active	v1.0	
+F-pre-py1.classify	F	pre	v1.0/00-预备/code/py1_language_basics.py#L115	match 结构化模式匹配 + 守卫	active	v1.0	
+F-pre-py1.comprehension_vs_generator	F	pre	v1.0/00-预备/code/py1_language_basics.py#L131	推导式 vs 生成器表达式	active	v1.0	
+F-pre-py1.fixed_default	F	pre	v1.0/00-预备/code/py1_language_basics.py#L81	用 None 哨兵修正可变默认值陷阱	active	v1.0	
+F-pre-py1.main	F	pre	v1.0/00-预备/code/py1_language_basics.py#L159	运行全部示例并打印结果	active	v1.0	
+F-pre-py1.make_counter	F	pre	v1.0/00-预备/code/py1_language_basics.py#L99	闭包与 nonlocal：返回带状态的计数器	active	v1.0	
+F-pre-py1.mutable_default_trap	F	pre	v1.0/00-预备/code/py1_language_basics.py#L74	可变默认值陷阱（错误示范）	active	v1.0	
+F-pre-py1.show_binding_semantics	F	pre	v1.0/00-预备/code/py1_language_basics.py#L23	绑定/身份/可变性的可观测行为	active	v1.0	
+F-pre-py1.show_bytecode	F	pre	v1.0/00-预备/code/py1_language_basics.py#L150	用 dis 观察字节码	active	v1.0	
+F-pre-py1.slice_semantics	F	pre	v1.0/00-预备/code/py1_language_basics.py#L55	切片：左闭右开、负索引、步长、越界截断	active	v1.0	
+F-pre-py1.tag	F	pre	v1.0/00-预备/code/py1_language_basics.py#L90	签名演示：*args、只关键字参数、**kwargs	active	v1.0	
+F-pre-py2	F	pre	v1.0/00-预备/code/py2_oop_protocols.py#L1	Python 语言 II 教学代码：类/协议/异常/生成器/装饰器	active	v1.0	
+F-pre-py2.atomic_write	F	pre	v1.0/00-预备/code/py2_oop_protocols.py#L240	临时文件 + os.replace 的原子写	active	v1.0	
+F-pre-py2.Batch	F	pre	v1.0/00-预备/code/py2_oop_protocols.py#L133	dataclass：自动 __init__/__repr__/__eq__（对照 data.py 的 Batch）	active	v1.0	
+F-pre-py2.Buffer	F	pre	v1.0/00-预备/code/py2_oop_protocols.py#L61	只实现容器协议即可被 len()/索引/for 使用	active	v1.0	
+F-pre-py2.Color	F	pre	v1.0/00-预备/code/py2_oop_protocols.py#L141	Enum：具名常量，成员是单例	active	v1.0	
+F-pre-py2.Counter	F	pre	v1.0/00-预备/code/py2_oop_protocols.py#L84	property 读只读派生值 + 描述符式校验 setter	active	v1.0	
+F-pre-py2.encode_safe	F	pre	v1.0/00-预备/code/py2_oop_protocols.py#L198	EAFP 风格：直接查表，失败再处理	active	v1.0	
+F-pre-py2.feature_pipeline	F	pre	v1.0/00-预备/code/py2_oop_protocols.py#L312	生成器流水线：过滤 + 变换，无中间 list	active	v1.0	
+F-pre-py2.fib	F	pre	v1.0/00-预备/code/py2_oop_protocols.py#L275	functools.lru_cache 记忆化	active	v1.0	
+F-pre-py2.main	F	pre	v1.0/00-预备/code/py2_oop_protocols.py#L322	运行全部演示	active	v1.0	
+F-pre-py2.memory_footprint	F	pre	v1.0/00-预备/code/py2_oop_protocols.py#L106	粗略比较有/无 __slots__ 的实例内存	active	v1.0	
+F-pre-py2.parse_ids	F	pre	v1.0/00-预备/code/py2_oop_protocols.py#L181	示范 else/finally 与 raise ... from 的语义	active	v1.0	
+F-pre-py2.pushed	F	pre	v1.0/00-预备/code/py2_oop_protocols.py#L228	@contextmanager：用生成器写上下文管理器	active	v1.0	
+F-pre-py2.retry	F	pre	v1.0/00-预备/code/py2_oop_protocols.py#L255	带参装饰器：三层结构，functools.wraps 保元数据	active	v1.0	
+F-pre-py2.SimpleTokenizer	F	pre	v1.0/00-预备/code/py2_oop_protocols.py#L158	满足 TokenizerLike 协议的最小实现（不继承）	active	v1.0	
+F-pre-py2.sort_by_abs	F	pre	v1.0/00-预备/code/py2_oop_protocols.py#L283	高阶函数：key= 回调	active	v1.0	
+F-pre-py2.take	F	pre	v1.0/00-预备/code/py2_oop_protocols.py#L305	itertools.islice：从无限迭代器取前 n 个	active	v1.0	
+F-pre-py2.Timer	F	pre	v1.0/00-预备/code/py2_oop_protocols.py#L214	类式上下文管理器：测量代码块耗时	active	v1.0	
+F-pre-py2.TokenizerError	F	pre	v1.0/00-预备/code/py2_oop_protocols.py#L176	库专用异常基类，便于调用方精确捕获	active	v1.0	
+F-pre-py2.TokenizerLike	F	pre	v1.0/00-预备/code/py2_oop_protocols.py#L148	Protocol：结构化子类型（duck typing 的类型化）	active	v1.0	
+F-pre-py2.Vec2	F	pre	v1.0/00-预备/code/py2_oop_protocols.py#L33	二维向量：类属性 + 实例属性 + 运算符重载 + __repr__	active	v1.0	
+F-pre-py2.windows	F	pre	v1.0/00-预备/code/py2_oop_protocols.py#L293	生成器：滑动窗口，惰性求值	active	v1.0	
+F-pre-py3	F	pre	v1.0/00-预备/code/py3_engineering.py#L1	工程与环境教学骨架（argparse + logging + 可测函数）	active	v1.0	
+F-pre-py3.configure_logging	F	pre	v1.0/00-预备/code/py3_engineering.py#L30	配置根 logger 的级别与格式	active	v1.0	
+F-pre-py3.DEFAULT_FORMAT	F	pre	v1.0/00-预备/code/py3_engineering.py#L26	日志统一格式：时间 级别 模块名 消息	active	v1.0	
+F-pre-py3.draw	F	pre	v1.0/00-预备/code/py3_engineering.py#L64	按 seed 生成一组 [0,1) 随机数（纯函数式）	active	v1.0	
+F-pre-py3.LOGGER	F	pre	v1.0/00-预备/code/py3_engineering.py#L23	本模块 logger（不在 import 时配置，配置权交给入口）	active	v1.0	
+F-pre-py3.main	F	pre	v1.0/00-预备/code/py3_engineering.py#L99	串起解析、日志、播种与汇总流程	active	v1.0	
+F-pre-py3.parse_args	F	pre	v1.0/00-预备/code/py3_engineering.py#L84	定义并解析命令行参数	active	v1.0	
+F-pre-py3.seed_everything	F	pre	v1.0/00-预备/code/py3_engineering.py#L40	固定 Python/numpy/torch 三处随机源	active	v1.0	
+F-pre-py3.summarize	F	pre	v1.0/00-预备/code/py3_engineering.py#L71	对数值序列做无副作用汇总	active	v1.0	
+F-pre-py4	F	pre	v1.0/00-预备/code/py4_numpy.py#L1	NumPy 与张量思维教学代码	active	v1.0	
+F-pre-py4.__main__	F	pre	v1.0/00-预备/code/py4_numpy.py#L206	脚本入口：自测 + 小基准	active	v1.0	
+F-pre-py4.benchmark_vectorization	F	pre	v1.0/00-预备/code/py4_numpy.py#L128	基准：朴素循环 vs 向量化	active	v1.0	
+F-pre-py4.broadcast_shape	F	pre	v1.0/00-预备/code/py4_numpy.py#L65	按严格规则推导广播结果形状（不符则 None）	active	v1.0	
+F-pre-py4.classify_indexing	F	pre	v1.0/00-预备/code/py4_numpy.py#L36	判断常见索引结果是视图还是拷贝	active	v1.0	
+F-pre-py4.describe_array	F	pre	v1.0/00-预备/code/py4_numpy.py#L21	打印 ndarray 的形状/类型/步长元数据	active	v1.0	
+F-pre-py4.matmul_naive	F	pre	v1.0/00-预备/code/py4_numpy.py#L81	朴素三重循环实现 X @ W.T + b（对照【算法 PY4.4.2】）	active	v1.0	
+F-pre-py4.matmul_vectorized	F	pre	v1.0/00-预备/code/py4_numpy.py#L99	用 @ 与广播实现同一计算	active	v1.0	
+F-pre-py4.rng_demo	F	pre	v1.0/00-预备/code/py4_numpy.py#L113	Generator / 种子 / SeedSequence.spawn 演示	active	v1.0	
+F-pre-py4.selftest	F	pre	v1.0/00-预备/code/py4_numpy.py#L159	PY4 全章自测（assert 失败即报错）	active	v1.0	
+F-pre-py4.softmax_np	F	pre	v1.0/00-预备/code/py4_numpy.py#L105	数值稳定的 NumPy softmax（对照【例 PY4.5.3】）	active	v1.0	
+F-pre-py5	F	pre	v1.0/00-预备/code/py5_torch_from_zero.py#L2	PyTorch 从零：线性回归与两层 MLP 训练闭环	active	v1.0	
+F-pre-py5.evaluate	F	pre	v1.0/00-预备/code/py5_torch_from_zero.py#L130	验证：eval() + no_grad()，只前向，返回 (loss, acc)	active	v1.0	
+F-pre-py5.LinearRegressionModel	F	pre	v1.0/00-预备/code/py5_torch_from_zero.py#L46	单层线性回归：y = x W^T + b（对照【定义 1.1.1】）	active	v1.0	
+F-pre-py5.load_checkpoint	F	pre	v1.0/00-预备/code/py5_torch_from_zero.py#L154	加载 checkpoint（map_location 兜底跨设备）	active	v1.0	
+F-pre-py5.main	F	pre	v1.0/00-预备/code/py5_torch_from_zero.py#L230	命令行入口：--mode linear|mlp|both	active	v1.0	
+F-pre-py5.make_regression_data	F	pre	v1.0/00-预备/code/py5_torch_from_zero.py#L37	生成 y = 3x + 2 + 高斯噪声 的一维回归数据	active	v1.0	
+F-pre-py5.run_linear_regression	F	pre	v1.0/00-预备/code/py5_torch_from_zero.py#L163	线性回归闭环：拟合 y = 3x + 2	active	v1.0	
+F-pre-py5.run_mlp_classification	F	pre	v1.0/00-预备/code/py5_torch_from_zero.py#L188	两层 MLP 分类闭环（Dataset/DataLoader + 验证 + checkpoint + 可选 AMP）	active	v1.0	
+F-pre-py5.save_checkpoint	F	pre	v1.0/00-预备/code/py5_torch_from_zero.py#L144	保存 model/optimizer/epoch 的完整 checkpoint	active	v1.0	
+F-pre-py5.ToyClassificationDataset	F	pre	v1.0/00-预备/code/py5_torch_from_zero.py#L74	三簇二维玩具分类集（Dataset 协议：__len__/__getitem__）	active	v1.0	
+F-pre-py5.train_one_epoch	F	pre	v1.0/00-预备/code/py5_torch_from_zero.py#L95	一个 epoch 的标准训练五步（【算法 PY5.7.1】）	active	v1.0	
+F-pre-py5.train_one_epoch_amp	F	pre	v1.0/00-预备/code/py5_torch_from_zero.py#L112	CUDA 混合精度版单 epoch（CPU 路径不进入）	active	v1.0	
+F-pre-py5.TwoLayerMLP	F	pre	v1.0/00-预备/code/py5_torch_from_zero.py#L58	两层 ReLU MLP（对照【定义 1.1.3】三层结构与【代码 1.1.4】forward）	active	v1.0	
+F-pre-py6	F	pre	v1.0/00-预备/code/py6_torch_ecosystem.py#L2	PyTorch 进阶与生态教学代码	active	v1.0	
+F-pre-py6._require_torch	F	pre	v1.0/00-预备/code/py6_torch_ecosystem.py#L34	按需导入 torch，缺失时返回 None	active	v1.0	
+F-pre-py6.autocast_demo	F	pre	v1.0/00-预备/code/py6_torch_ecosystem.py#L94	混合精度 autocast 与 GradScaler 语义	active	v1.0	
+F-pre-py6.checkpoint_demo	F	pre	v1.0/00-预备/code/py6_torch_ecosystem.py#L45	梯度检查点前后向一致性验证	active	v1.0	
+F-pre-py6.compile_demo	F	pre	v1.0/00-预备/code/py6_torch_ecosystem.py#L163	torch.compile 可用性探测	active	v1.0	
+F-pre-py6.ecosystem_demo	F	pre	v1.0/00-预备/code/py6_torch_ecosystem.py#L185	transformers/peft/trl/accelerate 速览	active	v1.0	
+F-pre-py6.main	F	pre	v1.0/00-预备/code/py6_torch_ecosystem.py#L222	命令行入口，按名调度各演示	active	v1.0	
+F-pre-py6.memory_demo	F	pre	v1.0/00-预备/code/py6_torch_ecosystem.py#L144	显存统计与 empty_cache 的适用边界	active	v1.0	
+F-pre-py6.noncontiguous_demo	F	pre	v1.0/00-预备/code/py6_torch_ecosystem.py#L76	非连续张量上 view/reshape/contiguous 的差别	active	v1.0	
+F-pre-py6.profiler_demo	F	pre	v1.0/00-预备/code/py6_torch_ecosystem.py#L125	torch.profiler 统计算子耗时	active	v1.0	
 F-tools-tag_graph	F	tools	v1.0/tools/tag_graph.py#L2	Tag 图工具：extract / check / render	active	v1.0	
 N-01	N	N	v1.0/notebooks/01-基础/N01_张量与自动微分.ipynb		active	v1.0	
 N-01.c1	N	N	v1.0/notebooks/01-基础/N01_张量与自动微分.ipynb#c1		active	v1.0	
@@ -542,6 +779,63 @@ N-17.c1	N	N	v1.0/notebooks/08-V1-1/N17_tool_calling_agent.ipynb#c1		active	v1.0
 N-17.c2	N	N	v1.0/notebooks/08-V1-1/N17_tool_calling_agent.ipynb#c2		active	v1.0	
 N-17.c3	N	N	v1.0/notebooks/08-V1-1/N17_tool_calling_agent.ipynb#c3		active	v1.0	
 N-17.c4	N	N	v1.0/notebooks/08-V1-1/N17_tool_calling_agent.ipynb#c4		active	v1.0	
+N-18	N	N	v1.0/notebooks/00-预备/N18_Python语言I.ipynb		active	v1.0	
+N-18.c1	N	N	v1.0/notebooks/00-预备/N18_Python语言I.ipynb#c1		active	v1.0	
+N-18.c2	N	N	v1.0/notebooks/00-预备/N18_Python语言I.ipynb#c2		active	v1.0	
+N-18.c3	N	N	v1.0/notebooks/00-预备/N18_Python语言I.ipynb#c3		active	v1.0	
+N-18.c4	N	N	v1.0/notebooks/00-预备/N18_Python语言I.ipynb#c4		active	v1.0	
+N-18.c5	N	N	v1.0/notebooks/00-预备/N18_Python语言I.ipynb#c5		active	v1.0	
+N-18.c6	N	N	v1.0/notebooks/00-预备/N18_Python语言I.ipynb#c6		active	v1.0	
+N-18.c7	N	N	v1.0/notebooks/00-预备/N18_Python语言I.ipynb#c7		active	v1.0	
+N-18.c8	N	N	v1.0/notebooks/00-预备/N18_Python语言I.ipynb#c8		active	v1.0	
+N-18.c9	N	N	v1.0/notebooks/00-预备/N18_Python语言I.ipynb#c9		active	v1.0	
+N-18.c10	N	N	v1.0/notebooks/00-预备/N18_Python语言I.ipynb#c10		active	v1.0	
+N-19	N	N	v1.0/notebooks/00-预备/N19_Python面向对象与协议.ipynb		active	v1.0	
+N-19.c1	N	N	v1.0/notebooks/00-预备/N19_Python面向对象与协议.ipynb#c1		active	v1.0	
+N-19.c2	N	N	v1.0/notebooks/00-预备/N19_Python面向对象与协议.ipynb#c2		active	v1.0	
+N-19.c3	N	N	v1.0/notebooks/00-预备/N19_Python面向对象与协议.ipynb#c3		active	v1.0	
+N-19.c4	N	N	v1.0/notebooks/00-预备/N19_Python面向对象与协议.ipynb#c4		active	v1.0	
+N-19.c5	N	N	v1.0/notebooks/00-预备/N19_Python面向对象与协议.ipynb#c5		active	v1.0	
+N-19.c6	N	N	v1.0/notebooks/00-预备/N19_Python面向对象与协议.ipynb#c6		active	v1.0	
+N-19.c7	N	N	v1.0/notebooks/00-预备/N19_Python面向对象与协议.ipynb#c7		active	v1.0	
+N-19.c8	N	N	v1.0/notebooks/00-预备/N19_Python面向对象与协议.ipynb#c8		active	v1.0	
+N-20	N	N	v1.0/notebooks/00-预备/N20_工程环境与工具链.ipynb		active	v1.0	
+N-20.c1	N	N	v1.0/notebooks/00-预备/N20_工程环境与工具链.ipynb#c1		active	v1.0	
+N-20.c2	N	N	v1.0/notebooks/00-预备/N20_工程环境与工具链.ipynb#c2		active	v1.0	
+N-20.c3	N	N	v1.0/notebooks/00-预备/N20_工程环境与工具链.ipynb#c3		active	v1.0	
+N-20.c4	N	N	v1.0/notebooks/00-预备/N20_工程环境与工具链.ipynb#c4		active	v1.0	
+N-20.c5	N	N	v1.0/notebooks/00-预备/N20_工程环境与工具链.ipynb#c5		active	v1.0	
+N-20.c6	N	N	v1.0/notebooks/00-预备/N20_工程环境与工具链.ipynb#c6		active	v1.0	
+N-20.c7	N	N	v1.0/notebooks/00-预备/N20_工程环境与工具链.ipynb#c7		active	v1.0	
+N-20.c8	N	N	v1.0/notebooks/00-预备/N20_工程环境与工具链.ipynb#c8		active	v1.0	
+N-21	N	N	v1.0/notebooks/00-预备/N21_NumPy与张量思维.ipynb		active	v1.0	
+N-21.c1	N	N	v1.0/notebooks/00-预备/N21_NumPy与张量思维.ipynb#c1		active	v1.0	
+N-21.c2	N	N	v1.0/notebooks/00-预备/N21_NumPy与张量思维.ipynb#c2		active	v1.0	
+N-21.c3	N	N	v1.0/notebooks/00-预备/N21_NumPy与张量思维.ipynb#c3		active	v1.0	
+N-21.c4	N	N	v1.0/notebooks/00-预备/N21_NumPy与张量思维.ipynb#c4		active	v1.0	
+N-21.c5	N	N	v1.0/notebooks/00-预备/N21_NumPy与张量思维.ipynb#c5		active	v1.0	
+N-21.c6	N	N	v1.0/notebooks/00-预备/N21_NumPy与张量思维.ipynb#c6		active	v1.0	
+N-21.c7	N	N	v1.0/notebooks/00-预备/N21_NumPy与张量思维.ipynb#c7		active	v1.0	
+N-21.c8	N	N	v1.0/notebooks/00-预备/N21_NumPy与张量思维.ipynb#c8		active	v1.0	
+N-21.c9	N	N	v1.0/notebooks/00-预备/N21_NumPy与张量思维.ipynb#c9		active	v1.0	
+N-22	N	N	v1.0/notebooks/00-预备/N22_PyTorch从零.ipynb		active	v1.0	
+N-22.c1	N	N	v1.0/notebooks/00-预备/N22_PyTorch从零.ipynb#c1		active	v1.0	
+N-22.c2	N	N	v1.0/notebooks/00-预备/N22_PyTorch从零.ipynb#c2		active	v1.0	
+N-22.c3	N	N	v1.0/notebooks/00-预备/N22_PyTorch从零.ipynb#c3		active	v1.0	
+N-22.c4	N	N	v1.0/notebooks/00-预备/N22_PyTorch从零.ipynb#c4		active	v1.0	
+N-22.c5	N	N	v1.0/notebooks/00-预备/N22_PyTorch从零.ipynb#c5		active	v1.0	
+N-22.c6	N	N	v1.0/notebooks/00-预备/N22_PyTorch从零.ipynb#c6		active	v1.0	
+N-22.c7	N	N	v1.0/notebooks/00-预备/N22_PyTorch从零.ipynb#c7		active	v1.0	
+N-22.c8	N	N	v1.0/notebooks/00-预备/N22_PyTorch从零.ipynb#c8		active	v1.0	
+N-22.c9	N	N	v1.0/notebooks/00-预备/N22_PyTorch从零.ipynb#c9		active	v1.0	
+N-23	N	N	v1.0/notebooks/00-预备/N23_PyTorch进阶与生态.ipynb		active	v1.0	
+N-23.c1	N	N	v1.0/notebooks/00-预备/N23_PyTorch进阶与生态.ipynb#c1		active	v1.0	
+N-23.c2	N	N	v1.0/notebooks/00-预备/N23_PyTorch进阶与生态.ipynb#c2		active	v1.0	
+N-23.c3	N	N	v1.0/notebooks/00-预备/N23_PyTorch进阶与生态.ipynb#c3		active	v1.0	
+N-23.c4	N	N	v1.0/notebooks/00-预备/N23_PyTorch进阶与生态.ipynb#c4		active	v1.0	
+N-23.c5	N	N	v1.0/notebooks/00-预备/N23_PyTorch进阶与生态.ipynb#c5		active	v1.0	
+N-23.c6	N	N	v1.0/notebooks/00-预备/N23_PyTorch进阶与生态.ipynb#c6		active	v1.0	
+N-23.c7	N	N	v1.0/notebooks/00-预备/N23_PyTorch进阶与生态.ipynb#c7		active	v1.0	
 P-1.1.2	P	1	v1.0/01-基础/01-神经网络与反向传播.md#L30	线性层串联仍是线性层	active	v1.0	
 P-1.2.3	P	1	v1.0/01-基础/01-神经网络与反向传播.md#L87	对数几率比、平移不变性与双射	active	v1.0	
 P-1.2.8	P	1	v1.0/01-基础/01-神经网络与反向传播.md#L185	对数配分函数的导数与凸性	active	v1.0	
@@ -552,13 +846,21 @@ P-1.3.1	P	1	v1.0/01-基础/01-神经网络与反向传播.md#L306	逐元素激�
 P-1.3.2	P	1	v1.0/01-基础/01-神经网络与反向传播.md#L318	线性层的 VJP 与参数梯度	active	v1.0	
 P-1.4.1	P	1	v1.0/01-基础/01-神经网络与反向传播.md#L441	batch 形式的反向公式	active	v1.0	
 P-6.1.2	P	6	v1.0/01-基础/06-初始化与学习率调度.md#L26	方差传播与 Xavier/Kaiming	active	v1.0	
-P-LORA.2.3	P	LORA	v1.0/05-LoRA/01-LoRA原理.md#L62	参数量与压缩比	active	v1.0	
-P-LORA.3.1	P	LORA	v1.0/05-LoRA/01-LoRA原理.md#L93	零初始化 ⇒ 初始等价基座	active	v1.0	
-P-LORA.3.4	P	LORA	v1.0/05-LoRA/01-LoRA原理.md#L117	缩放 $s=\alpha/r$ 的作用	active	v1.0	
-P-PT.3.1	P	PT	v1.0/02-预训练/01-预训练原理.md#L56	最小化交叉熵 = 最大似然 = 最小化 KL	active	v1.0	
-P-PT.4.1	P	PT	v1.0/02-预训练/01-预训练原理.md#L88	交叉熵对 logits 的梯度	active	v1.0	
-P-PT.7.1	P	PT	v1.0/02-预训练/01-预训练原理.md#L146	算力预算 C≈6ND	active	v1.0	
-P-RL.4.2	P	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L146	基线为什么不引入偏差	active	v1.0	
+P-LORA.2.3	P	LORA	v1.0/05-LoRA/01-LoRA原理.md#L63	参数量与压缩比	active	v1.0	
+P-LORA.3.1	P	LORA	v1.0/05-LoRA/01-LoRA原理.md#L94	零初始化 ⇒ 初始等价基座	active	v1.0	
+P-LORA.3.4	P	LORA	v1.0/05-LoRA/01-LoRA原理.md#L118	缩放 $s=\alpha/r$ 的作用	active	v1.0	
+P-PT.3.1	P	PT	v1.0/02-预训练/01-预训练原理.md#L58	最小化交叉熵 = 最大似然 = 最小化 KL	active	v1.0	
+P-PT.4.1	P	PT	v1.0/02-预训练/01-预训练原理.md#L90	交叉熵对 logits 的梯度	active	v1.0	
+P-PT.7.1	P	PT	v1.0/02-预训练/01-预训练原理.md#L148	算力预算 C≈6ND	active	v1.0	
+P-PY1.2.2	P	PY1	v1.0/00-预备/PY1-Python语言I.md#L84	赋值即重绑定，参数传递为引用传递	active	v1.0	
+P-PY2.1.3	P	PY2	v1.0/00-预备/PY2-Python语言II.md#L37	属性查找顺序：实例字典优先于类字典	active	v1.0	
+P-PY2.2.2	P	PY2	v1.0/00-预备/PY2-Python语言II.md#L117	`__repr__` 与 `__str__` 的分工	active	v1.0	
+P-PY2.2.3	P	PY2	v1.0/00-预备/PY2-Python语言II.md#L125	容器协议：`__len__`、`__getitem__`、`__contains__`	active	v1.0	
+P-PY2.2.4	P	PY2	v1.0/00-预备/PY2-Python语言II.md#L134	`__eq__` 与 `__hash__` 的契约	active	v1.0	
+P-PY2.4.2	P	PY2	v1.0/00-预备/PY2-Python语言II.md#L234	`data.py` 的 `Batch` 就是 dataclass	active	v1.0	
+P-PY2.6.2	P	PY2	v1.0/00-预备/PY2-Python语言II.md#L346	`contextlib.contextmanager`：用生成器写上下文管理器	active	v1.0	
+P-PY2.8.3	P	PY2	v1.0/00-预备/PY2-Python语言II.md#L473	生成器表达式与列表推导式的区别	active	v1.0	
+P-RL.4.2	P	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L148	基线为什么不引入偏差	active	v1.0	
 Pf-1.1.2	Pf	1	v1.0/01-基础/01-神经网络与反向传播.md#L34		active	v1.0	
 Pf-1.2.3	Pf	1	v1.0/01-基础/01-神经网络与反向传播.md#L97		active	v1.0	
 Pf-1.2.6	Pf	1	v1.0/01-基础/01-神经网络与反向传播.md#L164		active	v1.0	
@@ -575,10 +877,10 @@ Pf-2.2.2	Pf	2	v1.0/01-基础/02-自动微分与优化器.md#L84		active	v1.0
 Pf-3.1.2	Pf	3	v1.0/01-基础/03-Attention与Transformer.md#L41		active	v1.0	
 Pf-6.1.2	Pf	6	v1.0/01-基础/06-初始化与学习率调度.md#L28		active	v1.0	
 Pf-6.3.2	Pf	6	v1.0/01-基础/06-初始化与学习率调度.md#L101		active	v1.0	
-Pf-PT.3.1	Pf	PT	v1.0/02-预训练/01-预训练原理.md#L70		active	v1.0	
-Pf-PT.4.1	Pf	PT	v1.0/02-预训练/01-预训练原理.md#L97		active	v1.0	
-Pf-RL.3.1	Pf	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L79		active	v1.0	
-Pf-RL.4.2	Pf	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L155		active	v1.0	
+Pf-PT.3.1	Pf	PT	v1.0/02-预训练/01-预训练原理.md#L72		active	v1.0	
+Pf-PT.4.1	Pf	PT	v1.0/02-预训练/01-预训练原理.md#L99		active	v1.0	
+Pf-RL.3.1	Pf	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L81		active	v1.0	
+Pf-RL.4.2	Pf	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L157		active	v1.0	
 R-1.2.11	R	1	v1.0/01-基础/01-神经网络与反向传播.md#L241	logits、对数概率与概率的层级关系	active	v1.0	
 R-1.2.13	R	1	v1.0/01-基础/01-神经网络与反向传播.md#L271	数值实现：logsumexp 与 F.cross_entropy	active	v1.0	
 R-1.3.3	R	1	v1.0/01-基础/01-神经网络与反向传播.md#L364	$\partial z/\partial W=a^{\top}$ 的严格含义与 VJP 记忆法	active	v1.0	
@@ -642,40 +944,126 @@ R-DS.3.1	R	DS	v1.0/datasets/README.md#L47	本地路径（my-new-linux	active	v1.
 R-DS.4.1	R	DS	v1.0/datasets/README.md#L79	评测集	active	v1.0	
 R-DS.5.1	R	DS	v1.0/datasets/README.md#L90	许可证要点	active	v1.0	
 R-DS.6.1	R	DS	v1.0/datasets/README.md#L98	"教学只用切片" 的做法	active	v1.0	
-R-LORA.1.1	R	LORA	v1.0/05-LoRA/01-LoRA原理.md#L17	LoRA 速览	active	v1.0	
-R-LORA.2.1	R	LORA	v1.0/05-LoRA/01-LoRA原理.md#L37	动机：全参微调的存储代价	active	v1.0	
-R-LORA.2.4	R	LORA	v1.0/05-LoRA/01-LoRA原理.md#L73	秩与容量	active	v1.0	
-R-LORA.3.3	R	LORA	v1.0/05-LoRA/01-LoRA原理.md#L108	零初始化下的梯度流向	active	v1.0	
-R-LORA.3.5	R	LORA	v1.0/05-LoRA/01-LoRA原理.md#L131	dropout 与权重合并	active	v1.0	
-R-LORA.4.2	R	LORA	v1.0/05-LoRA/01-LoRA原理.md#L152	目标模块选择与容量	active	v1.0	
-R-LORA.5.4	R	LORA	v1.0/05-LoRA/01-LoRA原理.md#L202	paged optimizer	active	v1.0	
-R-LORA.5.5	R	LORA	v1.0/05-LoRA/01-LoRA原理.md#L209	QLoRA 计算流程	active	v1.0	
-R-LORA.6.2	R	LORA	v1.0/05-LoRA/01-LoRA原理.md#L241	DoRA 的特点与统一视角	active	v1.0	
-R-LORA.7.1	R	LORA	v1.0/05-LoRA/01-LoRA原理.md#L256	与全参微调对比	active	v1.0	
-R-LORA.7.2	R	LORA	v1.0/05-LoRA/01-LoRA原理.md#L268	秩-容量关系	active	v1.0	
-R-LORA.8.1	R	LORA	v1.0/05-LoRA/01-LoRA原理.md#L285	源码对照与超参速查	active	v1.0	
-R-LORA.8.2	R	LORA	v1.0/05-LoRA/01-LoRA原理.md#L298	推荐起点	active	v1.0	
-R-LORA.9.1	R	LORA	v1.0/05-LoRA/01-LoRA原理.md#L309	外部数学文档索引	active	v1.0	
-R-LORA.10.1	R	LORA	v1.0/05-LoRA/01-LoRA原理.md#L320	小结	active	v1.0	
-R-MCTS.1.1	R	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L13	一句话与对照	active	v1.0	
-R-MCTS.2.3	R	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L48	solved 判定	active	v1.0	
-R-MCTS.3.2	R	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L66	未访问值与 AND 选择分数	active	v1.0	
-R-MCTS.4.2	R	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L87	回传规则	active	v1.0	
-R-MCTS.5.2	R	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L106	Dirichlet 旁注与循环检测	active	v1.0	
-R-MCTS.6.2	R	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L131	expand_node 与复验	active	v1.0	
-R-MCTS.8.3	R	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L171	V1 闭环全景	active	v1.0	
-R-MCTS.9.1	R	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L191	本目录可运行代码	active	v1.0	
-R-MCTS.10.1	R	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L203	小结	active	v1.0	
-R-MCTS.11.1	R	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L225	参考与源码索引	active	v1.0	
-R-PT.1.1	R	PT	v1.0/02-预训练/01-预训练原理.md#L13	四阶段流水线	active	v1.0	
-R-PT.2.3	R	PT	v1.0/02-预训练/01-预训练原理.md#L48	teacher forcing 与并行训练	active	v1.0	
-R-PT.6.3	R	PT	v1.0/02-预训练/01-预训练原理.md#L138	配比的直觉与防遗忘	active	v1.0	
-R-PT.7.2	R	PT	v1.0/02-预训练/01-预训练原理.md#L160	Chinchilla 数据-参数比	active	v1.0	
-R-PT.8.2	R	PT	v1.0/02-预训练/01-预训练原理.md#L179	混合精度与 fp32 保留	active	v1.0	
-R-PT.8.4	R	PT	v1.0/02-预训练/01-预训练原理.md#L192	梯度检查点	active	v1.0	
-R-PT.9.1	R	PT	v1.0/02-预训练/01-预训练原理.md#L198	与 nanoproof 源码对照	active	v1.0	
-R-PT.10.1	R	PT	v1.0/02-预训练/01-预训练原理.md#L216	常见坑	active	v1.0	
-R-PT.11.1	R	PT	v1.0/02-预训练/01-预训练原理.md#L229	小结	active	v1.0	
+R-LORA.1.1	R	LORA	v1.0/05-LoRA/01-LoRA原理.md#L18	LoRA 速览	active	v1.0	
+R-LORA.2.1	R	LORA	v1.0/05-LoRA/01-LoRA原理.md#L38	动机：全参微调的存储代价	active	v1.0	
+R-LORA.2.4	R	LORA	v1.0/05-LoRA/01-LoRA原理.md#L74	秩与容量	active	v1.0	
+R-LORA.3.3	R	LORA	v1.0/05-LoRA/01-LoRA原理.md#L109	零初始化下的梯度流向	active	v1.0	
+R-LORA.3.5	R	LORA	v1.0/05-LoRA/01-LoRA原理.md#L132	dropout 与权重合并	active	v1.0	
+R-LORA.4.2	R	LORA	v1.0/05-LoRA/01-LoRA原理.md#L153	目标模块选择与容量	active	v1.0	
+R-LORA.5.4	R	LORA	v1.0/05-LoRA/01-LoRA原理.md#L203	paged optimizer	active	v1.0	
+R-LORA.5.5	R	LORA	v1.0/05-LoRA/01-LoRA原理.md#L210	QLoRA 计算流程	active	v1.0	
+R-LORA.6.2	R	LORA	v1.0/05-LoRA/01-LoRA原理.md#L242	DoRA 的特点与统一视角	active	v1.0	
+R-LORA.7.1	R	LORA	v1.0/05-LoRA/01-LoRA原理.md#L257	与全参微调对比	active	v1.0	
+R-LORA.7.2	R	LORA	v1.0/05-LoRA/01-LoRA原理.md#L269	秩-容量关系	active	v1.0	
+R-LORA.8.1	R	LORA	v1.0/05-LoRA/01-LoRA原理.md#L286	源码对照与超参速查	active	v1.0	
+R-LORA.8.2	R	LORA	v1.0/05-LoRA/01-LoRA原理.md#L299	推荐起点	active	v1.0	
+R-LORA.9.1	R	LORA	v1.0/05-LoRA/01-LoRA原理.md#L310	外部数学文档索引	active	v1.0	
+R-LORA.10.1	R	LORA	v1.0/05-LoRA/01-LoRA原理.md#L321	小结	active	v1.0	
+R-MCTS.1.1	R	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L15	一句话与对照	active	v1.0	
+R-MCTS.2.3	R	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L50	solved 判定	active	v1.0	
+R-MCTS.3.2	R	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L68	未访问值与 AND 选择分数	active	v1.0	
+R-MCTS.4.2	R	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L89	回传规则	active	v1.0	
+R-MCTS.5.2	R	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L108	Dirichlet 旁注与循环检测	active	v1.0	
+R-MCTS.6.2	R	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L133	expand_node 与复验	active	v1.0	
+R-MCTS.8.3	R	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L173	V1 闭环全景	active	v1.0	
+R-MCTS.9.1	R	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L193	本目录可运行代码	active	v1.0	
+R-MCTS.10.1	R	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L205	小结	active	v1.0	
+R-MCTS.11.1	R	MCTS	v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L227	参考与源码索引	active	v1.0	
+R-PT.1.1	R	PT	v1.0/02-预训练/01-预训练原理.md#L15	四阶段流水线	active	v1.0	
+R-PT.2.3	R	PT	v1.0/02-预训练/01-预训练原理.md#L50	teacher forcing 与并行训练	active	v1.0	
+R-PT.6.3	R	PT	v1.0/02-预训练/01-预训练原理.md#L140	配比的直觉与防遗忘	active	v1.0	
+R-PT.7.2	R	PT	v1.0/02-预训练/01-预训练原理.md#L162	Chinchilla 数据-参数比	active	v1.0	
+R-PT.8.2	R	PT	v1.0/02-预训练/01-预训练原理.md#L181	混合精度与 fp32 保留	active	v1.0	
+R-PT.8.4	R	PT	v1.0/02-预训练/01-预训练原理.md#L194	梯度检查点	active	v1.0	
+R-PT.9.1	R	PT	v1.0/02-预训练/01-预训练原理.md#L200	与 nanoproof 源码对照	active	v1.0	
+R-PT.10.1	R	PT	v1.0/02-预训练/01-预训练原理.md#L218	常见坑	active	v1.0	
+R-PT.11.1	R	PT	v1.0/02-预训练/01-预训练原理.md#L231	小结	active	v1.0	
+R-PY1.1.3	R	PY1	v1.0/00-预备/PY1-Python语言I.md#L40	`__pycache__` 与 `.pyc`	active	v1.0	
+R-PY1.2.4	R	PY1	v1.0/00-预备/PY1-Python语言I.md#L100	引用计数与 GC 概览	active	v1.0	
+R-PY1.3.2	R	PY1	v1.0/00-预备/PY1-Python语言I.md#L143	`int` 与 `float` 对照 C/C++	active	v1.0	
+R-PY1.3.7	R	PY1	v1.0/00-预备/PY1-Python语言I.md#L182	切片语义：步长、负索引、拷贝 vs 视图	active	v1.0	
+R-PY1.4.4	R	PY1	v1.0/00-预备/PY1-Python语言I.md#L225	`for-else` 与 `while-else`	active	v1.0	
+R-PY1.4.5	R	PY1	v1.0/00-预备/PY1-Python语言I.md#L239	海象运算符 `:=`	active	v1.0	
+R-PY1.5.2	R	PY1	v1.0/00-预备/PY1-Python语言I.md#L290	默认参数与可变默认值陷阱	active	v1.0	
+R-PY1.6.4	R	PY1	v1.0/00-预备/PY1-Python语言I.md#L378	与 PY2 的衔接	active	v1.0	
+R-PY2.1.5	R	PY2	v1.0/00-预备/PY2-Python语言II.md#L61	`super()` 与协作式多继承	active	v1.0	
+R-PY2.2.5	R	PY2	v1.0/00-预备/PY2-Python语言II.md#L144	运算符重载一览与 C++ 对照	active	v1.0	
+R-PY2.5.4	R	PY2	v1.0/00-预备/PY2-Python语言II.md#L306	EAFP vs LBYL；对照 C 错误码	active	v1.0	
+R-PY2.8.4	R	PY2	v1.0/00-预备/PY2-Python语言II.md#L483	`itertools` 常用件	active	v1.0	
+R-PY2.9.4	R	PY2	v1.0/00-预备/PY2-Python语言II.md#L541	`sys.path` 与查找顺序；对照链接	active	v1.0	
+R-PY3.1.2	R	PY3	v1.0/00-预备/PY3-工程与环境.md#L29	pip、依赖解析与 requirements.txt	active	v1.0	
+R-PY3.1.3	R	PY3	v1.0/00-预备/PY3-工程与环境.md#L46	conda：跨语言包与环境管理	active	v1.0	
+R-PY3.1.4	R	PY3	v1.0/00-预备/PY3-工程与环境.md#L56	CUDA 版与 ROCm 版 PyTorch 的安装差异	active	v1.0	
+R-PY3.2.1	R	PY3	v1.0/00-预备/PY3-工程与环境.md#L81	包布局与 import 解析	active	v1.0	
+R-PY3.2.2	R	PY3	v1.0/00-预备/PY3-工程与环境.md#L91	pyproject.toml：声明“可安装”与“可运行”	active	v1.0	
+R-PY3.2.3	R	PY3	v1.0/00-预备/PY3-工程与环境.md#L116	本仓目录职责	active	v1.0	
+R-PY3.3.1	R	PY3	v1.0/00-预备/PY3-工程与环境.md#L125	argparse：把配置从源码里挪出来	active	v1.0	
+R-PY3.3.2	R	PY3	v1.0/00-预备/PY3-工程与环境.md#L136	环境变量与 os.environ	active	v1.0	
+R-PY3.3.3	R	PY3	v1.0/00-预备/PY3-工程与环境.md#L147	logging：替代 print/printf 的调试	active	v1.0	
+R-PY3.4.1	R	PY3	v1.0/00-预备/PY3-工程与环境.md#L172	pdb 与 breakpoint()，对照 gdb	active	v1.0	
+R-PY3.4.2	R	PY3	v1.0/00-预备/PY3-工程与环境.md#L182	assert：契约检查与它的开关	active	v1.0	
+R-PY3.4.3	R	PY3	v1.0/00-预备/PY3-工程与环境.md#L191	pytest：发现、断言、fixture、参数化	active	v1.0	EXT-PY3-05
+R-PY3.4.4	R	PY3	v1.0/00-预备/PY3-工程与环境.md#L210	属性测试简介	active	v1.0	
+R-PY3.5.1	R	PY3	v1.0/00-预备/PY3-工程与环境.md#L216	cell 语义、内核与执行顺序	active	v1.0	
+R-PY3.5.2	R	PY3	v1.0/00-预备/PY3-工程与环境.md#L226	魔法命令与 shell 转义	active	v1.0	
+R-PY3.5.3	R	PY3	v1.0/00-预备/PY3-工程与环境.md#L235	内核算力与 GPU 检测	active	v1.0	
+R-PY3.5.4	R	PY3	v1.0/00-预备/PY3-工程与环境.md#L248	与本仓 notebook 惯例对接	active	v1.0	
+R-PY3.6.1	R	PY3	v1.0/00-预备/PY3-工程与环境.md#L261	提交、分支与合并	active	v1.0	
+R-PY3.6.2	R	PY3	v1.0/00-预备/PY3-工程与环境.md#L272	.gitignore 与不入库的产物	active	v1.0	
+R-PY3.6.3	R	PY3	v1.0/00-预备/PY3-工程与环境.md#L287	worktree：一个仓库、多个工作目录	active	v1.0	EXT-PY3-09
+R-PY3.6.4	R	PY3	v1.0/00-预备/PY3-工程与环境.md#L303	冲突的处理原则	active	v1.0	
+R-PY3.7.2	R	PY3	v1.0/00-预备/PY3-工程与环境.md#L319	随机种子与确定性开关	active	v1.0	
+R-PY3.7.3	R	PY3	v1.0/00-预备/PY3-工程与环境.md#L338	记录环境：把现场写进产物	active	v1.0	
+R-PY3.8.1	R	PY3	v1.0/00-预备/PY3-工程与环境.md#L352	外部来源清单	active	v1.0	
+R-PY4.1.3	R	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L32	为什么必须同质定长	active	v1.0	
+R-PY4.1.6	R	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L50	视图 vs 拷贝：对照指针别名与 memcpy	active	v1.0	
+R-PY4.2.2	R	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L79	负索引与步长切片的代价	active	v1.0	
+R-PY4.2.5	R	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L91	赋值语义：原地写入目标	active	v1.0	
+R-PY4.2.7	R	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L112	对照 C 指针算术	active	v1.0	
+R-PY4.3.4	R	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L150	广播是零拷贝的 stride=0 视图	active	v1.0	
+R-PY4.3.6	R	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L171	与 PyTorch 广播一致	active	v1.0	
+R-PY4.4.1	R	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L177	为什么必须向量化	active	v1.0	
+R-PY4.4.4	R	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L202	`einsum` 初识	active	v1.0	
+R-PY4.4.6	R	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L220	与 batch 反向公式的衔接	active	v1.0	
+R-PY4.5.2	R	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L230	`axis` 与 `keepdims`	active	v1.0	
+R-PY4.5.5	R	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L259	归约 + 广播是「规范化」的标准范式	active	v1.0	
+R-PY4.6.1	R	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L265	全局状态 vs `Generator`	active	v1.0	
+R-PY4.6.3	R	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L273	并行随机数：`SeedSequence`	active	v1.0	
+R-PY4.6.4	R	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L277	与 PyTorch 随机源的对应	active	v1.0	
+R-PY4.7.2	R	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L299	批量 matmul 与广播组合	active	v1.0	
+R-PY4.7.4	R	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L307	数值稳定与 dtype 提示	active	v1.0	
+R-PY4.7.5	R	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L313	为 PY5 铺垫	active	v1.0	
+R-PY4.8.1	R	PY4	v1.0/00-预备/PY4-NumPy与张量思维.md#L319	来源与许可	active	v1.0	
+R-PY5.1.4	R	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L62	拷贝语义：共享、视图与深拷贝	active	v1.0	
+R-PY5.1.5	R	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L72	requires_grad：进入自动微分世界的开关	active	v1.0	
+R-PY5.2.5	R	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L109	与 NumPy 的对应表	active	v1.0	
+R-PY5.3.4	R	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L142	backward、retain_graph 与梯度累加	active	v1.0	
+R-PY5.3.6	R	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L176	与第 1 章反向传播的对应	active	v1.0	
+R-PY5.4.3	R	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L198	train/eval 模式	active	v1.0	
+R-PY5.4.5	R	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L228	参数、缓冲区与模块遍历	active	v1.0	
+R-PY5.5.4	R	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L261	参数组与逐组学习率	active	v1.0	
+R-PY5.5.5	R	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L265	zero_grad 与 set_to_none	active	v1.0	
+R-PY5.6.4	R	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L315	与经验风险的对应	active	v1.0	
+R-PY5.7.3	R	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L360	保存/加载：state_dict、优化器状态与续训	active	v1.0	
+R-PY5.7.4	R	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L380	AMP 与 GradScaler 初识	active	v1.0	
+R-PY5.7.5	R	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L397	与【代码 1.6.2】的对照	active	v1.0	
+R-PY5.8.1	R	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L403	in-place on leaf：叶子张量被原地修改	active	v1.0	
+R-PY5.8.2	R	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L411	shape 不匹配	active	v1.0	
+R-PY5.8.3	R	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L415	device 混用	active	v1.0	
+R-PY5.8.4	R	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L419	忘记 zero_grad	active	v1.0	
+R-PY5.8.5	R	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L423	eval 未生效与其他陷阱	active	v1.0	
+R-PY5.8.6	R	PY5	v1.0/00-预备/PY5-PyTorch从零.md#L431	诊断速查表	active	v1.0	
+R-PY6.1.2	R	PY6	v1.0/00-预备/PY6-PyTorch进阶与生态.md#L27	非连续张量与 `view`/`reshape`/`contiguous`	active	v1.0	
+R-PY6.1.4	R	PY6	v1.0/00-预备/PY6-PyTorch进阶与生态.md#L45	`GradScaler` 与溢出处理	active	v1.0	
+R-PY6.2.2	R	PY6	v1.0/00-预备/PY6-PyTorch进阶与生态.md#L83	显存统计	active	v1.0	
+R-PY6.2.3	R	PY6	v1.0/00-预备/PY6-PyTorch进阶与生态.md#L91	`empty_cache` 的适用与不适用	active	v1.0	
+R-PY6.3.2	R	PY6	v1.0/00-预备/PY6-PyTorch进阶与生态.md#L136	`Trainer` 与 `TrainingArguments`	active	v1.0	
+R-PY6.3.4	R	PY6	v1.0/00-预备/PY6-PyTorch进阶与生态.md#L150	`trl`：`SFTTrainer` / `GRPOTrainer`	active	v1.0	
+R-PY6.3.7	R	PY6	v1.0/00-预备/PY6-PyTorch进阶与生态.md#L182	安装与版本约束	active	v1.0	
+R-PY6.4.1	R	PY6	v1.0/00-预备/PY6-PyTorch进阶与生态.md#L191	同一功能的两种写法	active	v1.0	
+R-PY6.4.3	R	PY6	v1.0/00-预备/PY6-PyTorch进阶与生态.md#L218	迁移到 with_api 的注意事项	active	v1.0	
+R-PY6.5.1	R	PY6	v1.0/00-预备/PY6-PyTorch进阶与生态.md#L227	来源与许可	active	v1.0	
+R-PY6.6.1	R	PY6	v1.0/00-预备/PY6-PyTorch进阶与生态.md#L247	本章小结	active	v1.0	
 R-RES.1.1	R	RES	v1.0/00-资料清单.md#L9	从零实现 LLM / Transformer（主线骨架	active	v1.0	
 R-RES.2.1	R	RES	v1.0/00-资料清单.md#L26	PyTorch / 深度学习基础（数学+代码	active	v1.0	
 R-RES.3.1	R	RES	v1.0/00-资料清单.md#L39	LoRA / PEFT	active	v1.0	
@@ -685,24 +1073,25 @@ R-RES.6.1	R	RES	v1.0/00-资料清单.md#L79	Lean / 数学证明数据集与模�
 R-RES.7.1	R	RES	v1.0/00-资料清单.md#L98	既有数学文档（`/home/a/文档/`，本教材统一链接过去	active	v1.0	
 R-RES.8.1	R	RES	v1.0/00-资料清单.md#L107	AlphaProof 参考源码（只读，逐文件精读对象	active	v1.0	
 R-RES.9.1	R	RES	v1.0/00-资料清单.md#L119	环境与工具	active	v1.0	
-R-RL.1.1	R	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L21	源码对照速查	active	v1.0	
-R-RL.2.2	R	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L68	确定性转移：随机性全部来自策略采样	active	v1.0	
-R-RL.6.2	R	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L223	clip 行为解读	active	v1.0	
-R-RL.6.4	R	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L239	与 TRPO 的关系	active	v1.0	
-R-RL.7.2	R	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L259	均值基线与归一化的偏差	active	v1.0	
-R-RL.7.4	R	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L277	为什么能省掉 critic	active	v1.0	
-R-RL.7.5	R	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L282	全同组退化与难度课程	active	v1.0	
-R-RL.8.2	R	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L306	三种估计器比较与信息几何	active	v1.0	
-R-RL.9.2	R	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L341	稀疏奖励的工程解法	active	v1.0	
-R-RL.9.3	R	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L347	RLVR 的能力边界	active	v1.0	
-R-RL.10.1	R	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L356	on-policy 稳定性与熵坍塌	active	v1.0	
-R-RL.10.2	R	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L362	奖励攻击与长度/难度偏差	active	v1.0	
-R-RL.11.3	R	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L390	V1 闭环	active	v1.0	
-R-RL.12.1	R	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L401	`policy_server.py` 的 `/ttt_step`	active	v1.0	
-R-RL.12.2	R	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L429	`gpu_runtime` 各 backend 的 `learn()`	active	v1.0	
-R-RL.12.3	R	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L449	`nanoproof/rl.py`：token-mean CE + unlikelihood	active	v1.0	
-R-RL.13.1	R	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L482	小结	active	v1.0	
-R-RL.14.1	R	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L500	参考与源码索引	active	v1.0	
+R-RES.10.1	R	RES	v1.0/00-资料清单.md#L127	预备篇（`00-预备/`，Python / PyTorch 从零	active	v1.0	
+R-RL.1.1	R	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L23	源码对照速查	active	v1.0	
+R-RL.2.2	R	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L70	确定性转移：随机性全部来自策略采样	active	v1.0	
+R-RL.6.2	R	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L225	clip 行为解读	active	v1.0	
+R-RL.6.4	R	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L241	与 TRPO 的关系	active	v1.0	
+R-RL.7.2	R	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L261	均值基线与归一化的偏差	active	v1.0	
+R-RL.7.4	R	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L279	为什么能省掉 critic	active	v1.0	
+R-RL.7.5	R	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L284	全同组退化与难度课程	active	v1.0	
+R-RL.8.2	R	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L308	三种估计器比较与信息几何	active	v1.0	
+R-RL.9.2	R	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L343	稀疏奖励的工程解法	active	v1.0	
+R-RL.9.3	R	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L349	RLVR 的能力边界	active	v1.0	
+R-RL.10.1	R	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L358	on-policy 稳定性与熵坍塌	active	v1.0	
+R-RL.10.2	R	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L364	奖励攻击与长度/难度偏差	active	v1.0	
+R-RL.11.3	R	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L392	V1 闭环	active	v1.0	
+R-RL.12.1	R	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L403	`policy_server.py` 的 `/ttt_step`	active	v1.0	
+R-RL.12.2	R	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L431	`gpu_runtime` 各 backend 的 `learn()`	active	v1.0	
+R-RL.12.3	R	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L451	`nanoproof/rl.py`：token-mean CE + unlikelihood	active	v1.0	
+R-RL.13.1	R	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L484	小结	active	v1.0	
+R-RL.14.1	R	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L502	参考与源码索引	active	v1.0	
 R-RM01API.1.1	R	RM01API	v1.0/01-基础/code/with_api/README.md#L11	文件	active	v1.0	
 R-RM01API.2.1	R	RM01API	v1.0/01-基础/code/with_api/README.md#L23	快速开始（Colab / 本地	active	v1.0	
 R-RM01API.3.1	R	RM01API	v1.0/01-基础/code/with_api/README.md#L43	逐模块对照表	active	v1.0	
@@ -752,21 +1141,21 @@ R-RMVH.6.1	R	RMVH	v1.0/04-价值头/README.md#L97	未决点 / 注意	active	v1.0
 R-ROAD.1.1	R	ROAD	v1.0/00-学习路线图.md#L9	统一"四件套"结构	active	v1.0	
 R-ROAD.2.1	R	ROAD	v1.0/00-学习路线图.md#L25	与 AlphaProof 的映射	active	v1.0	
 R-ROAD.3.1	R	ROAD	v1.0/00-学习路线图.md#L40	阶段路线与验收	active	v1.0	
-R-ROAD.4.1	R	ROAD	v1.0/00-学习路线图.md#L55	规模与运行环境	active	v1.0	
-R-ROAD.5.1	R	ROAD	v1.0/00-学习路线图.md#L64	数据集（教学用小切片	active	v1.0	
-R-ROAD.6.1	R	ROAD	v1.0/00-学习路线图.md#L78	与既有数学文档对照	active	v1.0	
-R-ROAD.7.1	R	ROAD	v1.0/00-学习路线图.md#L84	使用建议	active	v1.0	
-R-SFT.3.3	R	SFT	v1.0/03-SFT/01-SFT原理.md#L84	为什么要 mask prompt	active	v1.0	
-R-SFT.3.4	R	SFT	v1.0/03-SFT/01-SFT原理.md#L92	右填充	active	v1.0	
-R-SFT.4.1	R	SFT	v1.0/03-SFT/01-SFT原理.md#L99	chat template 一致性	active	v1.0	
-R-SFT.4.2	R	SFT	v1.0/03-SFT/01-SFT原理.md#L113	掩码定位	active	v1.0	
-R-SFT.5.1	R	SFT	v1.0/03-SFT/01-SFT原理.md#L122	全参 SFT	active	v1.0	
-R-SFT.5.3	R	SFT	v1.0/03-SFT/01-SFT原理.md#L138	三种微调方式对比	active	v1.0	
-R-SFT.5.4	R	SFT	v1.0/03-SFT/01-SFT原理.md#L147	容器 QLoRA 超参	active	v1.0	
-R-SFT.6.1	R	SFT	v1.0/03-SFT/01-SFT原理.md#L154	过拟合、防遗忘与评估	active	v1.0	
-R-SFT.7.1	R	SFT	v1.0/03-SFT/01-SFT原理.md#L164	与 AlphaProof 源码对照	active	v1.0	
-R-SFT.8.1	R	SFT	v1.0/03-SFT/01-SFT原理.md#L177	常见坑	active	v1.0	
-R-SFT.8.2	R	SFT	v1.0/03-SFT/01-SFT原理.md#L185	小结	active	v1.0	
+R-ROAD.4.1	R	ROAD	v1.0/00-学习路线图.md#L56	规模与运行环境	active	v1.0	
+R-ROAD.5.1	R	ROAD	v1.0/00-学习路线图.md#L65	数据集（教学用小切片	active	v1.0	
+R-ROAD.6.1	R	ROAD	v1.0/00-学习路线图.md#L79	与既有数学文档对照	active	v1.0	
+R-ROAD.7.1	R	ROAD	v1.0/00-学习路线图.md#L85	使用建议	active	v1.0	
+R-SFT.3.3	R	SFT	v1.0/03-SFT/01-SFT原理.md#L86	为什么要 mask prompt	active	v1.0	
+R-SFT.3.4	R	SFT	v1.0/03-SFT/01-SFT原理.md#L94	右填充	active	v1.0	
+R-SFT.4.1	R	SFT	v1.0/03-SFT/01-SFT原理.md#L101	chat template 一致性	active	v1.0	
+R-SFT.4.2	R	SFT	v1.0/03-SFT/01-SFT原理.md#L115	掩码定位	active	v1.0	
+R-SFT.5.1	R	SFT	v1.0/03-SFT/01-SFT原理.md#L124	全参 SFT	active	v1.0	
+R-SFT.5.3	R	SFT	v1.0/03-SFT/01-SFT原理.md#L140	三种微调方式对比	active	v1.0	
+R-SFT.5.4	R	SFT	v1.0/03-SFT/01-SFT原理.md#L149	容器 QLoRA 超参	active	v1.0	
+R-SFT.6.1	R	SFT	v1.0/03-SFT/01-SFT原理.md#L156	过拟合、防遗忘与评估	active	v1.0	
+R-SFT.7.1	R	SFT	v1.0/03-SFT/01-SFT原理.md#L166	与 AlphaProof 源码对照	active	v1.0	
+R-SFT.8.1	R	SFT	v1.0/03-SFT/01-SFT原理.md#L179	常见坑	active	v1.0	
+R-SFT.8.2	R	SFT	v1.0/03-SFT/01-SFT原理.md#L187	小结	active	v1.0	
 R-SRC0.1.1	R	SRC0	v1.0/09-源码精读/00-导读.md#L11	版本总览表	active	v1.0	
 R-SRC0.2.1	R	SRC0	v1.0/09-源码精读/00-导读.md#L30	推荐阅读顺序	active	v1.0	
 R-SRC0.3.1	R	SRC0	v1.0/09-源码精读/00-导读.md#L43	版本继承关系	active	v1.0	
@@ -816,30 +1205,30 @@ R-TINY.2.1	R	TINY	v1.0/tiny/README.md#L33	与 nanoproof `NetworkConfig` 的字�
 R-TINY.3.1	R	TINY	v1.0/tiny/README.md#L51	参数量估算公式	active	v1.0	
 R-TINY.4.1	R	TINY	v1.0/tiny/README.md#L84	用法	active	v1.0	
 R-V10.1.1	R	V10	v1.0/README.md#L9	怎么用	active	v1.0	
-R-V10.2.1	R	V10	v1.0/README.md#L20	目录结构	active	v1.0	
-R-V10.3.1	R	V10	v1.0/README.md#L42	约定	active	v1.0	
-R-V11.1.1	R	V11	v1.0/08-V1-1/01-工具调用与agent.md#L15	三个关键词	active	v1.0	
-R-V11.2.2	R	V11	v1.0/08-V1-1/01-工具调用与agent.md#L42	循环要点	active	v1.0	
-R-V11.3.3	R	V11	v1.0/08-V1-1/01-工具调用与agent.md#L78	DSL 解析规则与 `EvidenceKind`	active	v1.0	
-R-V11.4.4	R	V11	v1.0/08-V1-1/01-工具调用与agent.md#L122	证据 A/B 度量	active	v1.0	
-R-V11.6.2	R	V11	v1.0/08-V1-1/01-工具调用与agent.md#L189	RuntimeTransport 与证据生产者	active	v1.0	
-R-V11.6.3	R	V11	v1.0/08-V1-1/01-工具调用与agent.md#L196	树内采样 vs 树外证据	active	v1.0	
-R-V11.7.2	R	V11	v1.0/08-V1-1/01-工具调用与agent.md#L223	字段说明	active	v1.0	
-R-V11.8.1	R	V11	v1.0/08-V1-1/01-工具调用与agent.md#L231	本目录代码与实验	active	v1.0	
-R-V11.9.1	R	V11	v1.0/08-V1-1/01-工具调用与agent.md#L241	参考与源码索引	active	v1.0	
-R-VH.1.1	R	VH	v1.0/04-价值头/01-价值头原理.md#L20	标量头 vs 64-bin 分类头速览	active	v1.0	
-R-VH.2.4	R	VH	v1.0/04-价值头/01-价值头原理.md#L72	目标截断到 [-1,1]	active	v1.0	
-R-VH.3.4	R	VH	v1.0/04-价值头/01-价值头原理.md#L116	nanoproof 的桶 token 生成	active	v1.0	
-R-VH.3.6	R	VH	v1.0/04-价值头/01-价值头原理.md#L129	桶 logits 的期望解码	active	v1.0	
-R-VH.4.3	R	VH	v1.0/04-价值头/01-价值头原理.md#L175	分类头的优势与代价	active	v1.0	
-R-VH.5.4	R	VH	v1.0/04-价值头/01-价值头原理.md#L236	two-hot 与硬整数类变体	active	v1.0	
-R-VH.6.2	R	VH	v1.0/04-价值头/01-价值头原理.md#L255	MSE/CE 的 properness 推论	active	v1.0	
-R-VH.6.4	R	VH	v1.0/04-价值头/01-价值头原理.md#L273	温度缩放	active	v1.0	
-R-VH.7.1	R	VH	v1.0/04-价值头/01-价值头原理.md#L288	偏差—方差来源	active	v1.0	
-R-VH.8.3	R	VH	v1.0/04-价值头/01-价值头原理.md#L329	工程约定：符号、距离与 RTTT	active	v1.0	
-R-VH.9.1	R	VH	v1.0/04-价值头/01-价值头原理.md#L355	源码对照速查	active	v1.0	
-R-VH.10.1	R	VH	v1.0/04-价值头/01-价值头原理.md#L380	小结与延伸	active	v1.0	
+R-V10.2.1	R	V10	v1.0/README.md#L21	目录结构	active	v1.0	
+R-V10.3.1	R	V10	v1.0/README.md#L44	约定	active	v1.0	
+R-V11.1.1	R	V11	v1.0/08-V1-1/01-工具调用与agent.md#L17	三个关键词	active	v1.0	
+R-V11.2.2	R	V11	v1.0/08-V1-1/01-工具调用与agent.md#L44	循环要点	active	v1.0	
+R-V11.3.3	R	V11	v1.0/08-V1-1/01-工具调用与agent.md#L80	DSL 解析规则与 `EvidenceKind`	active	v1.0	
+R-V11.4.4	R	V11	v1.0/08-V1-1/01-工具调用与agent.md#L124	证据 A/B 度量	active	v1.0	
+R-V11.6.2	R	V11	v1.0/08-V1-1/01-工具调用与agent.md#L191	RuntimeTransport 与证据生产者	active	v1.0	
+R-V11.6.3	R	V11	v1.0/08-V1-1/01-工具调用与agent.md#L198	树内采样 vs 树外证据	active	v1.0	
+R-V11.7.2	R	V11	v1.0/08-V1-1/01-工具调用与agent.md#L225	字段说明	active	v1.0	
+R-V11.8.1	R	V11	v1.0/08-V1-1/01-工具调用与agent.md#L233	本目录代码与实验	active	v1.0	
+R-V11.9.1	R	V11	v1.0/08-V1-1/01-工具调用与agent.md#L243	参考与源码索引	active	v1.0	
+R-VH.1.1	R	VH	v1.0/04-价值头/01-价值头原理.md#L21	标量头 vs 64-bin 分类头速览	active	v1.0	
+R-VH.2.4	R	VH	v1.0/04-价值头/01-价值头原理.md#L73	目标截断到 [-1,1]	active	v1.0	
+R-VH.3.4	R	VH	v1.0/04-价值头/01-价值头原理.md#L117	nanoproof 的桶 token 生成	active	v1.0	
+R-VH.3.6	R	VH	v1.0/04-价值头/01-价值头原理.md#L130	桶 logits 的期望解码	active	v1.0	
+R-VH.4.3	R	VH	v1.0/04-价值头/01-价值头原理.md#L176	分类头的优势与代价	active	v1.0	
+R-VH.5.4	R	VH	v1.0/04-价值头/01-价值头原理.md#L237	two-hot 与硬整数类变体	active	v1.0	
+R-VH.6.2	R	VH	v1.0/04-价值头/01-价值头原理.md#L256	MSE/CE 的 properness 推论	active	v1.0	
+R-VH.6.4	R	VH	v1.0/04-价值头/01-价值头原理.md#L274	温度缩放	active	v1.0	
+R-VH.7.1	R	VH	v1.0/04-价值头/01-价值头原理.md#L289	偏差—方差来源	active	v1.0	
+R-VH.8.3	R	VH	v1.0/04-价值头/01-价值头原理.md#L330	工程约定：符号、距离与 RTTT	active	v1.0	
+R-VH.9.1	R	VH	v1.0/04-价值头/01-价值头原理.md#L356	源码对照速查	active	v1.0	
+R-VH.10.1	R	VH	v1.0/04-价值头/01-价值头原理.md#L381	小结与延伸	active	v1.0	
 T-1.2.6	T	1	v1.0/01-基础/01-神经网络与反向传播.md#L139	极大似然 = 最小化交叉熵 = 最小化 KL	active	v1.0	
 T-1.3.4	T	1	v1.0/01-基础/01-神经网络与反向传播.md#L370	反向传播递推	active	v1.0	
-T-RL.3.1	T	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L77	策略梯度定理	active	v1.0	
-T-RL.4.1	T	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L134	REINFORCE 更新	active	v1.0	
+T-RL.3.1	T	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L79	策略梯度定理	active	v1.0	
+T-RL.4.1	T	RL	v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L136	REINFORCE 更新	active	v1.0	
