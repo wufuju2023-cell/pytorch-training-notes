@@ -6,8 +6,11 @@
 > - `.../reap-agentic-v1-1-sync/code-79efd240/scripts/{prepare_leantree.py,extract_real7_features.py,train_value_head.py,assess_value_head.py,preflight_ms.py}`
 > 角色：把 nanoproof 的**价值训练信号与数据语义**（成功轨迹的负剩余证明深度 / 64 个离散桶）移植到 REAP 的 **REAL-Prover 共享 backbone** 上；生产用 64-bin 分类头（与 03 篇 `categorical_search_backend.py` 对应），app 里另有一套连续标量头（与 01 篇对应）。
 > 教学链接：`../04-价值头/`、`../05-LoRA/`（app 的 TTT 联合更新）、`../06-RL-RLVR/`、`../07-MCTS+V1/`。
+> **【文档｜DOC-SRC5】**（doccode = `SRC5`）｜编号与 Tag 规范见《00-风格与编号规范》。
 
 ## 1. 移植映射（`PORTING_REAP_VALUE_HEAD.md`）
+
+**【注 SRC5.1.1｜R-SRC5.1.1】（移植映射）**
 
 | nanoproof 概念 | REAP 实现 | 备注 |
 |---|---|---|
@@ -21,12 +24,16 @@
 
 ## 2. `app/`：连续标量价值头（与 01 篇同源）
 
+**【代码 SRC5.2.1｜Cd-SRC5.2.1】（`app/`：连续标量价值头）**
+
 - `value_head.py`：`VALUE_HEAD_SCHEMA="reap.value-head.v1"`；`ValueHead`（`Linear(H,256)→SiLU→Linear(256,1)→Tanh`）；`proof_depth_to_target(depth,max_depth=64) = -min(depth,64)/64`；`discounted_returns`；原子 `save_value_head`/`load_value_head`（支持 legacy 裸 state_dict）；`ValueHeadTrainer`（MSE/Huber + 有限性校验）。
 - `policy_server.py`（略强于 01）：端点 `GET /health`、`POST /v1/chat/completions`、`/value`、`/value/v1/chat/completions`、`/value/train`、`/ttt_step`、`/adapter/snapshot`、`/adapter/restore`；`Engine.ttt_step` 做 policy（REINFORCE）+ KL + value（MSE）联合更新；`value_output_mode ∈ {scalar, distance}`，`distance` 映射到 `[1,max_distance]` 以适配 nanoproof/verified-collector 客户端（客户端会在 Lean 侧再取负一次）。
 - `train_value_head.py`：冻结 backbone、离线训 head，接受 `value_target`（含 `target_kind=nanoproof` 的负剩余深度，如 `value_target=-8`）或 `proof_depth` 或 `states/rewards` 轨迹（discounted return）；默认**不把旧 `value.score` 当标签**，除非 `--allow-score`。
 - `VALUE_HEAD.md`：数值语义、HTTP 输出模式、离线训练与启动、在线 TTT item 字段（`value_target`/`proof_depth`/`next_value`/`next_prompt` → 一步 TD `r+γV(s')`，裁剪 `[-1,1]`）、以及“仓库无公开可用已训 head”的限制说明。
 
 ## 3. nanoproof fork（`nanoproof/`）
+
+**【代码 SRC5.3.1｜Cd-SRC5.3.1】（nanoproof fork 与 AlphaProof 伪代码）**
 
 - **核心文件与 04 篇逐字相同**（`model.py/optim.py/sft.py/rl.py/search.py/experience_collection.py` 等无差异）；本 fork 增加：
   - `PORTING_REAP_VALUE_HEAD.md`（移植说明）。
@@ -41,6 +48,8 @@
 ## 4. `real7_scripts/`：3584→256→64 价值头数据管线与训练
 
 ### 4.1 `prepare_leantree.py`（271 行）——根隔离的确定性切分
+
+**【代码 SRC5.4.1｜Cd-SRC5.4.1】（`prepare_leantree.py`：根隔离的确定性切分）**
 - schema `new_value_head.leantree-row.v1`；固定源 revision/size/sha256（`:14-16`）。
 - Prompt 模板（`:17-19`）：`User: … Here're some theorems that may be helpful:\n\nSTATE:\n{state}\nTACTIC:\n\nAssistant:`。
 - `state_to_text`（`:44`）：把 LeanTree 的 goals/hypotheses 渲染成 `name : type` + `⊢ goal`。
@@ -51,6 +60,8 @@
 - `main`（`:229`）：校验源 size/sha256 → 输出 `{train,validation,test}.jsonl` + `manifest.json`（含 split_policy、depth_histogram、prompt_sha256）。
 
 ### 4.2 `extract_real7_features.py`（300 行）——冻结 backbone 特征缓存
+
+**【代码 SRC5.4.2｜Cd-SRC5.4.2】（`extract_real7_features.py`：冻结 backbone 特征缓存）**
 - `model_fingerprint`（`:28`）：REAL7B（`FrenzyMath/REAL-Prover`，revision `fe76f68d…`，`reap-model-lock.json`，4 个 safetensors 共 `15_231_271_864` 字节，339 tensors）复算指纹。
 - 加载 backbone（`:284`），`padding_side="left"`（`:283`），对每行算 **最后一个有效 token 的 hidden**（`last_hidden_state[:, -1, :]`，`:182`）并存为 fp16。
 - Shard schema `new_value_head.feature-shard.v2`（`:9`）：含 `features [N,3584]`、`labels`、`depths`、`sample_ids/root_ids/family_ids/state_sha256s` 与全部 provenance SHA。
@@ -59,6 +70,8 @@
 - `exclusive_run_lock`（`:83`）用 `fcntl.flock` 保证单 worker 独占 GPU/output。
 
 ### 4.3 `train_value_head.py`（239 行）——离线训 64-bin 头
+
+**【代码 SRC5.4.3｜Cd-SRC5.4.3】（`train_value_head.py`：离线训 64-bin 头）**
 - `load_features`（`:15`）：按 manifest 的 shard 顺序拼接并校验 gap/hash/shape/dtype/`labels+1==depths`。
 - **头结构（`:161`）：`Linear(3584,256)→SiLU→Linear(256,64)`**，参数量校验 `934,208`（`:162`）；分类 CE（`:179`）。
 - 指标 `metrics`（`:57`）：NLL、accuracy、`expected_clipped_depth_mae`、`within_two`、`argmax_within_two_bins`、`pearson_expected_vs_clipped_depth`，并按深度桶（1-4/5-8/9-16/17-32/33-64）分组（`:72-83`）。
@@ -67,12 +80,18 @@
 - **产物（`:213-223`）**：`value-head.pt`（role `pretrained`）+ `value-head-initial.pt`（role `matched-random-initial`），schema `new_value_head.categorical-head.v2`，含 hidden_size=3584/classes=64/decode/online_target/initial_head_sha256/feature fingerprint/dataset manifest sha/optimizer，另写 `report.json` 与 `COMPLETE`。
 
 ### 4.4 `assess_value_head.py`（57 行）——进入搜索前的离线门禁
+
+**【代码 SRC5.4.4｜Cd-SRC5.4.4】（`assess_value_head.py`：离线门禁）**
 - `assess`（`:9`）：要求验收集 NLL 与 expected-MAE 相对 matched random head 改善、`pearson_expected_vs_clipped_depth > 0`、`within_root_order` 在 ≥100 对上准确率 > 0.5（`:26-31`）；全部通过才 `eligible_for_matched_search_ablation`；明确“离线信号不等于证明成功”。
 
 ### 4.5 其它
+
+**【注 SRC5.4.5｜R-SRC5.4.5】（环境准备脚本）**
 - `preflight_ms.py`、`download_leantree.sh`、`setup_lean427.sh`（环境准备）。
 
 ## 5. 特征分片 schema（速查）
+
+**【例 SRC5.5.1｜E-SRC5.5.1】（特征分片 schema）**
 
 ```
 feature-shard.v2:
@@ -87,6 +106,8 @@ feature-manifest.v2:
 
 ## 6. 张量/语义小结
 
+**【例 SRC5.6.1｜E-SRC5.6.1】（张量/语义小结）**
+
 | 项 | app（连续） | real7（64-bin 分类） |
 |---|---|---|
 | 头 | `H→256→1→Tanh` | `3584→256→64`（934,208 参数） |
@@ -97,11 +118,15 @@ feature-manifest.v2:
 
 ## 7. 与其它版本差异
 
+**【注 SRC5.7.1｜R-SRC5.7.1】（与其它版本差异）**
+
 - 与 **04 nanoproof**：本版把 nanoproof 的价值信号移植到 HF REAL-Prover；核心 `nanoproof/` 代码与 04 相同，新增移植文档与 AlphaProof 伪代码。
 - 与 **01 app**：01 与 05 的 app 共享 `value_head.py`（连续标量头）；05 补充了 64-bin 生产版管线与 `distance` 输出模式。
 - 与 **03 gpu_runtime**：03 的 `categorical_search_backend.py` 直接消费本版 `new_value_head.categorical-head.v2/v3` artifact（见 `_validate_artifact`）。
 
 ## 8. 想改造应先动哪里
+
+**【注 SRC5.8.1｜R-SRC5.8.1】（想改造应先动哪里）**
 
 - **换头结构/维度**：`real7_scripts/train_value_head.py:161`（64 类）或 `app/value_head.py:43`（标量）；参数数量校验在 `:162`。
 - **改标签语义**：`prepare_leantree.py:85`（`value_class`）、`app/value_head.py:155`（`proof_depth_to_target`）。
@@ -111,5 +136,7 @@ feature-manifest.v2:
 - **迁移/长训**：`PORTING_REAP_VALUE_HEAD.md`。
 
 ## 9. 对应教学篇
+
+**【注 SRC5.9.1｜R-SRC5.9.1】（对应教学篇）**
 
 - `../04-价值头/`（3584→256→64、校准、within-root 排序）、`../05-LoRA/`（app 的 TTT 联合更新）、`../06-RL-RLVR/`（value target=负剩余深度）、`../02-预训练/`（数据切分/provenance）、`../08-V1-1/`（artifact 接入 gpu_runtime）。
