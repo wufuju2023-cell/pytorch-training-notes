@@ -1,10 +1,16 @@
 # with_api：用 HuggingFace 现成 API 训练同一个 tiny GPT
 
+> **【文档｜DOC-RM01API】**（doccode = `RM01API`）｜编号与 Tag 规范见《00-风格与编号规范》。
+
 与 `../from_scratch/` 是**同一件事的两种写法**：同语料、同 block 采样、同 lr 形状，
 唯一区别是网络和训练循环从手写换成 `transformers` / `datasets` / `accelerate`。
 目标是一眼看清「框架替你做了哪些事」。
 
 ## 文件
+
+**【注 RM01API.1.1｜R-RM01API.1.1】（文件）**
+
+本文对应代码 Tag：`F-b01-train_hf`、`F-b01-tokenizer_api`；配套 notebook：`N-01`–`N-08`。
 
 | 文件 | 作用 |
 |---|---|
@@ -13,6 +19,8 @@
 | `README.md` | 本文，逐模块对照表 |
 
 ## 快速开始（Colab / 本地）
+
+**【注 RM01API.2.1｜R-RM01API.2.1】（快速开始（Colab / 本地））**
 
 ```bash
 cd 01-基础/code/with_api
@@ -31,6 +39,8 @@ print(gen("theorem ", max_new_tokens=60))
 ```
 
 ## 逐模块对照表
+
+**【注 RM01API.3.1｜R-RM01API.3.1】（逐模块对照表）**
 
 | 模块 | from_scratch | with_api | AlphaProof |
 |---|---|---|---|
@@ -53,6 +63,8 @@ print(gen("theorem ", max_new_tokens=60))
 
 ## 理论回顾（两版共同点）
 
+**【注 RM01API.4.1｜R-RM01API.4.1】（理论回顾（两版共同点））**
+
 **因果语言模型目标**是最大化每个位置在给定前缀下的对数似然：
 
 $$
@@ -72,6 +84,8 @@ linear warmup + flat + linear warmdown（`common.py:86`），形状略有不同�
 放大 $K$ 倍、显存不变。
 
 ## 思考题
+
+**【注 RM01API.5.1｜R-RM01API.5.1】（思考题）**
 
 1. HF 的 `GPT2LMHeadModel` 提供 `labels` 时会自动右移一位；`from_scratch` 里是
    谁做的右移？（提示：`data.get_batch` 的 `y`）

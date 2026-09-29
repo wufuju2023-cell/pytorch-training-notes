@@ -1,9 +1,15 @@
 # tiny：预置的小模型配置（对齐 nanoproof `NetworkConfig`）
 
+> **【文档｜DOC-TINY】**（doccode = `TINY`）｜编号与 Tag 规范见《00-风格与编号规范》。
+
 两档 JSON 配置，字段与 `nanoproof/nanoproof/model.py:32` 的 `NetworkConfig`
 一一对齐，另加教学用的派生字段与资源估算，供 `../01-基础/` 的代码 / notebook 直接读取。
 
 ## 配置一览
+
+**【注 TINY.1.1｜R-TINY.1.1】（配置一览）**
+
+本文对应配置 Tag：`F-tiny-config_micro`、`F-tiny-config_tiny`（豁免，不加注释）；Python 版见 `F-b01-configs`。
 
 | | `config_gpt_micro.json` | `config_gpt_tiny.json` |
 |---|---|---|
@@ -24,6 +30,8 @@ loss 曲线与消融。
 
 ## 与 nanoproof `NetworkConfig` 的字段对应
 
+**【注 TINY.2.1｜R-TINY.2.1】（与 nanoproof `NetworkConfig` 的字段对应）**
+
 | nanoproof 字段 | 本 JSON | 含义 |
 |---|---|---|
 | `sequence_len` | `nanoproof_aligned.sequence_len` | 上下文长度 $T$ |
@@ -39,6 +47,8 @@ loss 曲线与消融。
 > `from_scratch/model.py` 里先不实现滑窗，仅保留字段以便后续阶段扩展。
 
 ## 参数量估算公式
+
+**【注 TINY.3.1｜R-TINY.3.1】（参数量估算公式）**
 
 对每层（Pre-LN + GQA 注意力 + SwiGLU）：
 
@@ -70,6 +80,8 @@ $$
 （额外按滑窗修正有效序列长度）。
 
 ## 用法
+
+**【注 TINY.4.1｜R-TINY.4.1】（用法）**
 
 ```python
 import json

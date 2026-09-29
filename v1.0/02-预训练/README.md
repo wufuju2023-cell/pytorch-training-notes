@@ -1,11 +1,17 @@
 # 02 · 预训练（Pre-training）
 
+> **【文档｜DOC-RMPT】**（doccode = `RMPT`）｜编号与 Tag 规范见《00-风格与编号规范》。
+
 目标：从随机初始化出发，在（缩小的）数学/Lean 语料上学会"预测下一个 token"，
 得到能续写证明、可作为 SFT/RL 起点的语言模型。理论推导见
 [01-预训练原理.md](01-预训练原理.md)，可运行实验见
 `../notebooks/02-预训练/N09_tiny预训练复刻.ipynb`。
 
 ## 两版实现对照
+
+**【注 RMPT.1.1｜R-RMPT.1.1】（两版实现对照）**
+
+本文对应代码 Tag：`F-b02-pretrain`、`F-b02-pretrain_hf`；配套 notebook：`N-09`。
 
 | 维度 | `code/from_scratch/pretrain.py` | `code/with_api/pretrain_hf.py` |
 |---|---|---|
@@ -20,6 +26,8 @@
 两版都只在 next-token 交叉熵上训练，结束时都采样一段文本验证 loss 是否真下降。
 
 ## from_scratch 版运行
+
+**【注 RMPT.2.1｜R-RMPT.2.1】（from_scratch 版运行）**
 
 ```bash
 cd 02-预训练/code/from_scratch
@@ -39,6 +47,8 @@ torchrun --nproc_per_node=2 pretrain.py --config tiny --device cuda --amp --para
 
 ## with_api 版运行
 
+**【注 RMPT.3.1｜R-RMPT.3.1】（with_api 版运行）**
+
 ```bash
 cd 02-预训练/code/with_api
 pip install "transformers>=4.46" "datasets>=3.0" accelerate torch
@@ -49,6 +59,8 @@ python3 pretrain_hf.py --model-name sshleifer/tiny-gpt2 --max-steps 30   # 真�
 > 默认完全离线：本地造语料、`GPT2Config` 随机初始化；仅当 `--model-name` 非空时联网下载。
 
 ## 预期 loss 曲线
+
+**【注 RMPT.4.1｜R-RMPT.4.1】（预期 loss 曲线）**
 
 字符级、tiny 模型、内置语料上，交叉熵 $L$ 与困惑度 $\mathrm{PPL}=e^{L}$ 大致为：
 
@@ -65,6 +77,8 @@ python3 pretrain_hf.py --model-name sshleifer/tiny-gpt2 --max-steps 30   # 真�
 
 ## 与 AlphaProof / nanoproof 的对应
 
+**【注 RMPT.5.1｜R-RMPT.5.1】（与 AlphaProof / nanoproof 的对应）**
+
 * `nanoproof/nanoproof/pretrain.py`：Nemotron-CC-Math（约 20B token），DDP + MuonAdamW +
   梯度累积，用 `target_flops` 反推迭代数 —— 对应本目录 `--target-flops` / `--param-data-ratio`。
 * `nanoproof/nanoproof/midtrain.py`：接着在 Lean-GitHub（约 65M token）代码上 midtrain ——
@@ -73,6 +87,8 @@ python3 pretrain_hf.py --model-name sshleifer/tiny-gpt2 --max-steps 30   # 真�
   用 AdamW 降低门槛。
 
 ## 数据说明
+
+**【注 RMPT.6.1｜R-RMPT.6.1】（数据说明）**
 
 真实预训练语料（Nemotron-CC-Math、Lean-GitHub 等）的 HF id、规模、许可证见
 [`../datasets/README.md`](../datasets/README.md)。本目录脚本默认不下载大数据，只用

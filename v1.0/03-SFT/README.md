@@ -1,10 +1,16 @@
 # 03 · SFT（Supervised Fine-Tuning）
 
+> **【文档｜DOC-RMSFT】**（doccode = `RMSFT`）｜编号与 Tag 规范见《00-风格与编号规范》。
+
 目标：把预训练语言模型对齐到"给定 Lean 证明状态，输出下一步 tactic"（容器版则是"给定
 证明缺口，输出结构化调用 JSON"）。理论见 [01-SFT原理.md](01-SFT原理.md)，实验见
 `../notebooks/03-SFT/N10_状态到tactic_SFT.ipynb`。
 
 ## 两版实现对照
+
+**【注 RMSFT.1.1｜R-RMSFT.1.1】（两版实现对照）**
+
+本文对应代码 Tag：`F-b03-sft`、`F-b03-sft_hf`；配套 notebook：`N-10`。
 
 | 维度 | `code/from_scratch/sft.py` | `code/with_api/sft_hf.py` |
 |---|---|---|
@@ -18,6 +24,8 @@
 
 ## from_scratch 版运行
 
+**【注 RMSFT.2.1｜R-RMSFT.2.1】（from_scratch 版运行）**
+
 ```bash
 cd 03-SFT/code/from_scratch
 python3 -m py_compile sft.py
@@ -30,6 +38,8 @@ python3 sft.py --data /path/to/state_tactic.jsonl --max-samples 2000
 
 ## with_api 版运行
 
+**【注 RMSFT.3.1｜R-RMSFT.3.1】（with_api 版运行）**
+
 ```bash
 cd 03-SFT/code/with_api
 pip install "transformers>=4.46" "peft>=0.13" "datasets>=3.0" accelerate
@@ -40,6 +50,8 @@ python3 sft_hf.py --states-file /path/to/state_tactic.jsonl --lora-r 16
 
 ## 预期行为
 
+**【注 RMSFT.4.1｜R-RMSFT.4.1】（预期行为）**
+
 * **loss**：`sft_loss` 从 ~2–4 降到 < 1；因为只对答案 token 计损失，数值比预训练低。
 * **answer token 准确率**：内置模板数据上，`micro` 模型几百步内可达 0.8 以上。
 * **exact-match**：字符级小模型 + 贪心解码，简单状态可达 0.5 以上；真实 Lean 状态上会低
@@ -47,6 +59,8 @@ python3 sft_hf.py --states-file /path/to/state_tactic.jsonl --lora-r 16
 * **过拟合**：数据少时训练 loss 迅速趋 0，但生成质量不再提升。
 
 ## 与 AlphaProof 的对应
+
+**【注 RMSFT.5.1｜R-RMSFT.5.1】（与 AlphaProof 的对应）**
 
 * `app/train_sft.py`（DEPRECATED）：LoRA r=16 + HF `Trainer`，思路即 with_api 版。
 * 容器 `train_full_supervised.py`：Qwen3-1.7B QLoRA；prompt（指令 +

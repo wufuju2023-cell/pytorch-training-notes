@@ -1,5 +1,7 @@
 # 04-价值头：理论 + 两版代码
 
+> **【文档｜DOC-RMVH】**（doccode = `RMVH`）｜编号与 Tag 规范见《00-风格与编号规范》。
+
 价值头（value head）是挂在策略 backbone 最后一个 hidden state 上的小 MLP，估计
 "当前证明状态还差多少步、有多大价值"。本章从 RL 价值函数推导到 AlphaProof 的
 scalar / 64-bin 两种实现。
@@ -11,6 +13,10 @@ scalar / 64-bin 两种实现。
 - Notebook：`../notebooks/04-价值头/N11_价值头与校准.ipynb`
 
 ## 目录
+
+**【注 RMVH.1.1｜R-RMVH.1.1】（目录）**
+
+本文对应代码 Tag：`F-b04-value_head`、`F-b04-train_value_head`、`F-b04-value_head_api`；配套 notebook：`N-11`。
 
 ```
 04-价值头/
@@ -26,6 +32,8 @@ scalar / 64-bin 两种实现。
 
 ## 两版对照
 
+**【注 RMVH.2.1｜R-RMVH.2.1】（两版对照）**
+
 | 维度 | `from_scratch` | `with_api` |
 | --- | --- | --- |
 | 特征来源 | 合成 3584 维 / 缓存分片 | `AutoModelForCausalLM` 的 `hidden_states[-1]` |
@@ -38,6 +46,8 @@ scalar / 64-bin 两种实现。
 > 优化器里，对应 `app/policy_server.py:108-116` 与 `gpu_runtime/real_backend.py:245`。
 
 ## 数据结构
+
+**【注 RMVH.3.1｜R-RMVH.3.1】（数据结构）**
 
 `train_value_head.py` 支持两种输入：
 
@@ -61,11 +71,15 @@ $$
 
 ## 指标与校准
 
+**【注 RMVH.4.1｜R-RMVH.4.1】（指标与校准）**
+
 - **scalar**：MSE/Huber、MAE、可靠性图 + ECE（`regression_reliability`）。
 - **categorical**：two-hot 交叉熵、期望距离 MAE、温度缩放（`fit_temperature`）。
 - Notebook N11 会画 reliability diagram、ECE，并画 `depth -> value` 曲线。
 
 ## 运行
+
+**【注 RMVH.5.1｜R-RMVH.5.1】（运行）**
 
 ```bash
 cd code/from_scratch
@@ -79,6 +93,8 @@ python3 value_head_api.py --model sshleifer/tiny-gpt2 --use-lora --num-bins 64
 ```
 
 ## 未决点 / 注意
+
+**【注 RMVH.6.1｜R-RMVH.6.1】（未决点 / 注意）**
 
 - 本地未安装 torch，代码只做了 `python3 -m py_compile` 语法校验；数值与 notebook
   执行由 lead 在云 GPU（torch 2.12+rocm7.2）统一跑。

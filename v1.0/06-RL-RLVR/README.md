@@ -1,8 +1,14 @@
 # 06 · 后训练 RL / RLVR
 
+> **【文档｜DOC-RMRL】**（doccode = `RMRL`）｜编号与 Tag 规范见《00-风格与编号规范》。
+
 本目录讲清楚“用奖励训练证明策略”的完整链条。
 
 ## 文件
+
+**【注 RMRL.1.1｜R-RMRL.1.1】（文件）**
+
+本文对应代码 Tag：`F-b06-grpo`、`F-b06-trl_grpo`；配套 notebook：`N-13`、`N-14`。
 
 | 文件 | 内容 |
 |---|---|
@@ -13,9 +19,13 @@
 
 ## 一句话路线
 
+**【注 RMRL.2.1｜R-RMRL.2.1】（一句话路线）**
+
 预训练 → SFT（03）→ **RL/RLVR 用可验证奖励强化策略** → 价值头（04）为搜索提供 $V(s)$ → MCTS（07）把策略+价值变成搜索。
 
 ## 与 AlphaProof 的对照
+
+**【注 RMRL.3.1｜R-RMRL.3.1】（与 AlphaProof 的对照）**
 
 - 在线 RTTT 一步：`app/policy_server.py:416` `ttt_step`，损失
   $`-r(\log p-\log p_{\text{old}}) + \beta_{\mathrm{KL}}(\log p-\log p_{\text{old}})^2 + c_v\,\mathrm{MSE}`$，
@@ -27,6 +37,8 @@
 
 ## 运行
 
+**【注 RMRL.4.1｜R-RMRL.4.1】（运行）**
+
 ```bash
 python3 code/from_scratch/grpo.py --steps 300
 ```
@@ -35,5 +47,7 @@ python3 code/from_scratch/grpo.py --steps 300
 `code/with_api/trl_grpo.py` 需要 `trl transformers peft datasets`，默认用 tiny 模型，Colab 可跑。
 
 ## 思考题
+
+**【注 RMRL.5.1｜R-RMRL.5.1】（思考题）**
 
 见 `01-RL与RLVR原理.md` §12。

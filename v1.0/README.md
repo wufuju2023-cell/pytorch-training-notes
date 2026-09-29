@@ -1,8 +1,14 @@
 # PyTorch 和模型训练源码学习 · v1.0
 
+> **【文档｜DOC-V10】**（doccode = `V10`）｜编号与 Tag 规范见《00-风格与编号规范》。
+
 目标：从零（数学 + 代码）彻底读懂 AlphaProof 的一整套 Python 训练/服务脚本，并能自己改。
 
 ## 怎么用
+
+**【注 V10.1.1｜R-V10.1.1】（怎么用）**
+
+配套 notebook Tag：`N-01`–`N-17`；代码文件 Tag 登记见《00-风格与编号规范》§4。
 
 1. 先读 [`00-学习路线图.md`](00-学习路线图.md)：全流程路线、阶段验收、与 AlphaProof 的映射。
 2. 查 [`00-资料清单.md`](00-资料清单.md)：外部教程/仓库/数据集/既有数学文档索引。
@@ -10,6 +16,8 @@
 4. 每个 notebook 都在 Colab 可跑（CPU 优先），并对应到 AlphaProof 的具体文件与函数。
 
 ## 目录结构
+
+**【注 V10.2.1｜R-V10.2.1】（目录结构）**
 
 ```
 v1.0/
@@ -30,6 +38,8 @@ v1.0/
 ```
 
 ## 约定
+
+**【注 V10.3.1｜R-V10.3.1】（约定）**
 
 - 代码两版：`code/from_scratch/`（纯 PyTorch，教学向）与 `code/with_api/`（transformers / peft / trl / accelerate）。
 - 规模：from_scratch 用 1–20M 参数 tiny 模型；with_api 用小基座 + LoRA / 4bit QLoRA。

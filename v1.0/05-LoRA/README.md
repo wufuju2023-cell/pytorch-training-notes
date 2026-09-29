@@ -1,10 +1,16 @@
 # 05-LoRA · 代码与实验说明
 
+> **【文档｜DOC-RMLORA】**（doccode = `RMLORA`）｜编号与 Tag 规范见《00-风格与编号规范》。
+
 配套理论：[`01-LoRA原理.md`](01-LoRA原理.md)。本目录给出 **两版** LoRA 实现：
 `from_scratch/`（手写 LoRALinear + 注入 tinyGPT）与 `with_api/`（PEFT + 4-bit
 QLoRA），外加 notebook `notebooks/05-LoRA/N12_LoRA从零与PEFT.ipynb`。
 
 ## 目录
+
+**【注 RMLORA.1.1｜R-RMLORA.1.1】（目录）**
+
+本文对应代码 Tag：`F-b05-lora`、`F-b05-finetune_lora`、`F-b05-peft_lora`、`F-b05-qlora_bnb`；配套 notebook：`N-12`。
 
 ```
 05-LoRA/
@@ -21,6 +27,8 @@ QLoRA），外加 notebook `notebooks/05-LoRA/N12_LoRA从零与PEFT.ipynb`。
 
 ## 两版对照
 
+**【注 RMLORA.2.1｜R-RMLORA.2.1】（两版对照）**
+
 | 维度 | from_scratch | with_api |
 | --- | --- | --- |
 | LoRA 层 | 手写 `LoRALinear`（A/B/缩放/dropout/merge） | `peft.LoraConfig` + `get_peft_model` |
@@ -30,6 +38,8 @@ QLoRA），外加 notebook `notebooks/05-LoRA/N12_LoRA从零与PEFT.ipynb`。
 | 关键对应 | `real_backend.py:24,117-128` | `policy_server.py:112` |
 
 ## 接口与数据结构
+
+**【注 RMLORA.3.1｜R-RMLORA.3.1】（接口与数据结构）**
 
 `lora.py`：
 
@@ -44,12 +54,16 @@ QLoRA），外加 notebook `notebooks/05-LoRA/N12_LoRA从零与PEFT.ipynb`。
 
 ## 指标 / 对照
 
+**【注 RMLORA.4.1｜R-RMLORA.4.1】（指标 / 对照）**
+
 - **参数量**：LoRA 通常占总参数 0.1%–1%（`lora.py` 自检会打印占比）。
 - **显存**：`torch.cuda.max_memory_allocated`，对比 full vs LoRA vs QLoRA。
 - **效果**：相同步数下的 loss 曲线（notebook 中画）。
 - **merge 正确性**：`LoRALinear.merge()` 前后输出应一致（误差 < 1e-5）。
 
 ## 运行
+
+**【注 RMLORA.5.1｜R-RMLORA.5.1】（运行）**
 
 ```bash
 # from_scratch
@@ -63,6 +77,8 @@ python code/with_api/qlora_bnb.py  --model <llama-7b> --steps 20   # 需 GPU + b
 
 ## 与 AlphaProof 的对应
 
+**【注 RMLORA.6.1｜R-RMLORA.6.1】（与 AlphaProof 的对应）**
+
 - `app/policy_server.py:112-116`：`r=16, alpha=32, dropout=0.02, bias=none`，
   `target_modules` 为全部 attn+mlp，`init_lora_weights=True`；
 - `gpu_runtime/real_backend.py:24` 的 `TARGET_MODULES` 与两版代码默认目标一致；
@@ -70,6 +86,8 @@ python code/with_api/qlora_bnb.py  --model <llama-7b> --steps 20   # 需 GPU + b
   对应"在线持续学习时冻结基座"的场景。
 
 ## 未决点
+
+**【注 RMLORA.7.1｜R-RMLORA.7.1】（未决点）**
 
 - 本地未装 torch，`from_scratch` 只做 `py_compile`；数值/显存结果由 lead 在云
   GPU 执行 notebook 时产生。

@@ -1,10 +1,16 @@
 # from_scratch：纯 PyTorch 手写 tiny GPT
 
+> **【文档｜DOC-RM01FS】**（doccode = `RM01FS`）｜编号与 Tag 规范见《00-风格与编号规范》。
+
 不依赖任何第三方模型库，只用 `torch`，把「字符 → 下一个字符」的最小 GPT 拆开写清楚。
 整机 ≤ 20M 参数，CPU 可跑；配套理论篇见 `../../../01-基础/*.md`，配套实验见
 `../../../notebooks/01-基础/N01–N08.ipynb`。
 
 ## 文件
+
+**【注 RM01FS.1.1｜R-RM01FS.1.1】（文件）**
+
+本文对应代码 Tag：`F-b01-configs`、`F-b01-model`、`F-b01-data`、`F-b01-train`、`F-b01-generate`；配套 notebook：`N-01`–`N-08`。
 
 | 文件 | 作用 | 对应 AlphaProof / nanoproof |
 |---|---|---|
@@ -15,6 +21,8 @@
 | `generate.py` | 载入 checkpoint，temperature / top-k / top-p 采样 | `model.py:492` `generate` |
 
 ## 快速开始（CPU，几分钟内出结果）
+
+**【注 RM01FS.2.1｜R-RM01FS.2.1】（快速开始（CPU，几分钟内出结果））**
 
 ```bash
 cd 01-基础/code/from_scratch
@@ -39,6 +47,8 @@ python3 train.py --config micro --resume out/micro/last.pt --max-iters 400
 ```
 
 ## 与理论的对应
+
+**【注 RM01FS.3.1｜R-RM01FS.3.1】（与理论的对应）**
 
 **注意力（Attention）。** 单头缩放点积注意力
 
@@ -68,6 +78,8 @@ $$
 **参数共享。** `tie_weights=True` 时 `lm_head.weight = tok_emb.weight`，省一份词表参数。
 
 ## 设计取舍（与 nanoproof 的差异，教学简化）
+
+**【注 RM01FS.4.1｜R-RM01FS.4.1】（设计取舍（与 nanoproof 的差异，教学简化））**
 
 - nanoproof 用自定义 `Linear` + bf16 取代 `autocast`（`model.py:49`），本版用
   标准 `torch.autocast`，更好懂；`--amp` 开关即对应它的 `COMPUTE_DTYPE`。

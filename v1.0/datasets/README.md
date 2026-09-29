@@ -1,5 +1,7 @@
 # datasets · v1.0 数据集说明
 
+> **【文档｜DOC-DS】**（doccode = `DS`）｜编号与 Tag 规范见《00-风格与编号规范》。
+
 本目录用 [`prepare_tiny.py`](prepare_tiny.py) 把各数据集各取一个**极小切片**（可离线、
 网络不可用时合成兜底），本文件记录每个数据集的 HF id / 本地路径 / 规模 / schema / 许可证。
 
@@ -8,6 +10,10 @@
 > 条，或用合成数据替代。
 
 ## 快速开始
+
+**【注 DS.1.1｜R-DS.1.1】（快速开始）**
+
+本文对应代码 Tag：`F-ds-prepare_tiny`（登记见《00-风格与编号规范》§4）。
 
 ```bash
 cd datasets
@@ -19,6 +25,8 @@ python3 prepare_tiny.py --out ./_tiny --max-rows 50 --offline    # 离线：本�
 `state_tactic_pairs.jsonl`、`leantree.jsonl`、`value_head_features.md`、`manifest.json`。
 
 ## 1. HF 数据集
+
+**【注 DS.2.1｜R-DS.2.1】（HF 数据集）**
 
 | 名称 | HF id | 规模 | schema | 许可证 | 获取 |
 |---|---|---|---|---|---|
@@ -35,6 +43,8 @@ python3 prepare_tiny.py --out ./_tiny --max-rows 50 --offline    # 离线：本�
 `manifest.json` 标注 `degraded`。
 
 ## 2. 本地路径（my-new-linux）
+
+**【注 DS.3.1｜R-DS.3.1】（本地路径（my-new-linux））**
 
 | 数据 | 路径 | 规模 | schema | 说明 |
 |---|---|---|---|---|
@@ -66,6 +76,8 @@ python3 prepare_tiny.py --out ./_tiny --max-rows 50 --offline    # 离线：本�
 
 ## 3. 评测集
 
+**【注 DS.4.1｜R-DS.4.1】（评测集）**
+
 | 名称 | 来源 | 规模 | 说明 |
 |---|---|---|---|
 | fatem-100 | 本地 eval_sets | 100 | 评测用，**不参与训练** |
@@ -75,11 +87,15 @@ python3 prepare_tiny.py --out ./_tiny --max-rows 50 --offline    # 离线：本�
 
 ## 4. 许可证要点
 
+**【注 DS.5.1｜R-DS.5.1】（许可证要点）**
+
 - `ufal/leantree`：Apache-2.0（见 HF 页）；`mathlib4`：Apache-2.0。
 - `FrenzyMath/state_tactic_pairs`、`internlm/*`、`deepseek-ai/*`、`l3lab/*`：以 HF 页为准。
 - `nvidia/Nemotron-CC-Math-v1`：GATED，需在 HF 页面接受条款；本仓库不分发。
 
 ## 5. "教学只用切片" 的做法
+
+**【注 DS.6.1｜R-DS.6.1】（"教学只用切片" 的做法）**
 
 1. `prepare_tiny.py --max-rows N`：每个数据集最多取前 N 条；
 2. 优先本地复制（fatem/holdout/leantree），避免重复下载；
