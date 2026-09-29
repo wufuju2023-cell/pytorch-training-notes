@@ -1,3 +1,5 @@
+# 【源代码｜F-b03-sft_hf】v1.0/03-SFT/code/with_api/sft_hf.py — HF+peft LoRA 的 chat-template SFT
+# 相关文档：《03-SFT/01-SFT原理.md》
 r"""SFT（with_api 版）：HuggingFace transformers + peft LoRA，带 chat template。
 
 与 from_scratch/sft.py 做同一件事（state -> tactic 的 token-masked SFT），但用
@@ -65,6 +67,7 @@ _TEMPLATES = [
 ]
 
 
+# 【F-b03-sft_hf.synthetic_pairs｜函数】造 (state, tactic) 样本
 def synthetic_pairs(n: int = 160, seed: int = 0) -> list[dict]:
     import random
 
@@ -76,6 +79,7 @@ def synthetic_pairs(n: int = 160, seed: int = 0) -> list[dict]:
     return out
 
 
+# 【F-b03-sft_hf.load_pairs｜函数】读取 jsonl 样本
 def load_pairs(path: str) -> list[dict]:
     out = []
     with open(path, encoding="utf-8") as f:
@@ -94,6 +98,7 @@ def load_pairs(path: str) -> list[dict]:
     return out
 
 
+# 【F-b03-sft_hf.SFTDataset｜类】按 chat template 构造、只对 assistant 计 loss
 class SFTDataset(Dataset):
     """按 chat template 构造 prompt，只对 assistant 回复计 loss。"""
 
@@ -130,6 +135,7 @@ class SFTDataset(Dataset):
 # ---------------------------------------------------------------------------
 # 2. 主流程
 # ---------------------------------------------------------------------------
+# 【F-b03-sft_hf.parse_args｜函数】解析命令行参数
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="HF + peft LoRA SFT（教学版）")
     p.add_argument("--model-name", default="sshleifer/tiny-gpt2",
@@ -150,6 +156,7 @@ def parse_args() -> argparse.Namespace:
     return p.parse_args()
 
 
+# 【F-b03-sft_hf.main｜函数】SFT 训练入口
 def main() -> None:
     args = parse_args()
     torch.manual_seed(args.seed)

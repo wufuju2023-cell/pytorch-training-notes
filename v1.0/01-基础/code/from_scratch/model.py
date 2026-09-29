@@ -1,3 +1,5 @@
+# 【源代码｜F-b01-model】v1.0/01-基础/code/from_scratch/model.py — 手写 tiny GPT（从字符到下一字符）
+# 相关文档：【定义 1.1.3｜D-1.1.3】、【代码 1.1.4｜Cd-1.1.4】
 """纯 PyTorch 手写 tiny GPT（教学向，单文件可读）。
 
 目标：把“从字符到下一个字符”的最小可训练语言模型拆开讲清楚，每个组件
@@ -39,6 +41,7 @@ from configs import GPTConfig
 # ---------------------------------------------------------------------------
 # 0. 基础归一化
 # ---------------------------------------------------------------------------
+# 【F-b01-model.RMSNorm｜类】均方根归一化
 class RMSNorm(nn.Module):
     """均方根归一化（Zhang & Sennrich, 2019）。
 
@@ -67,6 +70,7 @@ class RMSNorm(nn.Module):
 # ---------------------------------------------------------------------------
 # 1. RoPE：旋转位置编码
 # ---------------------------------------------------------------------------
+# 【F-b01-model.precompute_rope｜函数】预计算 RoPE 的 cos/sin 频率表
 def precompute_rope(
     seq_len: int, head_dim: int, base: float = 10000.0, device=None
 ) -> tuple[torch.Tensor, torch.Tensor]:
@@ -83,6 +87,7 @@ def precompute_rope(
     return freqs.cos().to(device), freqs.sin().to(device)
 
 
+# 【F-b01-model.apply_rope｜函数】对最后两半维做二维旋转
 def apply_rope(x: torch.Tensor, cos: torch.Tensor, sin: torch.Tensor) -> torch.Tensor:
     """对 ``x`` 的最后两半维做二维旋转。
 
@@ -104,6 +109,7 @@ def apply_rope(x: torch.Tensor, cos: torch.Tensor, sin: torch.Tensor) -> torch.T
 # ---------------------------------------------------------------------------
 # 2. GQA 辅助
 # ---------------------------------------------------------------------------
+# 【F-b01-model.repeat_kv｜函数】GQA/MQA 的 KV 头复制
 def repeat_kv(x: torch.Tensor, n_rep: int) -> torch.Tensor:
     """把 KV 头沿 head 维复制 ``n_rep`` 次（GQA / MQA）。
 
@@ -118,6 +124,7 @@ def repeat_kv(x: torch.Tensor, n_rep: int) -> torch.Tensor:
 # ---------------------------------------------------------------------------
 # 3. 因果自注意力（含 GQA、RoPE、可选的 QK-norm）
 # ---------------------------------------------------------------------------
+# 【F-b01-model.CausalSelfAttention｜类】QKV 投影 + RoPE + 因果注意力 + 输出投影
 class CausalSelfAttention(nn.Module):
     def __init__(self, cfg: GPTConfig, use_qk_norm: bool = True):
         super().__init__()
@@ -169,6 +176,7 @@ class CausalSelfAttention(nn.Module):
 # ---------------------------------------------------------------------------
 # 4. SwiGLU MLP
 # ---------------------------------------------------------------------------
+# 【F-b01-model.SwiGLU｜类】down(silu(gate(x)) * up(x)) 前馈
 class SwiGLU(nn.Module):
     """``down(silu(gate(x)) * up(x))``，中间维度对齐 LLaMA。
 
@@ -191,6 +199,7 @@ class SwiGLU(nn.Module):
 # ---------------------------------------------------------------------------
 # 5. Transformer block（Pre-LN + 残差）
 # ---------------------------------------------------------------------------
+# 【F-b01-model.Block｜类】预归一化的 Transformer 块
 class Block(nn.Module):
     def __init__(self, cfg: GPTConfig, use_qk_norm: bool = True):
         super().__init__()
@@ -208,6 +217,7 @@ class Block(nn.Module):
 # ---------------------------------------------------------------------------
 # 6. 完整 GPT
 # ---------------------------------------------------------------------------
+# 【F-b01-model.GPT｜类】tiny GPT 主模型
 class GPT(nn.Module):
     def __init__(self, cfg: GPTConfig):
         super().__init__()
@@ -349,6 +359,7 @@ class GPT(nn.Module):
             return torch.optim.AdamW(groups, lr=learning_rate, betas=betas)
 
 
+# 【F-b01-model.build_model｜函数】按名字构建模型
 def build_model(name: str = "micro") -> GPT:
     """便捷工厂：``build_model("micro"|"tiny")``。"""
     from configs import get_config

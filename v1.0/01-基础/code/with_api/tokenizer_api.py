@@ -1,3 +1,5 @@
+# 【源代码｜F-b01-tokenizer_api】v1.0/01-基础/code/with_api/tokenizer_api.py — HF tokenizers 训练小 BPE 并封装
+# 相关文档：《01-基础/04-分词器与词表.md》
 """用 HuggingFace 生态做分词：``tokenizers`` 训练小 BPE + ``PreTrainedTokenizerFast`` 封装。
 
 与 from_scratch 的字符级 ``CharTokenizer`` 对照：
@@ -19,6 +21,7 @@ import argparse
 import os
 
 
+# 【F-b01-tokenizer_api.train_bpe｜函数】训练 byte-level BPE 并保存
 def train_bpe(
     text: str,
     vocab_size: int = 512,
@@ -47,6 +50,7 @@ def train_bpe(
     return hf_tok
 
 
+# 【F-b01-tokenizer_api.build_char_tokenizer｜函数】无 tokenizers 依赖的字符级回退
 def build_char_tokenizer(text: str):
     """无 ``tokenizers`` 依赖的字符级 fallback，接口尽量贴近 HF tokenizer。
 
@@ -81,6 +85,7 @@ DEMO_TEXT = (
 ) * 40
 
 
+# 【F-b01-tokenizer_api.parse_args｜函数】解析命令行参数
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="HF BPE 分词器")
     p.add_argument("--corpus", default=None)
@@ -90,6 +95,7 @@ def parse_args() -> argparse.Namespace:
     return p.parse_args()
 
 
+# 【F-b01-tokenizer_api.main｜函数】训练并保存分词器
 def main() -> None:
     args = parse_args()
     text = DEMO_TEXT if args.demo or not args.corpus else open(args.corpus, encoding="utf-8").read()

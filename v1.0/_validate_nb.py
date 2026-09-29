@@ -1,3 +1,4 @@
+# 【源代码｜F-misc-validate_nb】v1.0/_validate_nb.py — 校验 notebook 合法性与可编译性
 import json, sys, py_compile, tempfile, os
 for path in sys.argv[1:]:
     nb = json.load(open(path, encoding="utf-8"))

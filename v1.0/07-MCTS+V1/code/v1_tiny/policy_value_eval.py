@@ -1,3 +1,5 @@
+# 【源代码｜F-b07-policy_value_eval】v1.0/07-MCTS+V1/code/v1_tiny/policy_value_eval.py — tiny 策略/价值网络（MCTS 占位）
+# 相关文档：《07-MCTS+V1/01-MCTS原理与V1闭环.md》
 """tiny 策略/价值网络——V1 闭环 demo 的“策略网络占位”。
 
 合成任务（可验证）：有 K 个原子命题。每个问题给定
@@ -22,6 +24,7 @@ import torch.nn.functional as F
 K = 6  # 原子数
 
 
+# 【F-b07-policy_value_eval.PolicyValueNet｜类】tiny 策略/价值网络
 class PolicyValueNet(nn.Module):
     def __init__(self, k: int = K, hidden: int = 128):
         super().__init__()
@@ -60,11 +63,13 @@ class PolicyValueNet(nn.Module):
         return {a: float(p[a]) for a in valid_actions}, float(v.item())
 
 
+# 【F-b07-policy_value_eval.encode_state｜函数】状态→one-hot 输入向量
 def encode_state(net: PolicyValueNet, state) -> torch.Tensor:
     hyp, remaining = state
     return net.encode(hyp, remaining)
 
 
+# 【F-b07-policy_value_eval.remaining_steps｜函数】可验证的剩余步数
 def remaining_steps(hyp, remaining) -> int:
     """可验证的剩余步数：remaining 中可证的原子数；若有不可证原子则给 K 惩罚。"""
     if any(i not in hyp for i in remaining):
@@ -72,6 +77,7 @@ def remaining_steps(hyp, remaining) -> int:
     return len(remaining)
 
 
+# 【F-b07-policy_value_eval.make_evaluator｜函数】state→(priors, depth) 评估器
 def make_evaluator(net: PolicyValueNet):
     """给 mcts.MCTS 用的 evaluator：state -> (priors, depth)。"""
     def evaluator(state):

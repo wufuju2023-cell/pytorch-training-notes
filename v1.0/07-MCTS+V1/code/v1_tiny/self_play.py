@@ -1,3 +1,5 @@
+# 【源代码｜F-b07-self_play】v1.0/07-MCTS+V1/code/v1_tiny/self_play.py — 自博弈搜索并生成训练样本
+# 相关文档：《07-MCTS+V1/01-MCTS原理与V1闭环.md》
 """自博弈：用 MCTS(+tiny 策略/价值网络) 解合成题，并把搜索树变成训练样本。
 
 对照 V1 闭环：搜索产生“访问计数 = 策略目标”，用可验证的剩余步数 = 价值目标，
@@ -19,6 +21,7 @@ from mcts import MCTS, Config
 from policy_value_eval import PolicyValueNet, remaining_steps, K
 
 
+# 【F-b07-self_play.make_problem｜函数】合成一个可验证问题
 def make_problem(rng: random.Random, k: int = K):
     hyp = frozenset(i for i in range(k) if rng.random() < 0.7)
     goal = frozenset(i for i in range(k) if rng.random() < 0.5)
@@ -27,6 +30,7 @@ def make_problem(rng: random.Random, k: int = K):
     return hyp, goal
 
 
+# 【F-b07-self_play.expand_fn｜函数】MCTS 展开函数
 def expand_fn(state, action):
     hyp, remaining = state
     if action not in remaining or action not in hyp:
@@ -35,6 +39,7 @@ def expand_fn(state, action):
     return [(hyp, new)] if new else []
 
 
+# 【F-b07-self_play.search｜函数】对单题跑 MCTS 搜索
 def search(net: PolicyValueNet, hyp, goal, sims: int = 32):
     from policy_value_eval import make_evaluator
 
@@ -43,6 +48,7 @@ def search(net: PolicyValueNet, hyp, goal, sims: int = 32):
     return mcts.run((hyp, goal), sims)
 
 
+# 【F-b07-self_play.collect_from_tree｜函数】把搜索树转成训练样本
 def collect_from_tree(root) -> list:
     samples, stack = [], [root]
     while stack:
@@ -61,6 +67,7 @@ def collect_from_tree(root) -> list:
     return samples
 
 
+# 【F-b07-self_play.train_step｜函数】用搜索样本更新网络
 def train_step(net: PolicyValueNet, opt, samples: list):
     if not samples:
         return 0.0, 0.0

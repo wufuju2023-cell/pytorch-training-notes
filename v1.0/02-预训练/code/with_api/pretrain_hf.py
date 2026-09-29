@@ -1,3 +1,5 @@
+# 【源代码｜F-b02-pretrain_hf】v1.0/02-预训练/code/with_api/pretrain_hf.py — HF datasets+Trainer 预训练版
+# 相关文档：《02-预训练/01-预训练原理.md》
 r"""预训练（with_api 版）：用 HuggingFace ``datasets`` + ``transformers.Trainer``。
 
 与 ``from_scratch/pretrain.py`` 做同一件事（next-token 语言建模），但全部交给
@@ -76,6 +78,7 @@ perplexity is the exponential of the mean cross entropy over tokens.
 """.strip()
 
 
+# 【F-b02-pretrain_hf.Cfg｜类】预训练配置容器
 @dataclass
 class Cfg:
     config: str = "tiny"
@@ -104,6 +107,7 @@ SIZES = {
 }
 
 
+# 【F-b02-pretrain_hf.parse_args｜函数】解析命令行参数
 def parse_args() -> Cfg:
     p = argparse.ArgumentParser(description="HF Trainer 预训练（教学版）")
     p.add_argument("--config", default="tiny", choices=list(SIZES))
@@ -128,6 +132,7 @@ def parse_args() -> Cfg:
     return Cfg(**vars(a))
 
 
+# 【F-b02-pretrain_hf.collect_texts｜函数】收集多域文本
 def collect_texts(cfg: Cfg) -> list[str]:
     if cfg.hf_dataset:
         # 真实数据集（教学只用切片），失败时回退内置语料
@@ -145,6 +150,7 @@ def collect_texts(cfg: Cfg) -> list[str]:
     return [CORPUS for _ in range(n)]
 
 
+# 【F-b02-pretrain_hf.build_tokenizer｜函数】构建并返回分词器
 def build_tokenizer(cfg: Cfg):
     tok = AutoTokenizer.from_pretrained(cfg.tokenizer_name)
     if tok.pad_token is None:
@@ -152,6 +158,7 @@ def build_tokenizer(cfg: Cfg):
     return tok
 
 
+# 【F-b02-pretrain_hf.build_model｜函数】构建小 GPT-2 基座
 def build_model(cfg: Cfg, vocab_size: int, tok) -> GPT2LMHeadModel:
     if cfg.use_pretrained:
         model = GPT2LMHeadModel.from_pretrained(cfg.model_name)
@@ -171,6 +178,7 @@ def build_model(cfg: Cfg, vocab_size: int, tok) -> GPT2LMHeadModel:
     return GPT2LMHeadModel(conf)
 
 
+# 【F-b02-pretrain_hf.main｜函数】预训练入口
 def main() -> None:
     cfg = parse_args()
     os.makedirs(cfg.out_dir, exist_ok=True)

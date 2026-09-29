@@ -1,4 +1,5 @@
 #!/bin/bash
+# 【脚本｜F-tools-cloud_fetch_publish】v1.0/tools/cloud_fetch_publish.sh — 下载云端执行结果并发布到 my-new-linux
 # Step 3+4: after cloud execution finishes (exec_all.log has ALL_DONE),
 # download executed tree and publish to my-new-linux docs.
 set -u

@@ -1,3 +1,4 @@
+# 【源代码｜F-misc-fixorder】v1.0/fixorder.py — 临时正文顺序修复脚本
 import io, sys
 
 p = "/tmp/opencode/v1-stage/04-价值头/01-价值头原理.md"

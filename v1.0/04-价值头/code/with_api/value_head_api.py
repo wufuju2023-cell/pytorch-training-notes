@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# 【源代码｜F-b04-value_head_api】v1.0/04-价值头/code/with_api/value_head_api.py — HF hidden states + 小 MLP 价值头
+# 相关文档：《04-价值头/01-价值头原理.md》
 """with_api 版价值头：HuggingFace hidden states + 小 MLP 头。
 
 对照 app/train_value_head.py（冻结 backbone、取最后 token hidden、只训 MLP）
@@ -25,6 +27,7 @@ from torch import Tensor, nn
 from torch.nn import functional as F
 
 
+# 【F-b04-value_head_api.ValueHead｜类】Linear→SiLU→Linear 价值头
 class ValueHead(nn.Module):
     """Linear(H,hd)->SiLU->Linear(hd,out)。out=1 用 Tanh, out=64 是分类头。"""
 
@@ -48,6 +51,7 @@ class ValueHead(nn.Module):
         return self.mlp(hidden_states.float()).squeeze(-1)
 
 
+# 【F-b04-value_head_api.last_token_hidden｜函数】取最后一个非 pad token 的 hidden
 def last_token_hidden(output, attention_mask: Tensor | None = None) -> Tensor:
     """从 HF 输出取最后一个非 padding token 的 hidden state。"""
     hidden = getattr(output, "hidden_states", None)
@@ -62,6 +66,7 @@ def last_token_hidden(output, attention_mask: Tensor | None = None) -> Tensor:
     return hidden[rows, last, :]
 
 
+# 【F-b04-value_head_api.build_backbone｜函数】加载并冻结基座（可选注入 LoRA）
 def build_backbone(model_name: str, use_lora: bool, lora_r: int = 16,
                    lora_alpha: int = 32, lora_dropout: float = 0.02):
     """加载并冻结基座; 可选注入 LoRA。返回 (model, tokenizer, hidden_size)。"""
@@ -100,6 +105,7 @@ def build_backbone(model_name: str, use_lora: bool, lora_r: int = 16,
     return base, tok, hidden_size
 
 
+# 【F-b04-value_head_api.main｜函数】训练入口
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--model", default="sshleifer/tiny-gpt2")

@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# 【源代码｜F-ds-prepare_tiny】v1.0/datasets/prepare_tiny.py — 教学用小切片数据准备器
+# 相关文档：《datasets/README.md》
 """教学用小切片数据准备器（可运行、可离线、网络不可用时优雅降级为造数据）。
 
 产物（写入 ``--out``，默认 ``./_tiny``）：
@@ -74,15 +76,18 @@ lemma succ_add (a b : Nat) : (a + 1) + b = (a + b) + 1 := by
 """.strip()
 
 
+# 【F-ds-prepare_tiny.log｜函数】带前缀日志
 def log(*a) -> None:
     print(*a, flush=True)
 
 
+# 【F-ds-prepare_tiny.ensure_dir｜函数】确保目录存在
 def ensure_dir(path: str) -> str:
     os.makedirs(path, exist_ok=True)
     return path
 
 
+# 【F-ds-prepare_tiny.atomic_write_jsonl｜函数】原子写入 jsonl
 def atomic_write_jsonl(path: str, rows: list[dict]) -> None:
     tmp = path + ".tmp"
     with open(tmp, "w", encoding="utf-8") as f:
@@ -91,6 +96,7 @@ def atomic_write_jsonl(path: str, rows: list[dict]) -> None:
     os.replace(tmp, path)
 
 
+# 【F-ds-prepare_tiny.atomic_write_text｜函数】原子写入文本
 def atomic_write_text(path: str, text: str) -> None:
     tmp = path + ".tmp"
     with open(tmp, "w", encoding="utf-8") as f:
@@ -98,6 +104,7 @@ def atomic_write_text(path: str, text: str) -> None:
     os.replace(tmp, path)
 
 
+# 【F-ds-prepare_tiny.head_jsonl｜函数】取 jsonl 前 N 行
 def head_jsonl(path: str, n: int) -> list[dict]:
     rows = []
     with open(path, encoding="utf-8") as f:
@@ -114,11 +121,13 @@ def head_jsonl(path: str, n: int) -> list[dict]:
     return rows
 
 
+# 【F-ds-prepare_tiny.synth_pairs｜函数】合成 (state,tactic) 样本
 def synth_pairs(n: int, seed: int = 0) -> list[dict]:
     rng = random.Random(seed)
     return [{"state": s, "tactic": t} for s, t in (rng.choice(_STATES) for _ in range(n))]
 
 
+# 【F-ds-prepare_tiny.synth_statements｜函数】合成形式化陈述
 def synth_statements(n: int, prefix: str, seed: int = 0) -> list[dict]:
     rng = random.Random(seed)
     out = []
@@ -130,6 +139,7 @@ def synth_statements(n: int, prefix: str, seed: int = 0) -> list[dict]:
     return out
 
 
+# 【F-ds-prepare_tiny.load_local｜函数】读取本地数据切片
 def load_local(path: str, n: int, kind: str) -> list[dict] | None:
     if not path or not os.path.exists(path):
         return None
@@ -163,6 +173,7 @@ def load_local(path: str, n: int, kind: str) -> list[dict] | None:
     return out or None
 
 
+# 【F-ds-prepare_tiny.load_hf｜函数】从 HF 拉取数据切片
 def load_hf(hf_id: str, n: int, offline: bool) -> list[dict] | None:
     if offline:
         log(f"[HF] offline，跳过 {hf_id}")
@@ -186,6 +197,7 @@ def load_hf(hf_id: str, n: int, offline: bool) -> list[dict] | None:
         return None
 
 
+# 【F-ds-prepare_tiny.normalize_pairs｜函数】归一化 (state,tactic) 字段
 def normalize_pairs(rows: list[dict], n: int) -> list[dict]:
     out = []
     for r in rows[:n]:
@@ -198,6 +210,7 @@ def normalize_pairs(rows: list[dict], n: int) -> list[dict]:
     return out
 
 
+# 【F-ds-prepare_tiny.prepare_corpus｜函数】准备预训练小语料
 def prepare_corpus(out: str) -> dict:
     text = _CORPUS
     source = "synthetic"
@@ -222,6 +235,7 @@ def prepare_corpus(out: str) -> dict:
             "schema": "plain text (chars)", "license": "mathlib4: Apache-2.0"}
 
 
+# 【F-ds-prepare_tiny.prepare_statements｜函数】准备 miniF2F 子集
 def prepare_statements(out: str, n: int, offline: bool, eval_sets: str) -> list[dict]:
     files = []
     for name in ("fatem-100.jsonl", "holdout-30.jsonl"):
@@ -254,6 +268,7 @@ def prepare_statements(out: str, n: int, offline: bool, eval_sets: str) -> list[
     return files
 
 
+# 【F-ds-prepare_tiny.prepare_state_tactic｜函数】抽取 state_tactic_pairs 前 N 条
 def prepare_state_tactic(out: str, n: int, offline: bool) -> dict:
     rows = (load_local(BACKUP_DATA.replace("leantree_mathlib.jsonl", "dataset/train.jsonl"),
                        n, "state_tactic")
@@ -271,6 +286,7 @@ def prepare_state_tactic(out: str, n: int, offline: bool) -> dict:
             "note": "教学只用切片；完整约 5 万对"}
 
 
+# 【F-ds-prepare_tiny.prepare_leantree｜函数】抽取 LeanTree 前 N 条
 def prepare_leantree(out: str, n: int, offline: bool) -> dict:
     rows = load_local(BACKUP_DATA, n, "leantree") or load_hf("ufal/leantree", n, offline)
     if rows:
@@ -288,6 +304,7 @@ def prepare_leantree(out: str, n: int, offline: bool) -> dict:
             "note": "教学只用前 N 条（完整约 26 万转移）"}
 
 
+# 【F-ds-prepare_tiny.write_value_head_note｜函数】写价值头特征分片说明
 def write_value_head_note(out: str) -> dict:
     text = (
         "# 价值头特征分片说明\n\n"
@@ -304,6 +321,7 @@ def write_value_head_note(out: str) -> dict:
             "schema": "hidden features 分片", "license": "N/A", "note": "大 tensor 不在仓库内"}
 
 
+# 【F-ds-prepare_tiny.parse_args｜函数】解析命令行参数
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="v1.0 教学用小切片数据准备器")
     p.add_argument("--out", default="./_tiny")
@@ -314,6 +332,7 @@ def parse_args() -> argparse.Namespace:
     return p.parse_args()
 
 
+# 【F-ds-prepare_tiny.main｜函数】准备入口
 def main() -> None:
     args = parse_args()
     random.seed(args.seed)

@@ -1,3 +1,5 @@
+# 【源代码｜F-b05-lora】v1.0/05-LoRA/code/from_scratch/lora.py — 从零实现 LoRA 并注入 tinyGPT
+# 相关文档：《05-LoRA/01-LoRA原理.md》
 """从零实现 LoRA 并注入极简 GPT（tinyGPT）。
 
 对照 app/policy_server.py:112 与 gpu_runtime/real_backend.py:24。
@@ -17,6 +19,7 @@ TARGET_MODULES = ("q_proj", "k_proj", "v_proj", "o_proj",
                   "gate_proj", "up_proj", "down_proj")
 
 
+# 【F-b05-lora.CausalSelfAttention｜类】tinyGPT 因果自注意力
 class CausalSelfAttention(nn.Module):
     def __init__(self, d_model: int, n_heads: int) -> None:
         super().__init__()
@@ -36,6 +39,7 @@ class CausalSelfAttention(nn.Module):
         return self.o_proj(out)
 
 
+# 【F-b05-lora.MLP｜类】tinyGPT 前馈层
 class MLP(nn.Module):
     def __init__(self, d_model: int, hidden: int) -> None:
         super().__init__()
@@ -47,6 +51,7 @@ class MLP(nn.Module):
         return self.down_proj(F.silu(self.gate_proj(x)) * self.up_proj(x))
 
 
+# 【F-b05-lora.Block｜类】tinyGPT Transformer 块
 class Block(nn.Module):
     def __init__(self, d_model: int, n_heads: int, mlp_ratio: int) -> None:
         super().__init__()
@@ -60,6 +65,7 @@ class Block(nn.Module):
         return x + self.mlp(self.ln2(x))
 
 
+# 【F-b05-lora.TinyGPT｜类】极简 GPT 主体
 class TinyGPT(nn.Module):
     def __init__(self, vocab_size: int = 128, d_model: int = 128,
                  n_layers: int = 4, n_heads: int = 4, max_len: int = 64,
@@ -81,6 +87,7 @@ class TinyGPT(nn.Module):
         return self.lm_head(self.ln_f(x))
 
 
+# 【F-b05-lora.LoRALinear｜类】低秩旁路 B(A x)·alpha/r
 class LoRALinear(nn.Module):
     def __init__(self, base: nn.Linear, r: int = 16, alpha: int = 32,
                  dropout: float = 0.0) -> None:
@@ -106,6 +113,7 @@ class LoRALinear(nn.Module):
         return self.base
 
 
+# 【F-b05-lora.inject_lora｜函数】把指定线层替换为 LoRALinear
 def inject_lora(model: nn.Module, target_names=TARGET_MODULES, r: int = 16,
                 alpha: int = 32, dropout: float = 0.0) -> nn.Module:
     names = tuple(target_names)
@@ -117,16 +125,19 @@ def inject_lora(model: nn.Module, target_names=TARGET_MODULES, r: int = 16,
     return model
 
 
+# 【F-b05-lora.lora_parameters｜函数】生成 LoRA 参数
 def lora_parameters(model: nn.Module):
     return [p for n, p in model.named_parameters() if "lora_" in n]
 
 
+# 【F-b05-lora.mark_only_lora_trainable｜函数】只保留 LoRA 参数可训练
 def mark_only_lora_trainable(model: nn.Module) -> int:
     for name, p in model.named_parameters():
         p.requires_grad_("lora_" in name)
     return count_parameters(model, trainable_only=True)
 
 
+# 【F-b05-lora.count_parameters｜函数】统计参数量
 def count_parameters(model: nn.Module, trainable_only: bool = True) -> int:
     return sum(p.numel() for p in model.parameters()
                if p.requires_grad or not trainable_only)

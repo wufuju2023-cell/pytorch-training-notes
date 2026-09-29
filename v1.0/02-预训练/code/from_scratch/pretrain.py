@@ -1,3 +1,5 @@
+# 【源代码｜F-b02-pretrain】v1.0/02-预训练/code/from_scratch/pretrain.py — 从零预训练 next-token 语言模型
+# 相关文档：《02-预训练/01-预训练原理.md》
 r"""从零预训练：在 tiny 语料上做 next-token 语言建模（纯 PyTorch 教学版）。
 
 复用 found-code 在 ``01-基础/code/from_scratch`` 给出的 tinyGPT 接口
@@ -35,6 +37,7 @@ import time
 from contextlib import nullcontext
 
 
+# 【F-b02-pretrain._bootstrap_tiny_gpt｜函数】把 01-基础/code/from_scratch 加入 sys.path
 def _bootstrap_tiny_gpt() -> str:
     """把 01-基础/code/from_scratch 加进 sys.path（相对本文件 ../../../）。"""
     here = os.path.dirname(os.path.abspath(__file__))
@@ -108,6 +111,7 @@ theorem List.append_nil (xs : List α) : xs ++ [] = xs := by
 }
 
 
+# 【F-b02-pretrain.parse_domains｜函数】解析 "math:3,code:1" 域配比
 def parse_domains(spec: str) -> dict[str, int]:
     """把 "math:3,code:1,web:1" 解析成 {"math":3,"code":1,"web":1}。"""
     out: dict[str, int] = {}
@@ -124,6 +128,7 @@ def parse_domains(spec: str) -> dict[str, int]:
     return out
 
 
+# 【F-b02-pretrain.build_corpus｜函数】按配比重复拼接各域文本
 def build_corpus(domains: dict[str, int], reps: int = 8) -> str:
     """按配比重复拼接各域文本（字符级占比近似配比）。"""
     total_w = sum(domains.values())
@@ -134,6 +139,7 @@ def build_corpus(domains: dict[str, int], reps: int = 8) -> str:
     return "\n\n".join(chunks)
 
 
+# 【F-b02-pretrain.domain_schedule｜函数】课程式配比线性插值
 def domain_schedule(step: int, total: int, warm: dict[str, int], final: dict[str, int]) -> dict[str, int]:
     """课程：把两套配比按训练进度线性插值（web/code -> math）。"""
     t = min(1.0, step / max(1, total - 1))
@@ -148,11 +154,13 @@ def domain_schedule(step: int, total: int, warm: dict[str, int], final: dict[str
 # ---------------------------------------------------------------------------
 # 2. 算力 / 数据预算
 # ---------------------------------------------------------------------------
+# 【F-b02-pretrain.tokens_from_target_flops｜函数】由 C≈6ND 反解 token 数
 def tokens_from_target_flops(target_flops: float, n_params: int) -> float:
     """由 C≈6ND 反解 token 数 D = C / (6N)。"""
     return target_flops / (6.0 * max(1, n_params))
 
 
+# 【F-b02-pretrain.planned_tokens｜函数】token 预算优先级
 def planned_tokens(args: argparse.Namespace, n_params: int) -> float:
     """token 预算优先级：--total-tokens > --target-flops > --param-data-ratio。"""
     if args.total_tokens > 0:
@@ -165,19 +173,23 @@ def planned_tokens(args: argparse.Namespace, n_params: int) -> float:
 # ---------------------------------------------------------------------------
 # 3. 分布式 & 精度
 # ---------------------------------------------------------------------------
+# 【F-b02-pretrain.is_dist｜函数】是否处于 torch.distributed
 def is_dist() -> bool:
     return int(os.environ.get("WORLD_SIZE", "1")) > 1
 
 
+# 【F-b02-pretrain.is_master｜函数】是否主进程
 def is_master() -> bool:
     return (not is_dist()) or dist.get_rank() == 0
 
 
+# 【F-b02-pretrain.log｜函数】只在主进程打印
 def log(*a) -> None:
     if is_master():
         print(*a, flush=True)
 
 
+# 【F-b02-pretrain.setup_dist｜函数】初始化 DDP
 def setup_dist() -> tuple[int, int, torch.device]:
     if not is_dist():
         dev = "cuda" if torch.cuda.is_available() else "cpu"
@@ -190,6 +202,7 @@ def setup_dist() -> tuple[int, int, torch.device]:
     return rank, world, torch.device("cuda", local_rank)
 
 
+# 【F-b02-pretrain.build_amp｜函数】构建混合精度上下文
 def build_amp(use_amp: bool, device: torch.device):
     enabled = use_amp and device.type == "cuda"
     dtype = torch.bfloat16 if (enabled and torch.cuda.is_bf16_supported()) else torch.float16
@@ -198,6 +211,7 @@ def build_amp(use_amp: bool, device: torch.device):
     return ctx, scaler
 
 
+# 【F-b02-pretrain.lr_at｜函数】warmup + cosine 学习率
 def lr_at(step: int, args: argparse.Namespace, total: int) -> float:
     if step < args.warmup_iters:
         return args.lr * (step + 1) / max(1, args.warmup_iters)
@@ -206,6 +220,7 @@ def lr_at(step: int, args: argparse.Namespace, total: int) -> float:
     return args.min_lr + coeff * (args.lr - args.min_lr)
 
 
+# 【F-b02-pretrain.estimate_loss｜函数】估计 train/val loss
 @torch.no_grad()
 def estimate_loss(model, dataset, args, device, ctx) -> float:
     model.eval()
@@ -222,6 +237,7 @@ def estimate_loss(model, dataset, args, device, ctx) -> float:
 # ---------------------------------------------------------------------------
 # 4. 主流程
 # ---------------------------------------------------------------------------
+# 【F-b02-pretrain.parse_args｜函数】解析命令行参数
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="tiny 语料预训练（教学版）")
     p.add_argument("--config", default="micro", choices=["micro", "tiny"])
@@ -251,6 +267,7 @@ def parse_args() -> argparse.Namespace:
     return p.parse_args()
 
 
+# 【F-b02-pretrain.main｜函数】预训练主循环
 def main() -> None:
     args = parse_args()
     if args.num_threads > 0:

@@ -1,3 +1,5 @@
+# 【源代码｜F-b06-grpo】v1.0/06-RL-RLVR/code/from_scratch/grpo.py — 最小 GRPO 教学实现（RLVR 精确匹配奖励）
+# 相关文档：《06-RL-RLVR/01-RL与RLVR原理.md》
 """最小 GRPO 教学实现（纯 PyTorch，CPU 可跑）。
 
 任务：单位数加法 mod 10。输入 "a+b="，模型需生成答案数字。
@@ -34,6 +36,7 @@ VOCAB = len(CHARS)
 BLOCK = 8  # "a+b=" 最多 4 个字符，答案 1 个
 
 
+# 【F-b06-grpo.encode｜函数】字符→id 编码
 def encode(text: str) -> torch.Tensor:
     return torch.tensor([STOI[c] for c in text], dtype=torch.long)
 
@@ -41,6 +44,7 @@ def encode(text: str) -> torch.Tensor:
 # ---------------------------------------------------------------------------
 # 1. 极小 Transformer LM（与 01 章 tinyGPT 同构，缩小版）
 # ---------------------------------------------------------------------------
+# 【F-b06-grpo.Config｜类】GRPO 配置
 @dataclass
 class Config:
     vocab: int = VOCAB
@@ -51,6 +55,7 @@ class Config:
     dropout: float = 0.0
 
 
+# 【F-b06-grpo.Block｜类】tiny 语言模型块
 class Block(nn.Module):
     def __init__(self, cfg: Config):
         super().__init__()
@@ -75,6 +80,7 @@ class Block(nn.Module):
         return x
 
 
+# 【F-b06-grpo.TinyLM｜类】极小自回归语言模型（策略）
 class TinyLM(nn.Module):
     def __init__(self, cfg: Config):
         super().__init__()
@@ -122,6 +128,7 @@ class TinyLM(nn.Module):
 # ---------------------------------------------------------------------------
 # 2. 可验证奖励（RLVR）：精确匹配
 # ---------------------------------------------------------------------------
+# 【F-b06-grpo.make_prompts｜函数】生成 "a+b=" 形式 prompt
 def make_prompts(batch: int, generator: torch.Generator):
     a = torch.randint(0, 10, (batch,), generator=generator)
     b = torch.randint(0, 10, (batch,), generator=generator)
@@ -130,6 +137,7 @@ def make_prompts(batch: int, generator: torch.Generator):
     return prompts, answers
 
 
+# 【F-b06-grpo.verify｜函数】可验证奖励（精确匹配）
 def verify(prompt: str, completion: str, answer: int) -> float:
     """确定性验证器：只看第一个生成字符。"""
     if not completion:
@@ -140,6 +148,7 @@ def verify(prompt: str, completion: str, answer: int) -> float:
 # ---------------------------------------------------------------------------
 # 3. GRPO
 # ---------------------------------------------------------------------------
+# 【F-b06-grpo.GRPOTrainer｜类】组采样/相对优势/clip/KL 训练器
 class GRPOTrainer:
     def __init__(self, policy: TinyLM, ref: TinyLM, lr: float = 3e-3,
                  clip: float = 0.2, beta_kl: float = 0.05, eps_std: float = 1e-4):
@@ -195,6 +204,7 @@ class GRPOTrainer:
         return stats
 
 
+# 【F-b06-grpo.main｜函数】训练入口
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--steps", type=int, default=300)

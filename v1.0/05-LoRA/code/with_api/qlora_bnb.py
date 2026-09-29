@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# 【源代码｜F-b05-qlora_bnb】v1.0/05-LoRA/code/with_api/qlora_bnb.py — 4bit nf4 冻结基座 + LoRA（QLoRA）
+# 相关文档：《05-LoRA/01-LoRA原理.md》
 """QLoRA：4-bit (nf4) 冻结基座 + LoRA，用 bitsandbytes 省显存。
 
 对照课程 05-LoRA 原理 QLoRA 一节：
@@ -19,6 +21,7 @@ import json
 import torch
 
 
+# 【F-b05-qlora_bnb.build_qlora｜函数】4bit 量化基座 + LoRA 配置
 def build_qlora(model_name: str, r: int, alpha: int, dropout: float,
                 target_modules):
     from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
@@ -45,6 +48,7 @@ def build_qlora(model_name: str, r: int, alpha: int, dropout: float,
     return get_peft_model(model, config), tok
 
 
+# 【F-b05-qlora_bnb.main｜函数】微调入口
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--model", default="sshleifer/tiny-gpt2")

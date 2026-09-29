@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# 【源代码｜F-b05-finetune_lora】v1.0/05-LoRA/code/from_scratch/finetune_lora.py — 冻结/全参/LoRA 三种微调对比
+# 相关文档：《05-LoRA/01-LoRA原理.md》
 """对比"冻结 / 全参 / LoRA"三种微调：参数量、显存与效果。
 
 任务：合成一个小型序列复制任务（把输入 token 的逆序作为标签），
@@ -26,6 +28,7 @@ from lora import (TARGET_MODULES, TinyGPT, count_parameters, inject_lora,
                   lora_parameters)
 
 
+# 【F-b05-finetune_lora.make_data｜函数】合成序列逆序复制任务
 def make_data(n: int, seq_len: int, vocab: int, seed: int = 0):
     """合成任务：标签是输入序列的逆序（要求模型学会重排）。"""
     g = torch.Generator().manual_seed(seed)
@@ -34,6 +37,7 @@ def make_data(n: int, seq_len: int, vocab: int, seed: int = 0):
     return x, y
 
 
+# 【F-b05-finetune_lora.train｜函数】按模式训练并统计参数量/显存
 def train(model, x, y, steps: int, lr: float, mode: str, device) -> dict:
     params = lora_parameters(model) if mode == "lora" else \
         [p for p in model.parameters() if p.requires_grad]
@@ -62,6 +66,7 @@ def train(model, x, y, steps: int, lr: float, mode: str, device) -> dict:
             "peak_mem_MB": round(peak, 1) if peak else None}
 
 
+# 【F-b05-finetune_lora.main｜函数】对比实验入口
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--mode", choices=("frozen", "full", "lora", "all"), default="all")

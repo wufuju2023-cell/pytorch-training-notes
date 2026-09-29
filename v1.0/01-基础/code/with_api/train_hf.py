@@ -1,3 +1,5 @@
+# 【源代码｜F-b01-train_hf】v1.0/01-基础/code/with_api/train_hf.py — 用 HF Trainer/accelerate 训练同一小 GPT
+# 相关文档：《01-基础/05-训练循环与数据管线.md》
 """用 HuggingFace 现成 API 训练同一个小 GPT（对照 from_scratch）。
 
 两条路径
@@ -39,6 +41,7 @@ DEMO_TEXT = (
 ) * 60
 
 
+# 【F-b01-train_hf.parse_args｜函数】解析命令行参数
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="HF GPT2 训练 tiny 语言模型")
     p.add_argument("--config", default="micro", choices=["micro", "tiny"])
@@ -60,12 +63,14 @@ def parse_args() -> argparse.Namespace:
     return p.parse_args()
 
 
+# 【F-b01-train_hf.get_text｜函数】取训练文本
 def get_text(args) -> str:
     if args.text_file and os.path.exists(args.text_file):
         return open(args.text_file, encoding="utf-8").read()
     return DEMO_TEXT
 
 
+# 【F-b01-train_hf.build_tokenizer｜函数】返回 (tokenizer, vocab_size)
 def build_tokenizer(args, text):
     """返回 (hf_tokenizer, vocab_size)。char 走本地轻量实现，bpe 走 tokenizers。"""
     if args.tokenizer == "bpe":
@@ -79,12 +84,14 @@ def build_tokenizer(args, text):
     return tok, tok.vocab_size
 
 
+# 【F-b01-train_hf.tokenizer_api_build_char｜函数】借用 tokenizer_api 的字符级实现
 def tokenizer_api_build_char(text):
     import tokenizer_api
 
     return tokenizer_api.build_char_tokenizer(text)
 
 
+# 【F-b01-train_hf.build_datasets｜函数】长文本切定长 block 并造 labels
 def build_datasets(tok, text, block_size):
     """把长文本切成定长 block，交给 ``DataCollatorForLanguageModeling`` 造 labels。"""
     from datasets import Dataset
@@ -100,6 +107,7 @@ def build_datasets(tok, text, block_size):
     return ds, val
 
 
+# 【F-b01-train_hf.build_model｜函数】构建 GPT2LMHeadModel
 def build_model(vocab_size, block_size, n_layer, n_head, n_embd):
     from transformers import GPT2Config, GPT2LMHeadModel
 
@@ -119,6 +127,7 @@ def build_model(vocab_size, block_size, n_layer, n_head, n_embd):
     return GPT2LMHeadModel(cfg)
 
 
+# 【F-b01-train_hf.train_with_trainer｜函数】用 Trainer 托管训练
 def train_with_trainer(model, tokenizer, train_ds, val_ds, args):
     from transformers import DataCollatorForLanguageModeling, Trainer, TrainingArguments
 
@@ -150,6 +159,7 @@ def train_with_trainer(model, tokenizer, train_ds, val_ds, args):
     return trainer
 
 
+# 【F-b01-train_hf.train_with_accelerate｜函数】用 accelerate 手写训练循环
 def train_with_accelerate(model, tok, train_ds, val_ds, args, device):
     """手写 accelerate 循环：等价于 from_scratch/train.py 的 AMP+累积+cosine。"""
     import math
@@ -190,6 +200,7 @@ def train_with_accelerate(model, tok, train_ds, val_ds, args, device):
     return unwrapped
 
 
+# 【F-b01-train_hf.main｜函数】训练入口
 def main() -> None:
     args = parse_args()
     import torch

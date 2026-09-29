@@ -1,3 +1,5 @@
+# 【源代码｜F-b04-value_head】v1.0/04-价值头/code/from_scratch/value_head.py — 价值头与校准工具（scalar+64-bin）
+# 相关文档：《04-价值头/01-价值头原理.md》
 """从零实现价值头（scalar 回归 + 64-bin 分类）与校准工具。
 
 对应理论：``04-价值头/01-价值头原理.md``
@@ -20,6 +22,7 @@ from torch.nn import functional as F
 # ---------------------------------------------------------------------------
 # 1. 语义工具：折扣回报 / proof-depth / two-hot
 # ---------------------------------------------------------------------------
+# 【F-b04-value_head.discounted_returns｜函数】折扣回报 G_t = r_t + gamma*G_{t+1}
 def discounted_returns(rewards: Sequence[float], gamma: float = 0.99) -> list[float]:
     """后向计算折扣回报 ``G_t = r_t + gamma * G_{t+1}``，裁剪到 [-1, 1]。"""
     out = [0.0] * len(rewards)
@@ -30,6 +33,7 @@ def discounted_returns(rewards: Sequence[float], gamma: float = 0.99) -> list[fl
     return out
 
 
+# 【F-b04-value_head.proof_depth_to_target｜函数】剩余证明深度→标量目标
 def proof_depth_to_target(depth: float, max_depth: int = 64) -> float:
     """剩余证明深度 -> 标量目标 ``-min(depth, max_depth) / max_depth``。
 
@@ -40,6 +44,7 @@ def proof_depth_to_target(depth: float, max_depth: int = 64) -> float:
     return -min(float(depth), float(max_depth)) / float(max_depth)
 
 
+# 【F-b04-value_head.distance_two_hot｜函数】距离投影到相邻两桶的软标签
 def distance_two_hot(distance: float, support_max: int = 64) -> Tensor:
     """把（可小数的）距离投影到相邻两桶，返回长度 ``support_max`` 的软标签。
 
@@ -58,6 +63,7 @@ def distance_two_hot(distance: float, support_max: int = 64) -> Tensor:
     return weights
 
 
+# 【F-b04-value_head.two_hot_ce_loss｜函数】two-hot 软标签交叉熵损失
 def two_hot_ce_loss(logits: Tensor, distance: float, support_max: int = 64) -> Tensor:
     """soft-target 交叉熵损失（target 为 two-hot 分布）。"""
     target = distance_two_hot(distance, support_max).to(logits.device)
@@ -65,6 +71,7 @@ def two_hot_ce_loss(logits: Tensor, distance: float, support_max: int = 64) -> T
     return -(target * log_prob).sum(-1).mean()
 
 
+# 【F-b04-value_head.expected_distance｜函数】分类头解码期望距离
 def expected_distance(logits: Tensor) -> Tensor:
     """分类头解码：``E[k] = sum_k k * softmax(logits)_k``，k = 1..num_bins。"""
     probs = F.softmax(logits, dim=-1)
@@ -76,6 +83,7 @@ def expected_distance(logits: Tensor) -> Tensor:
 # ---------------------------------------------------------------------------
 # 2. 两种价值头（对照 app/value_head.py:35 与 categorical_search_backend.py:41）
 # ---------------------------------------------------------------------------
+# 【F-b04-value_head.ScalarValueHead｜类】MLP→Tanh 标量价值头
 class ScalarValueHead(nn.Module):
     """Linear(H,256) -> SiLU -> Linear(256,1) -> Tanh，输出落在 [-1,1]。"""
 
@@ -99,6 +107,7 @@ class ScalarValueHead(nn.Module):
         return self.mlp(hidden_states.float()).squeeze(-1)
 
 
+# 【F-b04-value_head.CategoricalValueHead｜类】64-bin 分类价值头
 class CategoricalValueHead(nn.Module):
     """Linear(H,256) -> SiLU -> Linear(256,num_bins)，输出 num_bins 个 bin logits。
 
@@ -125,6 +134,7 @@ class CategoricalValueHead(nn.Module):
         return self.mlp(hidden_states.float())
 
 
+# 【F-b04-value_head.two_hot_cross_entropy｜函数】一批距离的 two-hot 平均交叉熵
 def two_hot_cross_entropy(logits: Tensor, distances, support_max: int = 64) -> Tensor:
     """对一批距离做 two-hot 软标签，返回平均交叉熵。"""
     if isinstance(distances, Tensor):
@@ -137,6 +147,7 @@ def two_hot_cross_entropy(logits: Tensor, distances, support_max: int = 64) -> T
 # ---------------------------------------------------------------------------
 # 3. 校准（ECE / 可靠性图 / 温度）
 # ---------------------------------------------------------------------------
+# 【F-b04-value_head.regression_reliability｜函数】可靠性统计（含 ECE）
 def regression_reliability(pred: Tensor, target: Tensor, n_bins: int = 10):
     """回归价值头的可靠性统计，返回 dict(centers, empirical, counts, ece)。"""
     p = pred.detach().reshape(-1).float()
@@ -165,6 +176,7 @@ def regression_reliability(pred: Tensor, target: Tensor, n_bins: int = 10):
             "counts": counts, "ece": ece}
 
 
+# 【F-b04-value_head.fit_temperature｜函数】学标量温度使 NLL 最小
 def fit_temperature(logits: Tensor, labels: Tensor, steps: int = 200) -> float:
     """学一个标量温度 T，使 softmax(logits/T) 的 NLL 最小（不改排序）。"""
     log_t = torch.zeros(1, requires_grad=True)
@@ -183,6 +195,7 @@ def fit_temperature(logits: Tensor, labels: Tensor, steps: int = 200) -> float:
 # ---------------------------------------------------------------------------
 # 4. 特征数据：真实分片 / 合成
 # ---------------------------------------------------------------------------
+# 【F-b04-value_head.synthetic_features｜函数】合成 (features, depth) 特征
 def synthetic_features(n: int, hidden_size: int = 3584, seed: int = 0,
                        max_depth: int = 64):
     """合成 (features[B,H], depth[B])。前 8 维决定剩余深度，其余为噪声。"""

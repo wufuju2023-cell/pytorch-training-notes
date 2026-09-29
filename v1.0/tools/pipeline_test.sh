@@ -1,4 +1,5 @@
 #!/bin/bash
+# 【脚本｜F-tools-pipeline_test】v1.0/tools/pipeline_test.sh — 云端 notebook 执行链路冒烟测试
 set -e
 R=/mnt/workspace/alphaproof-learn/tmp
 D=/tmp/opencode/v1-stage

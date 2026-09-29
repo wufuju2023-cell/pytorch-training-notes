@@ -1,3 +1,5 @@
+# 【源代码｜F-b03-sft】v1.0/03-SFT/code/from_scratch/sft.py — token-masked (state→tactic) 监督微调
+# 相关文档：《03-SFT/01-SFT原理.md》
 r"""从零实现 SFT：在 tiny 模型上做 (proof state -> tactic) 的 token-masked 监督微调。
 
 本脚本复用 ``01-基础/code/from_scratch`` 的 tinyGPT（``GPT`` / ``get_config`` /
@@ -53,6 +55,7 @@ from contextlib import nullcontext
 import torch
 
 
+# 【F-b03-sft._bootstrap_tiny_gpt｜函数】把 01-基础/code/from_scratch 加入 sys.path
 def _bootstrap_tiny_gpt() -> None:
     here = os.path.dirname(os.path.abspath(__file__))
     cand = os.path.abspath(os.path.join(here, "..", "..", "..", "01-基础", "code", "from_scratch"))
@@ -74,6 +77,7 @@ PROMPT_MIDDLE = "\nTACTIC:\n"
 # ---------------------------------------------------------------------------
 # 1. 状态-策略样本
 # ---------------------------------------------------------------------------
+# 【F-b03-sft.synthetic_pairs｜函数】造 (state, tactic) 样本
 def synthetic_pairs(n: int = 240, seed: int = 0) -> list[dict]:
     """造 ``n`` 条 (state, tactic) 样本，状态与策略一一对应，模型可真正学会。"""
     rng = random.Random(seed)
@@ -93,6 +97,7 @@ def synthetic_pairs(n: int = 240, seed: int = 0) -> list[dict]:
     return pairs
 
 
+# 【F-b03-sft.load_pairs｜函数】读取 (state, tactic) jsonl
 def load_pairs(path: str, limit: int = 2000) -> list[dict]:
     """读取 (state, tactic) jsonl，兼容几种常见字段名；坏行跳过。"""
     out: list[dict] = []
@@ -117,6 +122,7 @@ def load_pairs(path: str, limit: int = 2000) -> list[dict]:
 # ---------------------------------------------------------------------------
 # 2. token 化 + label mask
 # ---------------------------------------------------------------------------
+# 【F-b03-sft.encode_pair｜函数】返回 (input_ids, labels)，prompt 段置 -100
 def encode_pair(tok: CharTokenizer, state: str, tactic: str, max_len: int):
     """返回 ``(input_ids, labels)``：prompt 段 labels 全 -100，答案段为真实 id。"""
     prompt = PROMPT_PREFIX + state.strip() + PROMPT_MIDDLE
@@ -127,6 +133,7 @@ def encode_pair(tok: CharTokenizer, state: str, tactic: str, max_len: int):
     return ids, labels
 
 
+# 【F-b03-sft.SFTDataset｜类】state→tactic 的 token-masked 数据集
 class SFTDataset(torch.utils.data.Dataset):
     def __init__(self, pairs: list[dict], tok: CharTokenizer, max_len: int):
         self.rows = [encode_pair(tok, p["state"], p["tactic"], max_len) for p in pairs]
@@ -139,6 +146,7 @@ class SFTDataset(torch.utils.data.Dataset):
         return torch.tensor(ids, dtype=torch.long), torch.tensor(labels, dtype=torch.long)
 
 
+# 【F-b03-sft.make_collate｜函数】右填充并置 pad label=-100
 def make_collate(pad_id: int):
     """右填充到 batch 内最大长度；pad 位置 label=-100（不参与 loss）。"""
 
@@ -154,6 +162,7 @@ def make_collate(pad_id: int):
     return collate
 
 
+# 【F-b03-sft.answer_token_accuracy｜函数】只在答案 token 上统计 top-1 命中率
 def answer_token_accuracy(logits: torch.Tensor, labels: torch.Tensor) -> tuple[int, int]:
     """只在 labels != -100 的位置统计 teacher-forcing 的 top-1 命中率。"""
     mask = labels.ne(IGNORE_INDEX)
@@ -166,6 +175,7 @@ def answer_token_accuracy(logits: torch.Tensor, labels: torch.Tensor) -> tuple[i
 # ---------------------------------------------------------------------------
 # 3. 训练 / 评估
 # ---------------------------------------------------------------------------
+# 【F-b03-sft.parse_args｜函数】解析命令行参数
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="tiny 模型 token-masked SFT（教学版）")
     p.add_argument("--config", default="micro", choices=["micro", "tiny"])
@@ -191,12 +201,14 @@ def parse_args() -> argparse.Namespace:
     return p.parse_args()
 
 
+# 【F-b03-sft.resolve_device｜函数】选择运行设备
 def resolve_device(name: str) -> torch.device:
     if name == "auto":
         return torch.device("cuda" if torch.cuda.is_available() else "cpu")
     return torch.device(name)
 
 
+# 【F-b03-sft.lr_at｜函数】warmup + cosine 学习率
 def lr_at(step: int, args) -> float:
     if step < args.warmup_iters:
         return args.lr * (step + 1) / max(1, args.warmup_iters)
@@ -206,6 +218,7 @@ def lr_at(step: int, args) -> float:
     return args.min_lr + 0.5 * (1.0 + math.cos(math.pi * prog)) * (args.lr - args.min_lr)
 
 
+# 【F-b03-sft.evaluate｜函数】留出集评估与生成
 @torch.no_grad()
 def evaluate(model, ds, collate, device, tok, amp_ctx, n_show: int = 3) -> dict:
     model.eval()
@@ -231,6 +244,7 @@ def evaluate(model, ds, collate, device, tok, amp_ctx, n_show: int = 3) -> dict:
             "tok_acc": correct / max(1, total), "shows": shows}
 
 
+# 【F-b03-sft.main｜函数】SFT 训练主循环
 def main() -> None:
     args = parse_args()
     torch.manual_seed(args.seed)

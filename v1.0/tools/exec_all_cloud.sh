@@ -1,4 +1,5 @@
 #!/bin/bash
+# 【脚本｜F-tools-exec_all_cloud】v1.0/tools/exec_all_cloud.sh — 在云端容器批量执行 notebook
 # Runs on the cloud GPU container (as root), detached.
 set -u
 BASE=/mnt/workspace/alphaproof-learn

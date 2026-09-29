@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# 【源代码｜F-b05-peft_lora】v1.0/05-LoRA/code/with_api/peft_lora.py — HF+peft 的低秩微调
+# 相关文档：《05-LoRA/01-LoRA原理.md》
 """PEFT 版 LoRA：用 HuggingFace + peft 在真实模型上做低秩微调。
 
 对照 app/policy_server.py:112（r=16, alpha=32, dropout=0.02, 全部 attn+mlp,
@@ -23,6 +25,7 @@ TARGET_MODULES = ["q_proj", "k_proj", "v_proj", "o_proj",
                   "gate_proj", "up_proj", "down_proj"]
 
 
+# 【F-b05-peft_lora.build_peft_model｜函数】加载基座并注入 peft LoRA
 def build_peft_model(model_name: str, r: int, alpha: int, dropout: float,
                      target_modules, device):
     from peft import LoraConfig, get_peft_model
@@ -41,6 +44,7 @@ def build_peft_model(model_name: str, r: int, alpha: int, dropout: float,
     return model, tok
 
 
+# 【F-b05-peft_lora.main｜函数】微调入口
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--model", default="sshleifer/tiny-gpt2")

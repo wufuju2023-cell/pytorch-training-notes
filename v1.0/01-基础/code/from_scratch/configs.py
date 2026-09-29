@@ -1,3 +1,4 @@
+# 【源代码｜F-b01-configs】v1.0/01-基础/code/from_scratch/configs.py — tiny GPT 可复现配置（micro/tiny 两档）
 """tiny GPT 的可复现配置（纯 PyTorch 版）。
 
 设计原则
@@ -17,6 +18,7 @@ from __future__ import annotations
 from dataclasses import dataclass, field, asdict
 
 
+# 【F-b01-configs.GPTConfig｜类】tiny GPT 超参数
 @dataclass
 class GPTConfig:
     """tiny GPT 超参数。
@@ -105,6 +107,7 @@ class GPTConfig:
         return asdict(self)
 
 
+# 【F-b01-configs._swiglu_hidden｜函数】SwiGLU 中间维度向上取整到 multiple_of
 def _swiglu_hidden(n_embd: int, multiple_of: int) -> int:
     """SwiGLU 中间维度：8/3 * C 后向上取整到 multiple_of（对齐 LLaMA）。"""
     hidden = int(8 * n_embd / 3)
@@ -141,6 +144,7 @@ TINY = GPTConfig(
 configs: dict[str, GPTConfig] = {"micro": MICRO, "tiny": TINY}
 
 
+# 【F-b01-configs.get_config｜函数】按名字取配置并返回深拷贝
 def get_config(name: str) -> GPTConfig:
     """按名字取配置，返回**深拷贝**，避免训练脚本改坏全局预设。"""
     import copy

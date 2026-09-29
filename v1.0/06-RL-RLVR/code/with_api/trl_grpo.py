@@ -1,3 +1,5 @@
+# 【源代码｜F-b06-trl_grpo】v1.0/06-RL-RLVR/code/with_api/trl_grpo.py — trl GRPO + PEFT/LoRA 版
+# 相关文档：《06-RL-RLVR/01-RL与RLVR原理.md》
 """trl GRPO + PEFT/LoRA 版（with_api）——在极小基座上做 RLVR。
 
 与 from_scratch/grpo.py 的区别：这里把“策略、组采样、clip、KL、参考模型”全部
@@ -24,6 +26,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 from trl import GRPOConfig, GRPOTrainer
 
 
+# 【F-b06-trl_grpo.build_dataset｜函数】构造 prompt 数据集
 def build_dataset(n: int = 512):
     rng = random.Random(0)
     rows = []
@@ -36,11 +39,13 @@ def build_dataset(n: int = 512):
     return Dataset.from_list(rows)
 
 
+# 【F-b06-trl_grpo.extract_digit｜函数】取 completion 中第一个数字
 def extract_digit(text: str):
     m = re.search(r"(\d)", text)
     return m.group(1) if m else None
 
 
+# 【F-b06-trl_grpo.reward_fn｜函数】可验证奖励（精确匹配）
 def reward_fn(completions, answer, **kwargs):
     """可验证奖励：completion 中第一个数字是否等于正确答案。"""
     rewards = []
@@ -51,6 +56,7 @@ def reward_fn(completions, answer, **kwargs):
     return rewards
 
 
+# 【F-b06-trl_grpo.main｜函数】训练入口
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--model", default="sshleifer/tiny-gpt2")

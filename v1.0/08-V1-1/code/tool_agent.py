@@ -1,3 +1,5 @@
+# 【源代码｜F-b08-tool_agent】v1.0/08-V1-1/code/tool_agent.py — 最小 tool-calling agent
+# 相关文档：《08-V1-1/01-工具调用与agent.md》
 """最小 tool-calling agent（本地模拟工具 + `{"calls":[...]}` 解析）。
 
 对应《08 · 工具调用与 Agent》§1–§2：
@@ -25,6 +27,7 @@ from dataclasses import dataclass, field
 # ---------------------------------------------------------------------------
 # 0. 证据（与 Agentic.lean 对应）
 # ---------------------------------------------------------------------------
+# 【F-b08-tool_agent.Evidence｜类】证据项（内容与权重）
 @dataclass
 class Evidence:
     id: str
@@ -34,6 +37,7 @@ class Evidence:
     sourceDesc: str = ""
 
 
+# 【F-b08-tool_agent.evidence_composite｜函数】phi = tanh(sum w) 饱和压缩
 def evidence_composite(evs) -> float:
     """phi = tanh(sum w)，饱和压缩到 [0,1]。"""
     return math.tanh(sum(e.weight for e in evs))
@@ -53,6 +57,7 @@ FILE_DB = {
 }
 
 
+# 【F-b08-tool_agent.run_tool｜函数】执行本地模拟工具
 def run_tool(name: str, args: dict, trace: list | None = None):
     if name == "leanSearch":
         q = str(args.get("query", ""))
@@ -80,6 +85,7 @@ def run_tool(name: str, args: dict, trace: list | None = None):
 # ---------------------------------------------------------------------------
 # 2. 工具调用解析（两种协议）
 # ---------------------------------------------------------------------------
+# 【F-b08-tool_agent._extract_json｜函数】截取第一个平衡的 { ... }
 def _extract_json(text: str):
     """从文本里截取第一个平衡的 { ... }。"""
     start = text.find("{")
@@ -110,6 +116,7 @@ def _extract_json(text: str):
     return None
 
 
+# 【F-b08-tool_agent.parse_tool_calls｜函数】解析工具调用列表
 def parse_tool_calls(text: str) -> list[dict]:
     """返回 [{"name":..., "args": {...}}]；解析不到则返回 []。"""
     obj = _extract_json(text)
@@ -136,10 +143,12 @@ def parse_tool_calls(text: str) -> list[dict]:
 # ---------------------------------------------------------------------------
 # 3. agent 循环
 # ---------------------------------------------------------------------------
+# 【F-b08-tool_agent.tool_message｜函数】构造工具结果消息
 def tool_message(call: dict, result) -> dict:
     return {"role": "tool", "name": call["name"], "content": json.dumps(result, ensure_ascii=False)}
 
 
+# 【F-b08-tool_agent.ScriptedPolicy｜类】演示用脚本化模型
 class ScriptedPolicy:
     """演示用“模型”：第 1 步检索，第 2 步读文件，第 3 步给答案，之后结束。"""
 
@@ -152,6 +161,7 @@ class ScriptedPolicy:
         return "final: use `exact sq_connected` then `linarith`."
 
 
+# 【F-b08-tool_agent.agent_loop｜函数】生成→解析→执行→回灌循环
 def agent_loop(policy, task: str, max_steps: int = 6):
     messages = [
         {"role": "system", "content": "You are a Lean proof agent. Emit {\"calls\":[...]} to use tools."},
@@ -175,6 +185,7 @@ def agent_loop(policy, task: str, max_steps: int = 6):
     return messages[-1].get("content", ""), evidence, trace
 
 
+# 【F-b08-tool_agent.main｜函数】演示入口
 def main():
     task = "Prove: a^2 + 1 = b^2 + 1 -> a = b or a = -b"
     answer, evidence, trace = agent_loop(ScriptedPolicy(), task)

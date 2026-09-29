@@ -1,3 +1,5 @@
+# 【源代码｜F-b07-mcts】v1.0/07-MCTS+V1/code/mcts.py — 极简 PUCT/OR-AND MCTS
+# 相关文档：《07-MCTS+V1/01-MCTS原理与V1闭环.md》
 """极简 PUCT / OR-AND MCTS（教学实现，纯 Python，无依赖）。
 
 对应《07 · MCTS 原理与 V1 闭环》：
@@ -23,6 +25,7 @@ from dataclasses import dataclass, field
 OR, AND = "OR", "AND"
 
 
+# 【F-b07-mcts.Config｜类】MCTS 配置
 @dataclass
 class Config:
     c_init: float = 0.001
@@ -35,6 +38,7 @@ class Config:
     max_depth: int = 64
 
 
+# 【F-b07-mcts.Node｜类】搜索树节点（OR/AND）
 @dataclass
 class Node:
     state: object
@@ -61,6 +65,7 @@ class Node:
         return bool(self.children) or self.terminal
 
 
+# 【F-b07-mcts.MCTS｜类】通用 PUCT 搜索
 class MCTS:
     """通用 PUCT。expand_fn(state, action) -> 子状态列表（[] 表示关闭目标，None 表示非法）。"""
 

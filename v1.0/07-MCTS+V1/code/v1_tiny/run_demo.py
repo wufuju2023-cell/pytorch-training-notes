@@ -1,3 +1,5 @@
+# 【源代码｜F-b07-run_demo】v1.0/07-MCTS+V1/code/v1_tiny/run_demo.py — V1 闭环 tiny demo（训练→搜索→轨迹）
+# 相关文档：《07-MCTS+V1/01-MCTS原理与V1闭环.md》
 """V1 闭环 tiny demo：训练策略/价值 -> MCTS 搜索 -> 打印闭环轨迹。
 
 运行（CPU 即可，分钟级以内）：
@@ -19,6 +21,7 @@ from policy_value_eval import PolicyValueNet, remaining_steps, K
 from self_play import make_problem, search, collect_from_tree, train_step
 
 
+# 【F-b07-run_demo.evaluate｜函数】评估当前网络解出率
 def evaluate(net, rng, n=40, sims=24):
     solved = 0
     for _ in range(n):
@@ -28,6 +31,7 @@ def evaluate(net, rng, n=40, sims=24):
     return solved / n
 
 
+# 【F-b07-run_demo.best_path｜函数】从搜索树取最优路径
 def best_path(root):
     path = []
     node = root
@@ -39,6 +43,7 @@ def best_path(root):
     return path
 
 
+# 【F-b07-run_demo.main｜函数】闭环 demo 主循环
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--iters", type=int, default=5)

@@ -1,3 +1,4 @@
+# 【源代码｜F-b01-generate】v1.0/01-基础/code/from_scratch/generate.py — 从 checkpoint 采样文本（temperature/top-k/top-p）
 """从 checkpoint 加载 tiny GPT 并采样文本（temperature / top-k / top-p）。
 
 用法
@@ -20,6 +21,7 @@ from data import CharTokenizer
 from model import GPT
 
 
+# 【F-b01-generate.load_checkpoint｜函数】加载 checkpoint 中的模型与分词器
 def load_checkpoint(path: str, device) -> tuple[GPT, CharTokenizer, dict]:
     ckpt = torch.load(path, map_location=device)
     cfg = GPTConfig(**ckpt["config"])
@@ -36,6 +38,7 @@ def load_checkpoint(path: str, device) -> tuple[GPT, CharTokenizer, dict]:
     return model, tok, ckpt
 
 
+# 【F-b01-generate.parse_args｜函数】解析命令行参数
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="tiny GPT 文本生成")
     p.add_argument("--ckpt", required=True, help="checkpoint 路径（last.pt/best.pt）")
@@ -50,6 +53,7 @@ def parse_args() -> argparse.Namespace:
     return p.parse_args()
 
 
+# 【F-b01-generate.main｜函数】采样并打印生成文本
 def main() -> None:
     args = parse_args()
     device = torch.device(

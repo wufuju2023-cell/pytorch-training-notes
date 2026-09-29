@@ -1,4 +1,5 @@
 #!/bin/bash
+# 【脚本｜F-tools-cloud_start】v1.0/tools/cloud_start.sh — 重置并启动云端单实例执行
 # Full reset+run: kill old runners, upload exec script + fresh tree, start ONE detached execution.
 set -u
 K=~/.ssh/agent-root-mgmt

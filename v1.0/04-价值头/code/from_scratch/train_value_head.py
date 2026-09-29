@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# 【源代码｜F-b04-train_value_head】v1.0/04-价值头/code/from_scratch/train_value_head.py — 从零训练价值头（scalar/64-bin）
+# 相关文档：《04-价值头/01-价值头原理.md》
 """从零训练价值头：scalar（MSE/Huber）与 64-bin（two-hot 交叉熵）。
 
 与 ``app/train_value_head.py`` 的区别：这里不加载真实 backbone，而是读取
@@ -29,6 +31,7 @@ from value_head import (
 )
 
 
+# 【F-b04-train_value_head.load_shard｜函数】读缓存特征分片
 def load_shard(path: str, max_rows: int):
     """读缓存特征分片，返回 (features[B,H], depth[B], hidden_size)。"""
     feats, depths = [], []
@@ -58,12 +61,14 @@ def load_shard(path: str, max_rows: int):
             torch.tensor(depths, dtype=torch.float32), hidden_size)
 
 
+# 【F-b04-train_value_head.make_data｜函数】无数据时合成特征
 def make_data(args):
     if args.data:
         return load_shard(args.data, args.max_rows)
     return synthetic_features(args.n, args.hidden_size, seed=args.seed)
 
 
+# 【F-b04-train_value_head.train_scalar｜函数】训练 MSE/Huber 回归头
 def train_scalar(x, depths, args):
     y = torch.tensor([proof_depth_to_target(d, args.max_depth) for d in depths.tolist()])
     head = ScalarValueHead(x.shape[1], args.hidden_dim)
@@ -90,6 +95,7 @@ def train_scalar(x, depths, args):
     return head, y
 
 
+# 【F-b04-train_value_head.train_categorical｜函数】训练 64-bin two-hot 分类头
 def train_categorical(x, depths, args):
     head = CategoricalValueHead(x.shape[1], args.hidden_dim, args.num_bins)
     opt = torch.optim.AdamW(head.parameters(), lr=args.lr)
@@ -116,6 +122,7 @@ def train_categorical(x, depths, args):
     return head, dist
 
 
+# 【F-b04-train_value_head.parse_args｜函数】解析命令行参数
 def parse_args():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--mode", choices=("scalar", "categorical", "both"), default="both")
@@ -135,6 +142,7 @@ def parse_args():
     return p.parse_args()
 
 
+# 【F-b04-train_value_head.main｜函数】训练入口
 def main() -> int:
     args = parse_args()
     x, depths, hidden_size = make_data(args)

@@ -1,3 +1,5 @@
+# 【源代码｜F-b01-data】v1.0/01-基础/code/from_scratch/data.py — 字符级数据管线与 block 采样
+# 相关文档：《01-基础/05-训练循环与数据管线.md》
 """字符级数据管线 + block 采样（纯 PyTorch，无第三方依赖）。
 
 职责
@@ -69,6 +71,7 @@ example (f : α → β) : Function.Injective f ↔ ∀ a b, f a = f b → a = b 
 # ---------------------------------------------------------------------------
 # 字符级 tokenizer
 # ---------------------------------------------------------------------------
+# 【F-b01-data.CharTokenizer｜类】字符级分词器（stoi/itos + BOS/EOS 约定）
 class CharTokenizer:
     """极简字符级分词器：``stoi`` / ``itos`` 两张表 + BOS/EOS 约定。"""
 
@@ -119,6 +122,7 @@ class CharTokenizer:
 # ---------------------------------------------------------------------------
 # 语料加载
 # ---------------------------------------------------------------------------
+# 【F-b01-data.load_text｜函数】取语料文本（本地/下载/内置回退）
 def load_text(path: str | None = None, download: bool = False) -> str:
     """取语料文本。
 
@@ -145,12 +149,14 @@ def load_text(path: str | None = None, download: bool = False) -> str:
 # ---------------------------------------------------------------------------
 # Dataset / block 采样
 # ---------------------------------------------------------------------------
+# 【F-b01-data.Batch｜类】一个训练 batch 的容器
 @dataclass
 class Batch:
     x: torch.Tensor
     y: torch.Tensor
 
 
+# 【F-b01-data.CharDataset｜类】按 block_size 切块的 next-token 数据集
 class CharDataset:
     """把 1D token 流按 ``block_size`` 切块的 next-token 数据集。
 
@@ -169,12 +175,14 @@ class CharDataset:
         return Batch(x=chunk[:-1], y=chunk[1:])
 
 
+# 【F-b01-data.split_train_val｜函数】按比例划分训练/验证集
 def split_train_val(ids: torch.Tensor, val_frac: float = 0.1):
     n = len(ids)
     n_val = max(1, int(n * val_frac))
     return ids[:-n_val], ids[-n_val:]
 
 
+# 【F-b01-data.get_batch｜函数】随机抽一个 (x, y) batch
 def get_batch(
     dataset: CharDataset,
     batch_size: int,
@@ -191,6 +199,7 @@ def get_batch(
     return xs.to(device), ys.to(device)
 
 
+# 【F-b01-data.prepare｜函数】文本→tokenizer→train/val 张量一站式准备
 def prepare(
     text_path: str | None = None,
     download: bool = False,

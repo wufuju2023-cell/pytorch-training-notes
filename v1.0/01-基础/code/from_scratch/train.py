@@ -1,3 +1,5 @@
+# 【源代码｜F-b01-train】v1.0/01-基础/code/from_scratch/train.py — tiny GPT 训练脚本（AMP/累积/断点续训）
+# 相关文档：《01-基础/05-训练循环与数据管线.md》
 """tiny GPT 训练脚本（纯 PyTorch）：AMP / 梯度累积 / warmup+cosine / 断点续训。
 
 用法
@@ -36,6 +38,7 @@ from data import CharDataset, get_batch, prepare
 from model import GPT
 
 
+# 【F-b01-train.parse_args｜函数】解析命令行参数
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="tiny GPT 训练")
     p.add_argument("--config", default="micro", choices=["micro", "tiny"])
@@ -64,12 +67,14 @@ def parse_args() -> argparse.Namespace:
     return p.parse_args()
 
 
+# 【F-b01-train.resolve_device｜函数】选择运行设备
 def resolve_device(name: str) -> torch.device:
     if name == "auto":
         return torch.device("cuda" if torch.cuda.is_available() else "cpu")
     return torch.device(name)
 
 
+# 【F-b01-train.lr_at｜函数】warmup + cosine 学习率
 def lr_at(step: int, args: argparse.Namespace) -> float:
     """warmup + cosine 退火到 ``min_lr``。"""
     if step < args.warmup_iters:
@@ -81,6 +86,7 @@ def lr_at(step: int, args: argparse.Namespace) -> float:
     return args.min_lr + coeff * (args.lr - args.min_lr)
 
 
+# 【F-b01-train.estimate_loss｜函数】估计 train/val loss
 @torch.no_grad()
 def estimate_loss(model: GPT, dataset: CharDataset, args, device, ctx) -> float:
     model.eval()
@@ -94,6 +100,7 @@ def estimate_loss(model: GPT, dataset: CharDataset, args, device, ctx) -> float:
     return losses.mean().item()
 
 
+# 【F-b01-train.main｜函数】训练主循环
 def main() -> None:
     args = parse_args()
     if args.num_threads > 0:
