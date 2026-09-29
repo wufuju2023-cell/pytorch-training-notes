@@ -1,0 +1,36 @@
+{
+  "_comment": "gpt-tiny：字段与 nanoproof NetworkConfig 对齐，另加教学/估算字段。CPU 分钟级、GPU 秒级可训练。",
+  "name": "gpt-tiny",
+  "nanoproof_aligned": {
+    "sequence_len": 128,
+    "vocab_size": 256,
+    "n_layer": 4,
+    "n_head": 4,
+    "n_kv_head": 2,
+    "n_embd": 128,
+    "window_pattern": "LLSL"
+  },
+  "teaching_extras": {
+    "head_dim": 32,
+    "multiple_of": 32,
+    "dropout": 0.0,
+    "use_rope": true,
+    "tie_weights": true,
+    "rope_base": 10000.0
+  },
+  "estimate": {
+    "params_total": 771200,
+    "params_total_human": "0.771M",
+    "params_breakdown": {
+      "embedding": 32768,
+      "lm_head": 0,
+      "blocks": 738304,
+      "final_norm": 128
+    },
+    "train_vram_mb_fp32": 60,
+    "train_vram_mb_bf16": 45,
+    "cpu_time_sec_500_iters_b16": 180,
+    "gpu_time_sec_500_iters_t4": 6,
+    "notes": "仍是 << 20M 的教学规模；block=128、4 层，能明显看到 GQA 与 RoPE 对 loss 曲线的影响。"
+  }
+}

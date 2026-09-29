@@ -1,0 +1,36 @@
+{
+  "_comment": "gpt-micro：字段与 nanoproof NetworkConfig 对齐，另加教学/估算字段。CPU 秒级可训练。",
+  "name": "gpt-micro",
+  "nanoproof_aligned": {
+    "sequence_len": 64,
+    "vocab_size": 64,
+    "n_layer": 2,
+    "n_head": 4,
+    "n_kv_head": 2,
+    "n_embd": 64,
+    "window_pattern": "L"
+  },
+  "teaching_extras": {
+    "head_dim": 16,
+    "multiple_of": 32,
+    "dropout": 0.0,
+    "use_rope": true,
+    "tie_weights": true,
+    "rope_base": 10000.0
+  },
+  "estimate": {
+    "params_total": 102720,
+    "params_total_human": "0.103M",
+    "params_breakdown": {
+      "embedding": 4096,
+      "lm_head": 0,
+      "blocks": 98560,
+      "final_norm": 64
+    },
+    "train_vram_mb_fp32": 20,
+    "train_vram_mb_bf16": 14,
+    "cpu_time_sec_200_iters_b16": 15,
+    "gpu_time_sec_200_iters_t4": 2,
+    "notes": "字符级玩具规模，用例验证整条训练链路；200 步 val loss 可降到 ~1.5。"
+  }
+}
