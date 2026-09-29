@@ -1,1 +1,44 @@
 ext_id	url	license	usage	note
+EXT-PY1-01	https://docs.python.org/3/tutorial/	PSF License Version 2	参考概念组织与术语；示例代码为本章自行重写	PY1 来源与许可：The Python Tutorial
+EXT-PY1-02	https://docs.python.org/3/reference/	PSF License Version 2	参考数据模型、执行模型、作用域与真值规则的权威表述	PY1 来源与许可：The Python Language Reference
+EXT-PY1-03	https://docs.python.org/3/library/stdtypes.html	PSF License Version 2	参考内置类型与切片语义的接口定义	PY1 来源与许可：Built-in Types
+EXT-PY1-04	https://docs.python.org/3/library/dis.html	PSF License Version 2	参考字节码指令名称与反汇编用法	PY1 来源与许可：dis 反汇编器
+EXT-PY2-01	https://docs.python.org/3/tutorial/classes.html	PSF License Version 2（示例另按 0BSD）	类/继承/MRO/迭代器与生成器的术语与语义	PY2 来源与许可：Classes
+EXT-PY2-02	https://docs.python.org/3/tutorial/errors.html	PSF License Version 2（示例另按 0BSD）	异常层级、try/except/else/finally、raise ... from	PY2 来源与许可：Errors and Exceptions
+EXT-PY2-03	https://docs.python.org/3/reference/datamodel.html	PSF License Version 2（示例另按 0BSD）	对象模型、特殊方法、描述符、__slots__	PY2 来源与许可：Data model
+EXT-PY2-04	https://docs.python.org/3/reference/import.html	PSF License Version 2（示例另按 0BSD）	导入机制、包、__name__ 语义	PY2 来源与许可：The import system
+EXT-PY2-05	https://docs.python.org/3/reference/compound_stmts.html	PSF License Version 2（示例另按 0BSD）	with、try、class、函数定义语法	PY2 来源与许可：Compound statements
+EXT-PY2-06	https://docs.python.org/3/library/dataclasses.html	PSF License Version 2（示例另按 0BSD）	@dataclass、field、frozen/order	PY2 来源与许可：dataclasses
+EXT-PY2-07	https://docs.python.org/3/library/typing.html	PSF License Version 2（示例另按 0BSD）	Optional/Union/Sequence/Mapping/Protocol	PY2 来源与许可：typing
+EXT-PY2-08	https://docs.python.org/3/library/enum.html	PSF License Version 2（示例另按 0BSD）	Enum/IntEnum 语义	PY2 来源与许可：enum
+EXT-PY2-09	https://docs.python.org/3/library/contextlib.html	PSF License Version 2（示例另按 0BSD）	contextmanager/suppress/ExitStack/closing	PY2 来源与许可：contextlib
+EXT-PY2-10	https://docs.python.org/3/library/functools.html	PSF License Version 2（示例另按 0BSD）	wraps/lru_cache/total_ordering	PY2 来源与许可：functools
+EXT-PY2-11	https://docs.python.org/3/library/itertools.html	PSF License Version 2（示例另按 0BSD）	迭代器构件清单	PY2 来源与许可：itertools
+EXT-PY2-12	https://docs.python.org/3/howto/descriptor.html	PSF License Version 2（示例另按 0BSD）	描述符协议与查找优先级	PY2 来源与许可：Descriptor HowTo
+EXT-PY3-01	https://docs.python.org/3/	PSF-2.0	要点改写与最小示例	PY3 来源与许可：Python 官方文档（venv/argparse/logging/pdb/random/subprocess）
+EXT-PY3-02	https://pip.pypa.io/en/stable/	MIT	命令与要点	PY3 来源与许可：pip 文档
+EXT-PY3-03	https://packaging.python.org/	见站点仓库 LICENSE（仅链接）	结构说明	PY3 来源与许可：Python Packaging User Guide
+EXT-PY3-04	https://pytorch.org/get-started/locally/	BSD-3-Clause	安装命令改写	PY3 来源与许可：PyTorch 安装指南
+EXT-PY3-05	https://docs.pytest.org/	MIT	用法要点	PY3 来源与许可：pytest 文档
+EXT-PY3-06	https://hypothesis.readthedocs.io/	MPL-2.0	概念简介	PY3 来源与许可：hypothesis 文档
+EXT-PY3-07	https://docs.jupyter.org/	BSD-3-Clause	概念说明	PY3 来源与许可：Jupyter 文档
+EXT-PY3-08	https://research.google.com/colaboratory/faq.html	Google 服务条款（仅链接）	GPU/环境说明	PY3 来源与许可：Google Colab FAQ
+EXT-PY3-09	https://git-scm.com/docs	GPL-2.0	命令与概念	PY3 来源与许可：git 官方文档
+EXT-PY3-10	https://git-scm.com/book/	CC BY-NC-SA 3.0（仅链接）	概念参照	PY3 来源与许可：Pro Git 书
+EXT-PY4-01	https://numpy.org/doc/stable/user/	BSD-3-Clause（NumPy）	仅概念与 API 名称对照，未复制正文	PY4 来源与许可：NumPy User Guide
+EXT-PY4-02	https://numpy.org/doc/stable/reference/random/generator.html	BSD-3-Clause（NumPy）	仅 API 名称与语义说明	PY4 来源与许可：random.Generator 参考
+EXT-PY4-03	https://numpy.org/doc/stable/reference/routines.linalg.html	BSD-3-Clause（NumPy）	仅函数清单与用法原则	PY4 来源与许可：linalg 参考
+EXT-PY4-04	https://pytorch.org/docs/stable/notes/randomness.html	BSD-3-Clause（PyTorch）	仅随机源对应关系说明	PY4 来源与许可：PyTorch Reproducibility Notes
+EXT-PY5-01	https://pytorch.org/docs/stable/	BSD-3-Clause	Tensor/autograd/nn/optim/data/AMP 概念与 API 语义改写	PY5 来源与许可：PyTorch 官方文档
+EXT-PY5-02	https://pytorch.org/tutorials/	BSD-3-Clause	概念改写与最小示例	PY5 来源与许可：PyTorch Tutorials
+EXT-PY5-03	https://pytorch.org/docs/stable/data.html	BSD-3-Clause	Dataset/DataLoader/collate_fn 语义	PY5 来源与许可：torch.utils.data 文档
+EXT-PY5-04	https://pytorch.org/docs/stable/amp.html	BSD-3-Clause	混合精度 API 语义	PY5 来源与许可：torch.amp 文档
+EXT-PY6-01	https://pytorch.org/docs/stable/	BSD-3-Clause	仅链接与要点改写	PY6 来源与许可：PyTorch 文档（checkpoint/AMP/profiler/compile）
+EXT-PY6-02	https://pytorch.org/docs/stable/checkpoint.html	BSD-3-Clause	接口语义	PY6 来源与许可：torch.utils.checkpoint
+EXT-PY6-03	https://pytorch.org/docs/stable/amp.html	BSD-3-Clause	接口语义	PY6 来源与许可：torch.amp
+EXT-PY6-04	https://pytorch.org/docs/stable/profiler.html	BSD-3-Clause	接口语义	PY6 来源与许可：torch.profiler
+EXT-PY6-05	https://pytorch.org/docs/stable/torch.compiler.html	BSD-3-Clause	接口语义	PY6 来源与许可：torch.compile
+EXT-PY6-06	https://huggingface.co/docs/transformers	Apache-2.0	仅链接与要点改写	PY6 来源与许可：Transformers 文档
+EXT-PY6-07	https://huggingface.co/docs/peft	Apache-2.0	仅链接与要点改写	PY6 来源与许可：PEFT 文档
+EXT-PY6-08	https://huggingface.co/docs/trl	Apache-2.0	仅链接与要点改写	PY6 来源与许可：TRL 文档
+EXT-PY6-09	https://huggingface.co/docs/accelerate	Apache-2.0	仅链接与要点改写	PY6 来源与许可：Accelerate 文档

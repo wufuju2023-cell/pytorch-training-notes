@@ -8,12 +8,13 @@
 
 **【注 V10.1.1｜R-V10.1.1】（怎么用）**
 
-配套 notebook Tag：`N-01`–`N-17`；代码文件 Tag 登记见《00-风格与编号规范》§4。
+配套 notebook Tag：`N-01`–`N-23`；代码文件 Tag 登记见《00-风格与编号规范》§4。
 
 1. 先读 [`00-学习路线图.md`](00-学习路线图.md)：全流程路线、阶段验收、与 AlphaProof 的映射。
 2. 查 [`00-资料清单.md`](00-资料清单.md)：外部教程/仓库/数据集/既有数学文档索引。
-3. 按阶段学：每个主题都是 **理论 MD + 两版代码（from_scratch / with_api）+ notebook 小实验**。
-4. 每个 notebook 都在 Colab 可跑（CPU 优先），并对应到 AlphaProof 的具体文件与函数。
+3. **Stage -1 预备篇**（Python/PyTorch 零基础，可选）：走 [`00-预备/00-大纲.md`](00-预备/00-大纲.md)，即 PY1–PY6 理论篇（`00-预备/PY*.md`）+ notebook `N-18`–`N-23` + 代码 `F-pre-py1`–`F-pre-py6`；完成后再进 Stage 0。
+4. 按阶段学：每个主题都是 **理论 MD + 两版代码（from_scratch / with_api）+ notebook 小实验**。
+5. 每个 notebook 都在 Colab 可跑（CPU 优先），并对应到 AlphaProof 的具体文件与函数。
 
 ## 目录结构
 
@@ -22,6 +23,7 @@
 ```
 v1.0/
 ├─ 00-学习路线图.md / 00-资料清单.md / README.md
+├─ 00-预备/            Python/PyTorch 从零（PY1–PY6 理论 + N18–N23 + F-pre-py1..6）
 ├─ 01-基础/            神经网络·反传·优化器·Attention/Transformer·分词器·训练循环·初始化调度
 ├─ 02-预训练/          语言建模目标 + tiny 预训练复刻（nanoproof/pretrain.py 对照）
 ├─ 03-SFT/             证明步骤指令微调（state → tactic，label mask）

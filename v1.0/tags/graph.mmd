@@ -103,7 +103,6 @@ flowchart TD
   nN_21["N-21"]
   nN_22["N-22"]
   nN_23["N-23"]
-  nDOC_1 -->|requires| nDOC_PY2
   nDOC_1 -->|requires| nDOC_PY5
   nDOC_2 -->|requires| nDOC_PY4
   nDOC_3 -->|corresponds| nN_03
@@ -144,16 +143,26 @@ flowchart TD
   nDOC_PT -->|requires| nDOC_PY6
   nDOC_PY1 -->|corresponds| nF_pre_py1
   nDOC_PY1 -->|corresponds| nN_18
+  nDOC_PY1 -->|evolves_to| nDOC_PY2
   nDOC_PY2 -->|corresponds| nF_pre_py2
   nDOC_PY2 -->|corresponds| nN_19
+  nDOC_PY2 -->|requires| nDOC_PY1
   nDOC_PY3 -->|corresponds| nF_pre_py3
   nDOC_PY3 -->|corresponds| nN_20
+  nDOC_PY3 -->|requires| nDOC_PY2
   nDOC_PY4 -->|corresponds| nF_pre_py4
   nDOC_PY4 -->|corresponds| nN_21
+  nDOC_PY4 -->|evolves_to| nDOC_PY5
+  nDOC_PY4 -->|requires| nDOC_PY1
+  nDOC_PY4 -->|requires| nDOC_PY2
   nDOC_PY5 -->|corresponds| nF_pre_py5
   nDOC_PY5 -->|corresponds| nN_22
+  nDOC_PY5 -->|evolves_to| nDOC_1
+  nDOC_PY5 -->|requires| nDOC_PY4
   nDOC_PY6 -->|corresponds| nF_pre_py6
   nDOC_PY6 -->|corresponds| nN_23
+  nDOC_PY6 -->|evolves_to| nDOC_PT
+  nDOC_PY6 -->|requires| nDOC_PY5
   nDOC_RL -->|corresponds| nF_b06_grpo
   nDOC_RL -->|corresponds| nF_b06_trl_grpo
   nDOC_RL -->|corresponds| nN_13

@@ -1,4 +1,20 @@
 src	relation	dst	note	since
+Cd-PY1.1.4	adapted_from	EXT-PY1-04	auto:adapted_from	v1.0
+D-PY1.1.1	adapted_from	EXT-PY1-02	auto:adapted_from	v1.0
+D-PY1.3.3	adapted_from	EXT-PY1-03	auto:adapted_from	v1.0
+D-PY2.2.1	adapted_from	EXT-PY2-03	auto:adapted_from	v1.0
+D-PY2.4.1	adapted_from	EXT-PY2-06	auto:adapted_from	v1.0
+D-PY2.8.2	adapted_from	EXT-PY2-01	auto:adapted_from	v1.0
+D-PY3.1.1	adapted_from	EXT-PY3-01	auto:adapted_from	v1.0
+D-PY4.1.1	adapted_from	EXT-PY4-01	auto:adapted_from	v1.0
+D-PY4.3.1	adapted_from	EXT-PY4-01	auto:adapted_from	v1.0
+D-PY4.7.1	adapted_from	EXT-PY4-03	auto:adapted_from	v1.0
+D-PY5.1.1	adapted_from	EXT-PY5-01	auto:adapted_from	v1.0
+D-PY5.3.2	adapted_from	EXT-PY5-01	auto:adapted_from	v1.0
+D-PY5.6.2	adapted_from	EXT-PY5-03	auto:adapted_from	v1.0
+D-PY6.1.1	adapted_from	EXT-PY6-02	auto:adapted_from	v1.0
+D-PY6.3.1	adapted_from	EXT-PY6-06	auto:adapted_from	v1.0
+D-PY6.3.3	adapted_from	EXT-PY6-07	auto:adapted_from	v1.0
 DOC-1	refs	A-1.5.1	auto:refs	v1.0
 DOC-1	refs	C-1.3.5	auto:refs	v1.0
 DOC-1	refs	C-1.3.6	auto:refs	v1.0
@@ -12,6 +28,9 @@ DOC-1	refs	D-1.2.2	auto:refs	v1.0
 DOC-1	refs	D-1.2.4	auto:refs	v1.0
 DOC-1	refs	D-1.2.5	auto:refs	v1.0
 DOC-1	refs	D-1.2.7	auto:refs	v1.0
+DOC-1	refs	D-PY5.1.1	auto:refs	v1.0
+DOC-1	refs	D-PY5.3.1	auto:refs	v1.0
+DOC-1	refs	D-PY5.3.2	auto:refs	v1.0
 DOC-1	refs	E-1.2.12	auto:refs	v1.0
 DOC-1	refs	E-1.6.1	auto:refs	v1.0
 DOC-1	refs	Ex-1.8.1	auto:refs	v1.0
@@ -49,7 +68,9 @@ DOC-1	refs	R-1.7.2	auto:refs	v1.0
 DOC-1	refs	R-1.7.3	auto:refs	v1.0
 DOC-1	refs	T-1.2.6	auto:refs	v1.0
 DOC-1	refs	T-1.3.4	auto:refs	v1.0
-DOC-1	requires	DOC-PY2	auto:requires(outline)	v1.0
+DOC-1	requires	D-PY5.1.1	auto:requires	v1.0
+DOC-1	requires	D-PY5.3.1	auto:requires	v1.0
+DOC-1	requires	D-PY5.3.2	auto:requires	v1.0
 DOC-1	requires	DOC-PY5	auto:requires(outline)	v1.0
 DOC-2	refs	D-2.1.1	auto:refs	v1.0
 DOC-2	refs	D-2.2.1	auto:refs	v1.0
@@ -57,6 +78,8 @@ DOC-2	refs	D-2.2.2	auto:refs	v1.0
 DOC-2	refs	D-2.2.3	auto:refs	v1.0
 DOC-2	refs	D-2.3.1	auto:refs	v1.0
 DOC-2	refs	D-2.4.1	auto:refs	v1.0
+DOC-2	refs	D-PY4.3.1	auto:refs	v1.0
+DOC-2	refs	D-PY4.5.1	auto:refs	v1.0
 DOC-2	refs	E-2.5.1	auto:refs	v1.0
 DOC-2	refs	Ex-2.6.2	auto:refs	v1.0
 DOC-2	refs	Pf-2.2.2	auto:refs	v1.0
@@ -66,8 +89,12 @@ DOC-2	refs	R-2.3.2	auto:refs	v1.0
 DOC-2	refs	R-2.4.2	auto:refs	v1.0
 DOC-2	refs	R-2.5.2	auto:refs	v1.0
 DOC-2	refs	R-2.6.1	auto:refs	v1.0
+DOC-2	refs	R-PY4.4.1	auto:refs	v1.0
 DOC-2	refs	T-1.3.4	auto:refs	v1.0
+DOC-2	requires	D-PY4.3.1	auto:requires	v1.0
+DOC-2	requires	D-PY4.5.1	auto:requires	v1.0
 DOC-2	requires	DOC-PY4	auto:requires(outline)	v1.0
+DOC-2	requires	R-PY4.4.1	auto:requires	v1.0
 DOC-3	corresponds	N-03	auto:corresponds(mention)	v1.0
 DOC-3	corresponds	N-04	auto:corresponds(mention)	v1.0
 DOC-3	corresponds	N-05	auto:corresponds(mention)	v1.0
@@ -82,6 +109,7 @@ DOC-3	refs	D-3.4.1	auto:refs	v1.0
 DOC-3	refs	D-3.4.2	auto:refs	v1.0
 DOC-3	refs	D-3.4.3	auto:refs	v1.0
 DOC-3	refs	D-3.5.1	auto:refs	v1.0
+DOC-3	refs	D-PY4.7.1	auto:refs	v1.0
 DOC-3	refs	Ex-3.7.2	auto:refs	v1.0
 DOC-3	refs	Pf-3.1.2	auto:refs	v1.0
 DOC-3	refs	R-3.1.2	auto:refs	v1.0
@@ -93,11 +121,16 @@ DOC-3	refs	R-3.5.3	auto:refs	v1.0
 DOC-3	refs	R-3.6.1	auto:refs	v1.0
 DOC-3	refs	R-3.6.2	auto:refs	v1.0
 DOC-3	refs	R-3.7.1	auto:refs	v1.0
+DOC-3	refs	R-PY4.4.4	auto:refs	v1.0
+DOC-3	requires	D-PY4.7.1	auto:requires	v1.0
 DOC-3	requires	DOC-PY4	auto:requires(outline)	v1.0
+DOC-3	requires	R-PY4.4.4	auto:requires	v1.0
 DOC-4	corresponds	N-07	auto:corresponds(mention)	v1.0
 DOC-4	refs	A-4.3.1	auto:refs	v1.0
 DOC-4	refs	D-1.2.4	auto:refs	v1.0
 DOC-4	refs	D-4.1.2	auto:refs	v1.0
+DOC-4	refs	D-PY1.3.3	auto:refs	v1.0
+DOC-4	refs	D-PY1.3.6	auto:refs	v1.0
 DOC-4	refs	E-4.7.1	auto:refs	v1.0
 DOC-4	refs	Ex-4.8.2	auto:refs	v1.0
 DOC-4	refs	R-1.7.2	auto:refs	v1.0
@@ -112,6 +145,8 @@ DOC-4	refs	R-4.5.1	auto:refs	v1.0
 DOC-4	refs	R-4.6.1	auto:refs	v1.0
 DOC-4	refs	R-4.7.2	auto:refs	v1.0
 DOC-4	refs	R-4.8.1	auto:refs	v1.0
+DOC-4	requires	D-PY1.3.3	auto:requires	v1.0
+DOC-4	requires	D-PY1.3.6	auto:requires	v1.0
 DOC-4	requires	DOC-PY1	auto:requires(outline)	v1.0
 DOC-5	corresponds	N-04	auto:corresponds(mention)	v1.0
 DOC-5	corresponds	N-06	auto:corresponds(mention)	v1.0
@@ -127,6 +162,9 @@ DOC-5	refs	D-5.5.1	auto:refs	v1.0
 DOC-5	refs	D-5.6.1	auto:refs	v1.0
 DOC-5	refs	D-5.6.2	auto:refs	v1.0
 DOC-5	refs	D-5.7.1	auto:refs	v1.0
+DOC-5	refs	D-PY2.8.1	auto:refs	v1.0
+DOC-5	refs	D-PY5.6.1	auto:refs	v1.0
+DOC-5	refs	D-PY5.6.2	auto:refs	v1.0
 DOC-5	refs	E-5.8.1	auto:refs	v1.0
 DOC-5	refs	Ex-5.9.2	auto:refs	v1.0
 DOC-5	refs	R-1.3.8	auto:refs	v1.0
@@ -140,6 +178,9 @@ DOC-5	refs	R-5.4.3	auto:refs	v1.0
 DOC-5	refs	R-5.7.2	auto:refs	v1.0
 DOC-5	refs	R-5.7.3	auto:refs	v1.0
 DOC-5	refs	R-5.9.1	auto:refs	v1.0
+DOC-5	requires	D-PY2.8.1	auto:requires	v1.0
+DOC-5	requires	D-PY5.6.1	auto:requires	v1.0
+DOC-5	requires	D-PY5.6.2	auto:requires	v1.0
 DOC-5	requires	DOC-PY2	auto:requires(outline)	v1.0
 DOC-5	requires	DOC-PY5	auto:requires(outline)	v1.0
 DOC-6	corresponds	N-05	auto:corresponds(mention)	v1.0
@@ -148,6 +189,7 @@ DOC-6	refs	D-2.4.1	auto:refs	v1.0
 DOC-6	refs	D-6.3.1	auto:refs	v1.0
 DOC-6	refs	D-6.4.1	auto:refs	v1.0
 DOC-6	refs	D-6.4.2	auto:refs	v1.0
+DOC-6	refs	D-PY4.6.2	auto:refs	v1.0
 DOC-6	refs	E-6.7.1	auto:refs	v1.0
 DOC-6	refs	Ex-6.8.2	auto:refs	v1.0
 DOC-6	refs	P-6.1.2	auto:refs	v1.0
@@ -164,8 +206,11 @@ DOC-6	refs	R-6.4.3	auto:refs	v1.0
 DOC-6	refs	R-6.5.1	auto:refs	v1.0
 DOC-6	refs	R-6.6.1	auto:refs	v1.0
 DOC-6	refs	R-6.8.1	auto:refs	v1.0
+DOC-6	refs	R-PY4.6.1	auto:refs	v1.0
 DOC-6	refs	T-1.3.4	auto:refs	v1.0
+DOC-6	requires	D-PY4.6.2	auto:requires	v1.0
 DOC-6	requires	DOC-PY4	auto:requires(outline)	v1.0
+DOC-6	requires	R-PY4.6.1	auto:requires	v1.0
 DOC-BRIDGE	corresponds	F-b08-tool_agent	auto:corresponds(dir)	v1.0
 DOC-BRIDGE	refs	Cd-BRIDGE.2.1	auto:refs	v1.0
 DOC-BRIDGE	refs	E-BRIDGE.3.1	auto:refs	v1.0
@@ -192,6 +237,8 @@ DOC-LORA	refs	D-LORA.5.1	auto:refs	v1.0
 DOC-LORA	refs	D-LORA.5.2	auto:refs	v1.0
 DOC-LORA	refs	D-LORA.5.3	auto:refs	v1.0
 DOC-LORA	refs	D-LORA.6.1	auto:refs	v1.0
+DOC-LORA	refs	D-PY3.1.1	auto:refs	v1.0
+DOC-LORA	refs	D-PY6.3.3	auto:refs	v1.0
 DOC-LORA	refs	D-SFT.5.2	auto:refs	v1.0
 DOC-LORA	refs	P-LORA.2.3	auto:refs	v1.0
 DOC-LORA	refs	P-LORA.3.1	auto:refs	v1.0
@@ -229,6 +276,8 @@ DOC-MCTS	refs	D-MCTS.2.1	auto:refs	v1.0
 DOC-MCTS	refs	D-MCTS.3.1	auto:refs	v1.0
 DOC-MCTS	refs	D-MCTS.4.1	auto:refs	v1.0
 DOC-MCTS	refs	D-MCTS.5.1	auto:refs	v1.0
+DOC-MCTS	refs	D-PY3.1.1	auto:refs	v1.0
+DOC-MCTS	refs	D-PY6.3.1	auto:refs	v1.0
 DOC-MCTS	refs	Ex-MCTS.10.2	auto:refs	v1.0
 DOC-MCTS	refs	R-MCTS.1.1	auto:refs	v1.0
 DOC-MCTS	refs	R-MCTS.2.3	auto:refs	v1.0
@@ -244,6 +293,24 @@ DOC-MCTS	requires	DOC-PY3	auto:requires(outline)	v1.0
 DOC-MCTS	requires	DOC-PY6	auto:requires(outline)	v1.0
 DOC-PREM	refs	D-1.1.3	auto:refs	v1.0
 DOC-PREM	refs	D-1.2.4	auto:refs	v1.0
+DOC-PREM	refs	D-PY1.3.3	auto:refs	v1.0
+DOC-PREM	refs	D-PY1.3.6	auto:refs	v1.0
+DOC-PREM	refs	D-PY2.8.1	auto:refs	v1.0
+DOC-PREM	refs	D-PY3.1.1	auto:refs	v1.0
+DOC-PREM	refs	D-PY4.3.1	auto:refs	v1.0
+DOC-PREM	refs	D-PY4.5.1	auto:refs	v1.0
+DOC-PREM	refs	D-PY4.6.2	auto:refs	v1.0
+DOC-PREM	refs	D-PY4.7.1	auto:refs	v1.0
+DOC-PREM	refs	D-PY5.1.1	auto:refs	v1.0
+DOC-PREM	refs	D-PY5.3.1	auto:refs	v1.0
+DOC-PREM	refs	D-PY5.3.2	auto:refs	v1.0
+DOC-PREM	refs	D-PY5.6.1	auto:refs	v1.0
+DOC-PREM	refs	D-PY5.6.2	auto:refs	v1.0
+DOC-PREM	refs	D-PY6.3.1	auto:refs	v1.0
+DOC-PREM	refs	D-PY6.3.3	auto:refs	v1.0
+DOC-PREM	refs	R-PY4.4.1	auto:refs	v1.0
+DOC-PREM	refs	R-PY4.4.4	auto:refs	v1.0
+DOC-PREM	refs	R-PY4.6.1	auto:refs	v1.0
 DOC-PT	corresponds	F-b02-pretrain	auto:corresponds(dir)	v1.0
 DOC-PT	corresponds	F-b02-pretrain_hf	auto:corresponds(dir)	v1.0
 DOC-PT	corresponds	N-09	auto:corresponds(dir)	v1.0
@@ -256,6 +323,8 @@ DOC-PT	refs	D-PT.6.1	auto:refs	v1.0
 DOC-PT	refs	D-PT.6.2	auto:refs	v1.0
 DOC-PT	refs	D-PT.8.1	auto:refs	v1.0
 DOC-PT	refs	D-PT.8.3	auto:refs	v1.0
+DOC-PT	refs	D-PY3.1.1	auto:refs	v1.0
+DOC-PT	refs	D-PY6.3.1	auto:refs	v1.0
 DOC-PT	refs	D-SFT.3.2	auto:refs	v1.0
 DOC-PT	refs	Ex-PT.11.2	auto:refs	v1.0
 DOC-PT	refs	P-1.2.9	auto:refs	v1.0
@@ -278,6 +347,7 @@ DOC-PT	requires	DOC-PY3	auto:requires(outline)	v1.0
 DOC-PT	requires	DOC-PY6	auto:requires(outline)	v1.0
 DOC-PY1	corresponds	F-pre-py1	auto:corresponds(pre)	v1.0
 DOC-PY1	corresponds	N-18	auto:corresponds(pre)	v1.0
+DOC-PY1	evolves_to	DOC-PY2	人工：Python I -> Python II	v1.0
 DOC-PY1	refs	Cd-1.1.4	auto:refs	v1.0
 DOC-PY1	refs	Cd-PY1.1.4	auto:refs	v1.0
 DOC-PY1	refs	Cd-PY1.2.6	auto:refs	v1.0
@@ -384,8 +454,9 @@ DOC-PY2	refs	R-PY2.2.5	auto:refs	v1.0
 DOC-PY2	refs	R-PY2.5.4	auto:refs	v1.0
 DOC-PY2	refs	R-PY2.8.4	auto:refs	v1.0
 DOC-PY2	refs	R-PY2.9.4	auto:refs	v1.0
+DOC-PY2	requires	DOC-PY1	人工：PY2 前置 PY1	v1.0
 DOC-PY3	corresponds	F-pre-py3	auto:corresponds(pre)	v1.0
-DOC-PY3	corresponds	N-20	auto:corresponds(mention)	v1.0
+DOC-PY3	corresponds	N-20	auto:corresponds(pre)	v1.0
 DOC-PY3	refs	Cd-1.6.2	auto:refs	v1.0
 DOC-PY3	refs	Cd-PY3.1.5	auto:refs	v1.0
 DOC-PY3	refs	Cd-PY3.3.4	auto:refs	v1.0
@@ -420,8 +491,10 @@ DOC-PY3	refs	R-PY3.6.4	auto:refs	v1.0
 DOC-PY3	refs	R-PY3.7.2	auto:refs	v1.0
 DOC-PY3	refs	R-PY3.7.3	auto:refs	v1.0
 DOC-PY3	refs	R-PY3.8.1	auto:refs	v1.0
+DOC-PY3	requires	DOC-PY2	人工：PY3 前置 PY1/PY2	v1.0
 DOC-PY4	corresponds	F-pre-py4	auto:corresponds(pre)	v1.0
 DOC-PY4	corresponds	N-21	auto:corresponds(pre)	v1.0
+DOC-PY4	evolves_to	DOC-PY5	人工：NumPy 张量思维 -> PyTorch 从零	v1.0
 DOC-PY4	refs	A-PY4.4.2	auto:refs	v1.0
 DOC-PY4	refs	Cd-PY4.1.7	auto:refs	v1.0
 DOC-PY4	refs	Cd-PY4.2.6	auto:refs	v1.0
@@ -473,8 +546,11 @@ DOC-PY4	refs	R-PY4.7.2	auto:refs	v1.0
 DOC-PY4	refs	R-PY4.7.4	auto:refs	v1.0
 DOC-PY4	refs	R-PY4.7.5	auto:refs	v1.0
 DOC-PY4	refs	R-PY4.8.1	auto:refs	v1.0
+DOC-PY4	requires	DOC-PY1	人工：PY4 前置 PY1/PY2	v1.0
+DOC-PY4	requires	DOC-PY2	人工：PY4 前置 PY1/PY2	v1.0
 DOC-PY5	corresponds	F-pre-py5	auto:corresponds(pre)	v1.0
 DOC-PY5	corresponds	N-22	auto:corresponds(pre)	v1.0
+DOC-PY5	evolves_to	DOC-1	人工：预备篇 PyTorch -> 正式篇神经网络与反向传播	v1.0
 DOC-PY5	refs	A-PY5.7.1	auto:refs	v1.0
 DOC-PY5	refs	C-1.3.6	auto:refs	v1.0
 DOC-PY5	refs	Cd-1.1.4	auto:refs	v1.0
@@ -533,8 +609,10 @@ DOC-PY5	refs	R-PY5.8.4	auto:refs	v1.0
 DOC-PY5	refs	R-PY5.8.5	auto:refs	v1.0
 DOC-PY5	refs	R-PY5.8.6	auto:refs	v1.0
 DOC-PY5	refs	T-1.3.4	auto:refs	v1.0
+DOC-PY5	requires	DOC-PY4	人工：PY5 前置 PY4	v1.0
 DOC-PY6	corresponds	F-pre-py6	auto:corresponds(pre)	v1.0
 DOC-PY6	corresponds	N-23	auto:corresponds(pre)	v1.0
+DOC-PY6	evolves_to	DOC-PT	人工：预备篇生态 -> 正式篇预训练	v1.0
 DOC-PY6	refs	Cd-1.6.2	auto:refs	v1.0
 DOC-PY6	refs	Cd-PY6.1.5	auto:refs	v1.0
 DOC-PY6	refs	Cd-PY6.2.5	auto:refs	v1.0
@@ -570,6 +648,7 @@ DOC-PY6	refs	R-PY6.4.3	auto:refs	v1.0
 DOC-PY6	refs	R-PY6.5.1	auto:refs	v1.0
 DOC-PY6	refs	R-PY6.6.1	auto:refs	v1.0
 DOC-PY6	requires	D-1.1.3	auto:requires	v1.0
+DOC-PY6	requires	DOC-PY5	人工：PY6 前置 PY5	v1.0
 DOC-PY6	requires	P-1.2.9	auto:requires	v1.0
 DOC-RES	refs	R-RES.1.1	auto:refs	v1.0
 DOC-RES	refs	R-RES.2.1	auto:refs	v1.0
@@ -580,6 +659,7 @@ DOC-RES	refs	R-RES.6.1	auto:refs	v1.0
 DOC-RES	refs	R-RES.7.1	auto:refs	v1.0
 DOC-RES	refs	R-RES.8.1	auto:refs	v1.0
 DOC-RES	refs	R-RES.9.1	auto:refs	v1.0
+DOC-RES	refs	R-RES.10.1	auto:refs	v1.0
 DOC-RL	corresponds	F-b06-grpo	auto:corresponds(dir)	v1.0
 DOC-RL	corresponds	F-b06-trl_grpo	auto:corresponds(dir)	v1.0
 DOC-RL	corresponds	N-13	auto:corresponds(mention)	v1.0
@@ -587,6 +667,7 @@ DOC-RL	corresponds	N-14	auto:corresponds(mention)	v1.0
 DOC-RL	refs	A-RL.11.2	auto:refs	v1.0
 DOC-RL	refs	D-1.2.1	auto:refs	v1.0
 DOC-RL	refs	D-1.2.4	auto:refs	v1.0
+DOC-RL	refs	D-PY3.1.1	auto:refs	v1.0
 DOC-RL	refs	D-RL.2.1	auto:refs	v1.0
 DOC-RL	refs	D-RL.4.3	auto:refs	v1.0
 DOC-RL	refs	D-RL.4.4	auto:refs	v1.0
@@ -605,6 +686,7 @@ DOC-RL	refs	P-1.2.14	auto:refs	v1.0
 DOC-RL	refs	P-RL.4.2	auto:refs	v1.0
 DOC-RL	refs	Pf-RL.3.1	auto:refs	v1.0
 DOC-RL	refs	Pf-RL.4.2	auto:refs	v1.0
+DOC-RL	refs	R-PY6.3.4	auto:refs	v1.0
 DOC-RL	refs	R-RL.1.1	auto:refs	v1.0
 DOC-RL	refs	R-RL.2.2	auto:refs	v1.0
 DOC-RL	refs	R-RL.6.2	auto:refs	v1.0
@@ -694,6 +776,8 @@ DOC-SFT	refs	D-1.2.4	auto:refs	v1.0
 DOC-SFT	refs	D-LORA.2.2	auto:refs	v1.0
 DOC-SFT	refs	D-LORA.5.1	auto:refs	v1.0
 DOC-SFT	refs	D-PT.6.1	auto:refs	v1.0
+DOC-SFT	refs	D-PY3.1.1	auto:refs	v1.0
+DOC-SFT	refs	D-PY6.3.3	auto:refs	v1.0
 DOC-SFT	refs	D-SFT.1.1	auto:refs	v1.0
 DOC-SFT	refs	D-SFT.2.1	auto:refs	v1.0
 DOC-SFT	refs	D-SFT.3.1	auto:refs	v1.0
@@ -866,6 +950,8 @@ DOC-V11	refs	Cd-V11.4.3	auto:refs	v1.0
 DOC-V11	refs	Cd-V11.5.1	auto:refs	v1.0
 DOC-V11	refs	Cd-V11.7.1	auto:refs	v1.0
 DOC-V11	refs	D-1.2.1	auto:refs	v1.0
+DOC-V11	refs	D-PY3.1.1	auto:refs	v1.0
+DOC-V11	refs	D-PY6.3.1	auto:refs	v1.0
 DOC-V11	refs	D-V11.3.1	auto:refs	v1.0
 DOC-V11	refs	D-V11.3.2	auto:refs	v1.0
 DOC-V11	refs	D-V11.4.1	auto:refs	v1.0
@@ -889,13 +975,16 @@ DOC-V11	requires	DOC-PY6	auto:requires(outline)	v1.0
 DOC-VH	corresponds	F-b04-train_value_head	auto:corresponds(dir)	v1.0
 DOC-VH	corresponds	F-b04-value_head	auto:corresponds(dir)	v1.0
 DOC-VH	corresponds	F-b04-value_head_api	auto:corresponds(dir)	v1.0
-DOC-VH	corresponds	N-11	auto:corresponds(mention)	v1.0
+DOC-VH	corresponds	N-11	auto:corresponds(dir)	v1.0
 DOC-VH	refs	Cd-VH.2.3	auto:refs	v1.0
 DOC-VH	refs	Cd-VH.3.5	auto:refs	v1.0
 DOC-VH	refs	Cd-VH.5.2	auto:refs	v1.0
 DOC-VH	refs	D-1.2.1	auto:refs	v1.0
 DOC-VH	refs	D-1.2.4	auto:refs	v1.0
 DOC-VH	refs	D-1.2.5	auto:refs	v1.0
+DOC-VH	refs	D-PY3.1.1	auto:refs	v1.0
+DOC-VH	refs	D-PY5.4.1	auto:refs	v1.0
+DOC-VH	refs	D-PY6.3.1	auto:refs	v1.0
 DOC-VH	refs	D-VH.2.1	auto:refs	v1.0
 DOC-VH	refs	D-VH.2.2	auto:refs	v1.0
 DOC-VH	refs	D-VH.3.1	auto:refs	v1.0
@@ -1051,3 +1140,5 @@ N-23	refs	D-PY6.3.5	auto:refs	v1.0
 N-23	refs	DOC-PY6	auto:refs	v1.0
 N-23	refs	R-PY6.1.2	auto:refs	v1.0
 N-23	refs	R-PY6.1.4	auto:refs	v1.0
+R-PY3.4.3	adapted_from	EXT-PY3-05	auto:adapted_from	v1.0
+R-PY3.6.3	adapted_from	EXT-PY3-09	auto:adapted_from	v1.0

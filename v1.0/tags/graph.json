@@ -2,8 +2,8 @@
  "generated_by": "v1.0/tools/tag_graph.py render",
  "root": "/home/zhai/project/pytorch-training-notes",
  "counts": {
-  "tags": 1232,
-  "relations": 1052,
+  "tags": 1233,
+  "relations": 1143,
   "errors": 0,
   "warnings": 369
  },
@@ -32,7 +32,7 @@
    "id": "A-MCTS.8.1",
    "type": "A",
    "doccode": "MCTS",
-   "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L158",
+   "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L160",
    "title": "BatchSolver",
    "status": "active",
    "version": "v1.0",
@@ -42,7 +42,7 @@
    "id": "A-MCTS.8.2",
    "type": "A",
    "doccode": "MCTS",
-   "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L164",
+   "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L166",
    "title": "online_ttt `run_online`",
    "status": "active",
    "version": "v1.0",
@@ -72,7 +72,7 @@
    "id": "A-RL.11.2",
    "type": "A",
    "doccode": "RL",
-   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L380",
+   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L382",
    "title": "online_ttt 闭环",
    "status": "active",
    "version": "v1.0",
@@ -142,7 +142,7 @@
    "id": "Cd-LORA.3.2",
    "type": "Cd",
    "doccode": "LORA",
-   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L99",
+   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L100",
    "title": "`LoraConfig`",
    "status": "active",
    "version": "v1.0",
@@ -152,7 +152,7 @@
    "id": "Cd-LORA.4.1",
    "type": "Cd",
    "doccode": "LORA",
-   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L144",
+   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L145",
    "title": "`TARGET_MODULES`",
    "status": "active",
    "version": "v1.0",
@@ -162,7 +162,7 @@
    "id": "Cd-LORA.5.6",
    "type": "Cd",
    "doccode": "LORA",
-   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L214",
+   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L215",
    "title": "`BitsAndBytesConfig`",
    "status": "active",
    "version": "v1.0",
@@ -172,7 +172,7 @@
    "id": "Cd-MCTS.2.2",
    "type": "Cd",
    "doccode": "MCTS",
-   "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L34",
+   "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L36",
    "title": "focus 孩子构造",
    "status": "active",
    "version": "v1.0",
@@ -182,7 +182,7 @@
    "id": "Cd-MCTS.6.1",
    "type": "Cd",
    "doccode": "MCTS",
-   "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L116",
+   "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L118",
    "title": "单轮迭代伪代码",
    "status": "active",
    "version": "v1.0",
@@ -192,7 +192,7 @@
    "id": "Cd-MCTS.7.1",
    "type": "Cd",
    "doccode": "MCTS",
-   "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L140",
+   "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L142",
    "title": "与 Lean `reap` 引擎的对应",
    "status": "active",
    "version": "v1.0",
@@ -206,7 +206,7 @@
    "title": "用 `dis` 观察字节码",
    "status": "active",
    "version": "v1.0",
-   "ext": ""
+   "ext": "EXT-PY1-04"
   },
   {
    "id": "Cd-PY1.2.6",
@@ -1182,7 +1182,7 @@
    "id": "Cd-V11.2.1",
    "type": "Cd",
    "doccode": "V11",
-   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L25",
+   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L27",
    "title": "agent 循环伪代码",
    "status": "active",
    "version": "v1.0",
@@ -1192,7 +1192,7 @@
    "id": "Cd-V11.4.3",
    "type": "Cd",
    "doccode": "V11",
-   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L112",
+   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L114",
    "title": "`build_prompt` 实现",
    "status": "active",
    "version": "v1.0",
@@ -1202,7 +1202,7 @@
    "id": "Cd-V11.5.1",
    "type": "Cd",
    "doccode": "V11",
-   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L132",
+   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L134",
    "title": "HTTP 服务器路由表",
    "status": "active",
    "version": "v1.0",
@@ -1212,7 +1212,7 @@
    "id": "Cd-V11.7.1",
    "type": "Cd",
    "doccode": "V11",
-   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L204",
+   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L206",
    "title": "DSL 样例",
    "status": "active",
    "version": "v1.0",
@@ -1222,7 +1222,7 @@
    "id": "Cd-VH.2.3",
    "type": "Cd",
    "doccode": "VH",
-   "locator": "v1.0/04-价值头/01-价值头原理.md#L63",
+   "locator": "v1.0/04-价值头/01-价值头原理.md#L64",
    "title": "`discounted_returns`",
    "status": "active",
    "version": "v1.0",
@@ -1232,7 +1232,7 @@
    "id": "Cd-VH.3.5",
    "type": "Cd",
    "doccode": "VH",
-   "locator": "v1.0/04-价值头/01-价值头原理.md#L121",
+   "locator": "v1.0/04-价值头/01-价值头原理.md#L122",
    "title": "64 桶 token 定义",
    "status": "active",
    "version": "v1.0",
@@ -1242,7 +1242,7 @@
    "id": "Cd-VH.5.2",
    "type": "Cd",
    "doccode": "VH",
-   "locator": "v1.0/04-价值头/01-价值头原理.md#L211",
+   "locator": "v1.0/04-价值头/01-价值头原理.md#L212",
    "title": "`distance_two_hot`",
    "status": "active",
    "version": "v1.0",
@@ -1612,7 +1612,7 @@
    "id": "D-LORA.2.2",
    "type": "D",
    "doccode": "LORA",
-   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L42",
+   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L43",
    "title": "低秩更新参数化",
    "status": "active",
    "version": "v1.0",
@@ -1622,7 +1622,7 @@
    "id": "D-LORA.5.1",
    "type": "D",
    "doccode": "LORA",
-   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L174",
+   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L175",
    "title": "QLoRA",
    "status": "active",
    "version": "v1.0",
@@ -1632,7 +1632,7 @@
    "id": "D-LORA.5.2",
    "type": "D",
    "doccode": "LORA",
-   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L180",
+   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L181",
    "title": "nf4 blockwise 量化",
    "status": "active",
    "version": "v1.0",
@@ -1642,7 +1642,7 @@
    "id": "D-LORA.5.3",
    "type": "D",
    "doccode": "LORA",
-   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L195",
+   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L196",
    "title": "double quantization",
    "status": "active",
    "version": "v1.0",
@@ -1652,7 +1652,7 @@
    "id": "D-LORA.6.1",
    "type": "D",
    "doccode": "LORA",
-   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L230",
+   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L231",
    "title": "DoRA：幅度-方向分解",
    "status": "active",
    "version": "v1.0",
@@ -1662,7 +1662,7 @@
    "id": "D-MCTS.2.1",
    "type": "D",
    "doccode": "MCTS",
-   "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L29",
+   "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L31",
    "title": "OR / AND 节点",
    "status": "active",
    "version": "v1.0",
@@ -1672,7 +1672,7 @@
    "id": "D-MCTS.3.1",
    "type": "D",
    "doccode": "MCTS",
-   "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L56",
+   "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L58",
    "title": "PUCT 选择分数",
    "status": "active",
    "version": "v1.0",
@@ -1682,7 +1682,7 @@
    "id": "D-MCTS.4.1",
    "type": "D",
    "doccode": "MCTS",
-   "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L75",
+   "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L77",
    "title": "Q 变换与 $\\gamma$ 折扣",
    "status": "active",
    "version": "v1.0",
@@ -1692,7 +1692,7 @@
    "id": "D-MCTS.5.1",
    "type": "D",
    "doccode": "MCTS",
-   "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L96",
+   "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L98",
    "title": "progressive sampling 条件",
    "status": "active",
    "version": "v1.0",
@@ -1702,7 +1702,7 @@
    "id": "D-PT.2.1",
    "type": "D",
    "doccode": "PT",
-   "locator": "v1.0/02-预训练/01-预训练原理.md#L30",
+   "locator": "v1.0/02-预训练/01-预训练原理.md#L32",
    "title": "自回归分解与语言建模目标",
    "status": "active",
    "version": "v1.0",
@@ -1712,7 +1712,7 @@
    "id": "D-PT.2.2",
    "type": "D",
    "doccode": "PT",
-   "locator": "v1.0/02-预训练/01-预训练原理.md#L38",
+   "locator": "v1.0/02-预训练/01-预训练原理.md#L40",
    "title": "逐位置条件分布",
    "status": "active",
    "version": "v1.0",
@@ -1722,7 +1722,7 @@
    "id": "D-PT.3.2",
    "type": "D",
    "doccode": "PT",
-   "locator": "v1.0/02-预训练/01-预训练原理.md#L75",
+   "locator": "v1.0/02-预训练/01-预训练原理.md#L77",
    "title": "带掩码的逐位置损失",
    "status": "active",
    "version": "v1.0",
@@ -1732,7 +1732,7 @@
    "id": "D-PT.5.1",
    "type": "D",
    "doccode": "PT",
-   "locator": "v1.0/02-预训练/01-预训练原理.md#L107",
+   "locator": "v1.0/02-预训练/01-预训练原理.md#L109",
    "title": "困惑度 PPL",
    "status": "active",
    "version": "v1.0",
@@ -1742,7 +1742,7 @@
    "id": "D-PT.6.1",
    "type": "D",
    "doccode": "PT",
-   "locator": "v1.0/02-预训练/01-预训练原理.md#L120",
+   "locator": "v1.0/02-预训练/01-预训练原理.md#L122",
    "title": "域配比",
    "status": "active",
    "version": "v1.0",
@@ -1752,7 +1752,7 @@
    "id": "D-PT.6.2",
    "type": "D",
    "doccode": "PT",
-   "locator": "v1.0/02-预训练/01-预训练原理.md#L130",
+   "locator": "v1.0/02-预训练/01-预训练原理.md#L132",
    "title": "课程学习：线性域退火",
    "status": "active",
    "version": "v1.0",
@@ -1762,7 +1762,7 @@
    "id": "D-PT.8.1",
    "type": "D",
    "doccode": "PT",
-   "locator": "v1.0/02-预训练/01-预训练原理.md#L167",
+   "locator": "v1.0/02-预训练/01-预训练原理.md#L169",
    "title": "数据并行 all-reduce",
    "status": "active",
    "version": "v1.0",
@@ -1772,7 +1772,7 @@
    "id": "D-PT.8.3",
    "type": "D",
    "doccode": "PT",
-   "locator": "v1.0/02-预训练/01-预训练原理.md#L184",
+   "locator": "v1.0/02-预训练/01-预训练原理.md#L186",
    "title": "梯度累积",
    "status": "active",
    "version": "v1.0",
@@ -1786,7 +1786,7 @@
    "title": "CPython 的执行模型",
    "status": "active",
    "version": "v1.0",
-   "ext": ""
+   "ext": "EXT-PY1-02"
   },
   {
    "id": "D-PY1.1.2",
@@ -1846,7 +1846,7 @@
    "title": "`str` 与 `bytes`",
    "status": "active",
    "version": "v1.0",
-   "ext": ""
+   "ext": "EXT-PY1-03"
   },
   {
    "id": "D-PY1.3.4",
@@ -2036,7 +2036,7 @@
    "title": "数据模型与特殊方法总览",
    "status": "active",
    "version": "v1.0",
-   "ext": ""
+   "ext": "EXT-PY2-03"
   },
   {
    "id": "D-PY2.3.1",
@@ -2076,7 +2076,7 @@
    "title": "`dataclass`：样板代码生成器",
    "status": "active",
    "version": "v1.0",
-   "ext": ""
+   "ext": "EXT-PY2-06"
   },
   {
    "id": "D-PY2.4.3",
@@ -2196,7 +2196,7 @@
    "title": "生成器函数与 `yield`：惰性求值",
    "status": "active",
    "version": "v1.0",
-   "ext": ""
+   "ext": "EXT-PY2-01"
   },
   {
    "id": "D-PY2.9.1",
@@ -2236,7 +2236,7 @@
    "title": "虚拟环境与解释器隔离",
    "status": "active",
    "version": "v1.0",
-   "ext": ""
+   "ext": "EXT-PY3-01"
   },
   {
    "id": "D-PY3.7.1",
@@ -2256,7 +2256,7 @@
    "title": "ndarray",
    "status": "active",
    "version": "v1.0",
-   "ext": ""
+   "ext": "EXT-PY4-01"
   },
   {
    "id": "D-PY4.1.2",
@@ -2326,7 +2326,7 @@
    "title": "广播严格规则",
    "status": "active",
    "version": "v1.0",
-   "ext": ""
+   "ext": "EXT-PY4-01"
   },
   {
    "id": "D-PY4.5.1",
@@ -2356,7 +2356,7 @@
    "title": "`matmul` / `@` 语义",
    "status": "active",
    "version": "v1.0",
-   "ext": ""
+   "ext": "EXT-PY4-03"
   },
   {
    "id": "D-PY4.7.3",
@@ -2376,7 +2376,7 @@
    "title": "张量：带元数据的同构多维数组",
    "status": "active",
    "version": "v1.0",
-   "ext": ""
+   "ext": "EXT-PY5-01"
   },
   {
    "id": "D-PY5.1.2",
@@ -2436,7 +2436,7 @@
    "title": "requires_grad、grad_fn 与 .grad",
    "status": "active",
    "version": "v1.0",
-   "ext": ""
+   "ext": "EXT-PY5-01"
   },
   {
    "id": "D-PY5.3.3",
@@ -2516,7 +2516,7 @@
    "title": "DataLoader：batch/shuffle/collate/num_workers",
    "status": "active",
    "version": "v1.0",
-   "ext": ""
+   "ext": "EXT-PY5-03"
   },
   {
    "id": "D-PY6.1.1",
@@ -2526,7 +2526,7 @@
    "title": "梯度检查点",
    "status": "active",
    "version": "v1.0",
-   "ext": ""
+   "ext": "EXT-PY6-02"
   },
   {
    "id": "D-PY6.1.3",
@@ -2566,7 +2566,7 @@
    "title": "`transformers`：`Auto*` 三件套",
    "status": "active",
    "version": "v1.0",
-   "ext": ""
+   "ext": "EXT-PY6-06"
   },
   {
    "id": "D-PY6.3.3",
@@ -2576,7 +2576,7 @@
    "title": "`peft`：`LoraConfig` / `get_peft_model`",
    "status": "active",
    "version": "v1.0",
-   "ext": ""
+   "ext": "EXT-PY6-07"
   },
   {
    "id": "D-PY6.3.5",
@@ -2592,7 +2592,7 @@
    "id": "D-RL.2.1",
    "type": "D",
    "doccode": "RL",
-   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L44",
+   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L46",
    "title": "token 级 MDP 与轨迹概率",
    "status": "active",
    "version": "v1.0",
@@ -2602,7 +2602,7 @@
    "id": "D-RL.4.3",
    "type": "D",
    "doccode": "RL",
-   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L165",
+   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L167",
    "title": "优势函数",
    "status": "active",
    "version": "v1.0",
@@ -2612,7 +2612,7 @@
    "id": "D-RL.4.4",
    "type": "D",
    "doccode": "RL",
-   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L178",
+   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L180",
    "title": "GAE：优势的方差–偏差折中",
    "status": "active",
    "version": "v1.0",
@@ -2622,7 +2622,7 @@
    "id": "D-RL.5.1",
    "type": "D",
    "doccode": "RL",
-   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L195",
+   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L197",
    "title": "重要性比与单步代理目标",
    "status": "active",
    "version": "v1.0",
@@ -2632,7 +2632,7 @@
    "id": "D-RL.6.1",
    "type": "D",
    "doccode": "RL",
-   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L214",
+   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L216",
    "title": "PPO clip 目标",
    "status": "active",
    "version": "v1.0",
@@ -2642,7 +2642,7 @@
    "id": "D-RL.6.3",
    "type": "D",
    "doccode": "RL",
-   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L230",
+   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L232",
    "title": "完整 PPO 目标",
    "status": "active",
    "version": "v1.0",
@@ -2652,7 +2652,7 @@
    "id": "D-RL.7.1",
    "type": "D",
    "doccode": "RL",
-   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L249",
+   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L251",
    "title": "GRPO 组内相对优势",
    "status": "active",
    "version": "v1.0",
@@ -2662,7 +2662,7 @@
    "id": "D-RL.7.3",
    "type": "D",
    "doccode": "RL",
-   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L264",
+   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L266",
    "title": "GRPO 目标",
    "status": "active",
    "version": "v1.0",
@@ -2672,7 +2672,7 @@
    "id": "D-RL.8.1",
    "type": "D",
    "doccode": "RL",
-   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L291",
+   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L293",
    "title": "KL 正则与三种估计器",
    "status": "active",
    "version": "v1.0",
@@ -2682,7 +2682,7 @@
    "id": "D-RL.8.3",
    "type": "D",
    "doccode": "RL",
-   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L312",
+   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L314",
    "title": "RTTT 的平方对数比 KL",
    "status": "active",
    "version": "v1.0",
@@ -2692,7 +2692,7 @@
    "id": "D-RL.9.1",
    "type": "D",
    "doccode": "RL",
-   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L327",
+   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L329",
    "title": "RLVR：可验证奖励",
    "status": "active",
    "version": "v1.0",
@@ -2702,7 +2702,7 @@
    "id": "D-RL.11.1",
    "type": "D",
    "doccode": "RL",
-   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L372",
+   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L374",
    "title": "TTRL 与 RTTT",
    "status": "active",
    "version": "v1.0",
@@ -2712,7 +2712,7 @@
    "id": "D-SFT.1.1",
    "type": "D",
    "doccode": "SFT",
-   "locator": "v1.0/03-SFT/01-SFT原理.md#L23",
+   "locator": "v1.0/03-SFT/01-SFT原理.md#L25",
    "title": "SFT 的条件似然目标",
    "status": "active",
    "version": "v1.0",
@@ -2722,7 +2722,7 @@
    "id": "D-SFT.2.1",
    "type": "D",
    "doccode": "SFT",
-   "locator": "v1.0/03-SFT/01-SFT原理.md#L39",
+   "locator": "v1.0/03-SFT/01-SFT原理.md#L41",
    "title": "(state, tactic) 数据字段",
    "status": "active",
    "version": "v1.0",
@@ -2732,7 +2732,7 @@
    "id": "D-SFT.3.1",
    "type": "D",
    "doccode": "SFT",
-   "locator": "v1.0/03-SFT/01-SFT原理.md#L55",
+   "locator": "v1.0/03-SFT/01-SFT原理.md#L57",
    "title": "拼接格式",
    "status": "active",
    "version": "v1.0",
@@ -2742,7 +2742,7 @@
    "id": "D-SFT.3.2",
    "type": "D",
    "doccode": "SFT",
-   "locator": "v1.0/03-SFT/01-SFT原理.md#L66",
+   "locator": "v1.0/03-SFT/01-SFT原理.md#L68",
    "title": "标签掩码与掩码交叉熵",
    "status": "active",
    "version": "v1.0",
@@ -2752,7 +2752,7 @@
    "id": "D-SFT.5.2",
    "type": "D",
    "doccode": "SFT",
-   "locator": "v1.0/03-SFT/01-SFT原理.md#L127",
+   "locator": "v1.0/03-SFT/01-SFT原理.md#L129",
    "title": "LoRA 增量参数化",
    "status": "active",
    "version": "v1.0",
@@ -2762,7 +2762,7 @@
    "id": "D-V11.3.1",
    "type": "D",
    "doccode": "V11",
-   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L53",
+   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L55",
    "title": "OpenAI tool-call 协议",
    "status": "active",
    "version": "v1.0",
@@ -2772,7 +2772,7 @@
    "id": "D-V11.3.2",
    "type": "D",
    "doccode": "V11",
-   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L69",
+   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L71",
    "title": "agentic DSL `{\"calls\":[...]}`",
    "status": "active",
    "version": "v1.0",
@@ -2782,7 +2782,7 @@
    "id": "D-V11.4.1",
    "type": "D",
    "doccode": "V11",
-   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L89",
+   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L91",
    "title": "证据与审计结构",
    "status": "active",
    "version": "v1.0",
@@ -2792,7 +2792,7 @@
    "id": "D-V11.4.2",
    "type": "D",
    "doccode": "V11",
-   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L96",
+   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L98",
    "title": "组合律与贝叶斯重加权",
    "status": "active",
    "version": "v1.0",
@@ -2802,7 +2802,7 @@
    "id": "D-V11.5.2",
    "type": "D",
    "doccode": "V11",
-   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L146",
+   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L148",
    "title": "单工作线程 actor",
    "status": "active",
    "version": "v1.0",
@@ -2812,7 +2812,7 @@
    "id": "D-V11.5.3",
    "type": "D",
    "doccode": "V11",
-   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L153",
+   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L155",
    "title": "会话生命周期与乐观并发",
    "status": "active",
    "version": "v1.0",
@@ -2822,7 +2822,7 @@
    "id": "D-V11.5.4",
    "type": "D",
    "doccode": "V11",
-   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L162",
+   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L164",
    "title": "持久 learner 与 release",
    "status": "active",
    "version": "v1.0",
@@ -2832,7 +2832,7 @@
    "id": "D-V11.5.5",
    "type": "D",
    "doccode": "V11",
-   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L169",
+   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L171",
    "title": "RTTT hooks",
    "status": "active",
    "version": "v1.0",
@@ -2842,7 +2842,7 @@
    "id": "D-V11.6.1",
    "type": "D",
    "doccode": "V11",
-   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L181",
+   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L183",
    "title": "三档 transport",
    "status": "active",
    "version": "v1.0",
@@ -2852,7 +2852,7 @@
    "id": "D-VH.2.1",
    "type": "D",
    "doccode": "VH",
-   "locator": "v1.0/04-价值头/01-价值头原理.md#L36",
+   "locator": "v1.0/04-价值头/01-价值头原理.md#L37",
    "title": "状态价值、动作价值与优势",
    "status": "active",
    "version": "v1.0",
@@ -2862,7 +2862,7 @@
    "id": "D-VH.2.2",
    "type": "D",
    "doccode": "VH",
-   "locator": "v1.0/04-价值头/01-价值头原理.md#L58",
+   "locator": "v1.0/04-价值头/01-价值头原理.md#L59",
    "title": "折扣回报的后向递推",
    "status": "active",
    "version": "v1.0",
@@ -2872,7 +2872,7 @@
    "id": "D-VH.3.1",
    "type": "D",
    "doccode": "VH",
-   "locator": "v1.0/04-价值头/01-价值头原理.md#L81",
+   "locator": "v1.0/04-价值头/01-价值头原理.md#L82",
    "title": "nanoproof 的 proof-depth 价值语义",
    "status": "active",
    "version": "v1.0",
@@ -2882,7 +2882,7 @@
    "id": "D-VH.3.2",
    "type": "D",
    "doccode": "VH",
-   "locator": "v1.0/04-价值头/01-价值头原理.md#L89",
+   "locator": "v1.0/04-价值头/01-价值头原理.md#L90",
    "title": "REAP 标量价值头的归一化目标",
    "status": "active",
    "version": "v1.0",
@@ -2892,7 +2892,7 @@
    "id": "D-VH.3.3",
    "type": "D",
    "doccode": "VH",
-   "locator": "v1.0/04-价值头/01-价值头原理.md#L102",
+   "locator": "v1.0/04-价值头/01-价值头原理.md#L103",
    "title": "GPU 分类语义：distance 1–64",
    "status": "active",
    "version": "v1.0",
@@ -2902,7 +2902,7 @@
    "id": "D-VH.4.1",
    "type": "D",
    "doccode": "VH",
-   "locator": "v1.0/04-价值头/01-价值头原理.md#L149",
+   "locator": "v1.0/04-价值头/01-价值头原理.md#L150",
    "title": "标量价值头结构",
    "status": "active",
    "version": "v1.0",
@@ -2912,7 +2912,7 @@
    "id": "D-VH.4.2",
    "type": "D",
    "doccode": "VH",
-   "locator": "v1.0/04-价值头/01-价值头原理.md#L165",
+   "locator": "v1.0/04-价值头/01-价值头原理.md#L166",
    "title": "64 桶分类价值头结构",
    "status": "active",
    "version": "v1.0",
@@ -2922,7 +2922,7 @@
    "id": "D-VH.5.1",
    "type": "D",
    "doccode": "VH",
-   "locator": "v1.0/04-价值头/01-价值头原理.md#L193",
+   "locator": "v1.0/04-价值头/01-价值头原理.md#L194",
    "title": "two-hot 目标",
    "status": "active",
    "version": "v1.0",
@@ -2932,7 +2932,7 @@
    "id": "D-VH.5.3",
    "type": "D",
    "doccode": "VH",
-   "locator": "v1.0/04-价值头/01-价值头原理.md#L224",
+   "locator": "v1.0/04-价值头/01-价值头原理.md#L225",
    "title": "two-hot 交叉熵损失",
    "status": "active",
    "version": "v1.0",
@@ -2942,7 +2942,7 @@
    "id": "D-VH.6.1",
    "type": "D",
    "doccode": "VH",
-   "locator": "v1.0/04-价值头/01-价值头原理.md#L249",
+   "locator": "v1.0/04-价值头/01-价值头原理.md#L250",
    "title": "proper scoring rule",
    "status": "active",
    "version": "v1.0",
@@ -2952,7 +2952,7 @@
    "id": "D-VH.6.3",
    "type": "D",
    "doccode": "VH",
-   "locator": "v1.0/04-价值头/01-价值头原理.md#L261",
+   "locator": "v1.0/04-价值头/01-价值头原理.md#L262",
    "title": "可靠性图与 ECE",
    "status": "active",
    "version": "v1.0",
@@ -2962,7 +2962,7 @@
    "id": "D-VH.8.1",
    "type": "D",
    "doccode": "VH",
-   "locator": "v1.0/04-价值头/01-价值头原理.md#L311",
+   "locator": "v1.0/04-价值头/01-价值头原理.md#L312",
    "title": "PUCT 选择与 Q 统计量",
    "status": "active",
    "version": "v1.0",
@@ -2972,7 +2972,7 @@
    "id": "D-VH.8.2",
    "type": "D",
    "doccode": "VH",
-   "locator": "v1.0/04-价值头/01-价值头原理.md#L320",
+   "locator": "v1.0/04-价值头/01-价值头原理.md#L321",
    "title": "叶子评估与备份",
    "status": "active",
    "version": "v1.0",
@@ -3862,7 +3862,7 @@
    "id": "Ex-MCTS.10.2",
    "type": "Ex",
    "doccode": "MCTS",
-   "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L211",
+   "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L213",
    "title": "思考题",
    "status": "active",
    "version": "v1.0",
@@ -3872,7 +3872,7 @@
    "id": "Ex-PT.11.2",
    "type": "Ex",
    "doccode": "PT",
-   "locator": "v1.0/02-预训练/01-预训练原理.md#L237",
+   "locator": "v1.0/02-预训练/01-预训练原理.md#L239",
    "title": "动手：域切换与预算",
    "status": "active",
    "version": "v1.0",
@@ -4112,7 +4112,7 @@
    "id": "Ex-RL.13.2",
    "type": "Ex",
    "doccode": "RL",
-   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L487",
+   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L489",
    "title": "思考题",
    "status": "active",
    "version": "v1.0",
@@ -4122,7 +4122,7 @@
    "id": "Ex-SFT.8.3",
    "type": "Ex",
    "doccode": "SFT",
-   "locator": "v1.0/03-SFT/01-SFT原理.md#L190",
+   "locator": "v1.0/03-SFT/01-SFT原理.md#L192",
    "title": "动手：mask 与 LoRA 秩",
    "status": "active",
    "version": "v1.0",
@@ -8482,7 +8482,7 @@
    "id": "P-LORA.2.3",
    "type": "P",
    "doccode": "LORA",
-   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L62",
+   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L63",
    "title": "参数量与压缩比",
    "status": "active",
    "version": "v1.0",
@@ -8492,7 +8492,7 @@
    "id": "P-LORA.3.1",
    "type": "P",
    "doccode": "LORA",
-   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L93",
+   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L94",
    "title": "零初始化 ⇒ 初始等价基座",
    "status": "active",
    "version": "v1.0",
@@ -8502,7 +8502,7 @@
    "id": "P-LORA.3.4",
    "type": "P",
    "doccode": "LORA",
-   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L117",
+   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L118",
    "title": "缩放 $s=\\alpha/r$ 的作用",
    "status": "active",
    "version": "v1.0",
@@ -8512,7 +8512,7 @@
    "id": "P-PT.3.1",
    "type": "P",
    "doccode": "PT",
-   "locator": "v1.0/02-预训练/01-预训练原理.md#L56",
+   "locator": "v1.0/02-预训练/01-预训练原理.md#L58",
    "title": "最小化交叉熵 = 最大似然 = 最小化 KL",
    "status": "active",
    "version": "v1.0",
@@ -8522,7 +8522,7 @@
    "id": "P-PT.4.1",
    "type": "P",
    "doccode": "PT",
-   "locator": "v1.0/02-预训练/01-预训练原理.md#L88",
+   "locator": "v1.0/02-预训练/01-预训练原理.md#L90",
    "title": "交叉熵对 logits 的梯度",
    "status": "active",
    "version": "v1.0",
@@ -8532,7 +8532,7 @@
    "id": "P-PT.7.1",
    "type": "P",
    "doccode": "PT",
-   "locator": "v1.0/02-预训练/01-预训练原理.md#L146",
+   "locator": "v1.0/02-预训练/01-预训练原理.md#L148",
    "title": "算力预算 C≈6ND",
    "status": "active",
    "version": "v1.0",
@@ -8622,7 +8622,7 @@
    "id": "P-RL.4.2",
    "type": "P",
    "doccode": "RL",
-   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L146",
+   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L148",
    "title": "基线为什么不引入偏差",
    "status": "active",
    "version": "v1.0",
@@ -8792,7 +8792,7 @@
    "id": "Pf-PT.3.1",
    "type": "Pf",
    "doccode": "PT",
-   "locator": "v1.0/02-预训练/01-预训练原理.md#L70",
+   "locator": "v1.0/02-预训练/01-预训练原理.md#L72",
    "title": "",
    "status": "active",
    "version": "v1.0",
@@ -8802,7 +8802,7 @@
    "id": "Pf-PT.4.1",
    "type": "Pf",
    "doccode": "PT",
-   "locator": "v1.0/02-预训练/01-预训练原理.md#L97",
+   "locator": "v1.0/02-预训练/01-预训练原理.md#L99",
    "title": "",
    "status": "active",
    "version": "v1.0",
@@ -8812,7 +8812,7 @@
    "id": "Pf-RL.3.1",
    "type": "Pf",
    "doccode": "RL",
-   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L79",
+   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L81",
    "title": "",
    "status": "active",
    "version": "v1.0",
@@ -8822,7 +8822,7 @@
    "id": "Pf-RL.4.2",
    "type": "Pf",
    "doccode": "RL",
-   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L155",
+   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L157",
    "title": "",
    "status": "active",
    "version": "v1.0",
@@ -9462,7 +9462,7 @@
    "id": "R-LORA.1.1",
    "type": "R",
    "doccode": "LORA",
-   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L17",
+   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L18",
    "title": "LoRA 速览",
    "status": "active",
    "version": "v1.0",
@@ -9472,7 +9472,7 @@
    "id": "R-LORA.2.1",
    "type": "R",
    "doccode": "LORA",
-   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L37",
+   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L38",
    "title": "动机：全参微调的存储代价",
    "status": "active",
    "version": "v1.0",
@@ -9482,7 +9482,7 @@
    "id": "R-LORA.2.4",
    "type": "R",
    "doccode": "LORA",
-   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L73",
+   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L74",
    "title": "秩与容量",
    "status": "active",
    "version": "v1.0",
@@ -9492,7 +9492,7 @@
    "id": "R-LORA.3.3",
    "type": "R",
    "doccode": "LORA",
-   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L108",
+   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L109",
    "title": "零初始化下的梯度流向",
    "status": "active",
    "version": "v1.0",
@@ -9502,7 +9502,7 @@
    "id": "R-LORA.3.5",
    "type": "R",
    "doccode": "LORA",
-   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L131",
+   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L132",
    "title": "dropout 与权重合并",
    "status": "active",
    "version": "v1.0",
@@ -9512,7 +9512,7 @@
    "id": "R-LORA.4.2",
    "type": "R",
    "doccode": "LORA",
-   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L152",
+   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L153",
    "title": "目标模块选择与容量",
    "status": "active",
    "version": "v1.0",
@@ -9522,7 +9522,7 @@
    "id": "R-LORA.5.4",
    "type": "R",
    "doccode": "LORA",
-   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L202",
+   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L203",
    "title": "paged optimizer",
    "status": "active",
    "version": "v1.0",
@@ -9532,7 +9532,7 @@
    "id": "R-LORA.5.5",
    "type": "R",
    "doccode": "LORA",
-   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L209",
+   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L210",
    "title": "QLoRA 计算流程",
    "status": "active",
    "version": "v1.0",
@@ -9542,7 +9542,7 @@
    "id": "R-LORA.6.2",
    "type": "R",
    "doccode": "LORA",
-   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L241",
+   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L242",
    "title": "DoRA 的特点与统一视角",
    "status": "active",
    "version": "v1.0",
@@ -9552,7 +9552,7 @@
    "id": "R-LORA.7.1",
    "type": "R",
    "doccode": "LORA",
-   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L256",
+   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L257",
    "title": "与全参微调对比",
    "status": "active",
    "version": "v1.0",
@@ -9562,7 +9562,7 @@
    "id": "R-LORA.7.2",
    "type": "R",
    "doccode": "LORA",
-   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L268",
+   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L269",
    "title": "秩-容量关系",
    "status": "active",
    "version": "v1.0",
@@ -9572,7 +9572,7 @@
    "id": "R-LORA.8.1",
    "type": "R",
    "doccode": "LORA",
-   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L285",
+   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L286",
    "title": "源码对照与超参速查",
    "status": "active",
    "version": "v1.0",
@@ -9582,7 +9582,7 @@
    "id": "R-LORA.8.2",
    "type": "R",
    "doccode": "LORA",
-   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L298",
+   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L299",
    "title": "推荐起点",
    "status": "active",
    "version": "v1.0",
@@ -9592,7 +9592,7 @@
    "id": "R-LORA.9.1",
    "type": "R",
    "doccode": "LORA",
-   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L309",
+   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L310",
    "title": "外部数学文档索引",
    "status": "active",
    "version": "v1.0",
@@ -9602,7 +9602,7 @@
    "id": "R-LORA.10.1",
    "type": "R",
    "doccode": "LORA",
-   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L320",
+   "locator": "v1.0/05-LoRA/01-LoRA原理.md#L321",
    "title": "小结",
    "status": "active",
    "version": "v1.0",
@@ -9612,7 +9612,7 @@
    "id": "R-MCTS.1.1",
    "type": "R",
    "doccode": "MCTS",
-   "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L13",
+   "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L15",
    "title": "一句话与对照",
    "status": "active",
    "version": "v1.0",
@@ -9622,7 +9622,7 @@
    "id": "R-MCTS.2.3",
    "type": "R",
    "doccode": "MCTS",
-   "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L48",
+   "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L50",
    "title": "solved 判定",
    "status": "active",
    "version": "v1.0",
@@ -9632,7 +9632,7 @@
    "id": "R-MCTS.3.2",
    "type": "R",
    "doccode": "MCTS",
-   "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L66",
+   "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L68",
    "title": "未访问值与 AND 选择分数",
    "status": "active",
    "version": "v1.0",
@@ -9642,7 +9642,7 @@
    "id": "R-MCTS.4.2",
    "type": "R",
    "doccode": "MCTS",
-   "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L87",
+   "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L89",
    "title": "回传规则",
    "status": "active",
    "version": "v1.0",
@@ -9652,7 +9652,7 @@
    "id": "R-MCTS.5.2",
    "type": "R",
    "doccode": "MCTS",
-   "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L106",
+   "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L108",
    "title": "Dirichlet 旁注与循环检测",
    "status": "active",
    "version": "v1.0",
@@ -9662,7 +9662,7 @@
    "id": "R-MCTS.6.2",
    "type": "R",
    "doccode": "MCTS",
-   "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L131",
+   "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L133",
    "title": "expand_node 与复验",
    "status": "active",
    "version": "v1.0",
@@ -9672,7 +9672,7 @@
    "id": "R-MCTS.8.3",
    "type": "R",
    "doccode": "MCTS",
-   "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L171",
+   "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L173",
    "title": "V1 闭环全景",
    "status": "active",
    "version": "v1.0",
@@ -9682,7 +9682,7 @@
    "id": "R-MCTS.9.1",
    "type": "R",
    "doccode": "MCTS",
-   "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L191",
+   "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L193",
    "title": "本目录可运行代码",
    "status": "active",
    "version": "v1.0",
@@ -9692,7 +9692,7 @@
    "id": "R-MCTS.10.1",
    "type": "R",
    "doccode": "MCTS",
-   "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L203",
+   "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L205",
    "title": "小结",
    "status": "active",
    "version": "v1.0",
@@ -9702,7 +9702,7 @@
    "id": "R-MCTS.11.1",
    "type": "R",
    "doccode": "MCTS",
-   "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L225",
+   "locator": "v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L227",
    "title": "参考与源码索引",
    "status": "active",
    "version": "v1.0",
@@ -9712,7 +9712,7 @@
    "id": "R-PT.1.1",
    "type": "R",
    "doccode": "PT",
-   "locator": "v1.0/02-预训练/01-预训练原理.md#L13",
+   "locator": "v1.0/02-预训练/01-预训练原理.md#L15",
    "title": "四阶段流水线",
    "status": "active",
    "version": "v1.0",
@@ -9722,7 +9722,7 @@
    "id": "R-PT.2.3",
    "type": "R",
    "doccode": "PT",
-   "locator": "v1.0/02-预训练/01-预训练原理.md#L48",
+   "locator": "v1.0/02-预训练/01-预训练原理.md#L50",
    "title": "teacher forcing 与并行训练",
    "status": "active",
    "version": "v1.0",
@@ -9732,7 +9732,7 @@
    "id": "R-PT.6.3",
    "type": "R",
    "doccode": "PT",
-   "locator": "v1.0/02-预训练/01-预训练原理.md#L138",
+   "locator": "v1.0/02-预训练/01-预训练原理.md#L140",
    "title": "配比的直觉与防遗忘",
    "status": "active",
    "version": "v1.0",
@@ -9742,7 +9742,7 @@
    "id": "R-PT.7.2",
    "type": "R",
    "doccode": "PT",
-   "locator": "v1.0/02-预训练/01-预训练原理.md#L160",
+   "locator": "v1.0/02-预训练/01-预训练原理.md#L162",
    "title": "Chinchilla 数据-参数比",
    "status": "active",
    "version": "v1.0",
@@ -9752,7 +9752,7 @@
    "id": "R-PT.8.2",
    "type": "R",
    "doccode": "PT",
-   "locator": "v1.0/02-预训练/01-预训练原理.md#L179",
+   "locator": "v1.0/02-预训练/01-预训练原理.md#L181",
    "title": "混合精度与 fp32 保留",
    "status": "active",
    "version": "v1.0",
@@ -9762,7 +9762,7 @@
    "id": "R-PT.8.4",
    "type": "R",
    "doccode": "PT",
-   "locator": "v1.0/02-预训练/01-预训练原理.md#L192",
+   "locator": "v1.0/02-预训练/01-预训练原理.md#L194",
    "title": "梯度检查点",
    "status": "active",
    "version": "v1.0",
@@ -9772,7 +9772,7 @@
    "id": "R-PT.9.1",
    "type": "R",
    "doccode": "PT",
-   "locator": "v1.0/02-预训练/01-预训练原理.md#L198",
+   "locator": "v1.0/02-预训练/01-预训练原理.md#L200",
    "title": "与 nanoproof 源码对照",
    "status": "active",
    "version": "v1.0",
@@ -9782,7 +9782,7 @@
    "id": "R-PT.10.1",
    "type": "R",
    "doccode": "PT",
-   "locator": "v1.0/02-预训练/01-预训练原理.md#L216",
+   "locator": "v1.0/02-预训练/01-预训练原理.md#L218",
    "title": "常见坑",
    "status": "active",
    "version": "v1.0",
@@ -9792,7 +9792,7 @@
    "id": "R-PT.11.1",
    "type": "R",
    "doccode": "PT",
-   "locator": "v1.0/02-预训练/01-预训练原理.md#L229",
+   "locator": "v1.0/02-预训练/01-预训练原理.md#L231",
    "title": "小结",
    "status": "active",
    "version": "v1.0",
@@ -10046,7 +10046,7 @@
    "title": "pytest：发现、断言、fixture、参数化",
    "status": "active",
    "version": "v1.0",
-   "ext": ""
+   "ext": "EXT-PY3-05"
   },
   {
    "id": "R-PY3.4.4",
@@ -10126,7 +10126,7 @@
    "title": "worktree：一个仓库、多个工作目录",
    "status": "active",
    "version": "v1.0",
-   "ext": ""
+   "ext": "EXT-PY3-09"
   },
   {
    "id": "R-PY3.6.4",
@@ -10749,10 +10749,20 @@
    "ext": ""
   },
   {
+   "id": "R-RES.10.1",
+   "type": "R",
+   "doccode": "RES",
+   "locator": "v1.0/00-资料清单.md#L127",
+   "title": "预备篇（`00-预备/`，Python / PyTorch 从零",
+   "status": "active",
+   "version": "v1.0",
+   "ext": ""
+  },
+  {
    "id": "R-RL.1.1",
    "type": "R",
    "doccode": "RL",
-   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L21",
+   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L23",
    "title": "源码对照速查",
    "status": "active",
    "version": "v1.0",
@@ -10762,7 +10772,7 @@
    "id": "R-RL.2.2",
    "type": "R",
    "doccode": "RL",
-   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L68",
+   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L70",
    "title": "确定性转移：随机性全部来自策略采样",
    "status": "active",
    "version": "v1.0",
@@ -10772,7 +10782,7 @@
    "id": "R-RL.6.2",
    "type": "R",
    "doccode": "RL",
-   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L223",
+   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L225",
    "title": "clip 行为解读",
    "status": "active",
    "version": "v1.0",
@@ -10782,7 +10792,7 @@
    "id": "R-RL.6.4",
    "type": "R",
    "doccode": "RL",
-   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L239",
+   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L241",
    "title": "与 TRPO 的关系",
    "status": "active",
    "version": "v1.0",
@@ -10792,7 +10802,7 @@
    "id": "R-RL.7.2",
    "type": "R",
    "doccode": "RL",
-   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L259",
+   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L261",
    "title": "均值基线与归一化的偏差",
    "status": "active",
    "version": "v1.0",
@@ -10802,7 +10812,7 @@
    "id": "R-RL.7.4",
    "type": "R",
    "doccode": "RL",
-   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L277",
+   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L279",
    "title": "为什么能省掉 critic",
    "status": "active",
    "version": "v1.0",
@@ -10812,7 +10822,7 @@
    "id": "R-RL.7.5",
    "type": "R",
    "doccode": "RL",
-   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L282",
+   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L284",
    "title": "全同组退化与难度课程",
    "status": "active",
    "version": "v1.0",
@@ -10822,7 +10832,7 @@
    "id": "R-RL.8.2",
    "type": "R",
    "doccode": "RL",
-   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L306",
+   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L308",
    "title": "三种估计器比较与信息几何",
    "status": "active",
    "version": "v1.0",
@@ -10832,7 +10842,7 @@
    "id": "R-RL.9.2",
    "type": "R",
    "doccode": "RL",
-   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L341",
+   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L343",
    "title": "稀疏奖励的工程解法",
    "status": "active",
    "version": "v1.0",
@@ -10842,7 +10852,7 @@
    "id": "R-RL.9.3",
    "type": "R",
    "doccode": "RL",
-   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L347",
+   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L349",
    "title": "RLVR 的能力边界",
    "status": "active",
    "version": "v1.0",
@@ -10852,7 +10862,7 @@
    "id": "R-RL.10.1",
    "type": "R",
    "doccode": "RL",
-   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L356",
+   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L358",
    "title": "on-policy 稳定性与熵坍塌",
    "status": "active",
    "version": "v1.0",
@@ -10862,7 +10872,7 @@
    "id": "R-RL.10.2",
    "type": "R",
    "doccode": "RL",
-   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L362",
+   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L364",
    "title": "奖励攻击与长度/难度偏差",
    "status": "active",
    "version": "v1.0",
@@ -10872,7 +10882,7 @@
    "id": "R-RL.11.3",
    "type": "R",
    "doccode": "RL",
-   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L390",
+   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L392",
    "title": "V1 闭环",
    "status": "active",
    "version": "v1.0",
@@ -10882,7 +10892,7 @@
    "id": "R-RL.12.1",
    "type": "R",
    "doccode": "RL",
-   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L401",
+   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L403",
    "title": "`policy_server.py` 的 `/ttt_step`",
    "status": "active",
    "version": "v1.0",
@@ -10892,7 +10902,7 @@
    "id": "R-RL.12.2",
    "type": "R",
    "doccode": "RL",
-   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L429",
+   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L431",
    "title": "`gpu_runtime` 各 backend 的 `learn()`",
    "status": "active",
    "version": "v1.0",
@@ -10902,7 +10912,7 @@
    "id": "R-RL.12.3",
    "type": "R",
    "doccode": "RL",
-   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L449",
+   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L451",
    "title": "`nanoproof/rl.py`：token-mean CE + unlikelihood",
    "status": "active",
    "version": "v1.0",
@@ -10912,7 +10922,7 @@
    "id": "R-RL.13.1",
    "type": "R",
    "doccode": "RL",
-   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L482",
+   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L484",
    "title": "小结",
    "status": "active",
    "version": "v1.0",
@@ -10922,7 +10932,7 @@
    "id": "R-RL.14.1",
    "type": "R",
    "doccode": "RL",
-   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L500",
+   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L502",
    "title": "参考与源码索引",
    "status": "active",
    "version": "v1.0",
@@ -11422,7 +11432,7 @@
    "id": "R-ROAD.4.1",
    "type": "R",
    "doccode": "ROAD",
-   "locator": "v1.0/00-学习路线图.md#L55",
+   "locator": "v1.0/00-学习路线图.md#L56",
    "title": "规模与运行环境",
    "status": "active",
    "version": "v1.0",
@@ -11432,7 +11442,7 @@
    "id": "R-ROAD.5.1",
    "type": "R",
    "doccode": "ROAD",
-   "locator": "v1.0/00-学习路线图.md#L64",
+   "locator": "v1.0/00-学习路线图.md#L65",
    "title": "数据集（教学用小切片",
    "status": "active",
    "version": "v1.0",
@@ -11442,7 +11452,7 @@
    "id": "R-ROAD.6.1",
    "type": "R",
    "doccode": "ROAD",
-   "locator": "v1.0/00-学习路线图.md#L78",
+   "locator": "v1.0/00-学习路线图.md#L79",
    "title": "与既有数学文档对照",
    "status": "active",
    "version": "v1.0",
@@ -11452,7 +11462,7 @@
    "id": "R-ROAD.7.1",
    "type": "R",
    "doccode": "ROAD",
-   "locator": "v1.0/00-学习路线图.md#L84",
+   "locator": "v1.0/00-学习路线图.md#L85",
    "title": "使用建议",
    "status": "active",
    "version": "v1.0",
@@ -11462,7 +11472,7 @@
    "id": "R-SFT.3.3",
    "type": "R",
    "doccode": "SFT",
-   "locator": "v1.0/03-SFT/01-SFT原理.md#L84",
+   "locator": "v1.0/03-SFT/01-SFT原理.md#L86",
    "title": "为什么要 mask prompt",
    "status": "active",
    "version": "v1.0",
@@ -11472,7 +11482,7 @@
    "id": "R-SFT.3.4",
    "type": "R",
    "doccode": "SFT",
-   "locator": "v1.0/03-SFT/01-SFT原理.md#L92",
+   "locator": "v1.0/03-SFT/01-SFT原理.md#L94",
    "title": "右填充",
    "status": "active",
    "version": "v1.0",
@@ -11482,7 +11492,7 @@
    "id": "R-SFT.4.1",
    "type": "R",
    "doccode": "SFT",
-   "locator": "v1.0/03-SFT/01-SFT原理.md#L99",
+   "locator": "v1.0/03-SFT/01-SFT原理.md#L101",
    "title": "chat template 一致性",
    "status": "active",
    "version": "v1.0",
@@ -11492,7 +11502,7 @@
    "id": "R-SFT.4.2",
    "type": "R",
    "doccode": "SFT",
-   "locator": "v1.0/03-SFT/01-SFT原理.md#L113",
+   "locator": "v1.0/03-SFT/01-SFT原理.md#L115",
    "title": "掩码定位",
    "status": "active",
    "version": "v1.0",
@@ -11502,7 +11512,7 @@
    "id": "R-SFT.5.1",
    "type": "R",
    "doccode": "SFT",
-   "locator": "v1.0/03-SFT/01-SFT原理.md#L122",
+   "locator": "v1.0/03-SFT/01-SFT原理.md#L124",
    "title": "全参 SFT",
    "status": "active",
    "version": "v1.0",
@@ -11512,7 +11522,7 @@
    "id": "R-SFT.5.3",
    "type": "R",
    "doccode": "SFT",
-   "locator": "v1.0/03-SFT/01-SFT原理.md#L138",
+   "locator": "v1.0/03-SFT/01-SFT原理.md#L140",
    "title": "三种微调方式对比",
    "status": "active",
    "version": "v1.0",
@@ -11522,7 +11532,7 @@
    "id": "R-SFT.5.4",
    "type": "R",
    "doccode": "SFT",
-   "locator": "v1.0/03-SFT/01-SFT原理.md#L147",
+   "locator": "v1.0/03-SFT/01-SFT原理.md#L149",
    "title": "容器 QLoRA 超参",
    "status": "active",
    "version": "v1.0",
@@ -11532,7 +11542,7 @@
    "id": "R-SFT.6.1",
    "type": "R",
    "doccode": "SFT",
-   "locator": "v1.0/03-SFT/01-SFT原理.md#L154",
+   "locator": "v1.0/03-SFT/01-SFT原理.md#L156",
    "title": "过拟合、防遗忘与评估",
    "status": "active",
    "version": "v1.0",
@@ -11542,7 +11552,7 @@
    "id": "R-SFT.7.1",
    "type": "R",
    "doccode": "SFT",
-   "locator": "v1.0/03-SFT/01-SFT原理.md#L164",
+   "locator": "v1.0/03-SFT/01-SFT原理.md#L166",
    "title": "与 AlphaProof 源码对照",
    "status": "active",
    "version": "v1.0",
@@ -11552,7 +11562,7 @@
    "id": "R-SFT.8.1",
    "type": "R",
    "doccode": "SFT",
-   "locator": "v1.0/03-SFT/01-SFT原理.md#L177",
+   "locator": "v1.0/03-SFT/01-SFT原理.md#L179",
    "title": "常见坑",
    "status": "active",
    "version": "v1.0",
@@ -11562,7 +11572,7 @@
    "id": "R-SFT.8.2",
    "type": "R",
    "doccode": "SFT",
-   "locator": "v1.0/03-SFT/01-SFT原理.md#L185",
+   "locator": "v1.0/03-SFT/01-SFT原理.md#L187",
    "title": "小结",
    "status": "active",
    "version": "v1.0",
@@ -12062,7 +12072,7 @@
    "id": "R-V10.2.1",
    "type": "R",
    "doccode": "V10",
-   "locator": "v1.0/README.md#L20",
+   "locator": "v1.0/README.md#L21",
    "title": "目录结构",
    "status": "active",
    "version": "v1.0",
@@ -12072,7 +12082,7 @@
    "id": "R-V10.3.1",
    "type": "R",
    "doccode": "V10",
-   "locator": "v1.0/README.md#L42",
+   "locator": "v1.0/README.md#L44",
    "title": "约定",
    "status": "active",
    "version": "v1.0",
@@ -12082,7 +12092,7 @@
    "id": "R-V11.1.1",
    "type": "R",
    "doccode": "V11",
-   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L15",
+   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L17",
    "title": "三个关键词",
    "status": "active",
    "version": "v1.0",
@@ -12092,7 +12102,7 @@
    "id": "R-V11.2.2",
    "type": "R",
    "doccode": "V11",
-   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L42",
+   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L44",
    "title": "循环要点",
    "status": "active",
    "version": "v1.0",
@@ -12102,7 +12112,7 @@
    "id": "R-V11.3.3",
    "type": "R",
    "doccode": "V11",
-   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L78",
+   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L80",
    "title": "DSL 解析规则与 `EvidenceKind`",
    "status": "active",
    "version": "v1.0",
@@ -12112,7 +12122,7 @@
    "id": "R-V11.4.4",
    "type": "R",
    "doccode": "V11",
-   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L122",
+   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L124",
    "title": "证据 A/B 度量",
    "status": "active",
    "version": "v1.0",
@@ -12122,7 +12132,7 @@
    "id": "R-V11.6.2",
    "type": "R",
    "doccode": "V11",
-   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L189",
+   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L191",
    "title": "RuntimeTransport 与证据生产者",
    "status": "active",
    "version": "v1.0",
@@ -12132,7 +12142,7 @@
    "id": "R-V11.6.3",
    "type": "R",
    "doccode": "V11",
-   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L196",
+   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L198",
    "title": "树内采样 vs 树外证据",
    "status": "active",
    "version": "v1.0",
@@ -12142,7 +12152,7 @@
    "id": "R-V11.7.2",
    "type": "R",
    "doccode": "V11",
-   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L223",
+   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L225",
    "title": "字段说明",
    "status": "active",
    "version": "v1.0",
@@ -12152,7 +12162,7 @@
    "id": "R-V11.8.1",
    "type": "R",
    "doccode": "V11",
-   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L231",
+   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L233",
    "title": "本目录代码与实验",
    "status": "active",
    "version": "v1.0",
@@ -12162,7 +12172,7 @@
    "id": "R-V11.9.1",
    "type": "R",
    "doccode": "V11",
-   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L241",
+   "locator": "v1.0/08-V1-1/01-工具调用与agent.md#L243",
    "title": "参考与源码索引",
    "status": "active",
    "version": "v1.0",
@@ -12172,7 +12182,7 @@
    "id": "R-VH.1.1",
    "type": "R",
    "doccode": "VH",
-   "locator": "v1.0/04-价值头/01-价值头原理.md#L20",
+   "locator": "v1.0/04-价值头/01-价值头原理.md#L21",
    "title": "标量头 vs 64-bin 分类头速览",
    "status": "active",
    "version": "v1.0",
@@ -12182,7 +12192,7 @@
    "id": "R-VH.2.4",
    "type": "R",
    "doccode": "VH",
-   "locator": "v1.0/04-价值头/01-价值头原理.md#L72",
+   "locator": "v1.0/04-价值头/01-价值头原理.md#L73",
    "title": "目标截断到 [-1,1]",
    "status": "active",
    "version": "v1.0",
@@ -12192,7 +12202,7 @@
    "id": "R-VH.3.4",
    "type": "R",
    "doccode": "VH",
-   "locator": "v1.0/04-价值头/01-价值头原理.md#L116",
+   "locator": "v1.0/04-价值头/01-价值头原理.md#L117",
    "title": "nanoproof 的桶 token 生成",
    "status": "active",
    "version": "v1.0",
@@ -12202,7 +12212,7 @@
    "id": "R-VH.3.6",
    "type": "R",
    "doccode": "VH",
-   "locator": "v1.0/04-价值头/01-价值头原理.md#L129",
+   "locator": "v1.0/04-价值头/01-价值头原理.md#L130",
    "title": "桶 logits 的期望解码",
    "status": "active",
    "version": "v1.0",
@@ -12212,7 +12222,7 @@
    "id": "R-VH.4.3",
    "type": "R",
    "doccode": "VH",
-   "locator": "v1.0/04-价值头/01-价值头原理.md#L175",
+   "locator": "v1.0/04-价值头/01-价值头原理.md#L176",
    "title": "分类头的优势与代价",
    "status": "active",
    "version": "v1.0",
@@ -12222,7 +12232,7 @@
    "id": "R-VH.5.4",
    "type": "R",
    "doccode": "VH",
-   "locator": "v1.0/04-价值头/01-价值头原理.md#L236",
+   "locator": "v1.0/04-价值头/01-价值头原理.md#L237",
    "title": "two-hot 与硬整数类变体",
    "status": "active",
    "version": "v1.0",
@@ -12232,7 +12242,7 @@
    "id": "R-VH.6.2",
    "type": "R",
    "doccode": "VH",
-   "locator": "v1.0/04-价值头/01-价值头原理.md#L255",
+   "locator": "v1.0/04-价值头/01-价值头原理.md#L256",
    "title": "MSE/CE 的 properness 推论",
    "status": "active",
    "version": "v1.0",
@@ -12242,7 +12252,7 @@
    "id": "R-VH.6.4",
    "type": "R",
    "doccode": "VH",
-   "locator": "v1.0/04-价值头/01-价值头原理.md#L273",
+   "locator": "v1.0/04-价值头/01-价值头原理.md#L274",
    "title": "温度缩放",
    "status": "active",
    "version": "v1.0",
@@ -12252,7 +12262,7 @@
    "id": "R-VH.7.1",
    "type": "R",
    "doccode": "VH",
-   "locator": "v1.0/04-价值头/01-价值头原理.md#L288",
+   "locator": "v1.0/04-价值头/01-价值头原理.md#L289",
    "title": "偏差—方差来源",
    "status": "active",
    "version": "v1.0",
@@ -12262,7 +12272,7 @@
    "id": "R-VH.8.3",
    "type": "R",
    "doccode": "VH",
-   "locator": "v1.0/04-价值头/01-价值头原理.md#L329",
+   "locator": "v1.0/04-价值头/01-价值头原理.md#L330",
    "title": "工程约定：符号、距离与 RTTT",
    "status": "active",
    "version": "v1.0",
@@ -12272,7 +12282,7 @@
    "id": "R-VH.9.1",
    "type": "R",
    "doccode": "VH",
-   "locator": "v1.0/04-价值头/01-价值头原理.md#L355",
+   "locator": "v1.0/04-价值头/01-价值头原理.md#L356",
    "title": "源码对照速查",
    "status": "active",
    "version": "v1.0",
@@ -12282,7 +12292,7 @@
    "id": "R-VH.10.1",
    "type": "R",
    "doccode": "VH",
-   "locator": "v1.0/04-价值头/01-价值头原理.md#L380",
+   "locator": "v1.0/04-价值头/01-价值头原理.md#L381",
    "title": "小结与延伸",
    "status": "active",
    "version": "v1.0",
@@ -12312,7 +12322,7 @@
    "id": "T-RL.3.1",
    "type": "T",
    "doccode": "RL",
-   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L77",
+   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L79",
    "title": "策略梯度定理",
    "status": "active",
    "version": "v1.0",
@@ -12322,7 +12332,7 @@
    "id": "T-RL.4.1",
    "type": "T",
    "doccode": "RL",
-   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L134",
+   "locator": "v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L136",
    "title": "REINFORCE 更新",
    "status": "active",
    "version": "v1.0",
@@ -12330,6 +12340,118 @@
   }
  ],
  "edges": [
+  {
+   "src": "Cd-PY1.1.4",
+   "relation": "adapted_from",
+   "dst": "EXT-PY1-04",
+   "note": "auto:adapted_from",
+   "since": "v1.0"
+  },
+  {
+   "src": "D-PY1.1.1",
+   "relation": "adapted_from",
+   "dst": "EXT-PY1-02",
+   "note": "auto:adapted_from",
+   "since": "v1.0"
+  },
+  {
+   "src": "D-PY1.3.3",
+   "relation": "adapted_from",
+   "dst": "EXT-PY1-03",
+   "note": "auto:adapted_from",
+   "since": "v1.0"
+  },
+  {
+   "src": "D-PY2.2.1",
+   "relation": "adapted_from",
+   "dst": "EXT-PY2-03",
+   "note": "auto:adapted_from",
+   "since": "v1.0"
+  },
+  {
+   "src": "D-PY2.4.1",
+   "relation": "adapted_from",
+   "dst": "EXT-PY2-06",
+   "note": "auto:adapted_from",
+   "since": "v1.0"
+  },
+  {
+   "src": "D-PY2.8.2",
+   "relation": "adapted_from",
+   "dst": "EXT-PY2-01",
+   "note": "auto:adapted_from",
+   "since": "v1.0"
+  },
+  {
+   "src": "D-PY3.1.1",
+   "relation": "adapted_from",
+   "dst": "EXT-PY3-01",
+   "note": "auto:adapted_from",
+   "since": "v1.0"
+  },
+  {
+   "src": "D-PY4.1.1",
+   "relation": "adapted_from",
+   "dst": "EXT-PY4-01",
+   "note": "auto:adapted_from",
+   "since": "v1.0"
+  },
+  {
+   "src": "D-PY4.3.1",
+   "relation": "adapted_from",
+   "dst": "EXT-PY4-01",
+   "note": "auto:adapted_from",
+   "since": "v1.0"
+  },
+  {
+   "src": "D-PY4.7.1",
+   "relation": "adapted_from",
+   "dst": "EXT-PY4-03",
+   "note": "auto:adapted_from",
+   "since": "v1.0"
+  },
+  {
+   "src": "D-PY5.1.1",
+   "relation": "adapted_from",
+   "dst": "EXT-PY5-01",
+   "note": "auto:adapted_from",
+   "since": "v1.0"
+  },
+  {
+   "src": "D-PY5.3.2",
+   "relation": "adapted_from",
+   "dst": "EXT-PY5-01",
+   "note": "auto:adapted_from",
+   "since": "v1.0"
+  },
+  {
+   "src": "D-PY5.6.2",
+   "relation": "adapted_from",
+   "dst": "EXT-PY5-03",
+   "note": "auto:adapted_from",
+   "since": "v1.0"
+  },
+  {
+   "src": "D-PY6.1.1",
+   "relation": "adapted_from",
+   "dst": "EXT-PY6-02",
+   "note": "auto:adapted_from",
+   "since": "v1.0"
+  },
+  {
+   "src": "D-PY6.3.1",
+   "relation": "adapted_from",
+   "dst": "EXT-PY6-06",
+   "note": "auto:adapted_from",
+   "since": "v1.0"
+  },
+  {
+   "src": "D-PY6.3.3",
+   "relation": "adapted_from",
+   "dst": "EXT-PY6-07",
+   "note": "auto:adapted_from",
+   "since": "v1.0"
+  },
   {
    "src": "DOC-1",
    "relation": "refs",
@@ -12418,6 +12540,27 @@
    "src": "DOC-1",
    "relation": "refs",
    "dst": "D-1.2.7",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-1",
+   "relation": "refs",
+   "dst": "D-PY5.1.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-1",
+   "relation": "refs",
+   "dst": "D-PY5.3.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-1",
+   "relation": "refs",
+   "dst": "D-PY5.3.2",
    "note": "auto:refs",
    "since": "v1.0"
   },
@@ -12683,8 +12826,22 @@
   {
    "src": "DOC-1",
    "relation": "requires",
-   "dst": "DOC-PY2",
-   "note": "auto:requires(outline)",
+   "dst": "D-PY5.1.1",
+   "note": "auto:requires",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-1",
+   "relation": "requires",
+   "dst": "D-PY5.3.1",
+   "note": "auto:requires",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-1",
+   "relation": "requires",
+   "dst": "D-PY5.3.2",
+   "note": "auto:requires",
    "since": "v1.0"
   },
   {
@@ -12733,6 +12890,20 @@
    "src": "DOC-2",
    "relation": "refs",
    "dst": "D-2.4.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-2",
+   "relation": "refs",
+   "dst": "D-PY4.3.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-2",
+   "relation": "refs",
+   "dst": "D-PY4.5.1",
    "note": "auto:refs",
    "since": "v1.0"
   },
@@ -12802,6 +12973,13 @@
   {
    "src": "DOC-2",
    "relation": "refs",
+   "dst": "R-PY4.4.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-2",
+   "relation": "refs",
    "dst": "T-1.3.4",
    "note": "auto:refs",
    "since": "v1.0"
@@ -12809,8 +12987,29 @@
   {
    "src": "DOC-2",
    "relation": "requires",
+   "dst": "D-PY4.3.1",
+   "note": "auto:requires",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-2",
+   "relation": "requires",
+   "dst": "D-PY4.5.1",
+   "note": "auto:requires",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-2",
+   "relation": "requires",
    "dst": "DOC-PY4",
    "note": "auto:requires(outline)",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-2",
+   "relation": "requires",
+   "dst": "R-PY4.4.1",
+   "note": "auto:requires",
    "since": "v1.0"
   },
   {
@@ -12914,6 +13113,13 @@
   {
    "src": "DOC-3",
    "relation": "refs",
+   "dst": "D-PY4.7.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-3",
+   "relation": "refs",
    "dst": "Ex-3.7.2",
    "note": "auto:refs",
    "since": "v1.0"
@@ -12990,9 +13196,30 @@
   },
   {
    "src": "DOC-3",
+   "relation": "refs",
+   "dst": "R-PY4.4.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-3",
+   "relation": "requires",
+   "dst": "D-PY4.7.1",
+   "note": "auto:requires",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-3",
    "relation": "requires",
    "dst": "DOC-PY4",
    "note": "auto:requires(outline)",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-3",
+   "relation": "requires",
+   "dst": "R-PY4.4.4",
+   "note": "auto:requires",
    "since": "v1.0"
   },
   {
@@ -13020,6 +13247,20 @@
    "src": "DOC-4",
    "relation": "refs",
    "dst": "D-4.1.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-4",
+   "relation": "refs",
+   "dst": "D-PY1.3.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-4",
+   "relation": "refs",
+   "dst": "D-PY1.3.6",
    "note": "auto:refs",
    "since": "v1.0"
   },
@@ -13119,6 +13360,20 @@
    "relation": "refs",
    "dst": "R-4.8.1",
    "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-4",
+   "relation": "requires",
+   "dst": "D-PY1.3.3",
+   "note": "auto:requires",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-4",
+   "relation": "requires",
+   "dst": "D-PY1.3.6",
+   "note": "auto:requires",
    "since": "v1.0"
   },
   {
@@ -13229,6 +13484,27 @@
   {
    "src": "DOC-5",
    "relation": "refs",
+   "dst": "D-PY2.8.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-5",
+   "relation": "refs",
+   "dst": "D-PY5.6.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-5",
+   "relation": "refs",
+   "dst": "D-PY5.6.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-5",
+   "relation": "refs",
    "dst": "E-5.8.1",
    "note": "auto:refs",
    "since": "v1.0"
@@ -13320,6 +13596,27 @@
   {
    "src": "DOC-5",
    "relation": "requires",
+   "dst": "D-PY2.8.1",
+   "note": "auto:requires",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-5",
+   "relation": "requires",
+   "dst": "D-PY5.6.1",
+   "note": "auto:requires",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-5",
+   "relation": "requires",
+   "dst": "D-PY5.6.2",
+   "note": "auto:requires",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-5",
+   "relation": "requires",
    "dst": "DOC-PY2",
    "note": "auto:requires(outline)",
    "since": "v1.0"
@@ -13370,6 +13667,13 @@
    "src": "DOC-6",
    "relation": "refs",
    "dst": "D-6.4.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-6",
+   "relation": "refs",
+   "dst": "D-PY4.6.2",
    "note": "auto:refs",
    "since": "v1.0"
   },
@@ -13488,6 +13792,13 @@
   {
    "src": "DOC-6",
    "relation": "refs",
+   "dst": "R-PY4.6.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-6",
+   "relation": "refs",
    "dst": "T-1.3.4",
    "note": "auto:refs",
    "since": "v1.0"
@@ -13495,8 +13806,22 @@
   {
    "src": "DOC-6",
    "relation": "requires",
+   "dst": "D-PY4.6.2",
+   "note": "auto:requires",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-6",
+   "relation": "requires",
    "dst": "DOC-PY4",
    "note": "auto:requires(outline)",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-6",
+   "relation": "requires",
+   "dst": "R-PY4.6.1",
+   "note": "auto:requires",
    "since": "v1.0"
   },
   {
@@ -13678,6 +14003,20 @@
    "src": "DOC-LORA",
    "relation": "refs",
    "dst": "D-LORA.6.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-LORA",
+   "relation": "refs",
+   "dst": "D-PY3.1.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-LORA",
+   "relation": "refs",
+   "dst": "D-PY6.3.3",
    "note": "auto:refs",
    "since": "v1.0"
   },
@@ -13943,6 +14282,20 @@
   {
    "src": "DOC-MCTS",
    "relation": "refs",
+   "dst": "D-PY3.1.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-MCTS",
+   "relation": "refs",
+   "dst": "D-PY6.3.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-MCTS",
+   "relation": "refs",
    "dst": "Ex-MCTS.10.2",
    "note": "auto:refs",
    "since": "v1.0"
@@ -14046,6 +14399,132 @@
    "since": "v1.0"
   },
   {
+   "src": "DOC-PREM",
+   "relation": "refs",
+   "dst": "D-PY1.3.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PREM",
+   "relation": "refs",
+   "dst": "D-PY1.3.6",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PREM",
+   "relation": "refs",
+   "dst": "D-PY2.8.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PREM",
+   "relation": "refs",
+   "dst": "D-PY3.1.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PREM",
+   "relation": "refs",
+   "dst": "D-PY4.3.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PREM",
+   "relation": "refs",
+   "dst": "D-PY4.5.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PREM",
+   "relation": "refs",
+   "dst": "D-PY4.6.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PREM",
+   "relation": "refs",
+   "dst": "D-PY4.7.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PREM",
+   "relation": "refs",
+   "dst": "D-PY5.1.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PREM",
+   "relation": "refs",
+   "dst": "D-PY5.3.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PREM",
+   "relation": "refs",
+   "dst": "D-PY5.3.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PREM",
+   "relation": "refs",
+   "dst": "D-PY5.6.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PREM",
+   "relation": "refs",
+   "dst": "D-PY5.6.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PREM",
+   "relation": "refs",
+   "dst": "D-PY6.3.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PREM",
+   "relation": "refs",
+   "dst": "D-PY6.3.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PREM",
+   "relation": "refs",
+   "dst": "R-PY4.4.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PREM",
+   "relation": "refs",
+   "dst": "R-PY4.4.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PREM",
+   "relation": "refs",
+   "dst": "R-PY4.6.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
    "src": "DOC-PT",
    "relation": "corresponds",
    "dst": "F-b02-pretrain",
@@ -14126,6 +14605,20 @@
    "src": "DOC-PT",
    "relation": "refs",
    "dst": "D-PT.8.3",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PT",
+   "relation": "refs",
+   "dst": "D-PY3.1.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PT",
+   "relation": "refs",
+   "dst": "D-PY6.3.1",
    "note": "auto:refs",
    "since": "v1.0"
   },
@@ -14281,6 +14774,13 @@
    "relation": "corresponds",
    "dst": "N-18",
    "note": "auto:corresponds(pre)",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY1",
+   "relation": "evolves_to",
+   "dst": "DOC-PY2",
+   "note": "人工：Python I -> Python II",
    "since": "v1.0"
   },
   {
@@ -15026,6 +15526,13 @@
    "since": "v1.0"
   },
   {
+   "src": "DOC-PY2",
+   "relation": "requires",
+   "dst": "DOC-PY1",
+   "note": "人工：PY2 前置 PY1",
+   "since": "v1.0"
+  },
+  {
    "src": "DOC-PY3",
    "relation": "corresponds",
    "dst": "F-pre-py3",
@@ -15036,7 +15543,7 @@
    "src": "DOC-PY3",
    "relation": "corresponds",
    "dst": "N-20",
-   "note": "auto:corresponds(mention)",
+   "note": "auto:corresponds(pre)",
    "since": "v1.0"
   },
   {
@@ -15278,6 +15785,13 @@
    "since": "v1.0"
   },
   {
+   "src": "DOC-PY3",
+   "relation": "requires",
+   "dst": "DOC-PY2",
+   "note": "人工：PY3 前置 PY1/PY2",
+   "since": "v1.0"
+  },
+  {
    "src": "DOC-PY4",
    "relation": "corresponds",
    "dst": "F-pre-py4",
@@ -15289,6 +15803,13 @@
    "relation": "corresponds",
    "dst": "N-21",
    "note": "auto:corresponds(pre)",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "evolves_to",
+   "dst": "DOC-PY5",
+   "note": "人工：NumPy 张量思维 -> PyTorch 从零",
    "since": "v1.0"
   },
   {
@@ -15649,6 +16170,20 @@
    "since": "v1.0"
   },
   {
+   "src": "DOC-PY4",
+   "relation": "requires",
+   "dst": "DOC-PY1",
+   "note": "人工：PY4 前置 PY1/PY2",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY4",
+   "relation": "requires",
+   "dst": "DOC-PY2",
+   "note": "人工：PY4 前置 PY1/PY2",
+   "since": "v1.0"
+  },
+  {
    "src": "DOC-PY5",
    "relation": "corresponds",
    "dst": "F-pre-py5",
@@ -15660,6 +16195,13 @@
    "relation": "corresponds",
    "dst": "N-22",
    "note": "auto:corresponds(pre)",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY5",
+   "relation": "evolves_to",
+   "dst": "DOC-1",
+   "note": "人工：预备篇 PyTorch -> 正式篇神经网络与反向传播",
    "since": "v1.0"
   },
   {
@@ -16069,6 +16611,13 @@
    "since": "v1.0"
   },
   {
+   "src": "DOC-PY5",
+   "relation": "requires",
+   "dst": "DOC-PY4",
+   "note": "人工：PY5 前置 PY4",
+   "since": "v1.0"
+  },
+  {
    "src": "DOC-PY6",
    "relation": "corresponds",
    "dst": "F-pre-py6",
@@ -16080,6 +16629,13 @@
    "relation": "corresponds",
    "dst": "N-23",
    "note": "auto:corresponds(pre)",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY6",
+   "relation": "evolves_to",
+   "dst": "DOC-PT",
+   "note": "人工：预备篇生态 -> 正式篇预训练",
    "since": "v1.0"
   },
   {
@@ -16330,6 +16886,13 @@
   {
    "src": "DOC-PY6",
    "relation": "requires",
+   "dst": "DOC-PY5",
+   "note": "人工：PY6 前置 PY5",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-PY6",
+   "relation": "requires",
    "dst": "P-1.2.9",
    "note": "auto:requires",
    "since": "v1.0"
@@ -16398,6 +16961,13 @@
    "since": "v1.0"
   },
   {
+   "src": "DOC-RES",
+   "relation": "refs",
+   "dst": "R-RES.10.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
    "src": "DOC-RL",
    "relation": "corresponds",
    "dst": "F-b06-grpo",
@@ -16443,6 +17013,13 @@
    "src": "DOC-RL",
    "relation": "refs",
    "dst": "D-1.2.4",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-RL",
+   "relation": "refs",
+   "dst": "D-PY3.1.1",
    "note": "auto:refs",
    "since": "v1.0"
   },
@@ -16569,6 +17146,13 @@
    "src": "DOC-RL",
    "relation": "refs",
    "dst": "Pf-RL.4.2",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-RL",
+   "relation": "refs",
+   "dst": "R-PY6.3.4",
    "note": "auto:refs",
    "since": "v1.0"
   },
@@ -17192,6 +17776,20 @@
    "src": "DOC-SFT",
    "relation": "refs",
    "dst": "D-PT.6.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-SFT",
+   "relation": "refs",
+   "dst": "D-PY3.1.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-SFT",
+   "relation": "refs",
+   "dst": "D-PY6.3.3",
    "note": "auto:refs",
    "since": "v1.0"
   },
@@ -18402,6 +19000,20 @@
   {
    "src": "DOC-V11",
    "relation": "refs",
+   "dst": "D-PY3.1.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-V11",
+   "relation": "refs",
+   "dst": "D-PY6.3.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-V11",
+   "relation": "refs",
    "dst": "D-V11.3.1",
    "note": "auto:refs",
    "since": "v1.0"
@@ -18564,7 +19176,7 @@
    "src": "DOC-VH",
    "relation": "corresponds",
    "dst": "N-11",
-   "note": "auto:corresponds(mention)",
+   "note": "auto:corresponds(dir)",
    "since": "v1.0"
   },
   {
@@ -18606,6 +19218,27 @@
    "src": "DOC-VH",
    "relation": "refs",
    "dst": "D-1.2.5",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-VH",
+   "relation": "refs",
+   "dst": "D-PY3.1.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-VH",
+   "relation": "refs",
+   "dst": "D-PY5.4.1",
+   "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "DOC-VH",
+   "relation": "refs",
+   "dst": "D-PY6.3.1",
    "note": "auto:refs",
    "since": "v1.0"
   },
@@ -19692,6 +20325,20 @@
    "relation": "refs",
    "dst": "R-PY6.1.4",
    "note": "auto:refs",
+   "since": "v1.0"
+  },
+  {
+   "src": "R-PY3.4.3",
+   "relation": "adapted_from",
+   "dst": "EXT-PY3-05",
+   "note": "auto:adapted_from",
+   "since": "v1.0"
+  },
+  {
+   "src": "R-PY3.6.3",
+   "relation": "adapted_from",
+   "dst": "EXT-PY3-09",
+   "note": "auto:adapted_from",
    "since": "v1.0"
   }
  ]

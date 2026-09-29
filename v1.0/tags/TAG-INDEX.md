@@ -4,8 +4,8 @@
 
 ## 统计
 
-- registry: **1232** tags
-- relations: **1052** edges（corresponds=56, refs=954, requires=42）
+- registry: **1233** tags
+- relations: **1143** edges（adapted_from=18, corresponds=56, evolves_to=4, refs=1003, requires=62）
 - check: errors=0, warnings=369
 
 ## 总表（按 doccode 分组）
@@ -450,59 +450,59 @@
 
 | Tag | 类型 | 位置 | 标题 | 状态 | 版本 |
 | --- | --- | --- | --- | --- | --- |
-| `Cd-LORA.3.2` | Cd | `v1.0/05-LoRA/01-LoRA原理.md#L99` | `LoraConfig` | active | v1.0 |
-| `Cd-LORA.4.1` | Cd | `v1.0/05-LoRA/01-LoRA原理.md#L144` | `TARGET_MODULES` | active | v1.0 |
-| `Cd-LORA.5.6` | Cd | `v1.0/05-LoRA/01-LoRA原理.md#L214` | `BitsAndBytesConfig` | active | v1.0 |
-| `D-LORA.2.2` | D | `v1.0/05-LoRA/01-LoRA原理.md#L42` | 低秩更新参数化 | active | v1.0 |
-| `D-LORA.5.1` | D | `v1.0/05-LoRA/01-LoRA原理.md#L174` | QLoRA | active | v1.0 |
-| `D-LORA.5.2` | D | `v1.0/05-LoRA/01-LoRA原理.md#L180` | nf4 blockwise 量化 | active | v1.0 |
-| `D-LORA.5.3` | D | `v1.0/05-LoRA/01-LoRA原理.md#L195` | double quantization | active | v1.0 |
-| `D-LORA.6.1` | D | `v1.0/05-LoRA/01-LoRA原理.md#L230` | DoRA：幅度-方向分解 | active | v1.0 |
+| `Cd-LORA.3.2` | Cd | `v1.0/05-LoRA/01-LoRA原理.md#L100` | `LoraConfig` | active | v1.0 |
+| `Cd-LORA.4.1` | Cd | `v1.0/05-LoRA/01-LoRA原理.md#L145` | `TARGET_MODULES` | active | v1.0 |
+| `Cd-LORA.5.6` | Cd | `v1.0/05-LoRA/01-LoRA原理.md#L215` | `BitsAndBytesConfig` | active | v1.0 |
+| `D-LORA.2.2` | D | `v1.0/05-LoRA/01-LoRA原理.md#L43` | 低秩更新参数化 | active | v1.0 |
+| `D-LORA.5.1` | D | `v1.0/05-LoRA/01-LoRA原理.md#L175` | QLoRA | active | v1.0 |
+| `D-LORA.5.2` | D | `v1.0/05-LoRA/01-LoRA原理.md#L181` | nf4 blockwise 量化 | active | v1.0 |
+| `D-LORA.5.3` | D | `v1.0/05-LoRA/01-LoRA原理.md#L196` | double quantization | active | v1.0 |
+| `D-LORA.6.1` | D | `v1.0/05-LoRA/01-LoRA原理.md#L231` | DoRA：幅度-方向分解 | active | v1.0 |
 | `DOC-LORA` | DOC | `v1.0/05-LoRA/01-LoRA原理.md` | 05-LoRA原理：低秩适配、缩放与 QLoRA | active | v1.0 |
-| `P-LORA.2.3` | P | `v1.0/05-LoRA/01-LoRA原理.md#L62` | 参数量与压缩比 | active | v1.0 |
-| `P-LORA.3.1` | P | `v1.0/05-LoRA/01-LoRA原理.md#L93` | 零初始化 ⇒ 初始等价基座 | active | v1.0 |
-| `P-LORA.3.4` | P | `v1.0/05-LoRA/01-LoRA原理.md#L117` | 缩放 $s=\alpha/r$ 的作用 | active | v1.0 |
-| `R-LORA.1.1` | R | `v1.0/05-LoRA/01-LoRA原理.md#L17` | LoRA 速览 | active | v1.0 |
-| `R-LORA.2.1` | R | `v1.0/05-LoRA/01-LoRA原理.md#L37` | 动机：全参微调的存储代价 | active | v1.0 |
-| `R-LORA.2.4` | R | `v1.0/05-LoRA/01-LoRA原理.md#L73` | 秩与容量 | active | v1.0 |
-| `R-LORA.3.3` | R | `v1.0/05-LoRA/01-LoRA原理.md#L108` | 零初始化下的梯度流向 | active | v1.0 |
-| `R-LORA.3.5` | R | `v1.0/05-LoRA/01-LoRA原理.md#L131` | dropout 与权重合并 | active | v1.0 |
-| `R-LORA.4.2` | R | `v1.0/05-LoRA/01-LoRA原理.md#L152` | 目标模块选择与容量 | active | v1.0 |
-| `R-LORA.5.4` | R | `v1.0/05-LoRA/01-LoRA原理.md#L202` | paged optimizer | active | v1.0 |
-| `R-LORA.5.5` | R | `v1.0/05-LoRA/01-LoRA原理.md#L209` | QLoRA 计算流程 | active | v1.0 |
-| `R-LORA.6.2` | R | `v1.0/05-LoRA/01-LoRA原理.md#L241` | DoRA 的特点与统一视角 | active | v1.0 |
-| `R-LORA.7.1` | R | `v1.0/05-LoRA/01-LoRA原理.md#L256` | 与全参微调对比 | active | v1.0 |
-| `R-LORA.7.2` | R | `v1.0/05-LoRA/01-LoRA原理.md#L268` | 秩-容量关系 | active | v1.0 |
-| `R-LORA.8.1` | R | `v1.0/05-LoRA/01-LoRA原理.md#L285` | 源码对照与超参速查 | active | v1.0 |
-| `R-LORA.8.2` | R | `v1.0/05-LoRA/01-LoRA原理.md#L298` | 推荐起点 | active | v1.0 |
-| `R-LORA.9.1` | R | `v1.0/05-LoRA/01-LoRA原理.md#L309` | 外部数学文档索引 | active | v1.0 |
-| `R-LORA.10.1` | R | `v1.0/05-LoRA/01-LoRA原理.md#L320` | 小结 | active | v1.0 |
+| `P-LORA.2.3` | P | `v1.0/05-LoRA/01-LoRA原理.md#L63` | 参数量与压缩比 | active | v1.0 |
+| `P-LORA.3.1` | P | `v1.0/05-LoRA/01-LoRA原理.md#L94` | 零初始化 ⇒ 初始等价基座 | active | v1.0 |
+| `P-LORA.3.4` | P | `v1.0/05-LoRA/01-LoRA原理.md#L118` | 缩放 $s=\alpha/r$ 的作用 | active | v1.0 |
+| `R-LORA.1.1` | R | `v1.0/05-LoRA/01-LoRA原理.md#L18` | LoRA 速览 | active | v1.0 |
+| `R-LORA.2.1` | R | `v1.0/05-LoRA/01-LoRA原理.md#L38` | 动机：全参微调的存储代价 | active | v1.0 |
+| `R-LORA.2.4` | R | `v1.0/05-LoRA/01-LoRA原理.md#L74` | 秩与容量 | active | v1.0 |
+| `R-LORA.3.3` | R | `v1.0/05-LoRA/01-LoRA原理.md#L109` | 零初始化下的梯度流向 | active | v1.0 |
+| `R-LORA.3.5` | R | `v1.0/05-LoRA/01-LoRA原理.md#L132` | dropout 与权重合并 | active | v1.0 |
+| `R-LORA.4.2` | R | `v1.0/05-LoRA/01-LoRA原理.md#L153` | 目标模块选择与容量 | active | v1.0 |
+| `R-LORA.5.4` | R | `v1.0/05-LoRA/01-LoRA原理.md#L203` | paged optimizer | active | v1.0 |
+| `R-LORA.5.5` | R | `v1.0/05-LoRA/01-LoRA原理.md#L210` | QLoRA 计算流程 | active | v1.0 |
+| `R-LORA.6.2` | R | `v1.0/05-LoRA/01-LoRA原理.md#L242` | DoRA 的特点与统一视角 | active | v1.0 |
+| `R-LORA.7.1` | R | `v1.0/05-LoRA/01-LoRA原理.md#L257` | 与全参微调对比 | active | v1.0 |
+| `R-LORA.7.2` | R | `v1.0/05-LoRA/01-LoRA原理.md#L269` | 秩-容量关系 | active | v1.0 |
+| `R-LORA.8.1` | R | `v1.0/05-LoRA/01-LoRA原理.md#L286` | 源码对照与超参速查 | active | v1.0 |
+| `R-LORA.8.2` | R | `v1.0/05-LoRA/01-LoRA原理.md#L299` | 推荐起点 | active | v1.0 |
+| `R-LORA.9.1` | R | `v1.0/05-LoRA/01-LoRA原理.md#L310` | 外部数学文档索引 | active | v1.0 |
+| `R-LORA.10.1` | R | `v1.0/05-LoRA/01-LoRA原理.md#L321` | 小结 | active | v1.0 |
 
 ### doccode `MCTS`（21）
 
 | Tag | 类型 | 位置 | 标题 | 状态 | 版本 |
 | --- | --- | --- | --- | --- | --- |
-| `A-MCTS.8.1` | A | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L158` | BatchSolver | active | v1.0 |
-| `A-MCTS.8.2` | A | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L164` | online_ttt `run_online` | active | v1.0 |
-| `Cd-MCTS.2.2` | Cd | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L34` | focus 孩子构造 | active | v1.0 |
-| `Cd-MCTS.6.1` | Cd | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L116` | 单轮迭代伪代码 | active | v1.0 |
-| `Cd-MCTS.7.1` | Cd | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L140` | 与 Lean `reap` 引擎的对应 | active | v1.0 |
-| `D-MCTS.2.1` | D | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L29` | OR / AND 节点 | active | v1.0 |
-| `D-MCTS.3.1` | D | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L56` | PUCT 选择分数 | active | v1.0 |
-| `D-MCTS.4.1` | D | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L75` | Q 变换与 $\gamma$ 折扣 | active | v1.0 |
-| `D-MCTS.5.1` | D | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L96` | progressive sampling 条件 | active | v1.0 |
+| `A-MCTS.8.1` | A | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L160` | BatchSolver | active | v1.0 |
+| `A-MCTS.8.2` | A | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L166` | online_ttt `run_online` | active | v1.0 |
+| `Cd-MCTS.2.2` | Cd | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L36` | focus 孩子构造 | active | v1.0 |
+| `Cd-MCTS.6.1` | Cd | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L118` | 单轮迭代伪代码 | active | v1.0 |
+| `Cd-MCTS.7.1` | Cd | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L142` | 与 Lean `reap` 引擎的对应 | active | v1.0 |
+| `D-MCTS.2.1` | D | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L31` | OR / AND 节点 | active | v1.0 |
+| `D-MCTS.3.1` | D | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L58` | PUCT 选择分数 | active | v1.0 |
+| `D-MCTS.4.1` | D | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L77` | Q 变换与 $\gamma$ 折扣 | active | v1.0 |
+| `D-MCTS.5.1` | D | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L98` | progressive sampling 条件 | active | v1.0 |
 | `DOC-MCTS` | DOC | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md` | 07 · MCTS 原理与 V1 闭环 | active | v1.0 |
-| `Ex-MCTS.10.2` | Ex | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L211` | 思考题 | active | v1.0 |
-| `R-MCTS.1.1` | R | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L13` | 一句话与对照 | active | v1.0 |
-| `R-MCTS.2.3` | R | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L48` | solved 判定 | active | v1.0 |
-| `R-MCTS.3.2` | R | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L66` | 未访问值与 AND 选择分数 | active | v1.0 |
-| `R-MCTS.4.2` | R | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L87` | 回传规则 | active | v1.0 |
-| `R-MCTS.5.2` | R | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L106` | Dirichlet 旁注与循环检测 | active | v1.0 |
-| `R-MCTS.6.2` | R | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L131` | expand_node 与复验 | active | v1.0 |
-| `R-MCTS.8.3` | R | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L171` | V1 闭环全景 | active | v1.0 |
-| `R-MCTS.9.1` | R | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L191` | 本目录可运行代码 | active | v1.0 |
-| `R-MCTS.10.1` | R | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L203` | 小结 | active | v1.0 |
-| `R-MCTS.11.1` | R | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L225` | 参考与源码索引 | active | v1.0 |
+| `Ex-MCTS.10.2` | Ex | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L213` | 思考题 | active | v1.0 |
+| `R-MCTS.1.1` | R | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L15` | 一句话与对照 | active | v1.0 |
+| `R-MCTS.2.3` | R | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L50` | solved 判定 | active | v1.0 |
+| `R-MCTS.3.2` | R | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L68` | 未访问值与 AND 选择分数 | active | v1.0 |
+| `R-MCTS.4.2` | R | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L89` | 回传规则 | active | v1.0 |
+| `R-MCTS.5.2` | R | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L108` | Dirichlet 旁注与循环检测 | active | v1.0 |
+| `R-MCTS.6.2` | R | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L133` | expand_node 与复验 | active | v1.0 |
+| `R-MCTS.8.3` | R | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L173` | V1 闭环全景 | active | v1.0 |
+| `R-MCTS.9.1` | R | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L193` | 本目录可运行代码 | active | v1.0 |
+| `R-MCTS.10.1` | R | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L205` | 小结 | active | v1.0 |
+| `R-MCTS.11.1` | R | `v1.0/07-MCTS+V1/01-MCTS原理与V1闭环.md#L227` | 参考与源码索引 | active | v1.0 |
 
 ### doccode `misc`（2）
 
@@ -759,30 +759,30 @@
 
 | Tag | 类型 | 位置 | 标题 | 状态 | 版本 |
 | --- | --- | --- | --- | --- | --- |
-| `D-PT.2.1` | D | `v1.0/02-预训练/01-预训练原理.md#L30` | 自回归分解与语言建模目标 | active | v1.0 |
-| `D-PT.2.2` | D | `v1.0/02-预训练/01-预训练原理.md#L38` | 逐位置条件分布 | active | v1.0 |
-| `D-PT.3.2` | D | `v1.0/02-预训练/01-预训练原理.md#L75` | 带掩码的逐位置损失 | active | v1.0 |
-| `D-PT.5.1` | D | `v1.0/02-预训练/01-预训练原理.md#L107` | 困惑度 PPL | active | v1.0 |
-| `D-PT.6.1` | D | `v1.0/02-预训练/01-预训练原理.md#L120` | 域配比 | active | v1.0 |
-| `D-PT.6.2` | D | `v1.0/02-预训练/01-预训练原理.md#L130` | 课程学习：线性域退火 | active | v1.0 |
-| `D-PT.8.1` | D | `v1.0/02-预训练/01-预训练原理.md#L167` | 数据并行 all-reduce | active | v1.0 |
-| `D-PT.8.3` | D | `v1.0/02-预训练/01-预训练原理.md#L184` | 梯度累积 | active | v1.0 |
+| `D-PT.2.1` | D | `v1.0/02-预训练/01-预训练原理.md#L32` | 自回归分解与语言建模目标 | active | v1.0 |
+| `D-PT.2.2` | D | `v1.0/02-预训练/01-预训练原理.md#L40` | 逐位置条件分布 | active | v1.0 |
+| `D-PT.3.2` | D | `v1.0/02-预训练/01-预训练原理.md#L77` | 带掩码的逐位置损失 | active | v1.0 |
+| `D-PT.5.1` | D | `v1.0/02-预训练/01-预训练原理.md#L109` | 困惑度 PPL | active | v1.0 |
+| `D-PT.6.1` | D | `v1.0/02-预训练/01-预训练原理.md#L122` | 域配比 | active | v1.0 |
+| `D-PT.6.2` | D | `v1.0/02-预训练/01-预训练原理.md#L132` | 课程学习：线性域退火 | active | v1.0 |
+| `D-PT.8.1` | D | `v1.0/02-预训练/01-预训练原理.md#L169` | 数据并行 all-reduce | active | v1.0 |
+| `D-PT.8.3` | D | `v1.0/02-预训练/01-预训练原理.md#L186` | 梯度累积 | active | v1.0 |
 | `DOC-PT` | DOC | `v1.0/02-预训练/01-预训练原理.md` | 01 · 预训练原理 | active | v1.0 |
-| `Ex-PT.11.2` | Ex | `v1.0/02-预训练/01-预训练原理.md#L237` | 动手：域切换与预算 | active | v1.0 |
-| `P-PT.3.1` | P | `v1.0/02-预训练/01-预训练原理.md#L56` | 最小化交叉熵 = 最大似然 = 最小化 KL | active | v1.0 |
-| `P-PT.4.1` | P | `v1.0/02-预训练/01-预训练原理.md#L88` | 交叉熵对 logits 的梯度 | active | v1.0 |
-| `P-PT.7.1` | P | `v1.0/02-预训练/01-预训练原理.md#L146` | 算力预算 C≈6ND | active | v1.0 |
-| `Pf-PT.3.1` | Pf | `v1.0/02-预训练/01-预训练原理.md#L70` |  | active | v1.0 |
-| `Pf-PT.4.1` | Pf | `v1.0/02-预训练/01-预训练原理.md#L97` |  | active | v1.0 |
-| `R-PT.1.1` | R | `v1.0/02-预训练/01-预训练原理.md#L13` | 四阶段流水线 | active | v1.0 |
-| `R-PT.2.3` | R | `v1.0/02-预训练/01-预训练原理.md#L48` | teacher forcing 与并行训练 | active | v1.0 |
-| `R-PT.6.3` | R | `v1.0/02-预训练/01-预训练原理.md#L138` | 配比的直觉与防遗忘 | active | v1.0 |
-| `R-PT.7.2` | R | `v1.0/02-预训练/01-预训练原理.md#L160` | Chinchilla 数据-参数比 | active | v1.0 |
-| `R-PT.8.2` | R | `v1.0/02-预训练/01-预训练原理.md#L179` | 混合精度与 fp32 保留 | active | v1.0 |
-| `R-PT.8.4` | R | `v1.0/02-预训练/01-预训练原理.md#L192` | 梯度检查点 | active | v1.0 |
-| `R-PT.9.1` | R | `v1.0/02-预训练/01-预训练原理.md#L198` | 与 nanoproof 源码对照 | active | v1.0 |
-| `R-PT.10.1` | R | `v1.0/02-预训练/01-预训练原理.md#L216` | 常见坑 | active | v1.0 |
-| `R-PT.11.1` | R | `v1.0/02-预训练/01-预训练原理.md#L229` | 小结 | active | v1.0 |
+| `Ex-PT.11.2` | Ex | `v1.0/02-预训练/01-预训练原理.md#L239` | 动手：域切换与预算 | active | v1.0 |
+| `P-PT.3.1` | P | `v1.0/02-预训练/01-预训练原理.md#L58` | 最小化交叉熵 = 最大似然 = 最小化 KL | active | v1.0 |
+| `P-PT.4.1` | P | `v1.0/02-预训练/01-预训练原理.md#L90` | 交叉熵对 logits 的梯度 | active | v1.0 |
+| `P-PT.7.1` | P | `v1.0/02-预训练/01-预训练原理.md#L148` | 算力预算 C≈6ND | active | v1.0 |
+| `Pf-PT.3.1` | Pf | `v1.0/02-预训练/01-预训练原理.md#L72` |  | active | v1.0 |
+| `Pf-PT.4.1` | Pf | `v1.0/02-预训练/01-预训练原理.md#L99` |  | active | v1.0 |
+| `R-PT.1.1` | R | `v1.0/02-预训练/01-预训练原理.md#L15` | 四阶段流水线 | active | v1.0 |
+| `R-PT.2.3` | R | `v1.0/02-预训练/01-预训练原理.md#L50` | teacher forcing 与并行训练 | active | v1.0 |
+| `R-PT.6.3` | R | `v1.0/02-预训练/01-预训练原理.md#L140` | 配比的直觉与防遗忘 | active | v1.0 |
+| `R-PT.7.2` | R | `v1.0/02-预训练/01-预训练原理.md#L162` | Chinchilla 数据-参数比 | active | v1.0 |
+| `R-PT.8.2` | R | `v1.0/02-预训练/01-预训练原理.md#L181` | 混合精度与 fp32 保留 | active | v1.0 |
+| `R-PT.8.4` | R | `v1.0/02-预训练/01-预训练原理.md#L194` | 梯度检查点 | active | v1.0 |
+| `R-PT.9.1` | R | `v1.0/02-预训练/01-预训练原理.md#L200` | 与 nanoproof 源码对照 | active | v1.0 |
+| `R-PT.10.1` | R | `v1.0/02-预训练/01-预训练原理.md#L218` | 常见坑 | active | v1.0 |
+| `R-PT.11.1` | R | `v1.0/02-预训练/01-预训练原理.md#L231` | 小结 | active | v1.0 |
 
 ### doccode `PY1`（47）
 
@@ -1069,7 +1069,7 @@
 | `R-PY6.5.1` | R | `v1.0/00-预备/PY6-PyTorch进阶与生态.md#L227` | 来源与许可 | active | v1.0 |
 | `R-PY6.6.1` | R | `v1.0/00-预备/PY6-PyTorch进阶与生态.md#L247` | 本章小结 | active | v1.0 |
 
-### doccode `RES`（10）
+### doccode `RES`（11）
 
 | Tag | 类型 | 位置 | 标题 | 状态 | 版本 |
 | --- | --- | --- | --- | --- | --- |
@@ -1083,49 +1083,50 @@
 | `R-RES.7.1` | R | `v1.0/00-资料清单.md#L98` | 既有数学文档（`/home/a/文档/`，本教材统一链接过去 | active | v1.0 |
 | `R-RES.8.1` | R | `v1.0/00-资料清单.md#L107` | AlphaProof 参考源码（只读，逐文件精读对象 | active | v1.0 |
 | `R-RES.9.1` | R | `v1.0/00-资料清单.md#L119` | 环境与工具 | active | v1.0 |
+| `R-RES.10.1` | R | `v1.0/00-资料清单.md#L127` | 预备篇（`00-预备/`，Python / PyTorch 从零 | active | v1.0 |
 
 ### doccode `RL`（38）
 
 | Tag | 类型 | 位置 | 标题 | 状态 | 版本 |
 | --- | --- | --- | --- | --- | --- |
-| `A-RL.11.2` | A | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L380` | online_ttt 闭环 | active | v1.0 |
-| `D-RL.2.1` | D | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L44` | token 级 MDP 与轨迹概率 | active | v1.0 |
-| `D-RL.4.3` | D | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L165` | 优势函数 | active | v1.0 |
-| `D-RL.4.4` | D | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L178` | GAE：优势的方差–偏差折中 | active | v1.0 |
-| `D-RL.5.1` | D | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L195` | 重要性比与单步代理目标 | active | v1.0 |
-| `D-RL.6.1` | D | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L214` | PPO clip 目标 | active | v1.0 |
-| `D-RL.6.3` | D | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L230` | 完整 PPO 目标 | active | v1.0 |
-| `D-RL.7.1` | D | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L249` | GRPO 组内相对优势 | active | v1.0 |
-| `D-RL.7.3` | D | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L264` | GRPO 目标 | active | v1.0 |
-| `D-RL.8.1` | D | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L291` | KL 正则与三种估计器 | active | v1.0 |
-| `D-RL.8.3` | D | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L312` | RTTT 的平方对数比 KL | active | v1.0 |
-| `D-RL.9.1` | D | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L327` | RLVR：可验证奖励 | active | v1.0 |
-| `D-RL.11.1` | D | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L372` | TTRL 与 RTTT | active | v1.0 |
+| `A-RL.11.2` | A | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L382` | online_ttt 闭环 | active | v1.0 |
+| `D-RL.2.1` | D | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L46` | token 级 MDP 与轨迹概率 | active | v1.0 |
+| `D-RL.4.3` | D | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L167` | 优势函数 | active | v1.0 |
+| `D-RL.4.4` | D | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L180` | GAE：优势的方差–偏差折中 | active | v1.0 |
+| `D-RL.5.1` | D | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L197` | 重要性比与单步代理目标 | active | v1.0 |
+| `D-RL.6.1` | D | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L216` | PPO clip 目标 | active | v1.0 |
+| `D-RL.6.3` | D | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L232` | 完整 PPO 目标 | active | v1.0 |
+| `D-RL.7.1` | D | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L251` | GRPO 组内相对优势 | active | v1.0 |
+| `D-RL.7.3` | D | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L266` | GRPO 目标 | active | v1.0 |
+| `D-RL.8.1` | D | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L293` | KL 正则与三种估计器 | active | v1.0 |
+| `D-RL.8.3` | D | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L314` | RTTT 的平方对数比 KL | active | v1.0 |
+| `D-RL.9.1` | D | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L329` | RLVR：可验证奖励 | active | v1.0 |
+| `D-RL.11.1` | D | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L374` | TTRL 与 RTTT | active | v1.0 |
 | `DOC-RL` | DOC | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md` | 06 · RL 与 RLVR 原理（从策略梯度到可验证奖励） | active | v1.0 |
-| `Ex-RL.13.2` | Ex | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L487` | 思考题 | active | v1.0 |
-| `P-RL.4.2` | P | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L146` | 基线为什么不引入偏差 | active | v1.0 |
-| `Pf-RL.3.1` | Pf | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L79` |  | active | v1.0 |
-| `Pf-RL.4.2` | Pf | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L155` |  | active | v1.0 |
-| `R-RL.1.1` | R | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L21` | 源码对照速查 | active | v1.0 |
-| `R-RL.2.2` | R | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L68` | 确定性转移：随机性全部来自策略采样 | active | v1.0 |
-| `R-RL.6.2` | R | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L223` | clip 行为解读 | active | v1.0 |
-| `R-RL.6.4` | R | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L239` | 与 TRPO 的关系 | active | v1.0 |
-| `R-RL.7.2` | R | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L259` | 均值基线与归一化的偏差 | active | v1.0 |
-| `R-RL.7.4` | R | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L277` | 为什么能省掉 critic | active | v1.0 |
-| `R-RL.7.5` | R | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L282` | 全同组退化与难度课程 | active | v1.0 |
-| `R-RL.8.2` | R | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L306` | 三种估计器比较与信息几何 | active | v1.0 |
-| `R-RL.9.2` | R | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L341` | 稀疏奖励的工程解法 | active | v1.0 |
-| `R-RL.9.3` | R | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L347` | RLVR 的能力边界 | active | v1.0 |
-| `R-RL.10.1` | R | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L356` | on-policy 稳定性与熵坍塌 | active | v1.0 |
-| `R-RL.10.2` | R | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L362` | 奖励攻击与长度/难度偏差 | active | v1.0 |
-| `R-RL.11.3` | R | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L390` | V1 闭环 | active | v1.0 |
-| `R-RL.12.1` | R | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L401` | `policy_server.py` 的 `/ttt_step` | active | v1.0 |
-| `R-RL.12.2` | R | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L429` | `gpu_runtime` 各 backend 的 `learn()` | active | v1.0 |
-| `R-RL.12.3` | R | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L449` | `nanoproof/rl.py`：token-mean CE + unlikelihood | active | v1.0 |
-| `R-RL.13.1` | R | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L482` | 小结 | active | v1.0 |
-| `R-RL.14.1` | R | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L500` | 参考与源码索引 | active | v1.0 |
-| `T-RL.3.1` | T | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L77` | 策略梯度定理 | active | v1.0 |
-| `T-RL.4.1` | T | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L134` | REINFORCE 更新 | active | v1.0 |
+| `Ex-RL.13.2` | Ex | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L489` | 思考题 | active | v1.0 |
+| `P-RL.4.2` | P | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L148` | 基线为什么不引入偏差 | active | v1.0 |
+| `Pf-RL.3.1` | Pf | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L81` |  | active | v1.0 |
+| `Pf-RL.4.2` | Pf | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L157` |  | active | v1.0 |
+| `R-RL.1.1` | R | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L23` | 源码对照速查 | active | v1.0 |
+| `R-RL.2.2` | R | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L70` | 确定性转移：随机性全部来自策略采样 | active | v1.0 |
+| `R-RL.6.2` | R | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L225` | clip 行为解读 | active | v1.0 |
+| `R-RL.6.4` | R | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L241` | 与 TRPO 的关系 | active | v1.0 |
+| `R-RL.7.2` | R | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L261` | 均值基线与归一化的偏差 | active | v1.0 |
+| `R-RL.7.4` | R | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L279` | 为什么能省掉 critic | active | v1.0 |
+| `R-RL.7.5` | R | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L284` | 全同组退化与难度课程 | active | v1.0 |
+| `R-RL.8.2` | R | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L308` | 三种估计器比较与信息几何 | active | v1.0 |
+| `R-RL.9.2` | R | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L343` | 稀疏奖励的工程解法 | active | v1.0 |
+| `R-RL.9.3` | R | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L349` | RLVR 的能力边界 | active | v1.0 |
+| `R-RL.10.1` | R | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L358` | on-policy 稳定性与熵坍塌 | active | v1.0 |
+| `R-RL.10.2` | R | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L364` | 奖励攻击与长度/难度偏差 | active | v1.0 |
+| `R-RL.11.3` | R | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L392` | V1 闭环 | active | v1.0 |
+| `R-RL.12.1` | R | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L403` | `policy_server.py` 的 `/ttt_step` | active | v1.0 |
+| `R-RL.12.2` | R | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L431` | `gpu_runtime` 各 backend 的 `learn()` | active | v1.0 |
+| `R-RL.12.3` | R | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L451` | `nanoproof/rl.py`：token-mean CE + unlikelihood | active | v1.0 |
+| `R-RL.13.1` | R | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L484` | 小结 | active | v1.0 |
+| `R-RL.14.1` | R | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L502` | 参考与源码索引 | active | v1.0 |
+| `T-RL.3.1` | T | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L79` | 策略梯度定理 | active | v1.0 |
+| `T-RL.4.1` | T | `v1.0/06-RL-RLVR/01-RL与RLVR原理.md#L136` | REINFORCE 更新 | active | v1.0 |
 
 ### doccode `RM01API`（6）
 
@@ -1235,33 +1236,33 @@
 | `R-ROAD.1.1` | R | `v1.0/00-学习路线图.md#L9` | 统一"四件套"结构 | active | v1.0 |
 | `R-ROAD.2.1` | R | `v1.0/00-学习路线图.md#L25` | 与 AlphaProof 的映射 | active | v1.0 |
 | `R-ROAD.3.1` | R | `v1.0/00-学习路线图.md#L40` | 阶段路线与验收 | active | v1.0 |
-| `R-ROAD.4.1` | R | `v1.0/00-学习路线图.md#L55` | 规模与运行环境 | active | v1.0 |
-| `R-ROAD.5.1` | R | `v1.0/00-学习路线图.md#L64` | 数据集（教学用小切片 | active | v1.0 |
-| `R-ROAD.6.1` | R | `v1.0/00-学习路线图.md#L78` | 与既有数学文档对照 | active | v1.0 |
-| `R-ROAD.7.1` | R | `v1.0/00-学习路线图.md#L84` | 使用建议 | active | v1.0 |
+| `R-ROAD.4.1` | R | `v1.0/00-学习路线图.md#L56` | 规模与运行环境 | active | v1.0 |
+| `R-ROAD.5.1` | R | `v1.0/00-学习路线图.md#L65` | 数据集（教学用小切片 | active | v1.0 |
+| `R-ROAD.6.1` | R | `v1.0/00-学习路线图.md#L79` | 与既有数学文档对照 | active | v1.0 |
+| `R-ROAD.7.1` | R | `v1.0/00-学习路线图.md#L85` | 使用建议 | active | v1.0 |
 
 ### doccode `SFT`（18）
 
 | Tag | 类型 | 位置 | 标题 | 状态 | 版本 |
 | --- | --- | --- | --- | --- | --- |
-| `D-SFT.1.1` | D | `v1.0/03-SFT/01-SFT原理.md#L23` | SFT 的条件似然目标 | active | v1.0 |
-| `D-SFT.2.1` | D | `v1.0/03-SFT/01-SFT原理.md#L39` | (state, tactic) 数据字段 | active | v1.0 |
-| `D-SFT.3.1` | D | `v1.0/03-SFT/01-SFT原理.md#L55` | 拼接格式 | active | v1.0 |
-| `D-SFT.3.2` | D | `v1.0/03-SFT/01-SFT原理.md#L66` | 标签掩码与掩码交叉熵 | active | v1.0 |
-| `D-SFT.5.2` | D | `v1.0/03-SFT/01-SFT原理.md#L127` | LoRA 增量参数化 | active | v1.0 |
+| `D-SFT.1.1` | D | `v1.0/03-SFT/01-SFT原理.md#L25` | SFT 的条件似然目标 | active | v1.0 |
+| `D-SFT.2.1` | D | `v1.0/03-SFT/01-SFT原理.md#L41` | (state, tactic) 数据字段 | active | v1.0 |
+| `D-SFT.3.1` | D | `v1.0/03-SFT/01-SFT原理.md#L57` | 拼接格式 | active | v1.0 |
+| `D-SFT.3.2` | D | `v1.0/03-SFT/01-SFT原理.md#L68` | 标签掩码与掩码交叉熵 | active | v1.0 |
+| `D-SFT.5.2` | D | `v1.0/03-SFT/01-SFT原理.md#L129` | LoRA 增量参数化 | active | v1.0 |
 | `DOC-SFT` | DOC | `v1.0/03-SFT/01-SFT原理.md` | 01 · SFT 原理：指令微调与标签掩码 | active | v1.0 |
-| `Ex-SFT.8.3` | Ex | `v1.0/03-SFT/01-SFT原理.md#L190` | 动手：mask 与 LoRA 秩 | active | v1.0 |
-| `R-SFT.3.3` | R | `v1.0/03-SFT/01-SFT原理.md#L84` | 为什么要 mask prompt | active | v1.0 |
-| `R-SFT.3.4` | R | `v1.0/03-SFT/01-SFT原理.md#L92` | 右填充 | active | v1.0 |
-| `R-SFT.4.1` | R | `v1.0/03-SFT/01-SFT原理.md#L99` | chat template 一致性 | active | v1.0 |
-| `R-SFT.4.2` | R | `v1.0/03-SFT/01-SFT原理.md#L113` | 掩码定位 | active | v1.0 |
-| `R-SFT.5.1` | R | `v1.0/03-SFT/01-SFT原理.md#L122` | 全参 SFT | active | v1.0 |
-| `R-SFT.5.3` | R | `v1.0/03-SFT/01-SFT原理.md#L138` | 三种微调方式对比 | active | v1.0 |
-| `R-SFT.5.4` | R | `v1.0/03-SFT/01-SFT原理.md#L147` | 容器 QLoRA 超参 | active | v1.0 |
-| `R-SFT.6.1` | R | `v1.0/03-SFT/01-SFT原理.md#L154` | 过拟合、防遗忘与评估 | active | v1.0 |
-| `R-SFT.7.1` | R | `v1.0/03-SFT/01-SFT原理.md#L164` | 与 AlphaProof 源码对照 | active | v1.0 |
-| `R-SFT.8.1` | R | `v1.0/03-SFT/01-SFT原理.md#L177` | 常见坑 | active | v1.0 |
-| `R-SFT.8.2` | R | `v1.0/03-SFT/01-SFT原理.md#L185` | 小结 | active | v1.0 |
+| `Ex-SFT.8.3` | Ex | `v1.0/03-SFT/01-SFT原理.md#L192` | 动手：mask 与 LoRA 秩 | active | v1.0 |
+| `R-SFT.3.3` | R | `v1.0/03-SFT/01-SFT原理.md#L86` | 为什么要 mask prompt | active | v1.0 |
+| `R-SFT.3.4` | R | `v1.0/03-SFT/01-SFT原理.md#L94` | 右填充 | active | v1.0 |
+| `R-SFT.4.1` | R | `v1.0/03-SFT/01-SFT原理.md#L101` | chat template 一致性 | active | v1.0 |
+| `R-SFT.4.2` | R | `v1.0/03-SFT/01-SFT原理.md#L115` | 掩码定位 | active | v1.0 |
+| `R-SFT.5.1` | R | `v1.0/03-SFT/01-SFT原理.md#L124` | 全参 SFT | active | v1.0 |
+| `R-SFT.5.3` | R | `v1.0/03-SFT/01-SFT原理.md#L140` | 三种微调方式对比 | active | v1.0 |
+| `R-SFT.5.4` | R | `v1.0/03-SFT/01-SFT原理.md#L149` | 容器 QLoRA 超参 | active | v1.0 |
+| `R-SFT.6.1` | R | `v1.0/03-SFT/01-SFT原理.md#L156` | 过拟合、防遗忘与评估 | active | v1.0 |
+| `R-SFT.7.1` | R | `v1.0/03-SFT/01-SFT原理.md#L166` | 与 AlphaProof 源码对照 | active | v1.0 |
+| `R-SFT.8.1` | R | `v1.0/03-SFT/01-SFT原理.md#L179` | 常见坑 | active | v1.0 |
+| `R-SFT.8.2` | R | `v1.0/03-SFT/01-SFT原理.md#L187` | 小结 | active | v1.0 |
 
 ### doccode `SRC0`（6）
 
@@ -1472,70 +1473,70 @@
 | --- | --- | --- | --- | --- | --- |
 | `DOC-V10` | DOC | `v1.0/README.md` | PyTorch 和模型训练源码学习 · v1.0 | active | v1.0 |
 | `R-V10.1.1` | R | `v1.0/README.md#L9` | 怎么用 | active | v1.0 |
-| `R-V10.2.1` | R | `v1.0/README.md#L20` | 目录结构 | active | v1.0 |
-| `R-V10.3.1` | R | `v1.0/README.md#L42` | 约定 | active | v1.0 |
+| `R-V10.2.1` | R | `v1.0/README.md#L21` | 目录结构 | active | v1.0 |
+| `R-V10.3.1` | R | `v1.0/README.md#L44` | 约定 | active | v1.0 |
 
 ### doccode `V11`（23）
 
 | Tag | 类型 | 位置 | 标题 | 状态 | 版本 |
 | --- | --- | --- | --- | --- | --- |
-| `Cd-V11.2.1` | Cd | `v1.0/08-V1-1/01-工具调用与agent.md#L25` | agent 循环伪代码 | active | v1.0 |
-| `Cd-V11.4.3` | Cd | `v1.0/08-V1-1/01-工具调用与agent.md#L112` | `build_prompt` 实现 | active | v1.0 |
-| `Cd-V11.5.1` | Cd | `v1.0/08-V1-1/01-工具调用与agent.md#L132` | HTTP 服务器路由表 | active | v1.0 |
-| `Cd-V11.7.1` | Cd | `v1.0/08-V1-1/01-工具调用与agent.md#L204` | DSL 样例 | active | v1.0 |
-| `D-V11.3.1` | D | `v1.0/08-V1-1/01-工具调用与agent.md#L53` | OpenAI tool-call 协议 | active | v1.0 |
-| `D-V11.3.2` | D | `v1.0/08-V1-1/01-工具调用与agent.md#L69` | agentic DSL `{"calls":[...]}` | active | v1.0 |
-| `D-V11.4.1` | D | `v1.0/08-V1-1/01-工具调用与agent.md#L89` | 证据与审计结构 | active | v1.0 |
-| `D-V11.4.2` | D | `v1.0/08-V1-1/01-工具调用与agent.md#L96` | 组合律与贝叶斯重加权 | active | v1.0 |
-| `D-V11.5.2` | D | `v1.0/08-V1-1/01-工具调用与agent.md#L146` | 单工作线程 actor | active | v1.0 |
-| `D-V11.5.3` | D | `v1.0/08-V1-1/01-工具调用与agent.md#L153` | 会话生命周期与乐观并发 | active | v1.0 |
-| `D-V11.5.4` | D | `v1.0/08-V1-1/01-工具调用与agent.md#L162` | 持久 learner 与 release | active | v1.0 |
-| `D-V11.5.5` | D | `v1.0/08-V1-1/01-工具调用与agent.md#L169` | RTTT hooks | active | v1.0 |
-| `D-V11.6.1` | D | `v1.0/08-V1-1/01-工具调用与agent.md#L181` | 三档 transport | active | v1.0 |
+| `Cd-V11.2.1` | Cd | `v1.0/08-V1-1/01-工具调用与agent.md#L27` | agent 循环伪代码 | active | v1.0 |
+| `Cd-V11.4.3` | Cd | `v1.0/08-V1-1/01-工具调用与agent.md#L114` | `build_prompt` 实现 | active | v1.0 |
+| `Cd-V11.5.1` | Cd | `v1.0/08-V1-1/01-工具调用与agent.md#L134` | HTTP 服务器路由表 | active | v1.0 |
+| `Cd-V11.7.1` | Cd | `v1.0/08-V1-1/01-工具调用与agent.md#L206` | DSL 样例 | active | v1.0 |
+| `D-V11.3.1` | D | `v1.0/08-V1-1/01-工具调用与agent.md#L55` | OpenAI tool-call 协议 | active | v1.0 |
+| `D-V11.3.2` | D | `v1.0/08-V1-1/01-工具调用与agent.md#L71` | agentic DSL `{"calls":[...]}` | active | v1.0 |
+| `D-V11.4.1` | D | `v1.0/08-V1-1/01-工具调用与agent.md#L91` | 证据与审计结构 | active | v1.0 |
+| `D-V11.4.2` | D | `v1.0/08-V1-1/01-工具调用与agent.md#L98` | 组合律与贝叶斯重加权 | active | v1.0 |
+| `D-V11.5.2` | D | `v1.0/08-V1-1/01-工具调用与agent.md#L148` | 单工作线程 actor | active | v1.0 |
+| `D-V11.5.3` | D | `v1.0/08-V1-1/01-工具调用与agent.md#L155` | 会话生命周期与乐观并发 | active | v1.0 |
+| `D-V11.5.4` | D | `v1.0/08-V1-1/01-工具调用与agent.md#L164` | 持久 learner 与 release | active | v1.0 |
+| `D-V11.5.5` | D | `v1.0/08-V1-1/01-工具调用与agent.md#L171` | RTTT hooks | active | v1.0 |
+| `D-V11.6.1` | D | `v1.0/08-V1-1/01-工具调用与agent.md#L183` | 三档 transport | active | v1.0 |
 | `DOC-V11` | DOC | `v1.0/08-V1-1/01-工具调用与agent.md` | 08 · 工具调用与 Agent（V1-1 证据环） | active | v1.0 |
-| `R-V11.1.1` | R | `v1.0/08-V1-1/01-工具调用与agent.md#L15` | 三个关键词 | active | v1.0 |
-| `R-V11.2.2` | R | `v1.0/08-V1-1/01-工具调用与agent.md#L42` | 循环要点 | active | v1.0 |
-| `R-V11.3.3` | R | `v1.0/08-V1-1/01-工具调用与agent.md#L78` | DSL 解析规则与 `EvidenceKind` | active | v1.0 |
-| `R-V11.4.4` | R | `v1.0/08-V1-1/01-工具调用与agent.md#L122` | 证据 A/B 度量 | active | v1.0 |
-| `R-V11.6.2` | R | `v1.0/08-V1-1/01-工具调用与agent.md#L189` | RuntimeTransport 与证据生产者 | active | v1.0 |
-| `R-V11.6.3` | R | `v1.0/08-V1-1/01-工具调用与agent.md#L196` | 树内采样 vs 树外证据 | active | v1.0 |
-| `R-V11.7.2` | R | `v1.0/08-V1-1/01-工具调用与agent.md#L223` | 字段说明 | active | v1.0 |
-| `R-V11.8.1` | R | `v1.0/08-V1-1/01-工具调用与agent.md#L231` | 本目录代码与实验 | active | v1.0 |
-| `R-V11.9.1` | R | `v1.0/08-V1-1/01-工具调用与agent.md#L241` | 参考与源码索引 | active | v1.0 |
+| `R-V11.1.1` | R | `v1.0/08-V1-1/01-工具调用与agent.md#L17` | 三个关键词 | active | v1.0 |
+| `R-V11.2.2` | R | `v1.0/08-V1-1/01-工具调用与agent.md#L44` | 循环要点 | active | v1.0 |
+| `R-V11.3.3` | R | `v1.0/08-V1-1/01-工具调用与agent.md#L80` | DSL 解析规则与 `EvidenceKind` | active | v1.0 |
+| `R-V11.4.4` | R | `v1.0/08-V1-1/01-工具调用与agent.md#L124` | 证据 A/B 度量 | active | v1.0 |
+| `R-V11.6.2` | R | `v1.0/08-V1-1/01-工具调用与agent.md#L191` | RuntimeTransport 与证据生产者 | active | v1.0 |
+| `R-V11.6.3` | R | `v1.0/08-V1-1/01-工具调用与agent.md#L198` | 树内采样 vs 树外证据 | active | v1.0 |
+| `R-V11.7.2` | R | `v1.0/08-V1-1/01-工具调用与agent.md#L225` | 字段说明 | active | v1.0 |
+| `R-V11.8.1` | R | `v1.0/08-V1-1/01-工具调用与agent.md#L233` | 本目录代码与实验 | active | v1.0 |
+| `R-V11.9.1` | R | `v1.0/08-V1-1/01-工具调用与agent.md#L243` | 参考与源码索引 | active | v1.0 |
 
 ### doccode `VH`（29）
 
 | Tag | 类型 | 位置 | 标题 | 状态 | 版本 |
 | --- | --- | --- | --- | --- | --- |
-| `Cd-VH.2.3` | Cd | `v1.0/04-价值头/01-价值头原理.md#L63` | `discounted_returns` | active | v1.0 |
-| `Cd-VH.3.5` | Cd | `v1.0/04-价值头/01-价值头原理.md#L121` | 64 桶 token 定义 | active | v1.0 |
-| `Cd-VH.5.2` | Cd | `v1.0/04-价值头/01-价值头原理.md#L211` | `distance_two_hot` | active | v1.0 |
-| `D-VH.2.1` | D | `v1.0/04-价值头/01-价值头原理.md#L36` | 状态价值、动作价值与优势 | active | v1.0 |
-| `D-VH.2.2` | D | `v1.0/04-价值头/01-价值头原理.md#L58` | 折扣回报的后向递推 | active | v1.0 |
-| `D-VH.3.1` | D | `v1.0/04-价值头/01-价值头原理.md#L81` | nanoproof 的 proof-depth 价值语义 | active | v1.0 |
-| `D-VH.3.2` | D | `v1.0/04-价值头/01-价值头原理.md#L89` | REAP 标量价值头的归一化目标 | active | v1.0 |
-| `D-VH.3.3` | D | `v1.0/04-价值头/01-价值头原理.md#L102` | GPU 分类语义：distance 1–64 | active | v1.0 |
-| `D-VH.4.1` | D | `v1.0/04-价值头/01-价值头原理.md#L149` | 标量价值头结构 | active | v1.0 |
-| `D-VH.4.2` | D | `v1.0/04-价值头/01-价值头原理.md#L165` | 64 桶分类价值头结构 | active | v1.0 |
-| `D-VH.5.1` | D | `v1.0/04-价值头/01-价值头原理.md#L193` | two-hot 目标 | active | v1.0 |
-| `D-VH.5.3` | D | `v1.0/04-价值头/01-价值头原理.md#L224` | two-hot 交叉熵损失 | active | v1.0 |
-| `D-VH.6.1` | D | `v1.0/04-价值头/01-价值头原理.md#L249` | proper scoring rule | active | v1.0 |
-| `D-VH.6.3` | D | `v1.0/04-价值头/01-价值头原理.md#L261` | 可靠性图与 ECE | active | v1.0 |
-| `D-VH.8.1` | D | `v1.0/04-价值头/01-价值头原理.md#L311` | PUCT 选择与 Q 统计量 | active | v1.0 |
-| `D-VH.8.2` | D | `v1.0/04-价值头/01-价值头原理.md#L320` | 叶子评估与备份 | active | v1.0 |
+| `Cd-VH.2.3` | Cd | `v1.0/04-价值头/01-价值头原理.md#L64` | `discounted_returns` | active | v1.0 |
+| `Cd-VH.3.5` | Cd | `v1.0/04-价值头/01-价值头原理.md#L122` | 64 桶 token 定义 | active | v1.0 |
+| `Cd-VH.5.2` | Cd | `v1.0/04-价值头/01-价值头原理.md#L212` | `distance_two_hot` | active | v1.0 |
+| `D-VH.2.1` | D | `v1.0/04-价值头/01-价值头原理.md#L37` | 状态价值、动作价值与优势 | active | v1.0 |
+| `D-VH.2.2` | D | `v1.0/04-价值头/01-价值头原理.md#L59` | 折扣回报的后向递推 | active | v1.0 |
+| `D-VH.3.1` | D | `v1.0/04-价值头/01-价值头原理.md#L82` | nanoproof 的 proof-depth 价值语义 | active | v1.0 |
+| `D-VH.3.2` | D | `v1.0/04-价值头/01-价值头原理.md#L90` | REAP 标量价值头的归一化目标 | active | v1.0 |
+| `D-VH.3.3` | D | `v1.0/04-价值头/01-价值头原理.md#L103` | GPU 分类语义：distance 1–64 | active | v1.0 |
+| `D-VH.4.1` | D | `v1.0/04-价值头/01-价值头原理.md#L150` | 标量价值头结构 | active | v1.0 |
+| `D-VH.4.2` | D | `v1.0/04-价值头/01-价值头原理.md#L166` | 64 桶分类价值头结构 | active | v1.0 |
+| `D-VH.5.1` | D | `v1.0/04-价值头/01-价值头原理.md#L194` | two-hot 目标 | active | v1.0 |
+| `D-VH.5.3` | D | `v1.0/04-价值头/01-价值头原理.md#L225` | two-hot 交叉熵损失 | active | v1.0 |
+| `D-VH.6.1` | D | `v1.0/04-价值头/01-价值头原理.md#L250` | proper scoring rule | active | v1.0 |
+| `D-VH.6.3` | D | `v1.0/04-价值头/01-价值头原理.md#L262` | 可靠性图与 ECE | active | v1.0 |
+| `D-VH.8.1` | D | `v1.0/04-价值头/01-价值头原理.md#L312` | PUCT 选择与 Q 统计量 | active | v1.0 |
+| `D-VH.8.2` | D | `v1.0/04-价值头/01-价值头原理.md#L321` | 叶子评估与备份 | active | v1.0 |
 | `DOC-VH` | DOC | `v1.0/04-价值头/01-价值头原理.md` | 04-价值头原理：从价值函数到 64-bin 分类价值头 | active | v1.0 |
-| `R-VH.1.1` | R | `v1.0/04-价值头/01-价值头原理.md#L20` | 标量头 vs 64-bin 分类头速览 | active | v1.0 |
-| `R-VH.2.4` | R | `v1.0/04-价值头/01-价值头原理.md#L72` | 目标截断到 [-1,1] | active | v1.0 |
-| `R-VH.3.4` | R | `v1.0/04-价值头/01-价值头原理.md#L116` | nanoproof 的桶 token 生成 | active | v1.0 |
-| `R-VH.3.6` | R | `v1.0/04-价值头/01-价值头原理.md#L129` | 桶 logits 的期望解码 | active | v1.0 |
-| `R-VH.4.3` | R | `v1.0/04-价值头/01-价值头原理.md#L175` | 分类头的优势与代价 | active | v1.0 |
-| `R-VH.5.4` | R | `v1.0/04-价值头/01-价值头原理.md#L236` | two-hot 与硬整数类变体 | active | v1.0 |
-| `R-VH.6.2` | R | `v1.0/04-价值头/01-价值头原理.md#L255` | MSE/CE 的 properness 推论 | active | v1.0 |
-| `R-VH.6.4` | R | `v1.0/04-价值头/01-价值头原理.md#L273` | 温度缩放 | active | v1.0 |
-| `R-VH.7.1` | R | `v1.0/04-价值头/01-价值头原理.md#L288` | 偏差—方差来源 | active | v1.0 |
-| `R-VH.8.3` | R | `v1.0/04-价值头/01-价值头原理.md#L329` | 工程约定：符号、距离与 RTTT | active | v1.0 |
-| `R-VH.9.1` | R | `v1.0/04-价值头/01-价值头原理.md#L355` | 源码对照速查 | active | v1.0 |
-| `R-VH.10.1` | R | `v1.0/04-价值头/01-价值头原理.md#L380` | 小结与延伸 | active | v1.0 |
+| `R-VH.1.1` | R | `v1.0/04-价值头/01-价值头原理.md#L21` | 标量头 vs 64-bin 分类头速览 | active | v1.0 |
+| `R-VH.2.4` | R | `v1.0/04-价值头/01-价值头原理.md#L73` | 目标截断到 [-1,1] | active | v1.0 |
+| `R-VH.3.4` | R | `v1.0/04-价值头/01-价值头原理.md#L117` | nanoproof 的桶 token 生成 | active | v1.0 |
+| `R-VH.3.6` | R | `v1.0/04-价值头/01-价值头原理.md#L130` | 桶 logits 的期望解码 | active | v1.0 |
+| `R-VH.4.3` | R | `v1.0/04-价值头/01-价值头原理.md#L176` | 分类头的优势与代价 | active | v1.0 |
+| `R-VH.5.4` | R | `v1.0/04-价值头/01-价值头原理.md#L237` | two-hot 与硬整数类变体 | active | v1.0 |
+| `R-VH.6.2` | R | `v1.0/04-价值头/01-价值头原理.md#L256` | MSE/CE 的 properness 推论 | active | v1.0 |
+| `R-VH.6.4` | R | `v1.0/04-价值头/01-价值头原理.md#L274` | 温度缩放 | active | v1.0 |
+| `R-VH.7.1` | R | `v1.0/04-价值头/01-价值头原理.md#L289` | 偏差—方差来源 | active | v1.0 |
+| `R-VH.8.3` | R | `v1.0/04-价值头/01-价值头原理.md#L330` | 工程约定：符号、距离与 RTTT | active | v1.0 |
+| `R-VH.9.1` | R | `v1.0/04-价值头/01-价值头原理.md#L356` | 源码对照速查 | active | v1.0 |
+| `R-VH.10.1` | R | `v1.0/04-价值头/01-价值头原理.md#L381` | 小结与延伸 | active | v1.0 |
 
 ## Mermaid 图
 
@@ -1647,7 +1648,6 @@ flowchart TD
   nN_21["N-21"]
   nN_22["N-22"]
   nN_23["N-23"]
-  nDOC_1 -->|requires| nDOC_PY2
   nDOC_1 -->|requires| nDOC_PY5
   nDOC_2 -->|requires| nDOC_PY4
   nDOC_3 -->|corresponds| nN_03
@@ -1688,16 +1688,26 @@ flowchart TD
   nDOC_PT -->|requires| nDOC_PY6
   nDOC_PY1 -->|corresponds| nF_pre_py1
   nDOC_PY1 -->|corresponds| nN_18
+  nDOC_PY1 -->|evolves_to| nDOC_PY2
   nDOC_PY2 -->|corresponds| nF_pre_py2
   nDOC_PY2 -->|corresponds| nN_19
+  nDOC_PY2 -->|requires| nDOC_PY1
   nDOC_PY3 -->|corresponds| nF_pre_py3
   nDOC_PY3 -->|corresponds| nN_20
+  nDOC_PY3 -->|requires| nDOC_PY2
   nDOC_PY4 -->|corresponds| nF_pre_py4
   nDOC_PY4 -->|corresponds| nN_21
+  nDOC_PY4 -->|evolves_to| nDOC_PY5
+  nDOC_PY4 -->|requires| nDOC_PY1
+  nDOC_PY4 -->|requires| nDOC_PY2
   nDOC_PY5 -->|corresponds| nF_pre_py5
   nDOC_PY5 -->|corresponds| nN_22
+  nDOC_PY5 -->|evolves_to| nDOC_1
+  nDOC_PY5 -->|requires| nDOC_PY4
   nDOC_PY6 -->|corresponds| nF_pre_py6
   nDOC_PY6 -->|corresponds| nN_23
+  nDOC_PY6 -->|evolves_to| nDOC_PT
+  nDOC_PY6 -->|requires| nDOC_PY5
   nDOC_RL -->|corresponds| nF_b06_grpo
   nDOC_RL -->|corresponds| nF_b06_trl_grpo
   nDOC_RL -->|corresponds| nN_13
@@ -1775,6 +1785,18 @@ flowchart TD
 ```mermaid
 flowchart TD
   nD_1_1_3["D-1.1.3"]
+  nD_PY1_3_3["D-PY1.3.3"]
+  nD_PY1_3_6["D-PY1.3.6"]
+  nD_PY2_8_1["D-PY2.8.1"]
+  nD_PY4_3_1["D-PY4.3.1"]
+  nD_PY4_5_1["D-PY4.5.1"]
+  nD_PY4_6_2["D-PY4.6.2"]
+  nD_PY4_7_1["D-PY4.7.1"]
+  nD_PY5_1_1["D-PY5.1.1"]
+  nD_PY5_3_1["D-PY5.3.1"]
+  nD_PY5_3_2["D-PY5.3.2"]
+  nD_PY5_6_1["D-PY5.6.1"]
+  nD_PY5_6_2["D-PY5.6.2"]
   nDOC_1["DOC-1"]
   nDOC_2["DOC-2"]
   nDOC_3["DOC-3"]
@@ -1804,21 +1826,44 @@ flowchart TD
   nDOC_V11["DOC-V11"]
   nDOC_VH["DOC-VH"]
   nP_1_2_9["P-1.2.9"]
-  nDOC_1 -->|requires| nDOC_PY2
+  nR_PY4_4_1["R-PY4.4.1"]
+  nR_PY4_4_4["R-PY4.4.4"]
+  nR_PY4_6_1["R-PY4.6.1"]
+  nDOC_1 -->|requires| nD_PY5_1_1
+  nDOC_1 -->|requires| nD_PY5_3_1
+  nDOC_1 -->|requires| nD_PY5_3_2
   nDOC_1 -->|requires| nDOC_PY5
+  nDOC_2 -->|requires| nD_PY4_3_1
+  nDOC_2 -->|requires| nD_PY4_5_1
   nDOC_2 -->|requires| nDOC_PY4
+  nDOC_2 -->|requires| nR_PY4_4_1
+  nDOC_3 -->|requires| nD_PY4_7_1
   nDOC_3 -->|requires| nDOC_PY4
+  nDOC_3 -->|requires| nR_PY4_4_4
+  nDOC_4 -->|requires| nD_PY1_3_3
+  nDOC_4 -->|requires| nD_PY1_3_6
   nDOC_4 -->|requires| nDOC_PY1
+  nDOC_5 -->|requires| nD_PY2_8_1
+  nDOC_5 -->|requires| nD_PY5_6_1
+  nDOC_5 -->|requires| nD_PY5_6_2
   nDOC_5 -->|requires| nDOC_PY2
   nDOC_5 -->|requires| nDOC_PY5
+  nDOC_6 -->|requires| nD_PY4_6_2
   nDOC_6 -->|requires| nDOC_PY4
+  nDOC_6 -->|requires| nR_PY4_6_1
   nDOC_LORA -->|requires| nDOC_PY3
   nDOC_LORA -->|requires| nDOC_PY6
   nDOC_MCTS -->|requires| nDOC_PY3
   nDOC_MCTS -->|requires| nDOC_PY6
   nDOC_PT -->|requires| nDOC_PY3
   nDOC_PT -->|requires| nDOC_PY6
+  nDOC_PY2 -->|requires| nDOC_PY1
+  nDOC_PY3 -->|requires| nDOC_PY2
+  nDOC_PY4 -->|requires| nDOC_PY1
+  nDOC_PY4 -->|requires| nDOC_PY2
+  nDOC_PY5 -->|requires| nDOC_PY4
   nDOC_PY6 -->|requires| nD_1_1_3
+  nDOC_PY6 -->|requires| nDOC_PY5
   nDOC_PY6 -->|requires| nP_1_2_9
   nDOC_RL -->|requires| nDOC_PY3
   nDOC_RL -->|requires| nDOC_PY6

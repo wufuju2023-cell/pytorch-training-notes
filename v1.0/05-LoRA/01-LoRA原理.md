@@ -9,6 +9,7 @@
 > - 既有数学文档 `/home/a/文档/LoRA微调数学理论参考资料`（02/03/04/05/06 篇）
 > 代码伴侣：`code/from_scratch/lora.py`（`F-b05-lora`）、`finetune_lora.py`（`F-b05-finetune_lora`）、`code/with_api/peft_lora.py`（`F-b05-peft_lora`）、`qlora_bnb.py`（`F-b05-qlora_bnb`）。配套 notebook：`N-12`。
 > **【文档｜DOC-LORA】**（doccode = `LORA`）｜编号与 Tag 规范见《00-风格与编号规范》。
+> **前置（预备篇）**：见【定义 PY3.1.1】（虚拟环境）、【定义 PY6.3.3】（`peft` `LoraConfig`/`get_peft_model`）。
 
 ---
 

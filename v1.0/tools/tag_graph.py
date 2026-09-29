@@ -442,12 +442,16 @@ def infer_corresponds(result: ScanResult):
             doc = match_doc(rel)
             if doc:
                 emit(doc, n_tag, "auto:corresponds(dir)")
+            pre_doc = None
             m = re.match(r"^N-([0-9]+)$", n_tag)
             if m:
                 num = int(m.group(1))
                 if 18 <= num <= 23 and ("DOC-PY" + str(num - 17)) in defs:
-                    emit("DOC-PY" + str(num - 17), n_tag, "auto:corresponds(pre)")
+                    pre_doc = "DOC-PY" + str(num - 17)
+                    emit(pre_doc, n_tag, "auto:corresponds(pre)")
             for doc_hit in sorted(info.get("doc_mentions", set())):
+                if doc_hit == doc or doc_hit == pre_doc:
+                    continue  # 与目录推断/预备篇规则同一对端点时只保留一条，保证幂等
                 emit(doc_hit, n_tag, "auto:corresponds(mention)")
 
 
@@ -610,17 +614,22 @@ def cmd_extract(root: str) -> int:
         for info in result.files:
             info["rel"] = os.path.join(rel_content, info["rel"]) if rel_content != "." else info["rel"]
 
-    external_rows = read_external(tags_dir)
-    infer_corresponds(result)
-    infer_requires_outline(result, content)
-    infer_adapted_from(result, external_rows)
-
     registry_path = os.path.join(tags_dir, "registry.tsv")
     relations_path = os.path.join(tags_dir, "relations.tsv")
     previous = {}
     for r in read_tsv(registry_path, REGISTRY_HEADER):
         previous[r[0]] = r
     prev_relations = read_tsv(relations_path, RELATIONS_HEADER)
+
+    external_rows = read_external(tags_dir)
+    # ext 只存于 registry：先用旧 registry 的 ext 列回填扫描结果，供 adapted_from 生成
+    for tag, rec in result.defs.items():
+        prow = previous.get(tag)
+        if prow and prow[7]:
+            rec["ext"] = prow[7]
+    infer_corresponds(result)
+    infer_requires_outline(result, content)
+    infer_adapted_from(result, external_rows)
 
     registry_rows = build_registry_rows(result, previous)
     relation_rows = build_relation_rows(result, prev_relations)
@@ -710,6 +719,12 @@ def run_check(root: str, quiet=False):
     rel_missing = not os.path.exists(relations_path)
     if rel_missing:
         external_rows = read_external(tags_dir)
+        if not reg_missing:
+            prev = {r[0]: r for r in registry_rows}
+            for tag, rec in fresh.defs.items():
+                prow = prev.get(tag)
+                if prow and prow[7]:
+                    rec["ext"] = prow[7]
         infer_corresponds(fresh)
         infer_requires_outline(fresh, content)
         infer_adapted_from(fresh, external_rows)
