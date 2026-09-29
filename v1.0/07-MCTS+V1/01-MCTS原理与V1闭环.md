@@ -5,6 +5,8 @@
 > 实验：notebooks `N15_极简MCTS_PUCT`（`N-15`）、`N16_AlphaProof_V1_闭环tiny`（`N-16`）。
 >
 > **【文档｜DOC-MCTS】**（doccode = `MCTS`）｜编号与 Tag 规范见《00-风格与编号规范》。
+>
+> **前置（预备篇）**：见【定义 PY3.1.1】（虚拟环境）、【定义 PY6.3.1】（生态库速览）。
 
 ---
 
