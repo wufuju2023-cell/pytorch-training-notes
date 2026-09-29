@@ -7,11 +7,14 @@
 > - `reap-new-update-model/app/policy_server.py:108-116`（r16, α32, dropout0.02, all attn+mlp, `init_lora_weights=True`）
 > - `v1-1-agentic-tool/gpu/gpu_runtime/real_backend.py:68-128`（r16, α32, dropout0, `TARGET_MODULES`, per-session adapter）
 > - 既有数学文档 `/home/a/文档/LoRA微调数学理论参考资料`（02/03/04/05/06 篇）
-> 代码伴侣：`code/from_scratch/lora.py`、`finetune_lora.py`、`code/with_api/peft_lora.py`、`qlora_bnb.py`。
+> 代码伴侣：`code/from_scratch/lora.py`（`F-b05-lora`）、`finetune_lora.py`（`F-b05-finetune_lora`）、`code/with_api/peft_lora.py`（`F-b05-peft_lora`）、`qlora_bnb.py`（`F-b05-qlora_bnb`）。配套 notebook：`N-12`。
+> **【文档｜DOC-LORA】**（doccode = `LORA`）｜编号与 Tag 规范见《00-风格与编号规范》。
 
 ---
 
 ## 0. 一页速览
+
+**【注 LORA.1.1｜R-LORA.1.1】（LoRA 速览）**
 
 | 概念 | 要点 |
 | --- | --- |
@@ -31,8 +34,12 @@
 
 ### 1.1 动机
 
+**【注 LORA.2.1｜R-LORA.2.1】（动机：全参微调的存储代价）**
+
 全参微调把权重更新记为 $\Delta W$，对每个 $d\times k$ 的线性层要新存 $dk$ 个参数。
-对 7B 模型，$\sum dk$ 是数十亿参数，优化器状态（Adam 一阶/二阶矩）还要再乘 2–4 倍。
+对 7B 模型，$\sum dk$ 是数十亿参数，优化器状态（Adam 一阶/二阶矩）还要再乘 2–4 倍。应用场景多为 SFT（见《03-SFT原理》【定义 SFT.5.2】），参数化定义见下文【定义 LORA.2.2】。
+
+**【定义 LORA.2.2｜D-LORA.2.2】（低秩更新参数化）**
 
 LoRA 的核心假设：**微调带来的任务相关更新是低秩的**（intrinsic dimension 小）。
 于是令
@@ -52,6 +59,8 @@ $$
 
 ### 1.2 参数量与压缩比
 
+**【命题 LORA.2.3｜P-LORA.2.3】（参数量与压缩比）**
+
 $$
 \frac{r(d+k)}{dk} = r\left(\frac1d+\frac1k\right).
 $$
@@ -60,6 +69,8 @@ $$
 目标模块，LoRA 参数通常在 0.1%–1%。
 
 ### 1.3 秩与容量
+
+**【注 LORA.2.4｜R-LORA.2.4】（秩与容量）**
 
 $\mathrm{rank}(\Delta W) \le r$。$r$ 控制"可学方向"的维数：
 
@@ -79,9 +90,13 @@ A/B 分解存在**尺度冗余**（$A\to cA,\ B\to B/c$ 不变），这既带来
 
 ### 2.1 为什么 B 初始化为零
 
+**【命题 LORA.3.1｜P-LORA.3.1】（零初始化 ⇒ 初始等价基座）**
+
 若 $B=0$，则 $\Delta W = \frac{\alpha}{r}BA = 0$，微调**从等价基座开始**，训练不会在
 第一步就破坏预训练知识。PEFT 用 `init_lora_weights=True` 表达这件事，
 `init_lora_weights=False` 则 A、B 都随机（只适合从零训练/调试）：
+
+**【代码 LORA.3.2｜Cd-LORA.3.2】（`LoraConfig`）**
 
 ```python
 # app/policy_server.py:112-115
@@ -90,12 +105,16 @@ lora = LoraConfig(r=lora_r, lora_alpha=32, lora_dropout=0.02,
                   init_lora_weights=True)  # 零 B 初始化 => 等价 base
 ```
 
+**【注 LORA.3.3｜R-LORA.3.3】（零初始化下的梯度流向）**
+
 具体地，PEFT 默认：$A$ 用 kaiming 均匀初始化，$B=0$。于是梯度
 $\partial\mathcal{L}/\partial B \ne 0$（因为 $A\ne 0$），第一步 B 开始生长；而
 $\partial\mathcal{L}/\partial A = 0$（因为 $B=0$），所以 A 第一步不动——这是有意的
 稳定设计。
 
 ### 2.2 缩放因子与 $\alpha$ 的含义
+
+**【命题 LORA.3.4｜P-LORA.3.4】（缩放 $s=\alpha/r$ 的作用）**
 
 缩放 $s=\alpha/r$ 出现在 $\Delta W$ 上。它有两个作用：
 
@@ -109,6 +128,8 @@ $\partial\mathcal{L}/\partial A = 0$（因为 $B=0$），所以 A 第一步不�
 
 ### 2.3 dropout 与合并
 
+**【注 LORA.3.5｜R-LORA.3.5】（dropout 与权重合并）**
+
 - `lora_dropout` 加在 LoRA 分支的输入上（不是基座），起到正则作用；REAP
   `policy_server` 用 0.02，`real_backend` 用 0。
 - 推理时可**合并**：$W \leftarrow W_0 + \frac{\alpha}{r}BA$，之后前向零开销。这也是
@@ -120,11 +141,15 @@ $\partial\mathcal{L}/\partial A = 0$（因为 $B=0$），所以 A 第一步不�
 
 LoRA 加在哪些线性层，直接决定容量与收益。REAP / gpu_runtime 的选择是完全一致的 7 个：
 
+**【代码 LORA.4.1｜Cd-LORA.4.1】（`TARGET_MODULES`）**
+
 ```python
 # gpu_runtime/real_backend.py:24
 TARGET_MODULES = ("q_proj", "k_proj", "v_proj", "o_proj",
                   "gate_proj", "up_proj", "down_proj")
 ```
+
+**【注 LORA.4.2｜R-LORA.4.2】（目标模块选择与容量）**
 
 - `q,k,v,o`：注意力投影；
 - `gate,up,down`：MLP（FFN）投影。
@@ -146,9 +171,13 @@ intrinsic dimension 后收益迅速饱和，反而增加过拟合与显存。
 
 ## 4. QLoRA：把基座压到 4-bit
 
+**【定义 LORA.5.1｜D-LORA.5.1】（QLoRA）**
+
 QLoRA = **base 权重 4-bit 量化（冻结） + LoRA（bf16）**。它让 65B 模型能单卡微调。
 
 ### 4.1 nf4 量化
+
+**【定义 LORA.5.2｜D-LORA.5.2】（nf4 blockwise 量化）**
 
 对每个 block（通常 64 个权重）做 **blockwise absmax**：
 
@@ -163,18 +192,26 @@ scale $s$。
 
 ### 4.2 Double Quantization
 
+**【定义 LORA.5.3｜D-LORA.5.3】（double quantization）**
+
 scale 本身也占显存（每 64 权重一个 bf16 = 0.5 bit/param）。double quant 再对
 scale 做一次 8-bit 量化，把开销降到约 0.127 bit/param，进一步省显存。
 
 ### 4.3 Paged Optimizer
+
+**【注 LORA.5.4｜R-LORA.5.4】（paged optimizer）**
 
 优化器状态用 NVIDIA unified memory 分页，遇到显存尖峰自动换出到 CPU，避免 OOM
 （速度有损，但比崩溃好）。
 
 ### 4.4 计算流程
 
+**【注 LORA.5.5｜R-LORA.5.5】（QLoRA 计算流程）**
+
 前向时权重**即时反量化**到 bf16 做 matmul，梯度只流向 LoRA 分支（base 冻结）。
 因此 QLoRA 的显存 ≈ 4-bit base + 少量 LoRA + 激活。PEFT 里对应：
+
+**【代码 LORA.5.6｜Cd-LORA.5.6】（`BitsAndBytesConfig`）**
 
 ```python
 from transformers import BitsAndBytesConfig
@@ -190,6 +227,8 @@ bnb = BitsAndBytesConfig(
 
 ## 5. DoRA（Weight-Decomposed Low-Rank Adaptation）
 
+**【定义 LORA.6.1｜D-LORA.6.1】（DoRA：幅度-方向分解）**
+
 DoRA 把预训练权重分解为**幅度**与**方向**，再只对方向做低秩更新：
 
 $$
@@ -199,18 +238,22 @@ $$
 其中 $m\in\mathbb{R}^{d}$ 是可训练幅度向量（每列一个标量），$\|\cdot\|_c$ 是列向
 归一化。训练时 $m$ 与 $BA$ 都更新。
 
+**【注 LORA.6.2｜R-LORA.6.2】（DoRA 的特点与统一视角）**
+
 相比 LoRA，DoRA：
 
 - 更接近全参微调的"幅度-方向"更新模式，低 rank 下精度更好；
 - 额外参数只有 $d$（幅度向量），开销与 LoRA 同量级；
 - 实现稍复杂（多一步列归一化）。
 
-统一视角：LoRA、DoRA、AdaLoRA 等都可看成"在秩约束下对 $\Delta W$ 的不同参数化"，
+统一视角：LoRA、DoRA、AdaLoRA 等都可看成"在秩约束下对 $\Delta W$ 的不同参数化"（【定义 LORA.2.2】的推广），
 见 `LoRA微调数学理论参考资料/04-LoRA变体的统一理论.md`。
 
 ---
 
 ## 6. 与全参微调对比、秩-容量关系
+
+**【注 LORA.7.1｜R-LORA.7.1】（与全参微调对比）**
 
 | 维度 | 全参微调 | LoRA | QLoRA |
 | --- | --- | --- | --- |
@@ -221,6 +264,8 @@ $$
 | 推理开销 | 无 | 可 merge 归零 | 需反量化或合并 |
 | 多任务 | 每任务一份权重 | 每任务一个 adapter | 每任务一个 adapter |
 | 上限 | 最高 | 接近全参（秩足够时） | 略低于 LoRA |
+
+**【注 LORA.7.2｜R-LORA.7.2】（秩-容量关系）**
 
 **秩-容量关系**：设任务所需的"固有维度"为 $r^{*}$。
 
@@ -237,6 +282,8 @@ $$
 
 ## 7. 源码对照与超参速查
 
+**【注 LORA.8.1｜R-LORA.8.1】（源码对照与超参速查）**
+
 | 概念 | 源码位置 | 取值 |
 | --- | --- | --- |
 | LoRA 配置（policy_server） | `app/policy_server.py:112-116` | r=16, α=32, dropout=0.02, bias=none, init=True |
@@ -248,6 +295,8 @@ $$
 | QLoRA | `code/with_api/qlora_bnb.py` | nf4/double quant/paged |
 | DoRA | 本文件 §5 | 幅度-方向分解 |
 
+**【注 LORA.8.2｜R-LORA.8.2】（推荐起点）**
+
 推荐起点：
 
 - $r=16$，$\alpha=32$，`lora_dropout=0.0~0.05`，`bias="none"`；
@@ -257,6 +306,8 @@ $$
 
 ## 8. 与既有数学文档的链接
 
+**【注 LORA.9.1｜R-LORA.9.1】（外部数学文档索引）**
+
 - 低秩结构与 Grassmann 流形：`/home/a/文档/LoRA微调数学理论参考资料/02-LoRA的数学结构.md`
 - 训练动力学/尺度冗余：`.../03-LoRA的训练动力学与优化理论.md`
 - LoRA 变体统一理论（含 DoRA）：`.../04-LoRA变体的统一理论.md`
@@ -265,6 +316,8 @@ $$
 - 超参与缩放律：`.../08-缩放律-超参与理论最佳实践.md`
 
 ## 9. 小结
+
+**【注 LORA.10.1｜R-LORA.10.1】（小结）**
 
 1. LoRA 用 $W_0+\frac{\alpha}{r}BA$ 参数化低秩更新，$B=0$ 保证初始等价基座。
 2. $\alpha/r$ 是尺度归一化；$r$ 控制容量，$\alpha=2r$ 是稳妥起点。
