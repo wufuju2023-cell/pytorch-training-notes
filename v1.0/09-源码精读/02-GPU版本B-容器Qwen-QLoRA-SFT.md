@@ -8,8 +8,11 @@
 > `inference_v1/**` 在 `full_modelscope/inference_v1/`。
 > 角色：V1 主线里的**有监督长训**分支——把 Full caller 的 `{"calls":[…]}` 多步动作序列 SFT 到 Qwen3-1.7B。
 > 教学篇：`../03-SFT/`（SFT/数据格式）、`../05-LoRA/`（LoRA/QLoRA/4bit）、`../01-基础/`（AMP/梯度检查点/优化器）。
+> **【文档｜DOC-SRC2】**（doccode = `SRC2`）｜编号与 Tag 规范见《00-风格与编号规范》。
 
 ## 0. 文件树与职责
+
+**【注 SRC2.0.1｜R-SRC2.0.1】（文件树与职责）**
 
 ```
 备份根（zip 解出后）:
@@ -29,6 +32,8 @@
 ```
 
 ## 1. 数据格式：`{"calls":[...]}`
+
+**【注 SRC2.1.1｜R-SRC2.1.1】（数据格式 `{"calls":[...]}`）**
 
 每条样本一行 JSON（`validation.jsonl` / `train.jsonl`），关键字段：
 
@@ -58,12 +63,16 @@ Each call must contain action_id or macro_id and typed_params.
 ## 2. `train_full_supervised.py`（终版 855 行）
 
 ### 2.1 断点与门禁基础设施
+
+**【代码 SRC2.2.1｜Cd-SRC2.2.1】（断点与门禁基础设施）**
 - `jsonl_fingerprint`（`:61-71`）：对文件算 sha256 + 行数 + 字节数；**刻意不含挂载路径**，便于 Colab 换挂载点续训。
 - `config_signature`（`:74-86`）：model/precision_mode/max_seq_len/min_prompt_tokens/batch_size/gradient_accumulation/gradient_checkpointing/attention_implementation + train/validation 指纹。
 - `verify_smoke_receipt`（`:89-94`）：full 跑必须携带与当前签名完全一致的 `SMOKE_PASS` 收据。
 - `atomic_json`（`:54-58`）临时文件 + `os.replace`；`append_jsonl`（`:225-230`）`flush + os.fsync`。
 
 ### 2.2 `FullDataset`：target 保留的因果 LM 数据集
+
+**【代码 SRC2.2.2｜Cd-SRC2.2.2】（`FullDataset`：target 保留的因果 LM 数据集）**
 - `prompt`（`:125-136`）/`target`（`:138-140`）见 §1；`_raw_ids`（`:142-145`）prompt 带特殊 token、target 不带。
 - **`_fit`（`:147-158`）**：`prompt_budget = max_seq_len - len(target_ids)`；若 `< min_prompt_tokens` 则报错；否则超长时**只截断 prompt 尾部**（`prompt_ids[:prompt_budget]`），**绝不截断 target**（注释 `:156-157`）。
 - `_compute_token_stats`（`:160-189`）：统计 `target_too_long_rows`、`zero_supervised_rows` 等；构造时任一非零即抛错（`:118-123`，fail-closed）。
@@ -71,11 +80,15 @@ Each call must contain action_id or macro_id and typed_params.
 - `collate`（`:205-215`）：右侧 pad；`input_ids` 用 pad_id、`labels` 用 `-100`、`attention_mask` 0/1。形状 `[B,T]`，`T ≤ max_seq_len`（默认 6144）。
 
 ### 2.3 检查点与最佳 adapter
+
+**【代码 SRC2.2.3｜Cd-SRC2.2.3】（检查点与最佳 adapter）**
 - `save_checkpoint(...)`（`:253-299`）：目录名 `checkpoint-<kind>-step-<global_step>-epoch-<e>-batch-<b>`；先写 `.tmp`（`save_pretrained` + `trainer_state.pt` 含 optimizer/scheduler/scaler/state 与 `torch_rng/cuda_rng/python_rng`），原子 `os.replace`，写 `latest.json`（`:298`）；同游标已存在则保留旧目录（`:291-296`）。
 - `save_best_adapter`（`:302-320`）：不可变 `best_val_adapters/best-step-<g>-eval-<i>` + 原子提升 `best_val.json`。
 - `evaluate`（`:323-342`）：`eval()+no_grad+autocast`，按样本数加权平均验证 loss。
 
 ### 2.4 主流程 `main`（`:349-851`）
+
+**【代码 SRC2.2.4｜Cd-SRC2.2.4】（主流程 `main`）**
 关键参数：`--model` 默认 `Qwen/Qwen3-1.7B-Base`（`:351`）；`--precision-mode {4bit,fp16,bf16}`（`:356`）；`--epochs 5`（`:357`）；`--max-seq-len 6144`（`:358`）；`--min-prompt-tokens 256`（`:359`）；`--batch-size 1`、`--gradient-accumulation 8`（`:360-361`）；`--learning-rate 1e-4`（`:362`）；`--evals-per-epoch 3`（`:365`）；`--expected-validation-rows 400`（`:367`）；`--gradient-checkpointing on`（`:374`）；`--attention-implementation sdpa`（`:375`）；`--auto-extend-epochs 2`、`--min-relative-improvement 0.005`、`--early-stopping-patience 3`（`:370-372`）。
 
 1. **dry-run / token-audit-only**（`:410-443`）：只校验数据契约与 token 统计，不加载 CUDA。
@@ -93,11 +106,15 @@ Each call must contain action_id or macro_id and typed_params.
 
 ## 3. `supervisor.sh`（269 行）——编排与 autotune
 
+**【代码 SRC2.3.1｜Cd-SRC2.3.1】（`supervisor.sh`：编排与 autotune）**
+
 - 必需 `TRAIN_JSONL/VALID_JSONL/RUN_ROOT`（`:5-7`）；默认 `MODEL=Qwen/Qwen3-1.7B-Base`（`:9`），三档上下文 6144/4096/4096（`:10-12`），profiles `1:8:on 2:4:on 4:2:on 8:1:on 1:8:off 2:4:off 4:2:off 8:1:off`（`:24`），最小 headroom 768（`:25`），`RESUME=auto`（`:34`）。
 - `heartbeat`（`:40-60`）原子写心跳；`run_with_heartbeat`（`:69-95`）后台跑阶段命令并写 `stage.pid/stage.log`。
 - 顺序：preflight dry-run（`:102-105`）→ token 审计 6144/4096（必须 `zero_supervised_rows=0` 且 `target_too_long_rows=0`，`:109-115`）→ `try_candidate`（`:124-194`，在 headroom 门槛内选 tokens/s 最高，`:163-186`）→ 回退 fp16/6144 → fp16/4096 → 4bit/4096（`:197-207`）→ 写 `selection/selected.json`（`:217-236`）→ `FULL_DIR` 按精度/上下文隔离（`:240-243`）→ `RESUME=auto` 读 `latest.json`（`:245-255`）→ full 训练（`:257-269`，必须带 smoke 收据）。
 
 ## 4. `a10_autotune/a10_autotune.py`（478 行）——单卡 A10 吞吐调优
+
+**【代码 SRC2.4.1｜Cd-SRC2.4.1】（`a10_autotune.py`：单卡 A10 吞吐调优）**
 
 - `prepare_samples`（`:55-129`）：tokenize 一次，取 p10..p90 代表 + **最长样本**（峰值内存压测），写 `benchmark_samples.pt` + `sample_manifest.json`；不安全行 `SystemExit`（`:83-84`）。
 - `GpuSampler`（`:132-172`）：后台每 0.25s 采样 `nvidia-smi`（util/mem.used/mem.free/power）。
@@ -106,6 +123,8 @@ Each call must contain action_id or macro_id and typed_params.
 - `controller`（`:375-446`）：`fp16`(+`bf16`) × `{sdpa,eager}` 逐族子进程；在 `headroom≥min_headroom_mb` 中选最高 `nonpad_tokens_s`（`:408-421`），写 `autotune_summary.json` + `selected.env`（`:432-445`）。
 
 ## 5. `inference_v1/**` 与数据脚本
+
+**【代码 SRC2.5.1｜Cd-SRC2.5.1】（`inference_v1/**` 与数据脚本）**
 
 - `generate_pass1.py`（29 行）：`merged_eval11` 对 val400 逐题贪心生成（`do_sample=False, max_new_tokens=1024`），写 `pass1_generation.jsonl` + 进度（`:18-28`）。
 - `parse_pass1.py`（35 行）：抽取首个 JSON，校验 `calls`/forbidden（`:7-19`）；`action`→`action_id`（`:20-24`）；统计 `schema_valid/call_count_match/action_seq_match/exact_target_calls` 写 `pass1_metrics.json`（`:27-35`）。
@@ -117,6 +136,8 @@ Each call must contain action_id or macro_id and typed_params.
 - `data/audit_contract.py`（72 行）：统计 questions/calls/空参数/executor 字段/裸 H/action_counts（`:25-55`）。
 
 ## 6. 张量形状与训练配置
+
+**【例 SRC2.6.1｜E-SRC2.6.1】（张量形状与训练配置）**
 
 | 项 | 值 |
 |---|---|
@@ -132,11 +153,15 @@ Each call must contain action_id or macro_id and typed_params.
 
 ## 7. 与其它版本差异
 
+**【注 SRC2.7.1｜R-SRC2.7.1】（与其它版本差异）**
+
 - 与 **01 V1 app**：app 是 0 长训 + 在线 RTTT（零初始化 LoRA）；本版是离线 QLoRA SFT，产出可合并 adapter。
 - 与 **04 nanoproof SFT**：nanoproof 在自研 GPT 上从零训练；本版在 HF Qwen3-1.7B 上做参数高效微调。
 - 与 **05 value-head/nanoproof 移植**：那套是 3584→256→64 的价值头；本版训练的是 policy 的 calls 生成能力。
 
 ## 8. 想改造应先动哪里
+
+**【注 SRC2.8.1｜R-SRC2.8.1】（想改造应先动哪里）**
 
 - **换基座/上下文**：`train_full_supervised.py:351/358`、`supervisor.sh:9-13`。
 - **数据格式/target 语义**：`FullDataset.prompt/target`（`:125-140`）与 `validate_prepared_row`（`:23-51`）；规范化在 `inference_v1/data/prepare_smoke.py:37-89`。
@@ -146,6 +171,8 @@ Each call must contain action_id or macro_id and typed_params.
 - **autotune 维度**：`a10_autotune.py:350-353`、`:386-388`、`:408-421`。
 
 ## 9. 对应教学篇
+
+**【注 SRC2.9.1｜R-SRC2.9.1】（对应教学篇）**
 
 - SFT/数据格式与 token mask：`../03-SFT/`。
 - LoRA 与 QLoRA（4bit/nf4/double quant、`prepare_model_for_kbit_training`）：`../05-LoRA/`。
