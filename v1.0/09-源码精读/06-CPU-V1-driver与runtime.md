@@ -6,8 +6,11 @@
 > - Lean 侧补丁：`.../v1-result/reproduction/code/src/containers/cpu/patches/0001..0004`（见 03 篇 §11）。
 > 角色：V1 的 **CPU 控制面/数据面**——把“为每个定理开一个隔离的 Lean 进程 → 搜索中途按 observer 屏障做 TTT 更新 → 把成功经验切成可复用数据集”整条链路做成**可断点、可续传、不确定不重试**的系统。GPU 模型由 03 篇的 `GpuRuntime` 提供，本目录用 `GpuHttpClient` 调用。
 > 教学链接：`../07-MCTS+V1/`、`../08-V1-1/`、`../06-RL-RLVR/`。
+> **【文档｜DOC-SRC6】**（doccode = `SRC6`）｜编号与 Tag 规范见《00-风格与编号规范》。
 
 ## 0. 文件树与职责
+
+**【注 SRC6.0.1｜R-SRC6.0.1】（文件树与职责）**
 
 ```
 cpu_runtime/
@@ -35,12 +38,16 @@ gather/reap-training/ + reap-upstream/    Lean 侧 Reap（配合补丁 0001–00
 
 ## 1. `batch_solver.py`（254 行）：并发隔离的 Lean 会话
 
+**【代码 SRC6.1.1｜Cd-SRC6.1.1】（`batch_solver.py`：并发隔离的 Lean 会话）**
+
 - `SessionSpec`（L27）与 `parse_spec`（L55）：session_id（正则 `^[A-Za-z0-9][A-Za-z0-9_.-]{0,63}` 整串匹配）/theorem_file/policy_base_url/value_base_url/ps_endpoint；`load_manifest`（L68）读 JSONL 并拒绝重复。
 - `run_session`（L149）：为每个会话建 `output_root/<session_id>/`，注入环境变量 `REAP_SESSION_ID/REAP_SESSION_DIR/REAP_POLICY_ENDPOINT/REAP_VALUE_ENDPOINT/REAP_PS_ENDPOINT`（L163–171），执行 `lake env lean <theorem>`，写 stdout/stderr 与 `session.json`。
 - `run_process`（L103）：新进程组（POSIX `start_new_session` / Windows `CREATE_NEW_PROCESS_GROUP`），超时用 `_stop_process_tree`（L88）**只杀本会话进程树**（POSIX `killpg SIGTERM`，Windows `taskkill /T /F`），返回 `(124, True, …)`。
 - `run_all`（L201）：`asyncio.Semaphore(concurrency)` 限流；`write_summary`（L217）写 `summary.jsonl`；`main`（L234）返回 0 当全部 solved。
 
 ## 2. `online_batch.py`（608 行）：有界在线批次 ★
+
+**【代码 SRC6.2.1｜Cd-SRC6.2.1】（`online_batch.py`：有界在线批次）**
 
 - `PROFILE="online-search-visit-backup-v1"`（L29）；`BatchBlocked`（L36）表示“需人工介入、不得重试原会话”。
 - 原子发布 `publish`（L87，fsync → `os.replace`，默认拒绝覆盖）+ `batch_lock`（L101，fcntl/msvcrt 独占，第二写者即 Blocked）+ `no_links`（L53，拒绝 symlink/junction）。
@@ -50,6 +57,8 @@ gather/reap-training/ + reap-upstream/    Lean 侧 Reap（配合补丁 0001–00
 - **`run_batch`（L399）**：参数校验（concurrency∈[1,32]、gamma、URL origin 无凭据）→ 构造 `identity`（manifest sha + entries + config + 实现文件 sha，L435）并与 `batch-config.json` 绑定 → 分类 pending/recovered/skipped → `ThreadPoolExecutor(concurrency)` 派发（派发前先写 `.batch-intents/<sid>.json`，L530）→ 完成后 `completed_record` 校验再原子追加到 `solutions.jsonl`/`terminal-unsolved.jsonl`（`append` L482 保持前缀不变）→ 失败即 `manual_intervention_required`。返回 `reap.online-batch.result.v1`（L563）+ 调度指标。
 
 ## 3. `online_ttt.py`（579 行）：in-search TTT 协调 ★
+
+**【代码 SRC6.3.1｜Cd-SRC6.3.1】（`online_ttt.py`：in-search TTT 协调）**
 
 - 常量（L25–30）：`OBJECTIVE="search_visit_backup"`、`VALUE_SEMANTICS`、`MAX_LEARN_BODY_BYTES=8192`、`EXPERIENCE_RESETS`。
 - `validate_initialization`（L44）/`validate_created`（L90）：校验 create receipt 的 theorem/experience lineage、fresh optimizer/version/buffer/event 状态、objective/gamma/value_semantics。
@@ -66,6 +75,8 @@ gather/reap-training/ + reap-upstream/    Lean 侧 Reap（配合补丁 0001–00
 
 ## 4. `segmented_ttt.py`（552 行）：分段 TTT 状态机
 
+**【代码 SRC6.4.1｜Cd-SRC6.4.1】（`segmented_ttt.py`：分段 TTT 状态机）**
+
 - 契约 dataclass：`RolloutEvent`（L38）、`ActRequest`（L50）、`ActResult`（L60）、`TrainingEvent`（L68）、`LearnRequest`（L85）、`LearnResult`（L95）、`SessionOutcome`（L102）；`ActRunner`/`LearnClient` 协议（L113/L117）。
 - **每段 ACT 从定理根重新搜索**，一棵 MCTS 树绝不会含不同 policy version 的节点（模块 docstring）。
 - `_training_reward`（L146）：非终局的 verifier/tactic 失败记 -1，其余（含基础设施 timeout）记 0；`build_training_events`（L159）：`terminal_verified` 必须配 `root_verified` verdict。
@@ -73,6 +84,8 @@ gather/reap-training/ + reap-upstream/    Lean 侧 Reap（配合补丁 0001–00
 - `JsonlJournal`（L196）：每事件 `flush`。
 
 ## 5. 传输与工具
+
+**【代码 SRC6.5.1｜Cd-SRC6.5.1】（传输与工具模块）**
 
 - `http_clients.py`（119 行）：`GpuHttpClient`（L15）——`_request`（L22，JSON、`allow_nan=False`）；`create_session`（L40，支持 theorem/experience/release/role/contract pin）、`snapshot`（L62，可 `for_experience`）、`publish_experience`（L68）、`restore`（L73）、`delete_session`（L76）、`retire_session`（L79，**只提交一次**）、`retirement_receipt`（L89）、`learn`（L93，逐事件提交并校验 event_id 与 policy_version 递增）。
 - `transport_budget.py`（44 行）：`TransportBudget`（L11）——`fetch=20 < extension=115 < daemon=120 < daemon_http=130 < cli=150`（L25 强制内到外递增），另有 `lock=60, worker=600, recovery=60`；派生 `transport_call`（L29）、`bridge`（L32）、`client`（L36）、`barrier`（L40）。`DEFAULT_BUDGET`（L44）被 `online_batch/online_ttt` 使用。
@@ -86,12 +99,16 @@ gather/reap-training/ + reap-upstream/    Lean 侧 Reap（配合补丁 0001–00
 
 ## 6. CPU 容器源码包（`new-v1-gather-source-code-cpu`）
 
+**【注 SRC6.6.1｜R-SRC6.6.1】（CPU 容器源码包）**
+
 - `python-driver/v1_run.py`：BatchSolver 编排器（`make_lean` 生成 `import Reap` + `set_option reap.*_endpoint` + `theorem … := by reapMCTS` + `#eval IO.println "%%TASK_…_DONE%%"`，`podman run --network host` 执行，`state/<id>.done` 断点）。
 - `python-driver/v1_sink.py`：RolloutSink（`node_visited/task_done/rttt_update` + verdict 白名单，`state_key=sha256`）。
 - `python-driver/mock_policy_server.py`：CPU mock。
 - `reap-training/`、`reap-upstream/`：Lean 侧 Reap 源码；补丁 `0001–0004`（见 03 篇 §11）：环境变量端点、`MCTSObserver`/`observe?`/`reportCheckpoint?`、严格 value 错误（禁 -1000 哨兵）、`SelectionValueRefresh`（选择专用价值刷新）。
 
 ## 7. 并发 / 隔离 / 断点（核心不变式）
+
+**【注 SRC6.7.1｜R-SRC6.7.1】（并发 / 隔离 / 断点）**
 
 - **并发**：批次用 `ThreadPoolExecutor(concurrency)`（`online_batch`），会话用 `asyncio.Semaphore`（`batch_solver`）；collector 用 2 search + 1 verify 槽；GPU 侧所有可变操作仍由 03 篇的单一 `GpuActor` 串行（本目录只是客户端）。
 - **隔离**：每会话独立输出目录与端点；`student output` 通过独立 `session_id` 绑定独立 LoRA/value/optimizer（03 篇）。
@@ -100,11 +117,15 @@ gather/reap-training/ + reap-upstream/    Lean 侧 Reap（配合补丁 0001–00
 
 ## 8. 与其它版本差异
 
+**【注 SRC6.8.1｜R-SRC6.8.1】（与其它版本差异）**
+
 - 与 **01 V1 app**：01 的 `v1_run.py`/`v1_sink.py` 是极简 BatchSolver/JSONL；本目录把同样的闭环工程化为“多会话 + observer 屏障 + 断点续传 + 证据链审计”。
 - 与 **03 gpu_runtime**：03 是 GPU 侧会话/事务/发布；本目录是其 CPU 侧 driver（通过 `GpuHttpClient` 与 `/sessions/...` 端点对接，超时改用 `transport_budget` 的 FIFO 预算）。
 - 与 **04 nanoproof**：nanoproof 自带 MCTS/Prover；本目录把搜索交给 Lean 侧的 `reapMCTS`，CPU 只做编排与经验抽取。
 
 ## 9. 想改造应先动哪里
+
+**【注 SRC6.9.1｜R-SRC6.9.1】（想改造应先动哪里）**
 
 - **并发/隔离**：`batch_solver.py:run_session`（L149）、`online_batch.py:run_batch`（L399）。
 - **in-search 更新语义**：`online_ttt.py:_target`（L213）/`accept`（L265）/`validate_learn_receipt`（L102）。
@@ -115,6 +136,8 @@ gather/reap-training/ + reap-upstream/    Lean 侧 Reap（配合补丁 0001–00
 - **Lean 侧事件**：`containers/cpu/patches/0002`、`0004`。
 
 ## 10. 对应教学篇
+
+**【注 SRC6.10.1｜R-SRC6.10.1】（对应教学篇）**
 
 - `../07-MCTS+V1/`（MCTS 闭环、`reapMCTS`）、`../08-V1-1/`（会话/事务/发布/经验）、`../06-RL-RLVR/`（搜索中途 TTT、replay/负例）、`../04-价值头/`（value 端点）。
 - 既有流程笔记：`文档/mcts-theory-learning/MCTS算法流程/V1-MCTS完整运行流程与算例.md`。
