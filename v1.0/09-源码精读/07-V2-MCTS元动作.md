@@ -5,8 +5,11 @@
 > （另有镜像路径 `.../reap-new-update-model-value-head/lean-v2/v2/`）。
 > 角色：V2 把 V1“每条边 = 一个 Lean tactic”的搜索，升级为“每条边 = 一个**元动作（meta action）**”——元动作可以执行效应（Eff 通道）、新增引理并送 kernel gate、从观察序列中挖掘规律、打补丁/填洞。核心新概念：**塔（Tower）L + gate**、**Eff 通道白名单**、**元动作空间的 PUCT**。
 > 教学链接：`../07-MCTS+V1/`、`../08-V1-1/`、`../06-RL-RLVR/`。
+> **【文档｜DOC-SRC7】**（doccode = `SRC7`）｜编号与 Tag 规范见《00-风格与编号规范》。
 
 ## 0. 文件树与职责
+
+**【注 SRC7.0.1｜R-SRC7.0.1】（文件树与职责）**
 
 ```
 v2/
@@ -23,6 +26,8 @@ v2/
 
 ## 1. `mcts_loop.py`（117 行）——V2 主循环 ★
 
+**【代码 SRC7.1.1｜Cd-SRC7.1.1】（`mcts_loop.py`：V2 主循环）**
+
 - PUCT 常量 `C_BASE=3200.0, C_INIT=1.0`（`:16`）；`Node`（`:20`）：`state/prior/n_visits/value_sum/children`。
 - `c_init_for(N)`（`:28`）：`c(N)=C_INIT + log((N+C_BASE+1)/C_BASE)`。
 - `V2MCTS`（`:32`）：构造带 `goal/policy/tower/gate_mode/num_samples/seed/series`；默认 `series` 是立方和序列前 10 项（`:44`，多项式安全类原料）。
@@ -36,17 +41,23 @@ v2/
 
 ## 2. `policy_client.py`（50 行）——元动作策略
 
+**【代码 SRC7.2.1｜Cd-SRC7.2.1】（`policy_client.py`：元动作策略）**
+
 - `MOCK_ACTIONS`（`:8`）：`effect:arith-check`、`effect:sqsum-check`、`adddecl:1 + 1 = 2~decide`、`mine:series`、`patch:∀→∃`、`fillhole:h0` 等。
 - `PolicyClient`（`:19`）：`_probe`（`:26`）探测 `/health` 决定 `v2`(mock-cpu) / `gpu` / `mock-local`。
 - `sample()`（`:35`）：mock-local 随机返回元动作 + logprob；否则 POST `/v1/chat/completions`，解析 `(text, logprob_avg)`；异常回退到 `effect:arith-check`（`:49-50`）。**与 01/03 的 policy 端点协议一致**，只是动作语义从 Lean tactic 变成元动作。
 
 ## 3. `tower.py`（50 行）与 `gate_lean.py`（36 行）——塔与 kernel 门 ★
 
+**【代码 SRC7.3.1｜Cd-SRC7.3.1】（`tower.py` / `gate_lean.py`：塔与 kernel 门）**
+
 - `TowerEntry`（`:12`）：`name/body/deps/type`；`type` 是 gate 要验证的目标语句（标准库命题，默认 `1 + 1 = 2`）。
 - `Tower`（`:20`）：`register(e, gate_ok)`（`:23`）**仅当 gate ok 才入 L**；`depth(e)`（`:29`）= 已注册依赖数；`height()`（`:32`）= 全部条目最大 depth；`save/load`（`:35/:41`）JSON 持久化。
 - `gate_lean`（`gate_lean.py:17`）：把 `theorem <name> : <type> := by <body>` 写入临时 `.lean`，`podman run` 进 `reap-lean` 镜像执行 `lean`；无 `error`/`unsolved` 即 kernel 合法（`:33`）。镜像 `ghcr.io/wufuju2023-cell/reap-lean:4.28.0-rc1`，超时 120s（`:12-13`）。**gate 是外部 kernel 校验（回调），塔的抽象深度因此可被信任。**
 
 ## 4. `eff_registry.py`（55 行）——Eff 通道白名单 ★
+
+**【代码 SRC7.4.1｜Cd-SRC7.4.1】（`eff_registry.py`：Eff 通道白名单）**
 
 - `EffClass`（`:10`）：`DETERMINISTIC` / `EXISTENTIAL`。
 - `EffSpec`（`:16`）：`name/in_vals/verifier/klass`；`EffObs`（`:28`）：`value/ok/trace`。
@@ -55,6 +66,8 @@ v2/
 - `public_verifiers`（`:54`）：列出可用 verifier。
 
 ## 5. `mine.py`（117 行）——规律挖掘器 ★
+
+**【代码 SRC7.5.1｜Cd-SRC7.5.1】（`mine.py`：规律挖掘器）**
 
 - `Candidate`（`:14`）：`kind(poly/recurrence/identity/open)/coeffs/stmt/cls(F_k/F_c)/evidence/score`。
 - `finite_diff_const`（`:27`）：等距整数序列的 k 阶有限差是否恒定（判断 ≤k 阶多项式）。
@@ -66,11 +79,15 @@ v2/
 
 ## 6. `runner.py`（91 行）——最小 harness
 
+**【代码 SRC7.6.1｜Cd-SRC7.6.1】（`runner.py`：最小 harness）**
+
 - `V2State`（`:15`）：`goal/tower/obs_history/depth_budget`。
 - `V2Harness`（`:27`）：`step`（`:39`）执行元动作（effect/adddecl/fillhole/patch），写与 `v1_sink` 兼容的样本（`kind: effect/tower/tower_reject`，`:57-59`）；`_sink`（`:34`）追加 JSONL。
 - `main`（`:71`）：用一组元动作序列跑一遍，打印塔大小/高度与条目。
 
 ## 7. 与 V1 的差异
+
+**【例 SRC7.7.1｜E-SRC7.7.1】（与 V1 的差异）**
 
 | 维度 | V1（03/06 篇） | V2（本篇） |
 |---|---|---|
@@ -84,6 +101,8 @@ v2/
 
 ## 8. 想改造应先动哪里
 
+**【注 SRC7.8.1｜R-SRC7.8.1】（想改造应先动哪里）**
+
 - **元动作集合/奖励**：`mcts_loop.py:_evaluate`（`:58`）与 `policy_client.py:MOCK_ACTIONS`（`:8`）。
 - **PUCT 超参**：`mcts_loop.py:C_BASE/C_INIT`（`:16`）与 `c_init_for`（`:28`）。
 - **塔门控**：`tower.py:register`（`:23`）与 `gate_lean.py:gate_lean`（`:17`）。
@@ -91,6 +110,8 @@ v2/
 - **挖掘器策略**：`mine.py:fit_polynomial`（`:38`）/`fit_linear_recurrence`（`:50`）/`score`（`:100`）。
 
 ## 9. 对应教学篇
+
+**【注 SRC7.9.1｜R-SRC7.9.1】（对应教学篇）**
 
 - `../07-MCTS+V1/`（PUCT / 搜索闭环）、`../08-V1-1/`（sink/经验、policy 端点）、`../06-RL-RLVR/`（奖励/价值）。
 - 与 04 篇 `search.py`/`experience_collection.py` 对照：V2 把 AND/OR 与价值 backup 换成“元动作 + 塔 + Eff”。
